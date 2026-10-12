@@ -1,0 +1,122 @@
+[
+  {
+    "file": "advanced-practice/authorisation_matrix.py",
+    "exit_code": 0,
+    "stdout": "PASS: 89 explicit matrix, default-denial and revocation checks.\nThis result applies only to this in-memory function and declared policy.\n",
+    "stderr": ""
+  },
+  {
+    "file": "advanced-practice/history_checker.py",
+    "exit_code": 0,
+    "stdout": "stale after completed write: []\noverlap permits old value: [('R', 'W')]\nlater read sees new value: [('W', 'R')]\nPASS: three independently specified histories; one rejected, two accepted.\n",
+    "stderr": ""
+  },
+  {
+    "file": "advanced-practice/pilot_and_outcomes.py",
+    "exit_code": 0,
+    "stdout": "Pilot values (EUR millions): {'without': 0.2, 'positive_probability': 0.5, 'posterior_positive': 0.8, 'posterior_negative': 0.2, 'value_positive': 0.68, 'value_negative': -0.28, 'gross': 0.34, 'net': 0.29, 'information_value': 0.14}\nUninformative pilot net value: 0.15; cost 0.16 pilot net value: 0.18.\nOutcome changes in percentage points: pilot -4; comparison -1; difference -3.\nPASS: exact arithmetic. Causal interpretation and probabilities remain assumptions.\n",
+    "stderr": ""
+  },
+  {
+    "file": "book1/labs/lab10_analytics.py",
+    "exit_code": 0,
+    "stdout": "Initial day 1: 100.00\nCorrected day 1: 150.00\nTwo days before correction: 225.00\nTwo days after correction: 220.00\nConflicting same-version content: rejected\n",
+    "stderr": ""
+  },
+  {
+    "file": "book1/labs/lab11_migration.py",
+    "exit_code": 0,
+    "stdout": "Row counts match: source=3 target=3\nmissing: ['o3']\nextra: ['o4']\nchanged: ['o2']\nRepaired target: no key or value discrepancies\nScope excludes snapshot position, relationships, and production cutover.\n",
+    "stderr": ""
+  },
+  {
+    "file": "book1/labs/lab2_domain.py",
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "test_agent_assignment (__main__.DomainTests.test_agent_assignment) ... ok\ntest_customer_ownership (__main__.DomainTests.test_customer_ownership) ... ok\ntest_length_boundary (__main__.DomainTests.test_length_boundary) ... ok\ntest_tenant_boundary (__main__.DomainTests.test_tenant_boundary) ... ok\ntest_unknown_role_denied (__main__.DomainTests.test_unknown_role_denied) ... ok\ntest_valid (__main__.DomainTests.test_valid) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.000s\n\nOK\n"
+  },
+  {
+    "file": "book1/labs/lab3_database.py",
+    "exit_code": 0,
+    "stdout": "Cross-tenant asset: rejected by constraint\nDuplicate submission key: rejected by constraint\nInvalid status: rejected by constraint\nAfter rollback: request=0, outbox=0\n",
+    "stderr": ""
+  },
+  {
+    "file": "book1/labs/lab4_outbox.py",
+    "exit_code": 0,
+    "stdout": "Provider idempotent=False: local requests=1, remote records=2\nProvider idempotent=True: local requests=1, remote records=1\n",
+    "stderr": ""
+  },
+  {
+    "file": "book1/labs/lab5_capacity.py",
+    "exit_code": 0,
+    "stdout": "15 minute burst backlog: 5400 messages\n30 minute outage backlog at constant 20 per second: 36000 messages\nDrain time with service 35 and arrivals 20 per second: 40 minutes\nScope: rates are constant; task durations and bursts are not simulated.\n",
+    "stderr": ""
+  },
+  {
+    "file": "book1/labs/lab7_slo.py",
+    "exit_code": 0,
+    "stdout": "eligible: 1000\ngood: 998\nsuccess: 0.998\nallowed_bad: 1.000\nobserved_bad: 2\np95_ms: 400.000\np99_ms: 1600.000\nSuccess and latency are separate indicators; this short sample is not a monthly report.\n",
+    "stderr": ""
+  },
+  {
+    "file": "book1/labs/lab8_cost.py",
+    "exit_code": 0,
+    "stdout": "Custom baseline: EUR 427,000\nPurchased baseline: EUR 387,000\nPurchased subscription +20 percent: EUR 419,400\nCustom operations +25 percent: EUR 472,000\nPurchased operations at 45000: EUR 432,000\n",
+    "stderr": ""
+  },
+  {
+    "file": "book1/labs/lab9_saga.py",
+    "exit_code": 0,
+    "stdout": "Uncertain payment reconciled: confirmed; stock=0\nRejected payment: released once; stock=1\nFailed compensation retained, then resolved; stock=1\nAll scenario assertions passed. State is not crash-durable.\n",
+    "stderr": ""
+  },
+  {
+    "file": "book2/support/migration_reconciliation.py",
+    "exit_code": 0,
+    "stdout": "Equal row counts: 3\nDiscrepancies: {'missing': ['o3'], 'extra': ['o4'], 'changed': ['o2']}\nRepaired target passes the model checks. Source consistency and cutover readiness are not tested.\n",
+    "stderr": ""
+  },
+  {
+    "file": "book2/support/publication_versions.py",
+    "exit_code": 0,
+    "stdout": "Conflicting same-version event correctly rejected\nProvisional day 1: 100\nCorrected day 1: 150\nBefore and after e3 correction: 225 220\nAll assertions passed. Persistent publication history and access policy are outside this model.\n",
+    "stderr": ""
+  },
+  {
+    "file": "book2/support/recovery_and_evidence.py",
+    "exit_code": 0,
+    "stdout": "backlog=24000, arrivals/s=12, successful/s=32: 1200.00 seconds\nbacklog=24000, arrivals/s=12, successful/s=28: 1500.00 seconds\nbacklog=14400, arrivals/s=6, successful/s=20: 1028.57 seconds\nbacklog=14400, arrivals/s=6, successful/s=8: 7200.00 seconds\nZero-failure 95% upper bound at n=1000: 0.2991%\nMinimum independent zero-failure trials for bound below 0.1%: 2995\nAll assertions passed. Independence and constant rates are model assumptions.\n",
+    "stderr": ""
+  },
+  {
+    "file": "book2/support/reservation_schedules.py",
+    "exit_code": 0,
+    "stdout": "['reserve', 'authorise', 'confirm', 'expire', 'confirm'] => Model(available=0, reserved=0, committed=1, state='confirmed', payment='authorised')\n['reserve', 'expire', 'authorise', 'confirm', 'reconcile'] => Model(available=1, reserved=0, committed=0, state='cancellation_pending', payment='authorised')\n['reserve', 'expire', 'authorise', 'reconcile', 'void_confirmed', 'void_confirmed'] => Model(available=1, reserved=0, committed=0, state='cancelled', payment='voided')\nAll assertions passed; production concurrency and crash durability remain outside this model.\n",
+    "stderr": ""
+  },
+  {
+    "file": "book3/support/investment_model.py",
+    "exit_code": 0,
+    "stdout": "4% rate: NPV EUR 330,109.24\n8% base: NPV EUR 92,516.38\n12% rate: NPV EUR -117,802.48\nBenefits 20% lower: NPV EUR -525,986.89\nBenefits delayed one year: NPV EUR -136,558.90\nAssertions passed. Delayed case excludes extra transition cost.\n",
+    "stderr": ""
+  },
+  {
+    "file": "book3/support/outcome_measurement.py",
+    "exit_code": 0,
+    "stdout": "Unit rates before: {'A': 0.1, 'B': 0.05} after: {'A': 0.08, 'B': 0.04}\nPooled before: 0.055 after: 0.076\nLater rates standardised to original mix: 0.044000000000000004\nFictional narrow estimate: 0.005 kg CO2e = 5.0 g CO2e\nTotal energy ratio after efficiency and demand changes: 1.5\nThese calculations do not establish causation or a complete lifecycle footprint.\n",
+    "stderr": ""
+  },
+  {
+    "file": "book3/support/roadmap_dependencies.py",
+    "exit_code": 0,
+    "stdout": "A earliest (0, 4) latest (0, 4) slack 0\nB earliest (4, 10) latest (4, 10) slack 0\nC earliest (4, 7) latest (7, 10) slack 3\nD earliest (10, 14) latest (10, 14) slack 0\nE earliest (14, 16) latest (14, 16) slack 0\nPrecedence-only completion: 16 weeks; critical tasks: ['A', 'B', 'D', 'E']\nIf B and C require the same indivisible team sequentially: 19 weeks.\nCycle correctly rejected.\n",
+    "stderr": ""
+  },
+  {
+    "file": "book3/support/supplier_sensitivity.py",
+    "exit_code": 0,
+    "stdout": "Base weights: {'A': 3.65, 'B': 3.7}\nRevised weights: {'A': 3.75, 'B': 3.5}\nRanking ties at operability weight 1/3 when the other weights sum to 2/3.\nC remains ineligible regardless of its hypothetical preference scores.\n",
+    "stderr": ""
+  }
+]

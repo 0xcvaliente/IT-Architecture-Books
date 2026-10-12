@@ -1,0 +1,113 @@
+{
+ "title": "Expand, migrate and contract",
+ "description": "A schema change in four steps. Expand adds the new column; migrate writes both columns, backfills and switches readers. A gate checks that nothing still uses the old column before contract removes it. During expand and migrate both application versions work.",
+ "width": 860,
+ "height": 270,
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "regions": [
+  {
+   "id": "interval",
+   "label": "Old and new versions both work",
+   "x": 10,
+   "y": 20,
+   "w": 420,
+   "h": 230
+  }
+ ],
+ "nodes": [
+  {
+   "id": "expand",
+   "label": "1 Expand",
+   "x": 20,
+   "y": 70,
+   "w": 185,
+   "h": 160,
+   "detail": "Add the new column; the running version ignores it"
+  },
+  {
+   "id": "migrate",
+   "label": "2 Migrate",
+   "x": 235,
+   "y": 70,
+   "w": 185,
+   "h": 160,
+   "detail": "Write both columns, backfill rows, switch every reader"
+  },
+  {
+   "id": "gate",
+   "label": "3 Gate",
+   "x": 450,
+   "y": 70,
+   "w": 185,
+   "h": 160,
+   "detail": "No version uses the old column; recovery now rolls forward",
+   "emphasis": true
+  },
+  {
+   "id": "contract",
+   "label": "4 Contract",
+   "x": 665,
+   "y": 70,
+   "w": 185,
+   "h": 160,
+   "detail": "Drop the old column in a separate release"
+  }
+ ],
+ "edges": [
+  {
+   "id": "e1",
+   "from": "expand",
+   "to": "migrate",
+   "points": [
+    [
+     205,
+     150.0
+    ],
+    [
+     235,
+     150.0
+    ]
+   ]
+  },
+  {
+   "id": "e2",
+   "from": "migrate",
+   "to": "gate",
+   "points": [
+    [
+     420,
+     150.0
+    ],
+    [
+     450,
+     150.0
+    ]
+   ]
+  },
+  {
+   "id": "e3",
+   "from": "gate",
+   "to": "contract",
+   "points": [
+    [
+     635,
+     150.0
+    ],
+    [
+     665,
+     150.0
+    ]
+   ]
+  }
+ ],
+ "notes": []
+}

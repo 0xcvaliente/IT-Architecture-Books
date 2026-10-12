@@ -1,0 +1,225 @@
+{
+ "title": "Publication path",
+ "description": "Source positions and quality checks gate each publication; a passing run appends a new publication to the ledger, and a failing run leaves the previous publication visible.",
+ "width": 880,
+ "height": 535,
+ "theme": "light",
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "nodes": [
+  {
+   "id": "src",
+   "label": "Source positions",
+   "x": 20,
+   "y": 30,
+   "w": 210,
+   "h": 96,
+   "status": "provided",
+   "detail": "Change position or extract"
+  },
+  {
+   "id": "land",
+   "label": "Landing",
+   "x": 335,
+   "y": 30,
+   "w": 210,
+   "h": 96,
+   "status": "provided",
+   "detail": "Identity and version"
+  },
+  {
+   "id": "cur",
+   "label": "Curated state",
+   "x": 650,
+   "y": 30,
+   "w": 210,
+   "h": 96,
+   "status": "provided",
+   "detail": "Current version of each record"
+  },
+  {
+   "id": "gate",
+   "label": "Publication gate",
+   "x": 650,
+   "y": 220,
+   "w": 210,
+   "h": 100,
+   "status": "provided",
+   "emphasis": true,
+   "detail": "Quality and completeness"
+  },
+  {
+   "id": "new",
+   "label": "New publication",
+   "x": 335,
+   "y": 220,
+   "w": 210,
+   "h": 100,
+   "status": "provided",
+   "detail": "ID, value, inputs and what it supersedes"
+  },
+  {
+   "id": "ledger",
+   "label": "Publication ledger",
+   "x": 335,
+   "y": 400,
+   "w": 210,
+   "h": 115,
+   "status": "provided",
+   "shape": "store",
+   "detail": "Appended, never edited"
+  },
+  {
+   "id": "prev",
+   "label": "Previous publication",
+   "x": 650,
+   "y": 400,
+   "w": 210,
+   "h": 115,
+   "status": "provided",
+   "detail": "Stays visible"
+  }
+ ],
+ "edges": [
+  {
+   "id": "x",
+   "from": "src",
+   "to": "land",
+   "points": [
+    [
+     230,
+     78
+    ],
+    [
+     335,
+     78
+    ]
+   ],
+   "status": "provided",
+   "label": "Extract",
+   "label_at": [
+    244,
+    38
+   ],
+   "label_w": 76
+  },
+  {
+   "id": "v",
+   "from": "land",
+   "to": "cur",
+   "points": [
+    [
+     545,
+     78
+    ],
+    [
+     650,
+     78
+    ]
+   ],
+   "status": "provided",
+   "label": "Validate",
+   "label_at": [
+    560,
+    38
+   ],
+   "label_w": 80
+  },
+  {
+   "id": "c",
+   "from": "cur",
+   "to": "gate",
+   "points": [
+    [
+     755,
+     126
+    ],
+    [
+     755,
+     220
+    ]
+   ],
+   "status": "provided",
+   "label": "Compute",
+   "label_at": [
+    765,
+    156
+   ],
+   "label_w": 84
+  },
+  {
+   "id": "p",
+   "from": "gate",
+   "to": "new",
+   "points": [
+    [
+     650,
+     270
+    ],
+    [
+     545,
+     270
+    ]
+   ],
+   "status": "provided",
+   "label": "Pass",
+   "label_at": [
+    562,
+    228
+   ],
+   "label_w": 56
+  },
+  {
+   "id": "ap",
+   "from": "new",
+   "to": "ledger",
+   "points": [
+    [
+     440,
+     320
+    ],
+    [
+     440,
+     400
+    ]
+   ],
+   "status": "provided",
+   "label": "Append",
+   "label_at": [
+    450,
+    345
+   ],
+   "label_w": 76
+  },
+  {
+   "id": "f",
+   "from": "gate",
+   "to": "prev",
+   "points": [
+    [
+     755,
+     320
+    ],
+    [
+     755,
+     400
+    ]
+   ],
+   "status": "provided",
+   "label": "Fail",
+   "label_at": [
+    765,
+    345
+   ],
+   "label_w": 56
+  }
+ ]
+}

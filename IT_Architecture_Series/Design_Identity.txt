@@ -1,0 +1,46 @@
+IT ARCHITECTURE SERIES — DESIGN IDENTITY
+Revised edition, October 2026
+
+Reference: a restrained black, white and blue identity inspired by the user-supplied Uber 2018 brand quick guide.
+It is an original course layout with no Uber logos and no claim of affiliation.
+
+Type
+  Nimbus Sans for body text, headings, tables and captions; DejaVu Sans Mono for code, chosen for clearly
+  distinguished 0/O and 1/l/I. Every font slot in the Word styles is set explicitly, so headings never fall
+  back to a theme font (Calibri/Carlito).
+  Body text: 10 pt, single line spacing. Headings: 22, 12.5 and 10.5 pt bold. Captions 9 pt; tables 8.6 pt;
+  code listings 7.6 pt on a pale grey band; inline code one size below the surrounding text.
+  Italic marks titles of works and the occasional emphasised word; bold marks a term at its definition.
+  The PDF export disables ligatures in the code font, so identifiers such as in_flight print letter by letter.
+
+Palette
+  Black #000000, white #FFFFFF, navigational blue #276EF1, pale grey #F3F3F3, dark grey #323232,
+  pale blue #E8F0FE for the single emphasised element in a figure.
+
+Page and components
+  A4, 2.2 cm side margins. Running header: book title on the left, current chapter title on the right.
+  Footer: book number and page number.
+  Covers: large blue volume numeral, bold black title, subtitle, and statistics computed from the manuscript.
+  Every chapter starts on a new page with a blue "CHAPTER N" label and stays together with its learning
+  objectives; back matter (labs, answers, glossary, references, index) also starts on a new page.
+  References follow IEEE style; DOI sources print "doi:" with a link and no access date, web sources print
+  "Accessed" and "Available".
+  Index: two columns, grouped by initial letter (numerals under 0–9), with page numbers taken from the
+  checked PDF and terms drawn from the glossary and the bold definitions in the chapters.
+  Tables: black header row with white bold text, alternating pale grey rows, header repeated across pages;
+  short tables are kept on one page and columns are never narrower than their longest word.
+  Code listings never split across a page and are limited to 92 characters per line.
+  Callouts ("Common mistake", "In practice", "Check your understanding"): pale grey band with a blue left rule.
+  Figures: numbered automatically, captioned in full sentences, referenced in the text as "Figure N".
+
+Figures
+  Figures are positioned diagram scenes (authoring/bookN/figures/src/*.scene.json) or hand-written SVG,
+  rendered to SVG and 5268 px PNG with DejaVu Sans text in the palette above. The smallest figure text prints
+  at 6.8 pt or larger at the 16.3 cm figure width; tall figures are capped at 12.5 cm high. When a figure
+  would leave a large gap at the foot of a page, release.py moves it past a few paragraphs or reduces it
+  slightly (never below 72 percent) so the text fills the page.
+
+Editing
+  The DOCX files are editable in Word. Pagination depends on the installed fonts; the supplied PDFs are the
+  checked layout. After content edits, rebuild with authoring/common/release.py so contents and index page
+  numbers are recomputed and verified.

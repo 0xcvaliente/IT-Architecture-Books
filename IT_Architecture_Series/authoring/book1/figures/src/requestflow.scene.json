@@ -1,0 +1,203 @@
+{
+ "title": "Submission and background processing",
+ "description": "The customer submits metadata to the submission API, which writes the request and outbox record atomically and returns a receipt. Attachments upload to object storage through an authorised path. In the background, a worker reads pending work and hands it off to the CRM. Solid arrows show foreground requests and responses; dashed arrows show background processing.",
+ "width": 860,
+ "height": 410,
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "regions": [],
+ "nodes": [
+  {
+   "id": "cust",
+   "label": "Customer",
+   "x": 20,
+   "y": 30,
+   "w": 200,
+   "h": 90
+  },
+  {
+   "id": "api",
+   "label": "Submission API",
+   "x": 330,
+   "y": 30,
+   "w": 200,
+   "h": 90,
+   "emphasis": true
+  },
+  {
+   "id": "db",
+   "label": "Database",
+   "x": 640,
+   "y": 30,
+   "w": 200,
+   "h": 90,
+   "detail": "Request and outbox",
+   "shape": "store"
+  },
+  {
+   "id": "obj",
+   "label": "Object storage",
+   "x": 20,
+   "y": 300,
+   "w": 200,
+   "h": 90,
+   "detail": "Attachment",
+   "shape": "store"
+  },
+  {
+   "id": "crm",
+   "label": "CRM",
+   "x": 330,
+   "y": 300,
+   "w": 200,
+   "h": 90
+  },
+  {
+   "id": "worker",
+   "label": "Worker",
+   "x": 640,
+   "y": 300,
+   "w": 200,
+   "h": 90
+  }
+ ],
+ "edges": [
+  {
+   "id": "submit",
+   "from": "cust",
+   "to": "api",
+   "points": [
+    [
+     220,
+     60
+    ],
+    [
+     330,
+     60
+    ]
+   ],
+   "label": "Submit metadata",
+   "label_at": [
+    224,
+    8
+   ],
+   "label_w": 100
+  },
+  {
+   "id": "receipt",
+   "from": "api",
+   "to": "cust",
+   "points": [
+    [
+     330,
+     95
+    ],
+    [
+     220,
+     95
+    ]
+   ],
+   "label": "Receipt",
+   "label_at": [
+    240,
+    100
+   ],
+   "label_w": 72
+  },
+  {
+   "id": "write",
+   "from": "api",
+   "to": "db",
+   "points": [
+    [
+     530,
+     75
+    ],
+    [
+     640,
+     75
+    ]
+   ],
+   "label": "Atomic write",
+   "label_at": [
+    534,
+    22
+   ],
+   "label_w": 100
+  },
+  {
+   "id": "upload",
+   "from": "cust",
+   "to": "obj",
+   "points": [
+    [
+     120,
+     120
+    ],
+    [
+     120,
+     300
+    ]
+   ],
+   "label": "Upload via authorised path",
+   "label_at": [
+    130,
+    190
+   ],
+   "label_w": 196
+  },
+  {
+   "id": "read",
+   "from": "db",
+   "to": "worker",
+   "points": [
+    [
+     740,
+     120
+    ],
+    [
+     740,
+     300
+    ]
+   ],
+   "label": "Read pending work",
+   "label_at": [
+    600,
+    190
+   ],
+   "label_w": 132,
+   "style": "dashed"
+  },
+  {
+   "id": "handoff",
+   "from": "worker",
+   "to": "crm",
+   "points": [
+    [
+     640,
+     345
+    ],
+    [
+     530,
+     345
+    ]
+   ],
+   "label": "Handoff",
+   "label_at": [
+    550,
+    310
+   ],
+   "label_w": 74,
+   "style": "dashed"
+  }
+ ],
+ "notes": []
+}

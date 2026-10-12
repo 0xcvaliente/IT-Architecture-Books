@@ -1,0 +1,7 @@
+location,severity,issue,disposition
+"Chapters 1 and 13",major,"Benefits discussion depended on an abstract","Replaced with a full-text survey critique and original mechanism/measurement alternatives"
+"Chapter 3",major,"Operating-model briefing available only as abstract","Replaced its supporting role with an inspected MIT CISR definition; kept separate 2009 teaching example"
+"Chapter 7",major,"Governance research support limited to abstract","Replaced with full-text case research and original comparison of three decision arrangements"
+"Chapter 11",major,"Adoption discussion lacked a primary empirical critique","Added inspected case, contextual limits, worked alternatives and feedback figure"
+"Chapter 15",major,"Evidence-access description no longer matched revised references","Updated source roles, retired-reference history and human-review status"
+"Exercises and answers",suggestion,"New arguments needed practice","Added four exercises and marking guidance allowing defensible alternatives"

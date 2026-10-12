@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="560" viewBox="0 0 880 560" role="img" aria-labelledby="t d" font-family="DejaVu Sans">
+<title id="t">Helios capability heat map</title>
+<desc id="d">Fourteen Helios capabilities in five domains, each showing importance, effectiveness on a five-point scale and confidence. Customer identity resolution, entitlement checking, case coordination and group reporting are priority candidates; service request intake and data quality management need measurement first because confidence is low.</desc>
+<rect width="880" height="560" fill="#ffffff"/>
+<rect x="10" y="10" width="166" height="50" rx="6" fill="#ffffff" stroke="#323232" stroke-width="2"/>
+<text x="93.0" y="31" font-size="14" font-weight="bold" text-anchor="middle" fill="#000000">Customer</text>
+<text x="93.0" y="49" font-size="14" font-weight="bold" text-anchor="middle" fill="#000000">management</text>
+<rect x="10" y="72" width="166" height="108" rx="8" fill="#e8f0fe" stroke="#276ef1" stroke-width="3"/>
+<text x="20" y="94" font-size="14" font-weight="bold" text-anchor="start" fill="#000000">Customer identity</text>
+<text x="20" y="111" font-size="14" font-weight="bold" text-anchor="start" fill="#000000">resolution</text>
+<text x="20" y="135" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Importance: High</text>
+<text x="20" y="150" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Effectiveness: 2 of 5</text>
+<text x="20" y="165" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Confidence: medium</text>
+<rect x="10" y="190" width="166" height="108" rx="8" fill="#f3f3f3" stroke="#323232" stroke-width="2"/>
+<text x="20" y="212" font-size="14" font-weight="bold" text-anchor="start" fill="#000000">Customer contact</text>
+<text x="20" y="229" font-size="14" font-weight="bold" text-anchor="start" fill="#000000">management</text>
+<text x="20" y="253" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Importance: Medium</text>
+<text x="20" y="268" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Effectiveness: 3 of 5</text>
+<text x="20" y="283" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Confidence: high</text>
+<rect x="10" y="308" width="166" height="108" rx="8" fill="#f3f3f3" stroke="#323232" stroke-width="2"/>
+<text x="20" y="330" font-size="14" font-weight="bold" text-anchor="start" fill="#000000">Account</text>
+<text x="20" y="347" font-size="14" font-weight="bold" text-anchor="start" fill="#000000">management</text>
+<text x="20" y="371" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Importance: Medium</text>
+<text x="20" y="386" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Effectiveness: 4 of 5</text>
+<text x="20" y="401" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Confidence: high</text>
+<rect x="183" y="10" width="166" height="50" rx="6" fill="#ffffff" stroke="#323232" stroke-width="2"/>
+<text x="266.0" y="31" font-size="14" font-weight="bold" text-anchor="middle" fill="#000000">Service</text>
+<text x="266.0" y="49" font-size="14" font-weight="bold" text-anchor="middle" fill="#000000">management</text>
+<rect x="183" y="72" width="166" height="108" rx="8" fill="#f3f3f3" stroke="#323232" stroke-width="2" stroke-dasharray="9 6"/>
+<text x="193" y="94" font-size="14" font-weight="bold" text-anchor="start" fill="#000000">Service request</text>
+<text x="193" y="111" font-size="14" font-weight="bold" text-anchor="start" fill="#000000">intake</text>
+<text x="193" y="135" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Importance: High</text>
+<text x="193" y="150" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Effectiveness: 2 of 5</text>
+<text x="193" y="165" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Confidence: low</text>
+<rect x="183" y="190" width="166" height="108" rx="8" fill="#e8f0fe" stroke="#276ef1" stroke-width="3"/>
+<text x="193" y="212" font-size="14" font-weight="bold" text-anchor="start" fill="#000000">Entitlement</text>
+<text x="193" y="229" font-size="14" font-weight="bold" text-anchor="start" fill="#000000">checking</text>
+<text x="193" y="253" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Importance: High</text>
+<text x="193" y="268" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Effectiveness: 2 of 5</text>
+<text x="193" y="283" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Confidence: medium</text>
+<rect x="183" y="308" width="166" height="108" rx="8" fill="#e8f0fe" stroke="#276ef1" stroke-width="3"/>
+<text x="193" y="330" font-size="14" font-weight="bold" text-anchor="start" fill="#000000">Case</text>
+<text x="193" y="347" font-size="14" font-weight="bold" text-anchor="start" fill="#000000">coordination</text>
+<text x="193" y="371" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Importance: High</text>
+<text x="193" y="386" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Effectiveness: 2 of 5</text>
+<text x="193" y="401" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Confidence: medium</text>
+<rect x="356" y="10" width="166" height="50" rx="6" fill="#ffffff" stroke="#323232" stroke-width="2"/>
+<text x="439.0" y="40" font-size="14" font-weight="bold" text-anchor="middle" fill="#000000">Fulfilment</text>
+<rect x="356" y="72" width="166" height="108" rx="8" fill="#f3f3f3" stroke="#323232" stroke-width="2"/>
+<text x="366" y="94" font-size="14" font-weight="bold" text-anchor="start" fill="#000000">Technician</text>
+<text x="366" y="111" font-size="14" font-weight="bold" text-anchor="start" fill="#000000">scheduling</text>
+<text x="366" y="135" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Importance: High</text>
+<text x="366" y="150" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Effectiveness: 4 of 5</text>
+<text x="366" y="165" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Confidence: high</text>
+<rect x="356" y="190" width="166" height="108" rx="8" fill="#f3f3f3" stroke="#323232" stroke-width="2"/>
+<text x="366" y="212" font-size="14" font-weight="bold" text-anchor="start" fill="#000000">Field service</text>
+<text x="366" y="229" font-size="14" font-weight="bold" text-anchor="start" fill="#000000">delivery</text>
+<text x="366" y="253" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Importance: High</text>
+<text x="366" y="268" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Effectiveness: 4 of 5</text>
+<text x="366" y="283" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Confidence: high</text>
+<rect x="356" y="308" width="166" height="108" rx="8" fill="#f3f3f3" stroke="#323232" stroke-width="2"/>
+<text x="366" y="330" font-size="14" font-weight="bold" text-anchor="start" fill="#000000">Order</text>
+<text x="366" y="347" font-size="14" font-weight="bold" text-anchor="start" fill="#000000">allocation</text>
+<text x="366" y="371" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Importance: Medium</text>
+<text x="366" y="386" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Effectiveness: 3 of 5</text>
+<text x="366" y="401" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Confidence: medium</text>
+<rect x="356" y="426" width="166" height="108" rx="8" fill="#f3f3f3" stroke="#323232" stroke-width="2"/>
+<text x="366" y="448" font-size="14" font-weight="bold" text-anchor="start" fill="#000000">Subscription</text>
+<text x="366" y="465" font-size="14" font-weight="bold" text-anchor="start" fill="#000000">provisioning</text>
+<text x="366" y="489" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Importance: Medium</text>
+<text x="366" y="504" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Effectiveness: 4 of 5</text>
+<text x="366" y="519" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Confidence: medium</text>
+<rect x="529" y="10" width="166" height="50" rx="6" fill="#ffffff" stroke="#323232" stroke-width="2"/>
+<text x="612.0" y="40" font-size="14" font-weight="bold" text-anchor="middle" fill="#000000">Finance</text>
+<rect x="529" y="72" width="166" height="108" rx="8" fill="#f3f3f3" stroke="#323232" stroke-width="2"/>
+<text x="539" y="94" font-size="14" font-weight="bold" text-anchor="start" fill="#000000">Billing</text>
+<text x="539" y="135" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Importance: High</text>
+<text x="539" y="150" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Effectiveness: 4 of 5</text>
+<text x="539" y="165" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Confidence: high</text>
+<rect x="529" y="190" width="166" height="108" rx="8" fill="#f3f3f3" stroke="#323232" stroke-width="2"/>
+<text x="539" y="212" font-size="14" font-weight="bold" text-anchor="start" fill="#000000">Financial</text>
+<text x="539" y="229" font-size="14" font-weight="bold" text-anchor="start" fill="#000000">reconciliation</text>
+<text x="539" y="253" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Importance: Medium</text>
+<text x="539" y="268" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Effectiveness: 2 of 5</text>
+<text x="539" y="283" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Confidence: medium</text>
+<rect x="702" y="10" width="166" height="50" rx="6" fill="#ffffff" stroke="#323232" stroke-width="2"/>
+<text x="785.0" y="31" font-size="14" font-weight="bold" text-anchor="middle" fill="#000000">Enterprise</text>
+<text x="785.0" y="49" font-size="14" font-weight="bold" text-anchor="middle" fill="#000000">information</text>
+<rect x="702" y="72" width="166" height="108" rx="8" fill="#e8f0fe" stroke="#276ef1" stroke-width="3"/>
+<text x="712" y="94" font-size="14" font-weight="bold" text-anchor="start" fill="#000000">Group</text>
+<text x="712" y="111" font-size="14" font-weight="bold" text-anchor="start" fill="#000000">reporting</text>
+<text x="712" y="135" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Importance: High</text>
+<text x="712" y="150" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Effectiveness: 2 of 5</text>
+<text x="712" y="165" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Confidence: medium</text>
+<rect x="702" y="190" width="166" height="108" rx="8" fill="#f3f3f3" stroke="#323232" stroke-width="2" stroke-dasharray="9 6"/>
+<text x="712" y="212" font-size="14" font-weight="bold" text-anchor="start" fill="#000000">Data quality</text>
+<text x="712" y="229" font-size="14" font-weight="bold" text-anchor="start" fill="#000000">management</text>
+<text x="712" y="253" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Importance: Medium</text>
+<text x="712" y="268" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Effectiveness: 1 of 5</text>
+<text x="712" y="283" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Confidence: low</text>
+<text x="529" y="330" font-size="14" font-weight="bold" text-anchor="start" fill="#000000">Key</text>
+<rect x="529" y="344" width="40" height="26" rx="4" fill="#e8f0fe" stroke="#276ef1" stroke-width="3"/>
+<text x="579" y="356" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Priority candidate: importance high,</text>
+<text x="579" y="372" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">effectiveness 2 or below and</text>
+<text x="579" y="388" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">confidence medium or high</text>
+<rect x="529" y="412" width="40" height="26" rx="4" fill="#f3f3f3" stroke="#323232" stroke-width="2" stroke-dasharray="9 6"/>
+<text x="579" y="424" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Low confidence: measure</text>
+<text x="579" y="440" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">before investing</text>
+<rect x="529" y="464" width="40" height="26" rx="4" fill="#f3f3f3" stroke="#323232" stroke-width="2"/>
+<text x="579" y="482" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Other capabilities</text>
+<text x="529" y="526" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Effectiveness: 1 = fails often,</text>
+<text x="529" y="542" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">3 = adequate, 5 = strong and measured</text>
+</svg>

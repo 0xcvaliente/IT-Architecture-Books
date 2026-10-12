@@ -1,0 +1,20 @@
+[
+  {
+    "book": 1,
+    "manuscript_and_reference_files": 31,
+    "content_changes": [],
+    "figure_noncolour_changes": []
+  },
+  {
+    "book": 2,
+    "manuscript_and_reference_files": 20,
+    "content_changes": [],
+    "figure_noncolour_changes": []
+  },
+  {
+    "book": 3,
+    "manuscript_and_reference_files": 20,
+    "content_changes": [],
+    "figure_noncolour_changes": []
+  }
+]

@@ -1,0 +1,198 @@
+{
+ "title": "Aster order saga states",
+ "description": "Reserving stock moves an order from received to payment_pending, where an unknown payment outcome waits while Aster reconciles with the provider. A verified authorisation with an active reservation moves it to confirmed. A rejection releases the stock once and ends in rejected. An authorisation that arrives after the reservation expired moves the order to compensation_pending, where a void is requested; a failed void stays there, and a successful void ends in cancelled. Confirmed, rejected and cancelled are terminal: later or duplicate callbacks are recorded and change nothing.",
+ "width": 860,
+ "height": 580,
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "regions": [],
+ "nodes": [
+  {
+   "id": "received",
+   "label": "received",
+   "x": 20,
+   "y": 30,
+   "w": 200,
+   "h": 90,
+   "detail": "Checkout received"
+  },
+  {
+   "id": "pending",
+   "label": "payment_pending",
+   "x": 330,
+   "y": 20,
+   "w": 240,
+   "h": 120,
+   "detail": "Stock reserved; an unknown outcome waits here while Aster reconciles",
+   "emphasis": true
+  },
+  {
+   "id": "confirmed",
+   "label": "confirmed",
+   "x": 680,
+   "y": 30,
+   "w": 160,
+   "h": 100,
+   "detail": "Terminal; fulfilment requested"
+  },
+  {
+   "id": "rejected",
+   "label": "rejected",
+   "x": 120,
+   "y": 270,
+   "w": 220,
+   "h": 100,
+   "detail": "Terminal; stock released once"
+  },
+  {
+   "id": "comp",
+   "label": "compensation_pending",
+   "x": 480,
+   "y": 270,
+   "w": 280,
+   "h": 110,
+   "detail": "Void requested; a failed void stays here, visible to an owner"
+  },
+  {
+   "id": "cancelled",
+   "label": "cancelled",
+   "x": 480,
+   "y": 470,
+   "w": 280,
+   "h": 90,
+   "detail": "Terminal; payment voided"
+  }
+ ],
+ "edges": [
+  {
+   "id": "reserve",
+   "from": "received",
+   "to": "pending",
+   "points": [
+    [
+     220,
+     80
+    ],
+    [
+     330,
+     80
+    ]
+   ],
+   "label": "reserve stock",
+   "label_at": [
+    225,
+    26
+   ],
+   "label_w": 100
+  },
+  {
+   "id": "confirm",
+   "from": "pending",
+   "to": "confirmed",
+   "points": [
+    [
+     570,
+     80
+    ],
+    [
+     680,
+     80
+    ]
+   ],
+   "label": "authorised, reservation active",
+   "label_at": [
+    572,
+    8
+   ],
+   "label_w": 106
+  },
+  {
+   "id": "reject",
+   "from": "pending",
+   "to": "rejected",
+   "points": [
+    [
+     380,
+     140
+    ],
+    [
+     380,
+     210
+    ],
+    [
+     230,
+     210
+    ],
+    [
+     230,
+     270
+    ]
+   ],
+   "label": "payment rejected",
+   "label_at": [
+    232,
+    174
+   ],
+   "label_w": 146
+  },
+  {
+   "id": "compensate",
+   "from": "pending",
+   "to": "comp",
+   "points": [
+    [
+     520,
+     140
+    ],
+    [
+     520,
+     210
+    ],
+    [
+     620,
+     210
+    ],
+    [
+     620,
+     270
+    ]
+   ],
+   "label": "authorised after expiry",
+   "label_at": [
+    632,
+    214
+   ],
+   "label_w": 196
+  },
+  {
+   "id": "void",
+   "from": "comp",
+   "to": "cancelled",
+   "points": [
+    [
+     620,
+     380
+    ],
+    [
+     620,
+     470
+    ]
+   ],
+   "label": "void succeeds",
+   "label_at": [
+    630,
+    408
+   ],
+   "label_w": 116
+  }
+ ],
+ "notes": []
+}

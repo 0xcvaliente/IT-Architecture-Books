@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 450" width="860" height="450" role="img" aria-labelledby="t d" font-family="DejaVu Sans">
+<title id="t">Disaster-recovery strategies</title>
+<desc id="d">Four strategies from backup and restore to multi-site active/active. Moving right, recovery time and data loss fall from hours to near zero while running cost rises from lowest to highest. The first three are active/passive. Pilot light is highlighted.</desc>
+<defs><marker id="ah" markerWidth="12" markerHeight="10" refX="11" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L12 5 L0 10 Z" fill="#323232"/></marker></defs>
+<rect width="860" height="450" fill="#ffffff"/>
+<path d="M15 58 V46 H630 V58" fill="none" stroke="#323232" stroke-width="1.5"/>
+<text x="322.5" y="34" font-size="14" fill="#323232" text-anchor="middle">Active/passive: only the primary region serves traffic</text>
+<rect x="15" y="70" width="195" height="290" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="31" y="100" font-size="17" font-weight="bold" fill="#000000">Backup and</text>
+<text x="31" y="122" font-size="17" font-weight="bold" fill="#000000">restore</text>
+<text x="31" y="165" font-size="14" fill="#323232">Backups copied to</text>
+<text x="31" y="185" font-size="14" fill="#323232">the recovery</text>
+<text x="31" y="205" font-size="14" fill="#323232">region; rebuild</text>
+<text x="31" y="225" font-size="14" fill="#323232">after the event</text>
+<text x="31" y="268" font-size="13" fill="#323232">RPO and RTO</text>
+<text x="31" y="289" font-size="15" font-weight="bold" fill="#000000">Hours</text>
+<text x="31" y="318" font-size="13" fill="#323232">Running cost</text>
+<text x="31" y="339" font-size="15" font-weight="bold" fill="#000000">Lowest</text>
+<rect x="225" y="70" width="195" height="290" rx="6" fill="#e8f0fe" stroke="#276ef1" stroke-width="2.5"/>
+<text x="241" y="100" font-size="17" font-weight="bold" fill="#000000">Pilot light</text>
+<text x="241" y="165" font-size="14" fill="#323232">Data replicated</text>
+<text x="241" y="185" font-size="14" fill="#323232">live; application</text>
+<text x="241" y="205" font-size="14" fill="#323232">switched off</text>
+<text x="241" y="225" font-size="14" fill="#323232">until needed</text>
+<text x="241" y="268" font-size="13" fill="#323232">RPO and RTO</text>
+<text x="241" y="289" font-size="15" font-weight="bold" fill="#000000">Tens of minutes</text>
+<text x="241" y="318" font-size="13" fill="#323232">Running cost</text>
+<text x="241" y="339" font-size="15" font-weight="bold" fill="#000000">Low</text>
+<rect x="435" y="70" width="195" height="290" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="451" y="100" font-size="17" font-weight="bold" fill="#000000">Warm standby</text>
+<text x="451" y="165" font-size="14" fill="#323232">A smaller, fully</text>
+<text x="451" y="185" font-size="14" fill="#323232">working copy</text>
+<text x="451" y="205" font-size="14" fill="#323232">runs all the time</text>
+<text x="451" y="268" font-size="13" fill="#323232">RPO and RTO</text>
+<text x="451" y="289" font-size="15" font-weight="bold" fill="#000000">Minutes</text>
+<text x="451" y="318" font-size="13" fill="#323232">Running cost</text>
+<text x="451" y="339" font-size="15" font-weight="bold" fill="#000000">Medium</text>
+<rect x="645" y="70" width="195" height="290" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="661" y="100" font-size="17" font-weight="bold" fill="#000000">Multi-site</text>
+<text x="661" y="122" font-size="17" font-weight="bold" fill="#000000">active/active</text>
+<text x="661" y="165" font-size="14" fill="#323232">Full capacity</text>
+<text x="661" y="185" font-size="14" fill="#323232">serves traffic in</text>
+<text x="661" y="205" font-size="14" fill="#323232">every region</text>
+<text x="661" y="268" font-size="13" fill="#323232">RPO and RTO</text>
+<text x="661" y="289" font-size="15" font-weight="bold" fill="#000000">Near zero</text>
+<text x="661" y="318" font-size="13" fill="#323232">Running cost</text>
+<text x="661" y="339" font-size="15" font-weight="bold" fill="#000000">Highest</text>
+<line x1="15" y1="392" x2="840" y2="392" stroke="#323232" stroke-width="2" marker-end="url(#ah)"/>
+<text x="427.5" y="424" font-size="14" fill="#323232" text-anchor="middle">Further right: shorter recovery and less data loss, at a higher running cost</text>
+</svg>

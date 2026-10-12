@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 560" width="880" height="560" role="img" aria-labelledby="dc-2bca62a242-title dc-2bca62a242-desc" font-family="DejaVu Sans">
+<title id="dc-2bca62a242-title">Architecture dossier</title>
+<desc id="dc-2bca62a242-desc">The parts of a dossier linked by stable identifiers; a change card triggers a revision of the quality scenarios.</desc>
+<defs><marker id="dc-2bca62a242-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 4 L0 8 Z" fill="#323232"/></marker></defs>
+<rect width="880" height="560" fill="#ffffff" aria-hidden="true"/>
+<polyline data-edge="m" points="230,85 335,85" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-2bca62a242-arrow)"/>
+<polyline data-edge="s" points="545,85 650,85" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-2bca62a242-arrow)"/>
+<polyline data-edge="j" points="755,140 755,230" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-2bca62a242-arrow)"/>
+<polyline data-edge="t" points="440,140 440,230" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-2bca62a242-arrow)"/>
+<polyline data-edge="r" points="440,340 440,430" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-2bca62a242-arrow)"/>
+<polyline data-edge="sr" points="545,485 605,485 605,300 650,300" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-2bca62a242-arrow)"/>
+<polyline data-edge="sum" points="755,340 755,430" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-2bca62a242-arrow)"/>
+<polyline data-edge="rev" points="125,230 125,186 380,186 380,140" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-2bca62a242-arrow)" stroke-dasharray="6 5"/>
+<g id="dc-2bca62a242-node-brief" data-node="brief" data-x="20" data-y="30" data-w="210" data-h="110">
+<rect x="20" y="30" width="210" height="110" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="38" y="73.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="brief"><tspan x="38" dy="0">Studio brief</tspan></text>
+<text x="38" y="99.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="brief"><tspan x="38" dy="0">Problem, workload and</tspan><tspan x="38" dy="18">constraints</tspan></text>
+</g>
+<g id="dc-2bca62a242-node-scen" data-node="scen" data-x="335" data-y="30" data-w="210" data-h="110">
+<rect x="335" y="30" width="210" height="110" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="353" y="62.0" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="scen"><tspan x="353" dy="0">Quality</tspan><tspan x="353" dy="23">scenarios</tspan></text>
+<text x="353" y="111.0" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="scen"><tspan x="353" dy="0">Measurable, with IDs</tspan><tspan x="353" dy="18">such as Q3</tspan></text>
+</g>
+<g id="dc-2bca62a242-node-views" data-node="views" data-x="650" data-y="30" data-w="210" data-h="110">
+<rect x="650" y="30" width="210" height="110" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="668" y="64.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="views"><tspan x="668" dy="0">Five views</tspan></text>
+<text x="668" y="90.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="views"><tspan x="668" dy="0">Context, container,</tspan><tspan x="668" dy="18">sequence, deployment</tspan><tspan x="668" dy="18">and data</tspan></text>
+</g>
+<g id="dc-2bca62a242-node-change" data-node="change" data-x="20" data-y="230" data-w="210" data-h="110">
+<rect x="20" y="230" width="210" height="110" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="38" y="273.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="change"><tspan x="38" dy="0">Change card</tspan></text>
+<text x="38" y="299.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="change"><tspan x="38" dy="0">One new fact part-way</tspan><tspan x="38" dy="18">through</tspan></text>
+</g>
+<g id="dc-2bca62a242-node-exp" data-node="exp" data-x="335" data-y="230" data-w="210" data-h="110">
+<rect x="335" y="230" width="210" height="110" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="353" y="273.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="exp"><tspan x="353" dy="0">Experiments</tspan></text>
+<text x="353" y="299.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="exp"><tspan x="353" dy="0">Question, decision rule</tspan><tspan x="353" dy="18">and result</tspan></text>
+</g>
+<g id="dc-2bca62a242-node-adr" data-node="adr" data-x="650" data-y="230" data-w="210" data-h="110">
+<rect x="650" y="230" width="210" height="110" rx="6" fill="#e8f0fe" stroke="#276ef1" stroke-width="2"/>
+<text x="668" y="273.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="adr"><tspan x="668" dy="0">Decision records</tspan></text>
+<text x="668" y="299.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="adr"><tspan x="668" dy="0">Options, consequences</tspan><tspan x="668" dy="18">and review triggers</tspan></text>
+</g>
+<g id="dc-2bca62a242-node-find" data-node="find" data-x="335" data-y="430" data-w="210" data-h="110">
+<rect x="335" y="430" width="210" height="110" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="353" y="482.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="find"><tspan x="353" dy="0">Findings</tspan></text>
+<text x="353" y="508.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="find"><tspan x="353" dy="0">Supported or still open</tspan></text>
+</g>
+<g id="dc-2bca62a242-node-db" data-node="db" data-x="650" data-y="430" data-w="210" data-h="110">
+<rect x="650" y="430" width="210" height="110" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="668" y="473.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="db"><tspan x="668" dy="0">Decision brief</tspan></text>
+<text x="668" y="499.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="db"><tspan x="668" dy="0">One page for the</tspan><tspan x="668" dy="18">sponsor</tspan></text>
+</g>
+<g data-label="m" data-x="244" data-y="42" data-w="80" data-h="30"><rect x="244" y="42" width="80" height="30" rx="4" fill="#ffffff"/>
+<text x="252" y="61" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="252" dy="0">Measure</tspan></text>
+</g>
+<g data-label="s" data-x="562" data-y="42" data-w="66" data-h="30"><rect x="562" y="42" width="66" height="30" rx="4" fill="#ffffff"/>
+<text x="570" y="61" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="570" dy="0">Shape</tspan></text>
+</g>
+<g data-label="j" data-x="765" data-y="170" data-w="74" data-h="30"><rect x="765" y="170" width="74" height="30" rx="4" fill="#ffffff"/>
+<text x="773" y="189" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="773" dy="0">Justify</tspan></text>
+</g>
+<g data-label="t" data-x="450" data-y="170" data-w="56" data-h="30"><rect x="450" y="170" width="56" height="30" rx="4" fill="#ffffff"/>
+<text x="458" y="189" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="458" dy="0">Test</tspan></text>
+</g>
+<g data-label="r" data-x="362" data-y="370" data-w="70" data-h="30"><rect x="362" y="370" width="70" height="30" rx="4" fill="#ffffff"/>
+<text x="370" y="389" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="370" dy="0">Record</tspan></text>
+</g>
+<g data-label="sr" data-x="462" data-y="352" data-w="136" data-h="48"><rect x="462" y="352" width="136" height="48" rx="4" fill="#ffffff"/>
+<text x="470" y="371" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="470" dy="0">Support or</tspan><tspan x="470" dy="18">revise</tspan></text>
+</g>
+<g data-label="sum" data-x="765" data-y="370" data-w="92" data-h="30"><rect x="765" y="370" width="92" height="30" rx="4" fill="#ffffff"/>
+<text x="773" y="389" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="773" dy="0">Summarise</tspan></text>
+</g>
+<g data-label="rev" data-x="150" data-y="146" data-w="70" data-h="30"><rect x="150" y="146" width="70" height="30" rx="4" fill="#ffffff"/>
+<text x="158" y="165" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="158" dy="0">Revise</tspan></text>
+</g>
+</svg>

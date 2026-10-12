@@ -1,0 +1,264 @@
+{
+ "title": "Meridian integration paths",
+ "description": "The portal API commits each submission with its handoff record in one transaction; a worker path per business unit claims its own handoffs and calls that unit's CRM under its contract.",
+ "width": 880,
+ "height": 570,
+ "theme": "light",
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "nodes": [
+  {
+   "id": "api",
+   "label": "Portal API",
+   "x": 20,
+   "y": 40,
+   "w": 240,
+   "h": 110,
+   "status": "provided",
+   "detail": "Validates, checks access, returns receipt"
+  },
+  {
+   "id": "db",
+   "label": "Portal database",
+   "x": 330,
+   "y": 30,
+   "w": 300,
+   "h": 120,
+   "status": "provided",
+   "shape": "store",
+   "emphasis": true,
+   "detail": "Submission and handoff in one transaction"
+  },
+  {
+   "id": "wa",
+   "label": "Worker path A",
+   "x": 20,
+   "y": 250,
+   "w": 230,
+   "h": 90,
+   "status": "provided",
+   "detail": "Own concurrency and rate limit"
+  },
+  {
+   "id": "wb",
+   "label": "Worker path B",
+   "x": 325,
+   "y": 250,
+   "w": 230,
+   "h": 90,
+   "status": "provided",
+   "detail": "Own concurrency and rate limit"
+  },
+  {
+   "id": "wc",
+   "label": "Worker path C",
+   "x": 630,
+   "y": 250,
+   "w": 230,
+   "h": 90,
+   "status": "provided",
+   "detail": "Own concurrency and rate limit"
+  },
+  {
+   "id": "ca",
+   "label": "CRM A",
+   "x": 20,
+   "y": 450,
+   "w": 230,
+   "h": 100,
+   "status": "provided",
+   "detail": "Unique external reference"
+  },
+  {
+   "id": "cb",
+   "label": "CRM B",
+   "x": 325,
+   "y": 450,
+   "w": 230,
+   "h": 100,
+   "status": "provided",
+   "detail": "No unique key; search index lags"
+  },
+  {
+   "id": "cc",
+   "label": "CRM C",
+   "x": 630,
+   "y": 450,
+   "w": 230,
+   "h": 100,
+   "status": "provided",
+   "detail": "Idempotency key kept for 24 hours"
+  }
+ ],
+ "edges": [
+  {
+   "id": "commit",
+   "from": "api",
+   "to": "db",
+   "points": [
+    [
+     260,
+     95
+    ],
+    [
+     330,
+     95
+    ]
+   ],
+   "status": "provided",
+   "label": "Commit",
+   "label_at": [
+    264,
+    52
+   ],
+   "label_w": 64
+  },
+  {
+   "id": "cla",
+   "from": "db",
+   "to": "wa",
+   "points": [
+    [
+     380,
+     150
+    ],
+    [
+     380,
+     205
+    ],
+    [
+     135,
+     205
+    ],
+    [
+     135,
+     250
+    ]
+   ],
+   "status": "provided"
+  },
+  {
+   "id": "clb",
+   "from": "db",
+   "to": "wb",
+   "points": [
+    [
+     440,
+     150
+    ],
+    [
+     440,
+     250
+    ]
+   ],
+   "status": "provided",
+   "label": "Claim by unit",
+   "label_at": [
+    450,
+    170
+   ],
+   "label_w": 120
+  },
+  {
+   "id": "clc",
+   "from": "db",
+   "to": "wc",
+   "points": [
+    [
+     600,
+     150
+    ],
+    [
+     600,
+     205
+    ],
+    [
+     745,
+     205
+    ],
+    [
+     745,
+     250
+    ]
+   ],
+   "status": "provided"
+  },
+  {
+   "id": "a",
+   "from": "wa",
+   "to": "ca",
+   "points": [
+    [
+     135,
+     340
+    ],
+    [
+     135,
+     450
+    ]
+   ],
+   "status": "provided",
+   "label": "Send or look up",
+   "label_at": [
+    145,
+    378
+   ],
+   "label_w": 120,
+   "style": "dashed"
+  },
+  {
+   "id": "b",
+   "from": "wb",
+   "to": "cb",
+   "points": [
+    [
+     440,
+     340
+    ],
+    [
+     440,
+     450
+    ]
+   ],
+   "status": "provided",
+   "label": "Send or look up",
+   "label_at": [
+    450,
+    378
+   ],
+   "label_w": 120,
+   "style": "dashed"
+  },
+  {
+   "id": "c",
+   "from": "wc",
+   "to": "cc",
+   "points": [
+    [
+     745,
+     340
+    ],
+    [
+     745,
+     450
+    ]
+   ],
+   "status": "provided",
+   "label": "Send or look up",
+   "label_at": [
+    755,
+    378
+   ],
+   "label_w": 120,
+   "style": "dashed"
+  }
+ ]
+}

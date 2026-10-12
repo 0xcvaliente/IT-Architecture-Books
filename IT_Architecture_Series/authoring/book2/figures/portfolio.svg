@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 470" width="860" height="470" role="img" aria-labelledby="dc-380a885da6-title dc-380a885da6-desc" font-family="DejaVu Sans">
+<title id="dc-380a885da6-title">Portfolio argument</title>
+<desc id="dc-380a885da6-desc">Each of the four studios contributes a different kind of evidence to one portfolio argument.</desc>
+<defs><marker id="dc-380a885da6-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 4 L0 8 Z" fill="#323232"/></marker></defs>
+<rect width="860" height="470" fill="#ffffff" aria-hidden="true"/>
+<polyline data-edge="em" points="150,130 150,215 300,215" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-380a885da6-arrow)"/>
+<polyline data-edge="ea" points="710,130 710,215 560,215" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-380a885da6-arrow)"/>
+<polyline data-edge="eb" points="150,340 150,255 300,255" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-380a885da6-arrow)"/>
+<polyline data-edge="eo" points="710,340 710,255 560,255" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-380a885da6-arrow)"/>
+<g id="dc-380a885da6-node-m" data-node="m" data-x="20" data-y="30" data-w="260" data-h="100">
+<rect x="20" y="30" width="260" height="100" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="38" y="68.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="m"><tspan x="38" dy="0">Integration: Meridian</tspan></text>
+<text x="38" y="94.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="m"><tspan x="38" dy="0">Durable receipts and unknown</tspan><tspan x="38" dy="18">CRM outcomes</tspan></text>
+</g>
+<g id="dc-380a885da6-node-a" data-node="a" data-x="580" data-y="30" data-w="260" data-h="100">
+<rect x="580" y="30" width="260" height="100" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="598" y="68.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="a"><tspan x="598" dy="0">Transactions: Aster</tspan></text>
+<text x="598" y="94.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="a"><tspan x="598" dy="0">Stock invariant, hot row and</tspan><tspan x="598" dy="18">late payments</tspan></text>
+</g>
+<g id="dc-380a885da6-node-b" data-node="b" data-x="20" data-y="340" data-w="260" data-h="100">
+<rect x="20" y="340" width="260" height="100" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="38" y="378.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="b"><tspan x="38" dy="0">Data: Beacon</tspan></text>
+<text x="38" y="404.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="b"><tspan x="38" dy="0">Grain and the publication</tspan><tspan x="38" dy="18">ledger</tspan></text>
+</g>
+<g id="dc-380a885da6-node-o" data-node="o" data-x="580" data-y="340" data-w="260" data-h="100">
+<rect x="580" y="340" width="260" height="100" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="598" y="378.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="o"><tspan x="598" dy="0">Modernisation: Orion</tspan></text>
+<text x="598" y="404.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="o"><tspan x="598" dy="0">One write authority and a</tspan><tspan x="598" dy="18">tested way back</tspan></text>
+</g>
+<g id="dc-380a885da6-node-p" data-node="p" data-x="300" data-y="185" data-w="260" data-h="100">
+<rect x="300" y="185" width="260" height="100" rx="6" fill="#e8f0fe" stroke="#276ef1" stroke-width="2"/>
+<text x="318" y="223.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="p"><tspan x="318" dy="0">Portfolio argument</tspan></text>
+<text x="318" y="249.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="p"><tspan x="318" dy="0">Decisions, evidence and</tspan><tspan x="318" dy="18">revisions</tspan></text>
+</g>
+</svg>

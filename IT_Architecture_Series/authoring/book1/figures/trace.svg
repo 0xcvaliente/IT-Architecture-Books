@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 560" width="860" height="560" role="img" aria-labelledby="t d" font-family="DejaVu Sans">
+<title id="t">Correlating a receipt with its later handoff</title>
+<desc id="d">Trace A covers the browser request and ends when the API returns receipt 7f3a9c2e after committing the receipt and event e17. Later, the worker claims e17 in trace B, which links to trace A, makes attempt a3 to the CRM with the submission ID as key, receives the CRM case reference and records the result of attempt a3.</desc>
+<defs><marker id="ah" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 4 L0 8 Z" fill="#323232"/></marker></defs>
+<rect width="860" height="560" fill="#ffffff"/>
+<line x1="90" y1="60" x2="90" y2="495" stroke="#323232" stroke-width="1.2" stroke-dasharray="5 4"/>
+<rect x="15" y="12" width="150" height="48" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="90" y="42" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">Browser</text>
+<line x1="320" y1="60" x2="320" y2="495" stroke="#323232" stroke-width="1.2" stroke-dasharray="5 4"/>
+<rect x="245" y="12" width="150" height="48" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="320" y="42" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">API / DB</text>
+<line x1="555" y1="60" x2="555" y2="495" stroke="#323232" stroke-width="1.2" stroke-dasharray="5 4"/>
+<rect x="480" y="12" width="150" height="48" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="555" y="42" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">Worker</text>
+<line x1="770" y1="60" x2="770" y2="495" stroke="#323232" stroke-width="1.2" stroke-dasharray="5 4"/>
+<rect x="695" y="12" width="150" height="48" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="770" y="42" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">CRM</text>
+<line x1="90" y1="110" x2="314" y2="110" stroke="#323232" stroke-width="2" marker-end="url(#ah)"/>
+<text x="205.0" y="101" font-size="13" fill="#000000" text-anchor="middle">Request; trace A starts</text>
+<rect x="210" y="140" width="220" height="34" rx="4" fill="#e8f0fe" stroke="#276ef1" stroke-width="1.5"/>
+<text x="320" y="162" font-size="13" fill="#000000" text-anchor="middle">Commit receipt + event e17</text>
+<line x1="320" y1="225" x2="96" y2="225" stroke="#323232" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#ah)"/>
+<text x="205.0" y="216" font-size="13" fill="#000000" text-anchor="middle">Receipt 7f3a9c2e; trace A ends</text>
+<line x1="555" y1="285" x2="326" y2="285" stroke="#323232" stroke-width="2" marker-end="url(#ah)"/>
+<text x="437.5" y="276" font-size="13" fill="#000000" text-anchor="middle">Claims e17; trace B links to A</text>
+<line x1="555" y1="345" x2="764" y2="345" stroke="#323232" stroke-width="2" marker-end="url(#ah)"/>
+<text x="662.5" y="336" font-size="13" fill="#000000" text-anchor="middle">Attempt a3, key 7f3a9c2e</text>
+<line x1="770" y1="405" x2="561" y2="405" stroke="#323232" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#ah)"/>
+<text x="662.5" y="396" font-size="13" fill="#000000" text-anchor="middle">CRM case reference returned</text>
+<line x1="555" y1="465" x2="326" y2="465" stroke="#323232" stroke-width="2" marker-end="url(#ah)"/>
+<text x="437.5" y="456" font-size="13" fill="#000000" text-anchor="middle">Records result of attempt a3</text>
+<text x="430.0" y="535" font-size="14" fill="#323232" text-anchor="middle">Request, event and attempt identifiers have different scopes.</text>
+</svg>

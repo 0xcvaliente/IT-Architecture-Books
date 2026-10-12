@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 530" width="880" height="530" role="img" aria-labelledby="dc-abeccb14f5-title dc-abeccb14f5-desc" font-family="DejaVu Sans">
+<title id="dc-abeccb14f5-title">Analytical access paths</title>
+<desc id="dc-abeccb14f5-desc">Dashboard, notebook and export requests all pass one policy enforcement point; the raw zone has no consumer path, and an export writes a new copy that needs its own policy.</desc>
+<defs><marker id="dc-abeccb14f5-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 4 L0 8 Z" fill="#323232"/></marker></defs>
+<rect width="880" height="530" fill="#ffffff" aria-hidden="true"/>
+<polyline data-edge="pub" points="240,80 330,80" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-abeccb14f5-arrow)"/>
+<polyline data-edge="perm" points="440,130 440,205" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-abeccb14f5-arrow)"/>
+<polyline data-edge="q1" points="130,420 130,270 330,270" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-abeccb14f5-arrow)"/>
+<polyline data-edge="q2" points="440,420 440,335" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-abeccb14f5-arrow)"/>
+<polyline data-edge="q3" points="690,420 690,270 550,270" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-abeccb14f5-arrow)"/>
+<polyline data-edge="w" points="840,420 840,130" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-abeccb14f5-arrow)" stroke-dasharray="6 5"/>
+<g id="dc-abeccb14f5-node-raw" data-node="raw" data-x="20" data-y="30" data-w="220" data-h="100">
+<rect x="20" y="30" width="220" height="100" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="38" y="66.0" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="raw"><tspan x="38" dy="0">Restricted raw</tspan><tspan x="38" dy="23">zone</tspan></text>
+<text x="38" y="115.0" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="raw"><tspan x="38" dy="0">No consumer path</tspan></text>
+</g>
+<g id="dc-abeccb14f5-node-curated" data-node="curated" data-x="330" data-y="30" data-w="220" data-h="100">
+<rect x="330" y="30" width="220" height="100" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="348" y="68.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="curated"><tspan x="348" dy="0">Curated products</tspan></text>
+<text x="348" y="94.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="curated"><tspan x="348" dy="0">Detail by division and</tspan><tspan x="348" dy="18">tenant; aggregates</tspan></text>
+</g>
+<g id="dc-abeccb14f5-node-copy" data-node="copy" data-x="640" data-y="30" data-w="220" data-h="100">
+<rect x="640" y="30" width="220" height="100" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="658" y="68.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="copy"><tspan x="658" dy="0">Exported copy</tspan></text>
+<text x="658" y="94.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="copy"><tspan x="658" dy="0">Needs its own policy and</tspan><tspan x="658" dy="18">audience</tspan></text>
+</g>
+<g id="dc-abeccb14f5-node-policy" data-node="policy" data-x="330" data-y="205" data-w="220" data-h="130">
+<rect x="330" y="205" width="220" height="130" rx="6" fill="#e8f0fe" stroke="#276ef1" stroke-width="2"/>
+<text x="348" y="238.0" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="policy"><tspan x="348" dy="0">Policy</tspan><tspan x="348" dy="23">enforcement</tspan></text>
+<text x="348" y="287.0" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="policy"><tspan x="348" dy="0">Checks identity,</tspan><tspan x="348" dy="18">division and tenant</tspan><tspan x="348" dy="18">scope</tspan></text>
+</g>
+<g id="dc-abeccb14f5-node-dash" data-node="dash" data-x="20" data-y="420" data-w="220" data-h="80">
+<rect x="20" y="420" width="220" height="80" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="38" y="466.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="dash"><tspan x="38" dy="0">Dashboard</tspan></text>
+</g>
+<g id="dc-abeccb14f5-node-nb" data-node="nb" data-x="330" data-y="420" data-w="220" data-h="80">
+<rect x="330" y="420" width="220" height="80" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="348" y="466.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="nb"><tspan x="348" dy="0">Notebook</tspan></text>
+</g>
+<g id="dc-abeccb14f5-node-job" data-node="job" data-x="640" data-y="420" data-w="220" data-h="80">
+<rect x="640" y="420" width="220" height="80" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="658" y="466.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="job"><tspan x="658" dy="0">Export job</tspan></text>
+</g>
+<g data-label="pub" data-x="248" data-y="38" data-w="76" data-h="30"><rect x="248" y="38" width="76" height="30" rx="4" fill="#ffffff"/>
+<text x="256" y="57" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="256" dy="0">Publish</tspan></text>
+</g>
+<g data-label="perm" data-x="450" data-y="152" data-w="160" data-h="30"><rect x="450" y="152" width="160" height="30" rx="4" fill="#ffffff"/>
+<text x="458" y="171" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="458" dy="0">Permitted data only</tspan></text>
+</g>
+<g data-label="q1" data-x="140" data-y="300" data-w="64" data-h="30"><rect x="140" y="300" width="64" height="30" rx="4" fill="#ffffff"/>
+<text x="148" y="319" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="148" dy="0">Query</tspan></text>
+</g>
+<g data-label="q2" data-x="450" data-y="362" data-w="64" data-h="30"><rect x="450" y="362" width="64" height="30" rx="4" fill="#ffffff"/>
+<text x="458" y="381" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="458" dy="0">Query</tspan></text>
+</g>
+<g data-label="q3" data-x="556" data-y="278" data-w="130" data-h="30"><rect x="556" y="278" width="130" height="30" rx="4" fill="#ffffff"/>
+<text x="564" y="297" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="564" dy="0">Read for export</tspan></text>
+</g>
+<g data-label="w" data-x="700" data-y="330" data-w="130" data-h="48"><rect x="700" y="330" width="130" height="48" rx="4" fill="#ffffff"/>
+<text x="708" y="349" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="708" dy="0">Writes a new</tspan><tspan x="708" dy="18">copy</tspan></text>
+</g>
+</svg>

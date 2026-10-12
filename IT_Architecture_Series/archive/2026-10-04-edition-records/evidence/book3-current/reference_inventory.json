@@ -1,0 +1,444 @@
+[
+  {
+    "number": 1,
+    "key": "eacisr",
+    "type": "Academic teaching or institutional overview",
+    "source": [
+      "MIT Sloan Center for Information Systems Research",
+      "Classic topics enterprise architecture",
+      "https://cisr.mit.edu/content/classic-topics-enterprise-architecture",
+      ""
+    ],
+    "citation_locations": [
+      {
+        "chapter": "1 The enterprise architecture problem",
+        "section": "Local quality does not guarantee enterprise coherence",
+        "file": "manuscript/01.md",
+        "line": 7,
+        "ieee_reference": 1,
+        "citation_paragraph": "MIT CISR connects enterprise architecture to the integration and standardisation needs of an organisation's operating model. {REF:eacisr} This is a useful research perspective because it asks what the business needs to share before choosing a universal platform. It does not imply that every process or application should be centralised."
+      },
+      {
+        "chapter": "3 Operating models and strategic alignment",
+        "section": "Sharing data and sharing processes are different choices",
+        "file": "manuscript/03.md",
+        "line": 6,
+        "ieee_reference": 1,
+        "citation_paragraph": "MIT CISR's published overview identifies integration and standardisation requirements as the dimensions of an operating model. {REF:eacisr} This is an institutional definition, not an estimated effect of adopting a particular model. The course applies those dimensions to individual capabilities instead of assuming one uniform answer for all of Helios. A group may standardise financial reporting strongly while allowing differentiated service delivery."
+      }
+    ],
+    "review_scope": "Selected passage record included"
+  },
+  {
+    "number": 2,
+    "key": "dynamic",
+    "type": "Original academic research",
+    "source": [
+      "R. van de Wetering, T. Hendrickx, S. Brinkkemper, and S. Kurnia",
+      "The impact of EA-driven dynamic capabilities, innovativeness, and structure on organizational benefits: A variance and fsQCA perspective",
+      "https://doi.org/10.3390/su13105414",
+      "Sustainability, vol. 13, no. 10, art. 5414, 2021, doi: 10.3390/su13105414"
+    ],
+    "citation_locations": [
+      {
+        "chapter": "1 The enterprise architecture problem",
+        "section": "Helios needs a causal argument",
+        "file": "manuscript/01.md",
+        "line": 11,
+        "ieee_reference": 2,
+        "citation_paragraph": "Van de Wetering and colleagues analyse 299 usable survey responses using partial least squares modelling and fuzzy-set qualitative comparative analysis. They associate EA-driven capabilities with benefits through innovativeness. Their capabilities concern sensing opportunities, mobilising resources and transforming arrangements. Recruitment through a Dutch university's professional-student network, self-reported measures and a single observation period limit causal and population inference. The authors acknowledge that longitudinal and archival evidence would strengthen the study. {REF:dynamic} A capability to change an organisation is a different claim from possession of an architecture repository; Helios must demonstrate the relevant work."
+      }
+    ],
+    "review_scope": "Selected passage record included"
+  },
+  {
+    "number": 3,
+    "key": "coordination",
+    "type": "Academic teaching or institutional overview",
+    "source": [
+      "J. W. Ross",
+      "Merrill Lynch and the coordination operating model",
+      "https://www.ocw.mit.edu/courses/15-571-generating-business-value-from-information-technology-spring-2009/25dc18cd7da31587f26105c0e6804c03_MIT15_571s09_lec07.pdf",
+      "MIT OpenCourseWare, 15.571 Generating Business Value from Information Technology, class 7, Spring 2009"
+    ],
+    "citation_locations": [
+      {
+        "chapter": "3 Operating models and strategic alignment",
+        "section": "Work through competing operating designs",
+        "file": "manuscript/03.md",
+        "line": 29,
+        "ieee_reference": 3,
+        "citation_paragraph": "Federated coordination permits differentiated work but needs durable ownership of shared contracts. Ross's accessible MIT teaching material describes coordination through shared data visibility alongside local service customisation and stresses disciplined data use. {REF:coordination} Applied to Helios, a shared identity service without funded stewardship can become an unreliable dependency. Each division must agree how to resolve disputed matches and how quickly it will publish the events on which others rely."
+      }
+    ],
+    "review_scope": "Selected passage record included"
+  },
+  {
+    "number": 4,
+    "key": "gdpr",
+    "type": "Primary legal text",
+    "source": [
+      "European Parliament and Council of the European Union",
+      "Regulation EU 2016/679",
+      "https://eur-lex.europa.eu/eli/reg/2016/679",
+      "Official Journal of the European Union, L 119, pp. 1-88, May 4, 2016"
+    ],
+    "citation_locations": [
+      {
+        "chapter": "5 Enterprise information and data governance",
+        "section": "Correction and lifecycle are enterprise processes",
+        "file": "manuscript/05.md",
+        "line": 19,
+        "ieee_reference": 4,
+        "citation_paragraph": "The GDPR's principles and data-protection-by-design requirements inform the need to establish purposes, minimise data and implement appropriate controls throughout processing. {REF:gdpr} Exact obligations depend on the processing and organisational roles. Helios must obtain approved retention, access and transfer policies; this course does not infer them from a diagram or a cloud region."
+      }
+    ],
+    "review_scope": "Retained narrow definition or official-guidance citation from preceding edition; not a new research critique"
+  },
+  {
+    "number": 5,
+    "key": "azurewa",
+    "type": "Standards or official practitioner guidance",
+    "source": [
+      "Microsoft",
+      "Microsoft Azure Well-Architected Framework pillars",
+      "https://learn.microsoft.com/en-us/azure/well-architected/pillars",
+      ""
+    ],
+    "citation_locations": [
+      {
+        "chapter": "6 Technology strategy and shared platforms",
+        "section": "Cloud strategy is a set of workload decisions",
+        "file": "manuscript/06.md",
+        "line": 14,
+        "ieee_reference": 5,
+        "citation_paragraph": "Vendor-neutral architecture begins with responsibilities and guarantees. It does not require identical implementation on every provider. Azure and AWS both provide managed compute, storage, databases, identity and monitoring, but service semantics, configuration and operating responsibilities differ. Their Well-Architected guidance provides structured questions for evaluating workloads; it is provider guidance, not independent proof that a chosen deployment is optimal. {REF:azurewa} {REF:awswa}"
+      }
+    ],
+    "review_scope": "Retained narrow definition or official-guidance citation from preceding edition; not a new research critique"
+  },
+  {
+    "number": 6,
+    "key": "awswa",
+    "type": "Standards or official practitioner guidance",
+    "source": [
+      "Amazon Web Services",
+      "The pillars of the framework",
+      "https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html",
+      ""
+    ],
+    "citation_locations": [
+      {
+        "chapter": "6 Technology strategy and shared platforms",
+        "section": "Cloud strategy is a set of workload decisions",
+        "file": "manuscript/06.md",
+        "line": 14,
+        "ieee_reference": 6,
+        "citation_paragraph": "Vendor-neutral architecture begins with responsibilities and guarantees. It does not require identical implementation on every provider. Azure and AWS both provide managed compute, storage, databases, identity and monitoring, but service semantics, configuration and operating responsibilities differ. Their Well-Architected guidance provides structured questions for evaluating workloads; it is provider guidance, not independent proof that a chosen deployment is optimal. {REF:azurewa} {REF:awswa}"
+      }
+    ],
+    "review_scope": "Retained narrow definition or official-guidance citation from preceding edition; not a new research critique"
+  },
+  {
+    "number": 7,
+    "key": "mirroring",
+    "type": "Original academic research",
+    "source": [
+      "A. MacCormack, C. Baldwin, and J. Rusnak",
+      "Exploring the duality between product and organizational architectures: A test of the mirroring hypothesis",
+      "https://www.hbs.edu/ris/Publication%20Files/Research%20Policy%2041%20(2012)%201309%E2%80%93%201324_c5c2350e-013c-4065-a2f9-d95eb32177d5.pdf",
+      "Research Policy, vol. 41, no. 8, pp. 1309-1324, 2012, doi: 10.1016/j.respol.2012.04.011"
+    ],
+    "citation_locations": [
+      {
+        "chapter": "6 Technology strategy and shared platforms",
+        "section": "Product architecture and organisation structure",
+        "file": "manuscript/06.md",
+        "line": 25,
+        "ieee_reference": 7,
+        "citation_paragraph": "MacCormack, Baldwin and Rusnak examine the mirroring hypothesis using five matched pairs of software products. Their coupling analysis finds more modular designs in the loosely coupled organisations in their sample. They also identify limits, including the small software sample and imperfect control of functional equivalence; their design does not isolate every organisational influence. {REF:mirroring} This is empirical support for a relationship in the studied context, not a universal rule that changing an organisation chart will improve a system."
+      }
+    ],
+    "review_scope": "Selected passage record included"
+  },
+  {
+    "number": 8,
+    "key": "bimodal",
+    "type": "Original academic research",
+    "source": [
+      "J. Jöhnk, S. Oesterle, T. J. Winkler, J. Nørbjerg, and N. Urbach",
+      "Juggling the paradoxes—Governance mechanisms in bimodal IT organizations",
+      "https://www.fim-rc.de/Paperbibliothek/Veroeffentlicht/925/wi-925.pdf",
+      "in Proceedings of the 27th European Conference on Information Systems, Stockholm and Uppsala, Sweden, 2019"
+    ],
+    "citation_locations": [
+      {
+        "chapter": "7 Governance decision rights and exceptions",
+        "section": "Research critique: mechanisms can help or obstruct coordination",
+        "file": "manuscript/07.md",
+        "line": 42,
+        "ieee_reference": 8,
+        "citation_paragraph": "Jöhnk and colleagues study two bimodal IT organisations through fourteen semi-structured interviews, supporting documents and iterative coding. Their analysis distinguishes structural, procedural and relational mechanisms, including mechanisms that impede coordination and others used to cope with it. Examples include overlapping committees and collaboration across boundaries. The authors identify the two contrasting cases and contextual variation as limitations. {REF:bimodal} This is an exploratory account of organisations separating traditional and agile work, not a causal estimate or evidence that Helios should adopt that separation."
+      }
+    ],
+    "review_scope": "Selected passage record included"
+  },
+  {
+    "number": 9,
+    "key": "csf",
+    "type": "Standards or official practitioner guidance",
+    "source": [
+      "C. Pascoe, S. Quinn, and K. Scarfone",
+      "The NIST Cybersecurity Framework CSF 2.0",
+      "https://doi.org/10.6028/NIST.CSWP.29",
+      "NIST CSWP 29, Feb. 26, 2024"
+    ],
+    "citation_locations": [
+      {
+        "chapter": "8 Enterprise risk security and assurance",
+        "section": "Begin with the service the organisation must preserve",
+        "file": "manuscript/08.md",
+        "line": 7,
+        "ieee_reference": 9,
+        "citation_paragraph": "NIST CSF 2.0 organises cybersecurity outcomes under Govern, Identify, Protect, Detect, Respond and Recover. Its Govern function connects cybersecurity strategy, responsibilities, policy and oversight to enterprise risk management. {REF:csf} The framework is not a universal implementation checklist; the organisation must choose appropriate controls and evidence for its context."
+      }
+    ],
+    "review_scope": "Selected passage record included"
+  },
+  {
+    "number": 10,
+    "key": "zerotrust",
+    "type": "Standards or official practitioner guidance",
+    "source": [
+      "S. Rose, O. Borchert, S. Mitchell, and S. Connelly",
+      "Zero trust architecture",
+      "https://doi.org/10.6028/NIST.SP.800-207",
+      "NIST SP 800-207, Aug. 2020"
+    ],
+    "citation_locations": [
+      {
+        "chapter": "8 Enterprise risk security and assurance",
+        "section": "Separate risk statements from control lists",
+        "file": "manuscript/08.md",
+        "line": 11,
+        "ieee_reference": 10,
+        "citation_paragraph": "“Use encryption” is not a complete response to that risk because an authorised application account may still decrypt the data. Control selection needs a threat and an access path. The Zero Trust guidance rejects implicit trust based only on network location or ownership, which reinforces the need to examine identity and resource decisions. {REF:zerotrust}"
+      }
+    ],
+    "review_scope": "Selected passage record included"
+  },
+  {
+    "number": 11,
+    "key": "npv",
+    "type": "Academic teaching or institutional overview",
+    "source": [
+      "J. Dahlquist and R. Knight",
+      "Net present value NPV method",
+      "https://openstax.org/books/principles-finance/pages/16-2-net-present-value-npv-method",
+      "in Principles of Finance, Houston, TX: OpenStax, 2022, sec. 16.2"
+    ],
+    "citation_locations": [
+      {
+        "chapter": "9 Investment economics benefits and uncertainty",
+        "section": "Discounting a fictional modernisation project",
+        "file": "manuscript/09.md",
+        "line": 9,
+        "ieee_reference": 11,
+        "citation_paragraph": "Net present value discounts future cash flows to a common valuation date and subtracts the initial investment. The OpenStax finance text explains the method and the importance of the timing and discount rate. {REF:npv} For this teaching example, use NPV = −I + Σ CF_t/(1+r)^t, where I is time-zero investment, CF_t is incremental net cash flow at year-end t, and r is the annual discount rate. All amounts must use a consistent currency and inflation convention."
+      },
+      {
+        "chapter": "9 Investment economics benefits and uncertainty",
+        "section": "Work an investment decision with an imperfect pilot",
+        "file": "manuscript/09.md",
+        "line": 30,
+        "ieee_reference": 11,
+        "citation_paragraph": "The following is an original decision-analysis exercise. It is separate from Helios's three-million-euro NPV example and does not add another budget commitment. All values are already expressed at the same valuation date, in millions of euros. Discounting is therefore embedded in the stated option values; do not discount them again. Net present value supplies the common-date comparison, while the conditional probabilities and pilot design below are hypothetical. {REF:npv}"
+      }
+    ],
+    "review_scope": "Selected passage record included"
+  },
+  {
+    "number": 12,
+    "key": "change",
+    "type": "Original academic research",
+    "source": [
+      "D. Dang and S. Pekkola",
+      "Organizational change and enterprise architecture adoption: A case study in the public sector",
+      "https://doi.org/10.1007/978-981-19-3804-7_4",
+      "in Information Systems Research in Vietnam: A Shared Vision and New Frontiers, N. H. Thuan, D. Dang-Pham, H.-S. Le, and T. Q. Phan, Eds. Singapore: Springer, 2023, pp. 49–64, first online Sep. 22, 2022, doi: 10.1007/978-981-19-3804-7_4"
+    ],
+    "citation_locations": [
+      {
+        "chapter": "11 Organisational change adoption and architecture leadership",
+        "section": "Research critique: adoption unfolds across levels",
+        "file": "manuscript/11.md",
+        "line": 25,
+        "ieee_reference": 12,
+        "citation_paragraph": "Dang and Pekkola analyse EA adoption in one Vietnamese provincial government. Their interpretive study uses thirteen interviews conducted during 2015–2017, documents and observation; documents from sixteen other provinces provide secondary context. They trace change across organisational, subsystem and sector levels and describe interaction between top-down direction and bottom-up implementation. The authors call for investigation in other countries and contexts. {REF:change} The chapter explains a situated process, not a universal rollout sequence or a controlled estimate of EA's benefit. Its 2023 publication citation and 2022 online date refer to the same chapter."
+      }
+    ],
+    "review_scope": "Selected passage record included"
+  },
+  {
+    "number": 13,
+    "key": "dora",
+    "type": "Standards or official practitioner guidance",
+    "source": [
+      "N. Harvey",
+      "DORA's software delivery performance metrics",
+      "https://dora.dev/guides/dora-metrics/",
+      ""
+    ],
+    "citation_locations": [
+      {
+        "chapter": "13 Measuring enterprise outcomes and architecture value",
+        "section": "Technical measures retain their own scope",
+        "file": "manuscript/13.md",
+        "line": 18,
+        "ieee_reference": 13,
+        "citation_paragraph": "Software delivery measures can help teams improve a particular application or service. DORA's current guidance emphasises context and warns against misleading comparisons across unlike services. {REF:dora} They should not become a universal score for the enterprise architecture team or a substitute for customer and financial outcomes."
+      }
+    ],
+    "review_scope": "Retained narrow definition or official-guidance citation from preceding edition; not a new research critique"
+  },
+  {
+    "number": 14,
+    "key": "did",
+    "type": "Academic teaching or institutional overview",
+    "source": [
+      "N. Huntington-Klein",
+      "Difference-in-differences",
+      "https://theeffectbook.net/ch-DifferenceinDifference.html",
+      "in The Effect: An Introduction to Research Design and Causality, online version, ch. 18"
+    ],
+    "citation_locations": [
+      {
+        "chapter": "13 Measuring enterprise outcomes and architecture value",
+        "section": "A comparison group changes the interpretation",
+        "file": "manuscript/13.md",
+        "line": 29,
+        "ieee_reference": 14,
+        "citation_paragraph": "Huntington-Klein explains the comparison and parallel-trends assumption for difference-in-differences. {REF:did} To interpret the difference causally, the untreated trajectory of the participating division would need to be represented adequately by the comparison. Examine prior trends, customer mix, policy changes, staffing and measurement definitions. If the pilot division simultaneously adds experienced staff, the estimate combines interventions. If both divisions share the new customer-matching service, the comparison is exposed too. A pilot chosen because it has unusually bad recent performance can also improve without the proposed mechanism being responsible."
+      }
+    ],
+    "review_scope": "Selected passage record included"
+  },
+  {
+    "number": 15,
+    "key": "march",
+    "type": "Original academic research",
+    "source": [
+      "J. G. March",
+      "Exploration and exploitation in organizational learning",
+      "https://strategy.sjsu.edu/www.stable/pdf/March,%20J.%20G.%20(1991).%20Organization%20Science%202(1)%2071-87.pdf",
+      "Organization Science, vol. 2, no. 1, pp. 71-87, Feb. 1991, doi: 10.1287/orsc.2.1.71"
+    ],
+    "citation_locations": [
+      {
+        "chapter": "14 Innovation AI and sustainable technology decisions",
+        "section": "Exploration competes with current delivery",
+        "file": "manuscript/14.md",
+        "line": 5,
+        "ieee_reference": 15,
+        "citation_paragraph": "March distinguishes exploration of new possibilities from exploitation of existing knowledge and capabilities. His model examines how their different returns and learning dynamics affect organisational adaptation. {REF:march} It does not prescribe a universal innovation budget or prove that one allocation fits every enterprise."
+      },
+      {
+        "chapter": "14 Innovation AI and sustainable technology decisions",
+        "section": "Organisational learning can conflict with standardisation",
+        "file": "manuscript/14.md",
+        "line": 26,
+        "ieee_reference": 15,
+        "citation_paragraph": "March's mutual-learning model allows individuals to learn an organisational code while the code learns from individuals. The model shows how convergence and learning rates can affect longer-run knowledge; it is a stylised mechanism, not an empirical estimate of a best innovation budget. {REF:march} The following Helios application is an inference to test rather than a result measured in that paper."
+      }
+    ],
+    "review_scope": "Selected passage record included"
+  },
+  {
+    "number": 16,
+    "key": "airmf",
+    "type": "Standards or official practitioner guidance",
+    "source": [
+      "E. Tabassi",
+      "Artificial Intelligence Risk Management Framework AI RMF 1.0",
+      "https://doi.org/10.6028/NIST.AI.100-1",
+      "NIST AI 100-1, Jan. 2023"
+    ],
+    "citation_locations": [
+      {
+        "chapter": "14 Innovation AI and sustainable technology decisions",
+        "section": "An AI-assisted service case",
+        "file": "manuscript/14.md",
+        "line": 12,
+        "ieee_reference": 16,
+        "citation_paragraph": "NIST AI RMF 1.0 groups risk-management work under Govern, Map, Measure and Manage. {REF:airmf} For this case, use that structure to assign accountability, define the use context, evaluate relevant harms and decide how to respond. This is a limited application of the framework, not a certification or a claim of legal compliance."
+      }
+    ],
+    "review_scope": "Retained narrow definition or official-guidance citation from preceding edition; not a new research critique"
+  },
+  {
+    "number": 17,
+    "key": "togaf",
+    "type": "Standards or official practitioner guidance",
+    "source": [
+      "The Open Group",
+      "The TOGAF Standard",
+      "https://www.opengroup.org/togaf",
+      "10th ed."
+    ],
+    "citation_locations": [
+      {
+        "chapter": "15 Frameworks modelling and academic synthesis",
+        "section": "Separate method language and evidence",
+        "file": "manuscript/15.md",
+        "line": 6,
+        "ieee_reference": 17,
+        "citation_paragraph": "The TOGAF Standard provides an enterprise architecture methodology and framework. {REF:togaf} ArchiMate provides a modelling language for enterprise architecture. {REF:archimate} C4 focuses on communicating software architecture at different levels of structural detail. {REF:c4} These brief descriptions establish their different purposes; this book does not reproduce the standards or claim that its original diagrams conform to ArchiMate notation."
+      }
+    ],
+    "review_scope": "Retained narrow definition or official-guidance citation from preceding edition; not a new research critique"
+  },
+  {
+    "number": 18,
+    "key": "archimate",
+    "type": "Standards or official practitioner guidance",
+    "source": [
+      "The Open Group",
+      "ArchiMate certification program",
+      "https://www.opengroup.org/certifications/archimate",
+      ""
+    ],
+    "citation_locations": [
+      {
+        "chapter": "15 Frameworks modelling and academic synthesis",
+        "section": "Separate method language and evidence",
+        "file": "manuscript/15.md",
+        "line": 6,
+        "ieee_reference": 18,
+        "citation_paragraph": "The TOGAF Standard provides an enterprise architecture methodology and framework. {REF:togaf} ArchiMate provides a modelling language for enterprise architecture. {REF:archimate} C4 focuses on communicating software architecture at different levels of structural detail. {REF:c4} These brief descriptions establish their different purposes; this book does not reproduce the standards or claim that its original diagrams conform to ArchiMate notation."
+      }
+    ],
+    "review_scope": "Retained narrow definition or official-guidance citation from preceding edition; not a new research critique"
+  },
+  {
+    "number": 19,
+    "key": "c4",
+    "type": "Standards or official practitioner guidance",
+    "source": [
+      "S. Brown",
+      "The C4 model for visualising software architecture",
+      "https://c4model.com/",
+      ""
+    ],
+    "citation_locations": [
+      {
+        "chapter": "15 Frameworks modelling and academic synthesis",
+        "section": "Separate method language and evidence",
+        "file": "manuscript/15.md",
+        "line": 6,
+        "ieee_reference": 19,
+        "citation_paragraph": "The TOGAF Standard provides an enterprise architecture methodology and framework. {REF:togaf} ArchiMate provides a modelling language for enterprise architecture. {REF:archimate} C4 focuses on communicating software architecture at different levels of structural detail. {REF:c4} These brief descriptions establish their different purposes; this book does not reproduce the standards or claim that its original diagrams conform to ArchiMate notation."
+      }
+    ],
+    "review_scope": "Retained narrow definition or official-guidance citation from preceding edition; not a new research critique"
+  }
+]

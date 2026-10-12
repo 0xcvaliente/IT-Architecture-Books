@@ -1,0 +1,220 @@
+{
+ "title": "Beacon analytical platform zones",
+ "description": "Sources are extracted into a restricted landing area, validated into curated tables and published to serving models. Invalid records go to quarantine. Quality and lineage checks observe serving models and gate and reconcile the landing area. Solid arrows show data movement; dashed arrows show control and observation.",
+ "width": 860,
+ "height": 580,
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "regions": [],
+ "nodes": [
+  {
+   "id": "src",
+   "label": "Sources",
+   "x": 20,
+   "y": 20,
+   "w": 320,
+   "h": 90,
+   "detail": "CRM, ERP and sales"
+  },
+  {
+   "id": "land",
+   "label": "Restricted landing",
+   "x": 20,
+   "y": 170,
+   "w": 320,
+   "h": 90,
+   "detail": "Source position and raw data"
+  },
+  {
+   "id": "cur",
+   "label": "Curated tables",
+   "x": 20,
+   "y": 320,
+   "w": 320,
+   "h": 90,
+   "detail": "Grain and history"
+  },
+  {
+   "id": "serve",
+   "label": "Serving models",
+   "x": 20,
+   "y": 470,
+   "w": 320,
+   "h": 90,
+   "detail": "Approved measures"
+  },
+  {
+   "id": "quar",
+   "label": "Quarantine",
+   "x": 520,
+   "y": 170,
+   "w": 320,
+   "h": 90,
+   "detail": "Owner and resolution"
+  },
+  {
+   "id": "qual",
+   "label": "Quality and lineage",
+   "x": 520,
+   "y": 410,
+   "w": 320,
+   "h": 100,
+   "detail": "Checks gate each versioned publication"
+  }
+ ],
+ "edges": [
+  {
+   "id": "extract",
+   "from": "src",
+   "to": "land",
+   "points": [
+    [
+     180,
+     110
+    ],
+    [
+     180,
+     170
+    ]
+   ],
+   "label": "Extract",
+   "label_at": [
+    190,
+    124
+   ],
+   "label_w": 72
+  },
+  {
+   "id": "validate",
+   "from": "land",
+   "to": "cur",
+   "points": [
+    [
+     180,
+     260
+    ],
+    [
+     180,
+     320
+    ]
+   ],
+   "label": "Validate",
+   "label_at": [
+    190,
+    274
+   ],
+   "label_w": 80
+  },
+  {
+   "id": "publish",
+   "from": "cur",
+   "to": "serve",
+   "points": [
+    [
+     180,
+     410
+    ],
+    [
+     180,
+     470
+    ]
+   ],
+   "label": "Publish",
+   "label_at": [
+    190,
+    424
+   ],
+   "label_w": 72
+  },
+  {
+   "id": "invalid",
+   "from": "land",
+   "to": "quar",
+   "points": [
+    [
+     340,
+     215
+    ],
+    [
+     520,
+     215
+    ]
+   ],
+   "label": "Invalid records",
+   "label_at": [
+    366,
+    180
+   ],
+   "label_w": 130
+  },
+  {
+   "id": "observe",
+   "from": "serve",
+   "to": "qual",
+   "points": [
+    [
+     340,
+     515
+    ],
+    [
+     450,
+     515
+    ],
+    [
+     450,
+     470
+    ],
+    [
+     520,
+     470
+    ]
+   ],
+   "label": "Observe",
+   "label_at": [
+    372,
+    480
+   ],
+   "label_w": 74,
+   "style": "dashed"
+  },
+  {
+   "id": "gate",
+   "from": "qual",
+   "to": "land",
+   "points": [
+    [
+     600,
+     410
+    ],
+    [
+     600,
+     290
+    ],
+    [
+     300,
+     290
+    ],
+    [
+     300,
+     260
+    ]
+   ],
+   "label": "Gate and reconcile",
+   "label_at": [
+    420,
+    296
+   ],
+   "label_w": 150,
+   "style": "dashed"
+  }
+ ],
+ "notes": []
+}

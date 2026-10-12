@@ -1,0 +1,169 @@
+{
+ "title": "Majority quorums with five voters",
+ "description": "In a 3 | 2 partition, the side with three of five voters can elect a leader and commit, while the side with two cannot. In a 2 | 2 | 1 partition, no group holds three voters, so nothing new commits until connections return.",
+ "width": 860,
+ "height": 460,
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "regions": [
+  {
+   "id": "top",
+   "label": "3 | 2 partition",
+   "x": 10,
+   "y": 10,
+   "w": 840,
+   "h": 210
+  },
+  {
+   "id": "top_major",
+   "label": "3 of 5 voters: elects a leader and commits",
+   "x": 30,
+   "y": 50,
+   "w": 446,
+   "h": 155
+  },
+  {
+   "id": "top_minor",
+   "label": "2 of 5 voters: cannot commit",
+   "x": 496,
+   "y": 50,
+   "w": 304,
+   "h": 155
+  },
+  {
+   "id": "bottom",
+   "label": "2 | 2 | 1 partition: no group holds 3 of 5 voters, so nothing commits",
+   "x": 10,
+   "y": 240,
+   "w": 840,
+   "h": 210
+  },
+  {
+   "id": "b_one",
+   "label": "2 of 5",
+   "x": 30,
+   "y": 280,
+   "w": 304,
+   "h": 155
+  },
+  {
+   "id": "b_two",
+   "label": "2 of 5",
+   "x": 350,
+   "y": 280,
+   "w": 304,
+   "h": 155
+  },
+  {
+   "id": "b_three",
+   "label": "1 of 5",
+   "x": 670,
+   "y": 280,
+   "w": 162,
+   "h": 155
+  }
+ ],
+ "nodes": [
+  {
+   "id": "t1",
+   "label": "Voter 1",
+   "x": 46,
+   "y": 100,
+   "w": 130,
+   "h": 85,
+   "detail": "Leader",
+   "emphasis": true
+  },
+  {
+   "id": "t2",
+   "label": "Voter 2",
+   "x": 188,
+   "y": 100,
+   "w": 130,
+   "h": 85,
+   "detail": "Follower"
+  },
+  {
+   "id": "t3",
+   "label": "Voter 3",
+   "x": 330,
+   "y": 100,
+   "w": 130,
+   "h": 85,
+   "detail": "Follower"
+  },
+  {
+   "id": "t4",
+   "label": "Voter 4",
+   "x": 512,
+   "y": 100,
+   "w": 130,
+   "h": 85,
+   "detail": "No leader"
+  },
+  {
+   "id": "t5",
+   "label": "Voter 5",
+   "x": 654,
+   "y": 100,
+   "w": 130,
+   "h": 85,
+   "detail": "No leader"
+  },
+  {
+   "id": "b1",
+   "label": "Voter 1",
+   "x": 46,
+   "y": 330,
+   "w": 130,
+   "h": 85,
+   "detail": "No leader"
+  },
+  {
+   "id": "b2",
+   "label": "Voter 2",
+   "x": 188,
+   "y": 330,
+   "w": 130,
+   "h": 85,
+   "detail": "No leader"
+  },
+  {
+   "id": "b3",
+   "label": "Voter 3",
+   "x": 366,
+   "y": 330,
+   "w": 130,
+   "h": 85,
+   "detail": "No leader"
+  },
+  {
+   "id": "b4",
+   "label": "Voter 4",
+   "x": 508,
+   "y": 330,
+   "w": 130,
+   "h": 85,
+   "detail": "No leader"
+  },
+  {
+   "id": "b5",
+   "label": "Voter 5",
+   "x": 686,
+   "y": 330,
+   "w": 130,
+   "h": 85,
+   "detail": "No leader"
+  }
+ ],
+ "edges": [],
+ "notes": []
+}

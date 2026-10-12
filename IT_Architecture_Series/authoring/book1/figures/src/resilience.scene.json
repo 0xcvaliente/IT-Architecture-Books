@@ -1,0 +1,224 @@
+{
+ "title": "A guarded dependency call and circuit breaker states",
+ "description": "The caller sends requests through a bounded client that applies a deadline, a bulkhead pool and a circuit breaker before calling the dependency. The breaker moves from closed to open when failures cross a threshold, from open to half-open when a wait elapses, from half-open to closed when trial calls succeed, and back to open when a trial call fails.",
+ "width": 860,
+ "height": 540,
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "regions": [
+  {
+   "id": "breaker",
+   "label": "Circuit breaker states",
+   "x": 20,
+   "y": 180,
+   "w": 820,
+   "h": 340
+  }
+ ],
+ "nodes": [
+  {
+   "id": "caller",
+   "label": "Caller",
+   "x": 20,
+   "y": 30,
+   "w": 220,
+   "h": 100,
+   "detail": "Handoff worker"
+  },
+  {
+   "id": "client",
+   "label": "Bounded client",
+   "x": 320,
+   "y": 30,
+   "w": 220,
+   "h": 100,
+   "detail": "Deadline, bulkhead pool, circuit breaker",
+   "emphasis": true
+  },
+  {
+   "id": "dep",
+   "label": "Dependency",
+   "x": 620,
+   "y": 30,
+   "w": 220,
+   "h": 100,
+   "detail": "CRM API"
+  },
+  {
+   "id": "closed",
+   "label": "Closed",
+   "x": 60,
+   "y": 240,
+   "w": 220,
+   "h": 90,
+   "detail": "Calls flow; failures counted"
+  },
+  {
+   "id": "open",
+   "label": "Open",
+   "x": 580,
+   "y": 240,
+   "w": 220,
+   "h": 90,
+   "detail": "Calls fail fast"
+  },
+  {
+   "id": "half",
+   "label": "Half-open",
+   "x": 320,
+   "y": 400,
+   "w": 220,
+   "h": 90,
+   "detail": "A few trial calls"
+  }
+ ],
+ "edges": [
+  {
+   "id": "req",
+   "from": "caller",
+   "to": "client",
+   "points": [
+    [
+     240,
+     108
+    ],
+    [
+     320,
+     108
+    ]
+   ],
+   "label": "request",
+   "label_at": [
+    246,
+    70
+   ],
+   "label_w": 70
+  },
+  {
+   "id": "call",
+   "from": "client",
+   "to": "dep",
+   "points": [
+    [
+     540,
+     108
+    ],
+    [
+     620,
+     108
+    ]
+   ],
+   "label": "guarded call",
+   "label_at": [
+    546,
+    52
+   ],
+   "label_w": 72
+  },
+  {
+   "id": "trip",
+   "from": "closed",
+   "to": "open",
+   "points": [
+    [
+     280,
+     270
+    ],
+    [
+     580,
+     270
+    ]
+   ],
+   "label": "failures over threshold",
+   "label_at": [
+    334,
+    232
+   ],
+   "label_w": 190
+  },
+  {
+   "id": "wait",
+   "from": "open",
+   "to": "half",
+   "points": [
+    [
+     740,
+     330
+    ],
+    [
+     740,
+     450
+    ],
+    [
+     540,
+     450
+    ]
+   ],
+   "label": "wait elapses",
+   "label_at": [
+    748,
+    360
+   ],
+   "label_w": 90
+  },
+  {
+   "id": "fail",
+   "from": "half",
+   "to": "open",
+   "points": [
+    [
+     540,
+     420
+    ],
+    [
+     660,
+     420
+    ],
+    [
+     660,
+     330
+    ]
+   ],
+   "label": "a trial call fails",
+   "label_at": [
+    500,
+    346
+   ],
+   "label_w": 150
+  },
+  {
+   "id": "reset",
+   "from": "half",
+   "to": "closed",
+   "points": [
+    [
+     320,
+     445
+    ],
+    [
+     170,
+     445
+    ],
+    [
+     170,
+     330
+    ]
+   ],
+   "label": "trial calls succeed",
+   "label_at": [
+    178,
+    352
+   ],
+   "label_w": 162
+  }
+ ],
+ "notes": []
+}

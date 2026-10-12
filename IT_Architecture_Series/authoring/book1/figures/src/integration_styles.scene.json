@@ -1,0 +1,290 @@
+{
+ "title": "Four integration styles",
+ "description": "File transfer: ERP writes a nightly asset file that analytics reads later. Shared database: the CRM and the portal both read and write the portal database. Remote procedure invocation: the portal calls the ERP read API and waits for the reply. Messaging: the CRM publishes an event to a channel, and the work-order integration consumes it later. Dashed arrows show asynchronous transfer; solid arrows show synchronous access.",
+ "width": 860,
+ "height": 662,
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "regions": [
+  {
+   "id": "p_file",
+   "label": "File transfer: a scheduled file, read later",
+   "x": 20,
+   "y": 10,
+   "w": 820,
+   "h": 150
+  },
+  {
+   "id": "p_db",
+   "label": "Shared database: one schema, two writers",
+   "x": 20,
+   "y": 174,
+   "w": 820,
+   "h": 150
+  },
+  {
+   "id": "p_rpi",
+   "label": "Remote procedure invocation: call and wait",
+   "x": 20,
+   "y": 338,
+   "w": 820,
+   "h": 150
+  },
+  {
+   "id": "p_msg",
+   "label": "Messaging: asynchronous messages on a channel",
+   "x": 20,
+   "y": 502,
+   "w": 820,
+   "h": 150
+  }
+ ],
+ "nodes": [
+  {
+   "id": "f_erp",
+   "label": "ERP",
+   "x": 40,
+   "y": 55,
+   "w": 220,
+   "h": 85,
+   "detail": "Writes at night"
+  },
+  {
+   "id": "f_file",
+   "label": "Asset file",
+   "x": 320,
+   "y": 55,
+   "w": 220,
+   "h": 85,
+   "shape": "store"
+  },
+  {
+   "id": "f_an",
+   "label": "Analytics",
+   "x": 600,
+   "y": 55,
+   "w": 220,
+   "h": 85,
+   "detail": "Reads the next day"
+  },
+  {
+   "id": "d_crm",
+   "label": "CRM",
+   "x": 40,
+   "y": 219,
+   "w": 220,
+   "h": 85,
+   "detail": "Reads and writes"
+  },
+  {
+   "id": "d_db",
+   "label": "Portal database",
+   "x": 320,
+   "y": 219,
+   "w": 220,
+   "h": 85,
+   "shape": "store"
+  },
+  {
+   "id": "d_portal",
+   "label": "Portal",
+   "x": 600,
+   "y": 219,
+   "w": 220,
+   "h": 85,
+   "detail": "Reads and writes"
+  },
+  {
+   "id": "r_portal",
+   "label": "Portal",
+   "x": 40,
+   "y": 383,
+   "w": 260,
+   "h": 85,
+   "detail": "Waits for the reply"
+  },
+  {
+   "id": "r_erp",
+   "label": "ERP read API",
+   "x": 560,
+   "y": 383,
+   "w": 260,
+   "h": 85,
+   "detail": "Entitlements"
+  },
+  {
+   "id": "m_crm",
+   "label": "CRM",
+   "x": 40,
+   "y": 547,
+   "w": 220,
+   "h": 85,
+   "detail": "Publishes an event"
+  },
+  {
+   "id": "m_chan",
+   "label": "Event channel",
+   "x": 320,
+   "y": 547,
+   "w": 220,
+   "h": 85,
+   "shape": "store"
+  },
+  {
+   "id": "m_woi",
+   "label": "Work-order integration",
+   "x": 600,
+   "y": 547,
+   "w": 220,
+   "h": 85,
+   "detail": "Consumes it later"
+  }
+ ],
+ "edges": [
+  {
+   "id": "f1",
+   "from": "f_erp",
+   "to": "f_file",
+   "points": [
+    [
+     260,
+     97
+    ],
+    [
+     320,
+     97
+    ]
+   ],
+   "style": "dashed"
+  },
+  {
+   "id": "f2",
+   "from": "f_file",
+   "to": "f_an",
+   "points": [
+    [
+     540,
+     97
+    ],
+    [
+     600,
+     97
+    ]
+   ],
+   "style": "dashed"
+  },
+  {
+   "id": "d1",
+   "from": "d_crm",
+   "to": "d_db",
+   "points": [
+    [
+     260,
+     261
+    ],
+    [
+     320,
+     261
+    ]
+   ]
+  },
+  {
+   "id": "d2",
+   "from": "d_portal",
+   "to": "d_db",
+   "points": [
+    [
+     600,
+     261
+    ],
+    [
+     540,
+     261
+    ]
+   ]
+  },
+  {
+   "id": "r1",
+   "from": "r_portal",
+   "to": "r_erp",
+   "points": [
+    [
+     300,
+     408
+    ],
+    [
+     560,
+     408
+    ]
+   ],
+   "label": "request",
+   "label_at": [
+    390,
+    373
+   ],
+   "label_w": 70
+  },
+  {
+   "id": "r2",
+   "from": "r_erp",
+   "to": "r_portal",
+   "points": [
+    [
+     560,
+     443
+    ],
+    [
+     300,
+     443
+    ]
+   ],
+   "label": "reply",
+   "label_at": [
+    400,
+    445
+   ],
+   "label_w": 56
+  },
+  {
+   "id": "m1",
+   "from": "m_crm",
+   "to": "m_chan",
+   "points": [
+    [
+     260,
+     589
+    ],
+    [
+     320,
+     589
+    ]
+   ],
+   "style": "dashed"
+  },
+  {
+   "id": "m2",
+   "from": "m_chan",
+   "to": "m_woi",
+   "points": [
+    [
+     540,
+     589
+    ],
+    [
+     600,
+     589
+    ]
+   ],
+   "style": "dashed"
+  }
+ ],
+ "notes": []
+}

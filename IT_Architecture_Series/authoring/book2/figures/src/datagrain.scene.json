@@ -1,0 +1,212 @@
+{
+ "title": "Grain and dimensions",
+ "description": "Three facts at different grains share governed dimensions and are aggregated to a common grain before measures are combined.",
+ "width": 880,
+ "height": 470,
+ "theme": "light",
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "nodes": [
+  {
+   "id": "dim",
+   "label": "Governed dimensions",
+   "x": 250,
+   "y": 30,
+   "w": 380,
+   "h": 96,
+   "status": "provided",
+   "emphasis": true,
+   "detail": "Customer, division and date, with source-qualified identities"
+  },
+  {
+   "id": "ev",
+   "label": "Service event",
+   "x": 20,
+   "y": 200,
+   "w": 250,
+   "h": 110,
+   "status": "provided",
+   "detail": "One row per event and version"
+  },
+  {
+   "id": "snap",
+   "label": "Request snapshot",
+   "x": 315,
+   "y": 200,
+   "w": 250,
+   "h": 110,
+   "status": "provided",
+   "detail": "One row per request, date and publication"
+  },
+  {
+   "id": "comp",
+   "label": "Completion",
+   "x": 610,
+   "y": 200,
+   "w": 250,
+   "h": 110,
+   "status": "provided",
+   "detail": "One row per qualifying first closure"
+  },
+  {
+   "id": "agg",
+   "label": "Common grain",
+   "x": 190,
+   "y": 380,
+   "w": 500,
+   "h": 76,
+   "status": "provided",
+   "detail": "Aggregate each fact first, then combine measures"
+  }
+ ],
+ "edges": [
+  {
+   "id": "k1",
+   "from": "dim",
+   "to": "ev",
+   "points": [
+    [
+     300,
+     126
+    ],
+    [
+     300,
+     160
+    ],
+    [
+     145,
+     160
+    ],
+    [
+     145,
+     200
+    ]
+   ],
+   "status": "provided"
+  },
+  {
+   "id": "k2",
+   "from": "dim",
+   "to": "snap",
+   "points": [
+    [
+     440,
+     126
+    ],
+    [
+     440,
+     200
+    ]
+   ],
+   "status": "provided",
+   "label": "Keys",
+   "label_at": [
+    452,
+    145
+   ],
+   "label_w": 56
+  },
+  {
+   "id": "k3",
+   "from": "dim",
+   "to": "comp",
+   "points": [
+    [
+     580,
+     126
+    ],
+    [
+     580,
+     160
+    ],
+    [
+     735,
+     160
+    ],
+    [
+     735,
+     200
+    ]
+   ],
+   "status": "provided"
+  },
+  {
+   "id": "a1",
+   "from": "ev",
+   "to": "agg",
+   "points": [
+    [
+     145,
+     310
+    ],
+    [
+     145,
+     345
+    ],
+    [
+     300,
+     345
+    ],
+    [
+     300,
+     380
+    ]
+   ],
+   "status": "provided"
+  },
+  {
+   "id": "a2",
+   "from": "snap",
+   "to": "agg",
+   "points": [
+    [
+     440,
+     310
+    ],
+    [
+     440,
+     380
+    ]
+   ],
+   "status": "provided",
+   "label": "Aggregate",
+   "label_at": [
+    452,
+    330
+   ],
+   "label_w": 96
+  },
+  {
+   "id": "a3",
+   "from": "comp",
+   "to": "agg",
+   "points": [
+    [
+     735,
+     310
+    ],
+    [
+     735,
+     345
+    ],
+    [
+     580,
+     345
+    ],
+    [
+     580,
+     380
+    ]
+   ],
+   "status": "provided"
+  }
+ ]
+}

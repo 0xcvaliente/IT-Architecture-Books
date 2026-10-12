@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 410" width="860" height="410" role="img" aria-labelledby="dc-e71e265f8d-title dc-e71e265f8d-desc" font-family="DejaVu Sans">
+<title id="dc-e71e265f8d-title">Trust boundaries in the Meridian portal</title>
+<desc id="dc-e71e265f8d-desc">The browser reaches the API across the public boundary with TLS and identity. Inside the application boundary the API authorises requests and hands durable work to the worker. The API reaches the database with a scoped identity, and the worker reaches attachments with limited access, across the data boundary.</desc>
+<defs><marker id="dc-e71e265f8d-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 4 L0 8 Z" fill="#323232"/></marker></defs>
+<rect width="860" height="410" fill="#ffffff" aria-hidden="true"/>
+<rect x="10" y="20" width="260" height="370" rx="8" fill="none" stroke="#323232" stroke-dasharray="4 4"/>
+<text x="26" y="44" font-size="13" font-weight="600" fill="#323232" text-anchor="start"><tspan x="26" dy="0">Public boundary</tspan></text>
+<rect x="300" y="20" width="260" height="370" rx="8" fill="none" stroke="#323232" stroke-dasharray="4 4"/>
+<text x="316" y="44" font-size="13" font-weight="600" fill="#323232" text-anchor="start"><tspan x="316" dy="0">Application boundary</tspan></text>
+<rect x="590" y="20" width="260" height="370" rx="8" fill="none" stroke="#323232" stroke-dasharray="4 4"/>
+<text x="606" y="44" font-size="13" font-weight="600" fill="#323232" text-anchor="start"><tspan x="606" dy="0">Data boundary</tspan></text>
+<polyline data-edge="tls" points="240,145 330,145" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-e71e265f8d-arrow)"/>
+<polyline data-edge="dur" points="430,180 430,270" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-e71e265f8d-arrow)"/>
+<polyline data-edge="sc" points="530,145 620,145" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-e71e265f8d-arrow)"/>
+<polyline data-edge="lim" points="530,325 620,325" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-e71e265f8d-arrow)"/>
+<g id="dc-e71e265f8d-node-br" data-node="br" data-x="40" data-y="90" data-w="200" data-h="90">
+<rect x="40" y="90" width="200" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="58" y="141.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="br"><tspan x="58" dy="0">Browser</tspan></text>
+</g>
+<g id="dc-e71e265f8d-node-api" data-node="api" data-x="330" data-y="90" data-w="200" data-h="90">
+<rect x="330" y="90" width="200" height="90" rx="6" fill="#e8f0fe" stroke="#276ef1" stroke-width="2"/>
+<text x="348" y="132.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="api"><tspan x="348" dy="0">API</tspan></text>
+<text x="348" y="158.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="api"><tspan x="348" dy="0">Authorisation</tspan></text>
+</g>
+<g id="dc-e71e265f8d-node-wk" data-node="wk" data-x="330" data-y="270" data-w="200" data-h="90">
+<rect x="330" y="270" width="200" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="348" y="321.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="wk"><tspan x="348" dy="0">Worker</tspan></text>
+</g>
+<g id="dc-e71e265f8d-node-db" data-node="db" data-x="620" data-y="90" data-w="200" data-h="90">
+<rect x="620" y="90" width="200" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<path d="M630 99 H810 M630 171 H810" stroke="#323232" fill="none"/>
+<text x="638" y="141.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="db"><tspan x="638" dy="0">Database</tspan></text>
+</g>
+<g id="dc-e71e265f8d-node-att" data-node="att" data-x="620" data-y="270" data-w="200" data-h="90">
+<rect x="620" y="270" width="200" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<path d="M630 279 H810 M630 351 H810" stroke="#323232" fill="none"/>
+<text x="638" y="321.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="att"><tspan x="638" dy="0">Attachments</tspan></text>
+</g>
+<g data-label="tls" data-x="242" data-y="92" data-w="86" data-h="48"><rect x="242" y="92" width="86" height="48" rx="4" fill="#ffffff"/>
+<text x="250" y="111" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="250" dy="0">TLS and</tspan><tspan x="250" dy="18">identity</tspan></text>
+</g>
+<g data-label="dur" data-x="440" data-y="210" data-w="110" data-h="30"><rect x="440" y="210" width="110" height="30" rx="4" fill="#ffffff"/>
+<text x="448" y="229" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="448" dy="0">Durable work</tspan></text>
+</g>
+<g data-label="sc" data-x="532" data-y="92" data-w="86" data-h="48"><rect x="532" y="92" width="86" height="48" rx="4" fill="#ffffff"/>
+<text x="540" y="111" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="540" dy="0">Scoped</tspan><tspan x="540" dy="18">identity</tspan></text>
+</g>
+<g data-label="lim" data-x="532" data-y="272" data-w="86" data-h="48"><rect x="532" y="272" width="86" height="48" rx="4" fill="#ffffff"/>
+<text x="540" y="291" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="540" dy="0">Limited</tspan><tspan x="540" dy="18">access</tspan></text>
+</g>
+</svg>

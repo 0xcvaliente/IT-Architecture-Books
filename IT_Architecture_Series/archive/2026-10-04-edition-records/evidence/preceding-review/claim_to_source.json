@@ -1,0 +1,1364 @@
+[
+  {
+    "claim_id": "AC01",
+    "bounded_claim": "Information hiding uses changeable design decisions as a decomposition criterion.",
+    "source_key": "parnas",
+    "author": "D. L. Parnas",
+    "source_title": "On the criteria to be used in decomposing systems into modules",
+    "publication_details": "Communications of the ACM, vol. 15, no. 12, pp. 1053-1058, Dec. 1972, doi: 10.1145/361598.361623",
+    "canonical_url": "https://www.cs.lafayette.edu/~gexia/cs301/resources/parnas.html",
+    "inspected_copy_url": "https://www.cs.lafayette.edu/~gexia/cs301/resources/parnas.html",
+    "copy_note": "HTML full paper",
+    "source_locator": "The Criteria; Expected Benefits; KWIC change comparison",
+    "verification_status": "FULL_TEXT_PASSAGES",
+    "checked_on": "2026-10-04",
+    "reviewer": "Assistant-led editorial review",
+    "limitation_and_disposition": "Does not imply separate deployment for every module.",
+    "locations": [
+      {
+        "book": 1,
+        "chapter": "5 Software foundations for architecture work",
+        "section": "Information hiding as a decomposition criterion",
+        "file": "book1/manuscript/05.md",
+        "line": 83,
+        "ieee_reference": 13,
+        "citation_paragraph": "Parnas compares decompositions based on processing steps with modules that hide difficult or changeable design decisions. His argument makes the hidden decision, rather than the flowchart step, a useful basis for a module boundary. {REF:parnas} This does not mean every module must become a separately deployed service.",
+        "pdf_pages": [
+          18
+        ]
+      },
+      {
+        "book": 1,
+        "chapter": "Research study guide",
+        "section": "Foundational research and university work",
+        "file": "book1/manuscript/29-research.md",
+        "line": 9,
+        "ieee_reference": 13,
+        "citation_paragraph": "| Parnas on modular decomposition {REF:parnas} | Alternative decomposition criteria | Identify a changeable decision in your design and test whether its module hides it |",
+        "pdf_pages": [
+          106
+        ]
+      },
+      {
+        "book": 2,
+        "chapter": "2 Research experiments and architectural evidence",
+        "section": "Read a paper for transfer rather than decoration",
+        "file": "book2/manuscript/02.md",
+        "line": 23,
+        "ieee_reference": 5,
+        "citation_paragraph": "For example, Parnas's information-hiding argument helps evaluate boundaries around change-prone design decisions. {REF:parnas} It does not establish that every hidden decision should become a network service. Test your proposed boundary using two actual change scenarios. A separate process may introduce operational coupling that the modularity argument alone does not assess.",
+        "pdf_pages": [
+          8
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "AC02",
+    "bounded_claim": "The relational model addresses independence of applications from physical data representation.",
+    "source_key": "codd",
+    "author": "E. F. Codd",
+    "source_title": "A relational model of data for large shared data banks",
+    "publication_details": "Communications of the ACM, vol. 13, no. 6, pp. 377-387, Jun. 1970, doi: 10.1145/362384.362685",
+    "canonical_url": "https://www.engineering.upenn.edu/~zives/03f/cis550/codd.pdf",
+    "inspected_copy_url": "https://www.engineering.upenn.edu/~zives/03f/cis550/codd.pdf",
+    "copy_note": "PDF pp. 1–2",
+    "source_locator": "Sections 1.1 and 1.2; printed pp. 377–378",
+    "verification_status": "FULL_TEXT_PASSAGES",
+    "checked_on": "2026-10-04",
+    "reviewer": "Assistant-led editorial review",
+    "limitation_and_disposition": "Not a claim that indexes or performance are irrelevant.",
+    "locations": [
+      {
+        "book": 1,
+        "chapter": "6 Databases and transactional data design",
+        "section": "Relational reasoning beyond a table sketch",
+        "file": "book1/manuscript/06.md",
+        "line": 97,
+        "ieee_reference": 17,
+        "citation_paragraph": "Codd's relational model addresses data independence: the logical representation should avoid forcing application logic to depend on physical ordering, indexing, or access paths. {REF:codd} The lesson for architecture is to distinguish business facts from the mechanisms used to retrieve them. A new index should not change the meaning of a request.",
+        "pdf_pages": [
+          21
+        ]
+      },
+      {
+        "book": 1,
+        "chapter": "Research study guide",
+        "section": "Foundational research and university work",
+        "file": "book1/manuscript/29-research.md",
+        "line": 10,
+        "ieee_reference": 17,
+        "citation_paragraph": "| Codd on the relational model {REF:codd} | Data independence and logical representation | Separate a business dependency from a physical access path in your schema |",
+        "pdf_pages": [
+          106
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "AC03",
+    "bounded_claim": "REST has a set of architectural constraints; JSON over HTTP alone is insufficient.",
+    "source_key": "rest",
+    "author": "R. T. Fielding",
+    "source_title": "Representational State Transfer REST",
+    "publication_details": "in Architectural Styles and the Design of Network-based Software Architectures, Ph.D. dissertation, University of California, Irvine, 2000, ch. 5",
+    "canonical_url": "https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm",
+    "inspected_copy_url": "https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm",
+    "copy_note": "Full dissertation chapter HTML",
+    "source_locator": "Chapter 5, sections 5.1.2–5.1.7; especially 5.1.5",
+    "verification_status": "FULL_TEXT_PASSAGES",
+    "checked_on": "2026-10-04",
+    "reviewer": "Assistant-led editorial review",
+    "limitation_and_disposition": "Code on demand is optional; the course examples do not claim full REST conformance.",
+    "locations": [
+      {
+        "book": 1,
+        "chapter": "8 APIs and integration contracts",
+        "section": "REST as constraints rather than a file format",
+        "file": "book1/manuscript/08.md",
+        "line": 79,
+        "ieee_reference": 21,
+        "citation_paragraph": "Fielding's dissertation derives REST through constraints including client-server separation, stateless interaction, caching, a uniform interface, layering, and optional code on demand. The uniform interface includes resource identification, representations, self-descriptive messages, and hypermedia-driven interaction. {REF:rest} JSON over HTTP alone does not establish conformance. The examples here use resource-oriented HTTP contracts; they do not claim that every example implements full REST.",
+        "pdf_pages": [
+          28
+        ]
+      },
+      {
+        "book": 1,
+        "chapter": "Research study guide",
+        "section": "Foundational research and university work",
+        "file": "book1/manuscript/29-research.md",
+        "line": 16,
+        "ieee_reference": 21,
+        "citation_paragraph": "| Fielding dissertation Chapter 5 {REF:rest} | REST constraints and their consequences | Audit one API against the constraints without equating REST with JSON |",
+        "pdf_pages": [
+          106
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "AC04",
+    "bounded_claim": "Some correctness functions require application endpoint knowledge, while lower layers can still help.",
+    "source_key": "endtoend",
+    "author": "J. H. Saltzer, D. P. Reed, and D. D. Clark",
+    "source_title": "End-to-end arguments in system design",
+    "publication_details": "ACM Transactions on Computer Systems, vol. 2, no. 4, pp. 277-288, Nov. 1984",
+    "canonical_url": "https://web.mit.edu/Saltzer/www/publications/endtoend/endtoend.pdf",
+    "inspected_copy_url": "https://web.mit.edu/Saltzer/www/publications/endtoend/endtoend.pdf",
+    "copy_note": "MIT author-hosted PDF",
+    "source_locator": "Introduction and argument; PDF pp. 1–2",
+    "verification_status": "FULL_TEXT_PASSAGES",
+    "checked_on": "2026-10-04",
+    "reviewer": "Assistant-led editorial review",
+    "limitation_and_disposition": "The business receipt example is an original application of the placement argument.",
+    "locations": [
+      {
+        "book": 1,
+        "chapter": "4 Operating systems networking and the request journey",
+        "section": "End-to-end correctness and network design",
+        "file": "book1/manuscript/04.md",
+        "line": 69,
+        "ieee_reference": 11,
+        "citation_paragraph": "Saltzer, Reed, and Clark argue that some functions require knowledge at the communicating endpoints for complete correctness; lower layers may still provide useful performance or reliability support. This is a placement argument, not a rule to remove all lower-layer controls. {REF:endtoend} In the course design, a TCP acknowledgement proves neither a database commit nor a correctly authorised business action. The portal receipt contract must therefore state its own durable boundary.",
+        "pdf_pages": [
+          15
+        ]
+      },
+      {
+        "book": 1,
+        "chapter": "Research study guide",
+        "section": "Foundational research and university work",
+        "file": "book1/manuscript/29-research.md",
+        "line": 11,
+        "ieee_reference": 11,
+        "citation_paragraph": "| Saltzer Reed and Clark on end-to-end arguments {REF:endtoend} | Placement of correctness responsibility | Explain why a transport acknowledgement is insufficient for a business receipt |",
+        "pdf_pages": [
+          106
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "AC05",
+    "bounded_claim": "Happened-before is a partial order; a smaller logical clock value does not establish causality.",
+    "source_key": "lamport",
+    "author": "L. Lamport",
+    "source_title": "Time clocks and the ordering of events in a distributed system",
+    "publication_details": "Communications of the ACM, vol. 21, no. 7, pp. 558-565, Jul. 1978",
+    "canonical_url": "https://lamport.azurewebsites.net/pubs/time-clocks.pdf",
+    "inspected_copy_url": "https://lamport.azurewebsites.net/pubs/time-clocks.pdf",
+    "copy_note": "Author-hosted full PDF",
+    "source_locator": "Happened-before definition and Clock Condition; printed pp. 558–560",
+    "verification_status": "FULL_TEXT_PASSAGES",
+    "checked_on": "2026-10-04",
+    "reviewer": "Assistant-led editorial review",
+    "limitation_and_disposition": "Do not infer causality from unqualified wall-clock comparisons.",
+    "locations": [
+      {
+        "book": 1,
+        "chapter": "12 Distributed systems performance and resilience",
+        "section": "Causality and consensus boundaries",
+        "file": "book1/manuscript/12.md",
+        "line": 73,
+        "ieee_reference": 33,
+        "citation_paragraph": "Lamport defines a happened-before relation from order within a process, sending and receiving a message, and transitivity. Events unrelated by that relation are concurrent in the model. Logical clocks preserve happened-before order, but a smaller logical timestamp alone does not prove causality. {REF:lamport} In a portal incident, a later wall-clock timestamp from the CRM therefore cannot by itself settle which update depended on which other update. Keep explicit event and predecessor identifiers when the business needs that relationship.",
+        "pdf_pages": [
+          40
+        ]
+      },
+      {
+        "book": 1,
+        "chapter": "Research study guide",
+        "section": "Foundational research and university work",
+        "file": "book1/manuscript/29-research.md",
+        "line": 12,
+        "ieee_reference": 33,
+        "citation_paragraph": "| Lamport on distributed ordering {REF:lamport} | Partial order and logical clocks | Draw concurrent events and state what a timestamp can and cannot establish |",
+        "pdf_pages": [
+          106
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "AC06",
+    "bounded_claim": "Under the paper’s partition model, linearizability and availability cannot both hold for every required operation.",
+    "source_key": "cap",
+    "author": "S. Gilbert and N. Lynch",
+    "source_title": "Brewer's conjecture and the feasibility of consistent available partition tolerant web services",
+    "publication_details": "ACM SIGACT News, vol. 33, no. 2, pp. 51-59, Jun. 2002, doi: 10.1145/564585.564601",
+    "canonical_url": "https://www.cs.princeton.edu/courses/archive/spr22/cos418/papers/cap.pdf",
+    "inspected_copy_url": "https://www.cs.princeton.edu/courses/archive/spr22/cos418/papers/cap.pdf",
+    "copy_note": "University-hosted full paper",
+    "source_locator": "Sections 2.1–2.3 and 3.1; Theorem 1 and proof; PDF pp. 2–5",
+    "verification_status": "FULL_TEXT_PASSAGES",
+    "checked_on": "2026-10-04",
+    "reviewer": "Assistant-led editorial review",
+    "limitation_and_disposition": "Availability means eventual responses at non-failing nodes under the stated model; not a product marketing taxonomy.",
+    "locations": [
+      {
+        "book": 1,
+        "chapter": "12 Distributed systems performance and resilience",
+        "section": "Consistency models",
+        "file": "book1/manuscript/12.md",
+        "line": 21,
+        "ieee_reference": 30,
+        "citation_paragraph": "The CAP result concerns what a distributed system can guarantee during a network partition: under its formal definitions, linearizable consistency and availability for every request cannot both be maintained across the partition. It is not a rule to choose any two marketing labels in normal operation. Latency, durability, and operational recovery require additional reasoning. {REF:cap}",
+        "pdf_pages": [
+          38
+        ]
+      },
+      {
+        "book": 1,
+        "chapter": "12 Distributed systems performance and resilience",
+        "section": "Derive the partition decision from the operation",
+        "file": "book1/manuscript/12.md",
+        "line": 103,
+        "ieee_reference": 30,
+        "citation_paragraph": "The CAP proof considers a read/write object under specific consistency and availability definitions. During a partition, an isolated reader cannot distinguish an execution with an unseen remote write from one without that write; requiring a response in both creates the contradiction. {REF:cap} This is a statement about possible executions, not a classification of every feature of a database product.",
+        "pdf_pages": [
+          41
+        ]
+      },
+      {
+        "book": 1,
+        "chapter": "Research study guide",
+        "section": "Foundational research and university work",
+        "file": "book1/manuscript/29-research.md",
+        "line": 13,
+        "ieee_reference": 30,
+        "citation_paragraph": "| Gilbert and Lynch on CAP {REF:cap} | Formal definitions and partition assumptions | Describe one operation that must refuse progress to preserve its consistency contract |",
+        "pdf_pages": [
+          106
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "AC07",
+    "bounded_claim": "Long-run mean work in progress equals mean arrival rate times mean system time under the theorem’s conditions.",
+    "source_key": "little",
+    "author": "J. D. C. Little",
+    "source_title": "A proof for the queuing formula L = lambda W",
+    "publication_details": "Operations Research, vol. 9, no. 3, pp. 383-387, 1961, doi: 10.1287/opre.9.3.383",
+    "canonical_url": "https://pubsonline.informs.org/doi/abs/10.1287/opre.9.3.383",
+    "inspected_copy_url": "https://fisherp.scripts.mit.edu/wordpress/wp-content/uploads/2015/11/ContentServer.pdf",
+    "copy_note": "https://fisherp.scripts.mit.edu/wordpress/wp-content/uploads/2015/11/ContentServer.pdf",
+    "source_locator": "Theorem 1 and opening development; printed pp. 383–384",
+    "verification_status": "FULL_TEXT_PASSAGES",
+    "checked_on": "2026-10-04",
+    "reviewer": "Assistant-led editorial review",
+    "limitation_and_disposition": "Finite means and stationarity/ergodicity assumptions matter; the book uses a stable-system approximation, not peak sizing.",
+    "locations": [
+      {
+        "book": 1,
+        "chapter": "12 Distributed systems performance and resilience",
+        "section": "Latency throughput and concurrency",
+        "file": "book1/manuscript/12.md",
+        "line": 27,
+        "ieee_reference": 31,
+        "citation_paragraph": "For a stable system, Little's Law relates averages: average work in progress equals arrival rate multiplied by average time in the system. If 20 requests arrive per second and average time is 0.4 seconds, about eight requests are in progress on average. This is not a peak sizing rule. Burstiness and tail latency require headroom and measurement. {REF:little}",
+        "pdf_pages": [
+          38
+        ]
+      },
+      {
+        "book": 2,
+        "chapter": "2 Research experiments and architectural evidence",
+        "section": "Build a numerical hypothesis before testing",
+        "file": "book2/manuscript/02.md",
+        "line": 15,
+        "ieee_reference": 4,
+        "citation_paragraph": "Little's law relates long-run average work in progress, arrival rate and time in a stable system. {REF:little} It is useful for checking units and rough consistency. Do not substitute it for a peak concurrency limit or assume a growing queue is in steady state.",
+        "pdf_pages": [
+          7
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "AC08",
+    "bounded_claim": "Raft uses election, replication and safety restrictions together; majority counting alone is insufficient.",
+    "source_key": "raft",
+    "author": "D. Ongaro and J. Ousterhout",
+    "source_title": "In search of an understandable consensus algorithm",
+    "publication_details": "in Proceedings of the 2014 USENIX Annual Technical Conference, 2014, pp. 305-319",
+    "canonical_url": "https://www.usenix.org/system/files/conference/atc14/atc14-paper-ongaro.pdf",
+    "inspected_copy_url": "https://www.usenix.org/system/files/conference/atc14/atc14-paper-ongaro.pdf",
+    "copy_note": "USENIX full paper",
+    "source_locator": "Figure 2; sections 5.4.1–5.4.3; Figure 8; printed pp. 308, 312–313",
+    "verification_status": "FULL_TEXT_PASSAGES",
+    "checked_on": "2026-10-04",
+    "reviewer": "Assistant-led editorial review",
+    "limitation_and_disposition": "The current-term commit restriction matters for older entries. Byzantine faults and external payment effects are outside this guarantee.",
+    "locations": [
+      {
+        "book": 1,
+        "chapter": "12 Distributed systems performance and resilience",
+        "section": "Causality and consensus boundaries",
+        "file": "book1/manuscript/12.md",
+        "line": 75,
+        "ieee_reference": 34,
+        "citation_paragraph": "Raft decomposes replicated-log consensus into leader election, log replication, and safety rules. A leader can commit an entry from its current term after replication to a majority under the algorithm's rules; merely counting copies of an arbitrary older entry is insufficient. {REF:raft} A three-voter cluster needs two voters for a majority. If a partition leaves one voter isolated, it must not independently commit competing decisions. This describes a consensus boundary, not a guarantee that every client operation finishes during a partition.",
+        "pdf_pages": [
+          40
+        ]
+      },
+      {
+        "book": 1,
+        "chapter": "12 Distributed systems performance and resilience",
+        "section": "What quorum intersection proves and leaves open",
+        "file": "book1/manuscript/12.md",
+        "line": 111,
+        "ieee_reference": 34,
+        "citation_paragraph": "For five fixed voters, any two sets of three overlap: together they contain six memberships but there are only five possible members. That arithmetic establishes an intersection, not consensus by itself. An overlapping voter that forgets its durable vote, accepts incompatible rules or follows an unsafe membership change does not protect agreement. In Raft, voting restrictions and the current-term commit rule work together with log replication to preserve the required history. {REF:raft}",
+        "pdf_pages": [
+          42
+        ]
+      },
+      {
+        "book": 1,
+        "chapter": "Research study guide",
+        "section": "Foundational research and university work",
+        "file": "book1/manuscript/29-research.md",
+        "line": 14,
+        "ieee_reference": 34,
+        "citation_paragraph": "| Ongaro and Ousterhout on Raft {REF:raft} | Election replication and safety conditions | Explain why majority replication is part of an algorithm rather than a complete design slogan |",
+        "pdf_pages": [
+          106
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "AC09",
+    "bounded_claim": "Fan-out can amplify the effect of occasional component latency outliers.",
+    "source_key": "tail",
+    "author": "J. Dean and L. A. Barroso",
+    "source_title": "The tail at scale",
+    "publication_details": "Communications of the ACM, vol. 56, no. 2, pp. 74-80, Feb. 2013, doi: 10.1145/2408776.2408794",
+    "canonical_url": "https://barroso.org/publications/TheTailAtScale.pdf",
+    "inspected_copy_url": "https://barroso.org/publications/TheTailAtScale.pdf",
+    "copy_note": "Author-hosted full PDF",
+    "source_locator": "Component-Level Variability Amplified by Scale; PDF p. 3",
+    "verification_status": "FULL_TEXT_PASSAGES",
+    "checked_on": "2026-10-04",
+    "reviewer": "Assistant-led editorial review",
+    "limitation_and_disposition": "The 0.99^20 calculation is an original independence model, not an observed benchmark.",
+    "locations": [
+      {
+        "book": 1,
+        "chapter": "12 Distributed systems performance and resilience",
+        "section": "A quantitative model of fan-out",
+        "file": "book1/manuscript/12.md",
+        "line": 83,
+        "ieee_reference": 35,
+        "citation_paragraph": "Dean and Barroso explain why occasional latency outliers become consequential when a response depends on many components. Their paper discusses sources and mitigation of tail latency. {REF:tail} The following calculation is an original simplified model, not a benchmark: if each independent dependency has a 0.99 probability of finishing by a deadline, the probability that all 20 finish is 0.99^20, approximately 0.8179. About 18.21 percent of aggregate requests then have at least one late dependency.",
+        "pdf_pages": [
+          40
+        ]
+      },
+      {
+        "book": 1,
+        "chapter": "Research study guide",
+        "section": "Foundational research and university work",
+        "file": "book1/manuscript/29-research.md",
+        "line": 15,
+        "ieee_reference": 35,
+        "citation_paragraph": "| Dean and Barroso on tail latency {REF:tail} | Outliers in large distributed requests | Challenge the independence assumption in the course fan-out calculation |",
+        "pdf_pages": [
+          106
+        ]
+      },
+      {
+        "book": 2,
+        "chapter": "8 Transaction experiments and failure review",
+        "section": "Tail latency and correlated dependencies",
+        "file": "book2/manuscript/08.md",
+        "line": 22,
+        "ieee_reference": 12,
+        "citation_paragraph": "Dean and Barroso explain why occasional slow components become consequential when a request depends on many components. {REF:tail} Aster should therefore keep optional catalogue enrichment and notifications outside the confirmation dependency path when the business permits. The source does not establish a numeric latency budget for this fictional system.",
+        "pdf_pages": [
+          23
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "AC10",
+    "bounded_claim": "A saga divides long work into subtransactions and uses semantic compensation when needed.",
+    "source_key": "saga",
+    "author": "H. Garcia-Molina and K. Salem",
+    "source_title": "Sagas",
+    "publication_details": "in Proceedings of the 1987 ACM SIGMOD International Conference on Management of Data, 1987, pp. 249-259",
+    "canonical_url": "https://www.cs.cornell.edu/andru/cs711/2002fa/reading/sagas.pdf",
+    "inspected_copy_url": "https://www.cs.cornell.edu/andru/cs711/2002fa/reading/sagas.pdf",
+    "copy_note": "Cornell-hosted 1987 SIGMOD full paper",
+    "source_locator": "Introduction and saga definition; printed pp. 249–250",
+    "verification_status": "FULL_TEXT_PASSAGES",
+    "checked_on": "2026-10-04",
+    "reviewer": "Assistant-led editorial review",
+    "limitation_and_disposition": "Intermediate effects may be observed. External-provider recovery in the books is an explicit course extension, not physical rollback.",
+    "locations": [
+      {
+        "book": 1,
+        "chapter": "22 Worked architecture commerce inventory and payments",
+        "section": "A saga and its compensation policy",
+        "file": "book1/manuscript/22.md",
+        "line": 43,
+        "ieee_reference": 55,
+        "citation_paragraph": "The original saga work examines long-lived transactions composed of smaller transactions with compensating actions when completion cannot proceed. {REF:saga} In modern service workflows, the important architectural point is that compensation is an explicit business action with its own failure modes. The teaching workflow below uses the pattern under a declared provider contract; it is not a distributed database rollback.",
+        "pdf_pages": [
+          75
+        ]
+      },
+      {
+        "book": 1,
+        "chapter": "Research study guide",
+        "section": "Foundational research and university work",
+        "file": "book1/manuscript/29-research.md",
+        "line": 17,
+        "ieee_reference": 55,
+        "citation_paragraph": "| Garcia-Molina and Salem conference paper {REF:saga} | Long-lived transactions and compensation | Contrast the original setting with the commerce workflow and list the extra external-system assumptions |",
+        "pdf_pages": [
+          106
+        ]
+      },
+      {
+        "book": 2,
+        "chapter": "7 Reservations payments and coordination",
+        "section": "Model the order as durable progress",
+        "file": "book2/manuscript/07.md",
+        "line": 7,
+        "ieee_reference": 11,
+        "citation_paragraph": "The original Sagas work describes long-lived transactions organised into smaller transactions with compensation. {REF:saga} In this assignment, compensation is an explicit business action such as releasing a reservation or requesting a payment void. It can fail or remain pending; it is not a magical reversal of history.",
+        "pdf_pages": [
+          18
+        ]
+      },
+      {
+        "book": 2,
+        "chapter": "7 Reservations payments and coordination",
+        "section": "Payment timing does not collapse into the stock transaction",
+        "file": "book2/manuscript/07.md",
+        "line": 55,
+        "ieee_reference": 11,
+        "citation_paragraph": "The original Sagas paper treats compensation as a semantic correction and permits other work to observe intermediate effects. {REF:saga} For Aster, a compensating payment command can itself time out. Keep a durable compensation-pending state with an owner and reconciliation procedure. A customer-facing message should distinguish confirmed order, payment pending and recovery pending. Hiding all of them behind failed invites customers to retry an action that may already have taken effect.",
+        "pdf_pages": [
+          21
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "AC11",
+    "bounded_claim": "ATAM evaluates approaches against quality scenarios and identifies risks, sensitivity points and tradeoffs.",
+    "source_key": "atam",
+    "author": "R. Kazman, M. Klein, and P. Clements",
+    "source_title": "ATAM: Method for architecture evaluation",
+    "publication_details": "Carnegie Mellon University, Software Engineering Institute, CMU/SEI-2000-TR-004, Aug. 2000",
+    "canonical_url": "https://www.sei.cmu.edu/documents/629/2000_005_001_13706.pdf",
+    "inspected_copy_url": "https://www.sei.cmu.edu/documents/629/2000_005_001_13706.pdf",
+    "copy_note": "SEI full technical report",
+    "source_locator": "Sections 7.1–7.2; printed pp. 21–23; method overview",
+    "verification_status": "FULL_TEXT_PASSAGES",
+    "checked_on": "2026-10-04",
+    "reviewer": "Assistant-led editorial review",
+    "limitation_and_disposition": "The book workshops are teaching adaptations, not certified or complete ATAM evaluations.",
+    "locations": [
+      {
+        "book": 1,
+        "chapter": "20 Architecture evaluation and evidence",
+        "section": "Evaluation is an argument about a particular design",
+        "file": "book1/manuscript/20.md",
+        "line": 13,
+        "ieee_reference": 54,
+        "citation_paragraph": "The Architecture Tradeoff Analysis Method, or ATAM, uses business drivers, architecture descriptions, prioritised scenarios, and analysis of architectural approaches to identify risks, sensitivity points, and tradeoffs. A sensitivity point is a consequential architectural property for a quality response; a tradeoff point affects multiple qualities. The method makes the reasoning and assumptions visible. {REF:atam} The workshop below is a small teaching adaptation, not a claim to perform the complete formal method.",
+        "pdf_pages": [
+          64
+        ]
+      },
+      {
+        "book": 1,
+        "chapter": "Research study guide",
+        "section": "Foundational research and university work",
+        "file": "book1/manuscript/29-research.md",
+        "line": 18,
+        "ieee_reference": 54,
+        "citation_paragraph": "| Kazman Klein and Clements technical report {REF:atam} | Architecture scenarios risks and tradeoffs | Evaluate one important decision and identify evidence still missing |",
+        "pdf_pages": [
+          106
+        ]
+      },
+      {
+        "book": 2,
+        "chapter": "2 Research experiments and architectural evidence",
+        "section": "Choose the evidence to fit the question",
+        "file": "book2/manuscript/02.md",
+        "line": 6,
+        "ieee_reference": 3,
+        "citation_paragraph": "Architecture evaluation can reveal risks before full implementation. ATAM explicitly investigates architectural decisions against quality requirements and identifies sensitivity and tradeoff points. {REF:atam} The studios use a smaller teaching review; they do not claim to conduct the formal method. The practical objective is to spend investigation effort where a result could change the design.",
+        "pdf_pages": [
+          6
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "AC12",
+    "bounded_claim": "Least privilege, fail-safe defaults and complete mediation are named protection principles.",
+    "source_key": "protection",
+    "author": "J. H. Saltzer and M. D. Schroeder",
+    "source_title": "The protection of information in computer systems",
+    "publication_details": "Proceedings of the IEEE, vol. 63, no. 9, pp. 1278-1308, Sep. 1975, doi: 10.1109/PROC.1975.9939",
+    "canonical_url": "https://www.cs.virginia.edu/~evans/cs551/saltzer/",
+    "inspected_copy_url": "https://www.cs.virginia.edu/~evans/cs551/saltzer/",
+    "copy_note": "University-hosted full paper HTML",
+    "source_locator": "Part I: Design Principles; paragraphs on dynamic authorisation and revocation immediately before the principles",
+    "verification_status": "FULL_TEXT_PASSAGES",
+    "checked_on": "2026-10-04",
+    "reviewer": "Assistant-led editorial review",
+    "limitation_and_disposition": "The attachment alternatives are original designs; source principles do not certify an implementation.",
+    "locations": [
+      {
+        "book": 1,
+        "chapter": "15 Security privacy and threat modelling",
+        "section": "Foundational protection principles",
+        "file": "book1/manuscript/15.md",
+        "line": 39,
+        "ieee_reference": 43,
+        "citation_paragraph": "Saltzer and Schroeder identify principles including least privilege, fail-safe defaults, and complete mediation. Least privilege limits authority to the task; fail-safe defaults make access depend on permission rather than the absence of a prohibition; complete mediation requires checking authority for access to protected objects. {REF:protection}",
+        "pdf_pages": [
+          49
+        ]
+      },
+      {
+        "book": 1,
+        "chapter": "15 Security privacy and threat modelling",
+        "section": "A security argument for attachment delivery",
+        "file": "book1/manuscript/15.md",
+        "line": 85,
+        "ieee_reference": 43,
+        "citation_paragraph": "List the paths to the bytes: the application API, a storage URL, a preview service, a support export, a log containing the link, and a restored backup used by operators. A control applied only to the visible download button misses the other paths. Saltzer and Schroeder's principles motivate checking authority and limiting privileges; their account also treats changes to authorisation as a substantive design problem. {REF:protection} The following alternatives are course designs, not a claim that their paper prescribes a cloud implementation.",
+        "pdf_pages": [
+          51
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "AC13",
+    "bounded_claim": "Linearizability requires a legal sequential history preserving real-time precedence of non-overlapping operations.",
+    "source_key": "linearizability",
+    "author": "M. P. Herlihy and J. M. Wing",
+    "source_title": "Linearizability: A correctness condition for concurrent objects",
+    "publication_details": "ACM Transactions on Programming Languages and Systems, vol. 12, no. 3, pp. 463-492, Jul. 1990",
+    "canonical_url": "https://www.cs.cmu.edu/~wing/publications/HerlihyWing90.pdf",
+    "inspected_copy_url": "https://www.cs.cmu.edu/~wing/publications/HerlihyWing90.pdf",
+    "copy_note": "Author-hosted full PDF",
+    "source_locator": "Section 2.2; printed pp. 468–469",
+    "verification_status": "FULL_TEXT_PASSAGES",
+    "checked_on": "2026-10-04",
+    "reviewer": "Assistant-led editorial review",
+    "limitation_and_disposition": "The teaching checker covers three small completed single-register histories, not pending-call completion or arbitrary production executions.",
+    "locations": [
+      {
+        "book": 1,
+        "chapter": "12 Distributed systems performance and resilience",
+        "section": "Histories make consistency claims testable",
+        "file": "book1/manuscript/12.md",
+        "line": 89,
+        "ieee_reference": 36,
+        "citation_paragraph": "Herlihy and Wing define linearizability through a legal sequential account of operations that preserves the order of non-overlapping calls. They distinguish this object-level condition from transaction serializability and its real-time refinement, strict serializability. {REF:linearizability} The following register examples are original teaching histories. They separate observable behaviour from the storage technology used to implement it.",
+        "pdf_pages": [
+          40
+        ]
+      },
+      {
+        "book": 2,
+        "chapter": "8 Transaction experiments and failure review",
+        "section": "Design a history test before a throughput test",
+        "file": "book2/manuscript/08.md",
+        "line": 30,
+        "ieee_reference": 13,
+        "citation_paragraph": "Write a sequential reservation specification: a command with a new ID may reserve one unit if a right remains, a repeated command resolves to its earlier result, and a release can return a held right at most once. Then collect invocations and responses from competing clients. A history is acceptable only if the declared consistency model can explain the observed results while respecting the specification. Linearizability supplies a precise real-time condition for a single concurrent object. {REF:linearizability}",
+        "pdf_pages": [
+          23
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "AC14",
+    "bounded_claim": "Transaction serializability does not itself impose real-time order; strict serializability adds such a condition.",
+    "source_key": "linearizability",
+    "author": "M. P. Herlihy and J. M. Wing",
+    "source_title": "Linearizability: A correctness condition for concurrent objects",
+    "publication_details": "ACM Transactions on Programming Languages and Systems, vol. 12, no. 3, pp. 463-492, Jul. 1990",
+    "canonical_url": "https://www.cs.cmu.edu/~wing/publications/HerlihyWing90.pdf",
+    "inspected_copy_url": "https://www.cs.cmu.edu/~wing/publications/HerlihyWing90.pdf",
+    "copy_note": "Author-hosted full PDF",
+    "source_locator": "Section 3.3; printed pp. 472–473",
+    "verification_status": "FULL_TEXT_PASSAGES",
+    "checked_on": "2026-10-04",
+    "reviewer": "Assistant-led editorial review",
+    "limitation_and_disposition": "Individually linearizable operations do not automatically make an application’s multi-operation business transaction atomic.",
+    "locations": [
+      {
+        "book": 1,
+        "chapter": "12 Distributed systems performance and resilience",
+        "section": "Histories make consistency claims testable",
+        "file": "book1/manuscript/12.md",
+        "line": 89,
+        "ieee_reference": 36,
+        "citation_paragraph": "Herlihy and Wing define linearizability through a legal sequential account of operations that preserves the order of non-overlapping calls. They distinguish this object-level condition from transaction serializability and its real-time refinement, strict serializability. {REF:linearizability} The following register examples are original teaching histories. They separate observable behaviour from the storage technology used to implement it.",
+        "pdf_pages": [
+          40
+        ]
+      },
+      {
+        "book": 2,
+        "chapter": "8 Transaction experiments and failure review",
+        "section": "Design a history test before a throughput test",
+        "file": "book2/manuscript/08.md",
+        "line": 30,
+        "ieee_reference": 13,
+        "citation_paragraph": "Write a sequential reservation specification: a command with a new ID may reserve one unit if a right remains, a repeated command resolves to its earlier result, and a release can return a held right at most once. Then collect invocations and responses from competing clients. A history is acceptable only if the declared consistency model can explain the observed results while respecting the specification. Linearizability supplies a precise real-time condition for a single concurrent object. {REF:linearizability}",
+        "pdf_pages": [
+          23
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "AC15",
+    "bounded_claim": "PostgreSQL Repeatable Read may allow a serialization anomaly; Serializable requires handling transaction retries.",
+    "source_key": "isolation",
+    "author": "PostgreSQL Global Development Group",
+    "source_title": "Transaction isolation",
+    "publication_details": "PostgreSQL 18 documentation",
+    "canonical_url": "https://www.postgresql.org/docs/18/transaction-iso.html",
+    "inspected_copy_url": "https://www.postgresql.org/docs/18/transaction-iso.html",
+    "copy_note": "Official full documentation page",
+    "source_locator": "PostgreSQL 18 documentation, sections 13.2.2 and 13.2.3",
+    "verification_status": "FULL_TEXT_PASSAGES",
+    "checked_on": "2026-10-04",
+    "reviewer": "Assistant-led editorial review",
+    "limitation_and_disposition": "Database-specific behaviour is explicitly identified; the on-call schedule is an original counterexample.",
+    "locations": [
+      {
+        "book": 1,
+        "chapter": "6 Databases and transactional data design",
+        "section": "Transactions and invariants",
+        "file": "book1/manuscript/06.md",
+        "line": 54,
+        "ieee_reference": 15,
+        "citation_paragraph": "Isolation determines what concurrent transactions can observe. PostgreSQL's default Read Committed level takes a new snapshot for each statement. Serializable isolation aims for results equivalent to some serial execution, and applications must handle transactions that are aborted to preserve that guarantee. Isolation details differ across products. {REF:isolation}",
+        "pdf_pages": [
+          20
+        ]
+      },
+      {
+        "book": 1,
+        "chapter": "6 Databases and transactional data design",
+        "section": "A schedule that exposes write skew",
+        "file": "book1/manuscript/06.md",
+        "line": 113,
+        "ieee_reference": 15,
+        "citation_paragraph": "Suppose both transactions read the same initial snapshot. Transaction A observes Ben on call and sets Ada off call. Transaction B observes Ada on call and sets Ben off call. The updates affect different rows, so a rule detecting only competing writes to the same row need not reject either transaction. The final state has nobody on call. Each decision was reasonable in its snapshot; the combined outcome violates the business rule. PostgreSQL's description of Repeatable Read and Serializable distinguishes the anomalies and retry requirements relevant to this example. {REF:isolation}",
+        "pdf_pages": [
+          22
+        ]
+      },
+      {
+        "book": 1,
+        "chapter": "Exercise answers and assessment guidance",
+        "section": "Chapter 6",
+        "file": "book1/manuscript/27-answers.md",
+        "line": 49,
+        "ieee_reference": 15,
+        "citation_paragraph": "**6.2** Under PostgreSQL Read Committed, transaction A updates version 7 to 8 and commits. Transaction B then evaluates or re-evaluates the condition against the current row and updates zero rows. Its caller should reread the state if authorised and decide whether the intended action is still valid. Under Repeatable Read or Serializable, a transaction whose earlier snapshot saw version 7 can instead receive a serialization failure and must abort and retry the transaction. Handle both outcomes according to the chosen database and isolation level. Blindly substituting version 8 can overwrite a meaningful intervening decision. {REF:isolation}",
+        "pdf_pages": [
+          96
+        ]
+      },
+      {
+        "book": 2,
+        "chapter": "6 Transaction studio brief and business invariants",
+        "section": "Find the contention boundary",
+        "file": "book2/manuscript/06.md",
+        "line": 15,
+        "ieee_reference": 10,
+        "citation_paragraph": "A local atomic conditional update can reserve quantity when enough remains, together with the reservation record. Under a suitable database contract, competing attempts either reserve safely or observe failure and respond accordingly. The design must define transaction retries, operation identity and how the application distinguishes out-of-stock from transient contention. PostgreSQL's isolation documentation illustrates why application behaviour must account for the selected level and possible transaction aborts. {REF:isolation}",
+        "pdf_pages": [
+          17
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "AC16",
+    "bounded_claim": "RFC 9700 requires PKCE for public clients using the authorization code grant and recommends it for confidential clients.",
+    "source_key": "oauth",
+    "author": "T. Lodderstedt, J. Bradley, A. Labunets, and D. Fett",
+    "source_title": "Best current practice for OAuth 2.0 security",
+    "publication_details": "RFC 9700, Jan. 2025",
+    "canonical_url": "https://www.rfc-editor.org/rfc/rfc9700",
+    "inspected_copy_url": "https://www.rfc-editor.org/rfc/rfc9700",
+    "copy_note": "Official RFC full text",
+    "source_locator": "Section 2.1.1",
+    "verification_status": "FULL_TEXT_PASSAGES",
+    "checked_on": "2026-10-04",
+    "reviewer": "Assistant-led editorial review",
+    "limitation_and_disposition": "Protocol protection does not determine a business resource’s ownership predicate.",
+    "locations": [
+      {
+        "book": 1,
+        "chapter": "9 Identity authentication and authorisation",
+        "section": "OAuth and OpenID Connect",
+        "file": "book1/manuscript/09.md",
+        "line": 21,
+        "ieee_reference": 23,
+        "citation_paragraph": "Current OAuth security guidance recommends code-based flows with appropriate protections and rejects the resource owner password credentials grant. Apply exact redirect URI handling, PKCE, and token audience restrictions as required by the protocol and deployment. {REF:oauth}",
+        "pdf_pages": [
+          29
+        ]
+      },
+      {
+        "book": 1,
+        "chapter": "9 Identity authentication and authorisation",
+        "section": "Derive the access decision from the resource",
+        "file": "book1/manuscript/09.md",
+        "line": 73,
+        "ieee_reference": 23,
+        "citation_paragraph": "RFC 9700 requires PKCE for public clients using the authorization code grant and recommends it for confidential clients. It also recommends limiting token privileges and resource audiences. {REF:oauth} These protocol protections do not establish the resource ownership predicate above. A token intended for the analytics API should not be accepted by the service-request API just because both trust the same issuer. Use established libraries and a defined token profile, including trusted issuer and key configuration, audience, lifetime and applicable claims; decoding a token is not validation.",
+        "pdf_pages": [
+          31
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "AC17",
+    "bounded_claim": "RFC 9700 recommends restricting token privileges and audiences.",
+    "source_key": "oauth",
+    "author": "T. Lodderstedt, J. Bradley, A. Labunets, and D. Fett",
+    "source_title": "Best current practice for OAuth 2.0 security",
+    "publication_details": "RFC 9700, Jan. 2025",
+    "canonical_url": "https://www.rfc-editor.org/rfc/rfc9700",
+    "inspected_copy_url": "https://www.rfc-editor.org/rfc/rfc9700",
+    "copy_note": "Official RFC full text",
+    "source_locator": "Sections 2.3 and 2.3.1",
+    "verification_status": "FULL_TEXT_PASSAGES",
+    "checked_on": "2026-10-04",
+    "reviewer": "Assistant-led editorial review",
+    "limitation_and_disposition": "Issuer, audience and applicable token profile validation remain necessary; decoding is not validation.",
+    "locations": [
+      {
+        "book": 1,
+        "chapter": "9 Identity authentication and authorisation",
+        "section": "OAuth and OpenID Connect",
+        "file": "book1/manuscript/09.md",
+        "line": 21,
+        "ieee_reference": 23,
+        "citation_paragraph": "Current OAuth security guidance recommends code-based flows with appropriate protections and rejects the resource owner password credentials grant. Apply exact redirect URI handling, PKCE, and token audience restrictions as required by the protocol and deployment. {REF:oauth}",
+        "pdf_pages": [
+          29
+        ]
+      },
+      {
+        "book": 1,
+        "chapter": "9 Identity authentication and authorisation",
+        "section": "Derive the access decision from the resource",
+        "file": "book1/manuscript/09.md",
+        "line": 73,
+        "ieee_reference": 23,
+        "citation_paragraph": "RFC 9700 requires PKCE for public clients using the authorization code grant and recommends it for confidential clients. It also recommends limiting token privileges and resource audiences. {REF:oauth} These protocol protections do not establish the resource ownership predicate above. A token intended for the analytics API should not be accepted by the service-request API just because both trust the same issuer. Use established libraries and a defined token profile, including trusted issuer and key configuration, audience, lifetime and applicable claims; decoding a token is not validation.",
+        "pdf_pages": [
+          31
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "AC18",
+    "bounded_claim": "Zero Trust does not grant implicit trust solely from network location or ownership.",
+    "source_key": "zerotrust",
+    "author": "S. Rose, O. Borchert, S. Mitchell, and S. Connelly",
+    "source_title": "Zero trust architecture",
+    "publication_details": "NIST SP 800-207, Aug. 2020",
+    "canonical_url": "https://doi.org/10.6028/NIST.SP.800-207",
+    "inspected_copy_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+    "copy_note": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+    "source_locator": "Executive summary and section 2.1; printed pp. ii, 6–7",
+    "verification_status": "FULL_TEXT_PASSAGES",
+    "checked_on": "2026-10-04",
+    "reviewer": "Assistant-led editorial review",
+    "limitation_and_disposition": "The specific tenant, division and resource predicates in the books are course assumptions.",
+    "locations": [
+      {
+        "book": 1,
+        "chapter": "15 Security privacy and threat modelling",
+        "section": "Defence in depth and Zero Trust",
+        "file": "book1/manuscript/15.md",
+        "line": 47,
+        "ieee_reference": 44,
+        "citation_paragraph": "NIST's Zero Trust architecture rejects implicit trust based only on network location or ownership. Access decisions should consider identities, resources, and context rather than assuming that everything inside a perimeter is safe. {REF:zerotrust} This does not require buying a product named Zero Trust.",
+        "pdf_pages": [
+          50
+        ]
+      },
+      {
+        "book": 1,
+        "chapter": "15 Security privacy and threat modelling",
+        "section": "Policy freshness and failure are architectural choices",
+        "file": "book1/manuscript/15.md",
+        "line": 99,
+        "ieee_reference": 44,
+        "citation_paragraph": "NIST SP 800-207 describes resource-centred access, dynamic policy and distinct decision and enforcement components. It also discusses disruption of those components as a threat. {REF:zerotrust} In this example, an online policy decision service creates a dependency; a cached decision creates a freshness problem. The tradeoff cannot be settled by drawing an extra security box.",
+        "pdf_pages": [
+          52
+        ]
+      },
+      {
+        "book": 2,
+        "chapter": "11 Data quality security and analytical evaluation",
+        "section": "Follow an authorisation rule through the analytical architecture",
+        "file": "book2/manuscript/11.md",
+        "line": 37,
+        "ieee_reference": 18,
+        "citation_paragraph": "NIST's resource-centred access model motivates explicit decisions at resource boundaries rather than trust from network placement. {REF:zerotrust} The following test is an original application. Seed six fictional records across two divisions and three tenants. Give one analyst permission to one division, another an approved group reporting role, and a service identity permission only to publish a defined aggregate. Check each permitted and prohibited combination through dashboard, notebook, direct query and export paths. A filter tested only in the dashboard is incomplete evidence.",
+        "pdf_pages": [
+          30
+        ]
+      },
+      {
+        "book": 3,
+        "chapter": "8 Enterprise risk security and assurance",
+        "section": "Separate risk statements from control lists",
+        "file": "book3/manuscript/08.md",
+        "line": 11,
+        "ieee_reference": 11,
+        "citation_paragraph": "“Use encryption” is not a complete response to that risk because an authorised application account may still decrypt the data. Control selection needs a threat and an access path. The Zero Trust guidance rejects implicit trust based only on network location or ownership, which reinforces the need to examine identity and resource decisions. {REF:zerotrust}",
+        "pdf_pages": [
+          23
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "AC19",
+    "bounded_claim": "Policy decisions and enforcement are distinct components, and disruption of those components is a risk.",
+    "source_key": "zerotrust",
+    "author": "S. Rose, O. Borchert, S. Mitchell, and S. Connelly",
+    "source_title": "Zero trust architecture",
+    "publication_details": "NIST SP 800-207, Aug. 2020",
+    "canonical_url": "https://doi.org/10.6028/NIST.SP.800-207",
+    "inspected_copy_url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+    "copy_note": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207.pdf",
+    "source_locator": "Section 3; printed pp. 9–10; section 5.2, printed p. 28",
+    "verification_status": "FULL_TEXT_PASSAGES",
+    "checked_on": "2026-10-04",
+    "reviewer": "Assistant-led editorial review",
+    "limitation_and_disposition": "The cache freshness and failure-policy comparison is a reasoned design application, not a NIST latency prescription.",
+    "locations": [
+      {
+        "book": 1,
+        "chapter": "15 Security privacy and threat modelling",
+        "section": "Defence in depth and Zero Trust",
+        "file": "book1/manuscript/15.md",
+        "line": 47,
+        "ieee_reference": 44,
+        "citation_paragraph": "NIST's Zero Trust architecture rejects implicit trust based only on network location or ownership. Access decisions should consider identities, resources, and context rather than assuming that everything inside a perimeter is safe. {REF:zerotrust} This does not require buying a product named Zero Trust.",
+        "pdf_pages": [
+          50
+        ]
+      },
+      {
+        "book": 1,
+        "chapter": "15 Security privacy and threat modelling",
+        "section": "Policy freshness and failure are architectural choices",
+        "file": "book1/manuscript/15.md",
+        "line": 99,
+        "ieee_reference": 44,
+        "citation_paragraph": "NIST SP 800-207 describes resource-centred access, dynamic policy and distinct decision and enforcement components. It also discusses disruption of those components as a threat. {REF:zerotrust} In this example, an online policy decision service creates a dependency; a cached decision creates a freshness problem. The tradeoff cannot be settled by drawing an extra security box.",
+        "pdf_pages": [
+          52
+        ]
+      },
+      {
+        "book": 2,
+        "chapter": "11 Data quality security and analytical evaluation",
+        "section": "Follow an authorisation rule through the analytical architecture",
+        "file": "book2/manuscript/11.md",
+        "line": 37,
+        "ieee_reference": 18,
+        "citation_paragraph": "NIST's resource-centred access model motivates explicit decisions at resource boundaries rather than trust from network placement. {REF:zerotrust} The following test is an original application. Seed six fictional records across two divisions and three tenants. Give one analyst permission to one division, another an approved group reporting role, and a service identity permission only to publish a defined aggregate. Check each permitted and prohibited combination through dashboard, notebook, direct query and export paths. A filter tested only in the dashboard is incomplete evidence.",
+        "pdf_pages": [
+          30
+        ]
+      },
+      {
+        "book": 3,
+        "chapter": "8 Enterprise risk security and assurance",
+        "section": "Separate risk statements from control lists",
+        "file": "book3/manuscript/08.md",
+        "line": 11,
+        "ieee_reference": 11,
+        "citation_paragraph": "“Use encryption” is not a complete response to that risk because an authorised application account may still decrypt the data. Control selection needs a threat and an access path. The Zero Trust guidance rejects implicit trust based only on network location or ownership, which reinforces the need to examine identity and resource decisions. {REF:zerotrust}",
+        "pdf_pages": [
+          23
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "AC20",
+    "bounded_claim": "March’s model examines exploration and exploitation with differing learning dynamics.",
+    "source_key": "march",
+    "author": "J. G. March",
+    "source_title": "Exploration and exploitation in organizational learning",
+    "publication_details": "Organization Science, vol. 2, no. 1, pp. 71-87, Feb. 1991, doi: 10.1287/orsc.2.1.71",
+    "canonical_url": "https://strategy.sjsu.edu/www.stable/pdf/March,%20J.%20G.%20(1991).%20Organization%20Science%202(1)%2071-87.pdf",
+    "inspected_copy_url": "https://strategy.sjsu.edu/www.stable/pdf/March,%20J.%20G.%20(1991).%20Organization%20Science%202(1)%2071-87.pdf",
+    "copy_note": "University-hosted full journal article",
+    "source_locator": "Introduction and section 2, A Model of Mutual Learning; printed pp. 71–75",
+    "verification_status": "FULL_TEXT_PASSAGES",
+    "checked_on": "2026-10-04",
+    "reviewer": "Assistant-led editorial review",
+    "limitation_and_disposition": "Stylised model, not an empirical universal innovation-budget allocation.",
+    "locations": [
+      {
+        "book": 3,
+        "chapter": "14 Innovation AI and sustainable technology decisions",
+        "section": "Exploration competes with current delivery",
+        "file": "book3/manuscript/14.md",
+        "line": 5,
+        "ieee_reference": 15,
+        "citation_paragraph": "March distinguishes exploration of new possibilities from exploitation of existing knowledge and capabilities. His model examines how their different returns and learning dynamics affect organisational adaptation. {REF:march} It does not prescribe a universal innovation budget or prove that one allocation fits every enterprise.",
+        "pdf_pages": [
+          37
+        ]
+      },
+      {
+        "book": 3,
+        "chapter": "14 Innovation AI and sustainable technology decisions",
+        "section": "Organisational learning can conflict with standardisation",
+        "file": "book3/manuscript/14.md",
+        "line": 26,
+        "ieee_reference": 15,
+        "citation_paragraph": "March's mutual-learning model allows individuals to learn an organisational code while the code learns from individuals. The model shows how convergence and learning rates can affect longer-run knowledge; it is a stylised mechanism, not an empirical estimate of a best innovation budget. {REF:march} The following Helios application is an inference to test rather than a result measured in that paper.",
+        "pdf_pages": [
+          39
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "AC21",
+    "bounded_claim": "In the mutual-learning model, individuals and the organisational code learn from each other.",
+    "source_key": "march",
+    "author": "J. G. March",
+    "source_title": "Exploration and exploitation in organizational learning",
+    "publication_details": "Organization Science, vol. 2, no. 1, pp. 71-87, Feb. 1991, doi: 10.1287/orsc.2.1.71",
+    "canonical_url": "https://strategy.sjsu.edu/www.stable/pdf/March,%20J.%20G.%20(1991).%20Organization%20Science%202(1)%2071-87.pdf",
+    "inspected_copy_url": "https://strategy.sjsu.edu/www.stable/pdf/March,%20J.%20G.%20(1991).%20Organization%20Science%202(1)%2071-87.pdf",
+    "copy_note": "University-hosted full journal article",
+    "source_locator": "Section 2; printed pp. 74–75 and subsequent convergence analysis",
+    "verification_status": "FULL_TEXT_PASSAGES",
+    "checked_on": "2026-10-04",
+    "reviewer": "Assistant-led editorial review",
+    "limitation_and_disposition": "Helios’s standardisation and experimentation policy is an inference to test, not a measured result from the paper.",
+    "locations": [
+      {
+        "book": 3,
+        "chapter": "14 Innovation AI and sustainable technology decisions",
+        "section": "Exploration competes with current delivery",
+        "file": "book3/manuscript/14.md",
+        "line": 5,
+        "ieee_reference": 15,
+        "citation_paragraph": "March distinguishes exploration of new possibilities from exploitation of existing knowledge and capabilities. His model examines how their different returns and learning dynamics affect organisational adaptation. {REF:march} It does not prescribe a universal innovation budget or prove that one allocation fits every enterprise.",
+        "pdf_pages": [
+          37
+        ]
+      },
+      {
+        "book": 3,
+        "chapter": "14 Innovation AI and sustainable technology decisions",
+        "section": "Organisational learning can conflict with standardisation",
+        "file": "book3/manuscript/14.md",
+        "line": 26,
+        "ieee_reference": 15,
+        "citation_paragraph": "March's mutual-learning model allows individuals to learn an organisational code while the code learns from individuals. The model shows how convergence and learning rates can affect longer-run knowledge; it is a stylised mechanism, not an empirical estimate of a best innovation budget. {REF:march} The following Helios application is an inference to test rather than a result measured in that paper.",
+        "pdf_pages": [
+          39
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "AC22",
+    "bounded_claim": "The study finds support for the mirroring hypothesis in its five matched software pairs.",
+    "source_key": "mirroring",
+    "author": "A. MacCormack, C. Baldwin, and J. Rusnak",
+    "source_title": "Exploring the duality between product and organizational architectures: A test of the mirroring hypothesis",
+    "publication_details": "Research Policy, vol. 41, no. 8, pp. 1309-1324, 2012, doi: 10.1016/j.respol.2012.04.011",
+    "canonical_url": "https://www.hbs.edu/ris/Publication%20Files/Research%20Policy%2041%20(2012)%201309%E2%80%93%201324_c5c2350e-013c-4065-a2f9-d95eb32177d5.pdf",
+    "inspected_copy_url": "https://www.hbs.edu/ris/Publication%20Files/Research%20Policy%2041%20(2012)%201309%E2%80%93%201324_c5c2350e-013c-4065-a2f9-d95eb32177d5.pdf",
+    "copy_note": "HBS-hosted full published article",
+    "source_locator": "Sections 5 and 6; printed pp. 1316–1318",
+    "verification_status": "FULL_TEXT_PASSAGES",
+    "checked_on": "2026-10-04",
+    "reviewer": "Assistant-led editorial review",
+    "limitation_and_disposition": "The source reports an association in the selected comparisons; it does not establish that reorganising teams causes better architecture.",
+    "locations": [
+      {
+        "book": 3,
+        "chapter": "6 Technology strategy and shared platforms",
+        "section": "Product architecture and organisation structure",
+        "file": "book3/manuscript/06.md",
+        "line": 25,
+        "ieee_reference": 8,
+        "citation_paragraph": "MacCormack, Baldwin and Rusnak examine the mirroring hypothesis using five matched pairs of software products. Their coupling analysis finds more modular designs in the loosely coupled organisations in their sample. They also identify limits, including the small software sample and imperfect control of functional equivalence; their design does not isolate every organisational influence. {REF:mirroring} This is empirical support for a relationship in the studied context, not a universal rule that changing an organisation chart will improve a system.",
+        "pdf_pages": [
+          18
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "AC23",
+    "bounded_claim": "The mirroring study has a small software sample and incomplete isolation of organisational and functional differences.",
+    "source_key": "mirroring",
+    "author": "A. MacCormack, C. Baldwin, and J. Rusnak",
+    "source_title": "Exploring the duality between product and organizational architectures: A test of the mirroring hypothesis",
+    "publication_details": "Research Policy, vol. 41, no. 8, pp. 1309-1324, 2012, doi: 10.1016/j.respol.2012.04.011",
+    "canonical_url": "https://www.hbs.edu/ris/Publication%20Files/Research%20Policy%2041%20(2012)%201309%E2%80%93%201324_c5c2350e-013c-4065-a2f9-d95eb32177d5.pdf",
+    "inspected_copy_url": "https://www.hbs.edu/ris/Publication%20Files/Research%20Policy%2041%20(2012)%201309%E2%80%93%201324_c5c2350e-013c-4065-a2f9-d95eb32177d5.pdf",
+    "copy_note": "HBS-hosted full published article",
+    "source_locator": "Discussion and limitations; printed pp. 1318–1319",
+    "verification_status": "FULL_TEXT_PASSAGES",
+    "checked_on": "2026-10-04",
+    "reviewer": "Assistant-led editorial review",
+    "limitation_and_disposition": "Do not generalise directly to every enterprise, industry or organisational redesign.",
+    "locations": [
+      {
+        "book": 3,
+        "chapter": "6 Technology strategy and shared platforms",
+        "section": "Product architecture and organisation structure",
+        "file": "book3/manuscript/06.md",
+        "line": 25,
+        "ieee_reference": 8,
+        "citation_paragraph": "MacCormack, Baldwin and Rusnak examine the mirroring hypothesis using five matched pairs of software products. Their coupling analysis finds more modular designs in the loosely coupled organisations in their sample. They also identify limits, including the small software sample and imperfect control of functional equivalence; their design does not isolate every organisational influence. {REF:mirroring} This is empirical support for a relationship in the studied context, not a universal rule that changing an organisation chart will improve a system.",
+        "pdf_pages": [
+          18
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "AC24",
+    "bounded_claim": "Ross’s coordination teaching example combines shared data visibility with local customisation and disciplined data use.",
+    "source_key": "coordination",
+    "author": "J. W. Ross",
+    "source_title": "Merrill Lynch and the coordination operating model",
+    "publication_details": "MIT OpenCourseWare, 15.571 Generating Business Value from Information Technology, class 7, Spring 2009",
+    "canonical_url": "https://www.ocw.mit.edu/courses/15-571-generating-business-value-from-information-technology-spring-2009/25dc18cd7da31587f26105c0e6804c03_MIT15_571s09_lec07.pdf",
+    "inspected_copy_url": "https://www.ocw.mit.edu/courses/15-571-generating-business-value-from-information-technology-spring-2009/25dc18cd7da31587f26105c0e6804c03_MIT15_571s09_lec07.pdf",
+    "copy_note": "MIT OpenCourseWare full seven-page lecture PDF",
+    "source_locator": "Slides 4–5; PDF pp. 6–7",
+    "verification_status": "FULL_TEXT_PASSAGES",
+    "checked_on": "2026-10-04",
+    "reviewer": "Assistant-led editorial review",
+    "limitation_and_disposition": "Academic teaching material; not independent causal evidence and not the unavailable 2005 briefing.",
+    "locations": [
+      {
+        "book": 3,
+        "chapter": "3 Operating models and strategic alignment",
+        "section": "Work through competing operating designs",
+        "file": "book3/manuscript/03.md",
+        "line": 29,
+        "ieee_reference": 4,
+        "citation_paragraph": "Federated coordination permits differentiated work but needs durable ownership of shared contracts. Ross's accessible MIT teaching material describes coordination through shared data visibility alongside local service customisation and stresses disciplined data use. {REF:coordination} Applied to Helios, a shared identity service without funded stewardship can become an unreliable dependency. Each division must agree how to resolve disputed matches and how quickly it will publish the events on which others rely.",
+        "pdf_pages": [
+          11
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "AC25",
+    "bounded_claim": "MIT CISR relates enterprise architecture to an operating model’s integration and standardisation needs.",
+    "source_key": "eacisr",
+    "author": "MIT Sloan Center for Information Systems Research",
+    "source_title": "Classic topics enterprise architecture",
+    "publication_details": "",
+    "canonical_url": "https://cisr.mit.edu/content/classic-topics-enterprise-architecture",
+    "inspected_copy_url": "https://cisr.mit.edu/content/classic-topics-enterprise-architecture",
+    "copy_note": "Official MIT CISR full page",
+    "source_locator": "Classic Topics: Enterprise Architecture, main definition and two key concepts",
+    "verification_status": "FULL_TEXT_PASSAGES",
+    "checked_on": "2026-10-04",
+    "reviewer": "Assistant-led editorial review",
+    "limitation_and_disposition": "Institutional research perspective, not proof that all processes should be centralised.",
+    "locations": [
+      {
+        "book": 3,
+        "chapter": "1 The enterprise architecture problem",
+        "section": "Local quality does not guarantee enterprise coherence",
+        "file": "book3/manuscript/01.md",
+        "line": 7,
+        "ieee_reference": 1,
+        "citation_paragraph": "MIT CISR connects enterprise architecture to the integration and standardisation needs of an organisation's operating model. {REF:eacisr} This is a useful research perspective because it asks what the business needs to share before choosing a universal platform. It does not imply that every process or application should be centralised.",
+        "pdf_pages": [
+          4
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "AC26",
+    "bounded_claim": "NPV compares cash flows at a common valuation date using their timing and discount rate.",
+    "source_key": "npv",
+    "author": "J. Dahlquist and R. Knight",
+    "source_title": "Net present value NPV method",
+    "publication_details": "in Principles of Finance, Houston, TX: OpenStax, 2022, sec. 16.2",
+    "canonical_url": "https://openstax.org/books/principles-finance/pages/16-2-net-present-value-npv-method",
+    "inspected_copy_url": "https://openstax.org/books/principles-finance/pages/16-2-net-present-value-npv-method",
+    "copy_note": "OpenStax full textbook section",
+    "source_locator": "Principles of Finance, section 16.2; calculation and advantages/limitations",
+    "verification_status": "FULL_TEXT_PASSAGES",
+    "checked_on": "2026-10-04",
+    "reviewer": "Assistant-led editorial review",
+    "limitation_and_disposition": "Discount rates and cash-flow assumptions are fictional in the cases; pilot probabilities are original inputs.",
+    "locations": [
+      {
+        "book": 3,
+        "chapter": "9 Investment economics benefits and uncertainty",
+        "section": "Discounting a fictional modernisation project",
+        "file": "book3/manuscript/09.md",
+        "line": 9,
+        "ieee_reference": 12,
+        "citation_paragraph": "Net present value discounts future cash flows to a common valuation date and subtracts the initial investment. The OpenStax finance text explains the method and the importance of the timing and discount rate. {REF:npv} For this teaching example, use NPV = −I + Σ CF_t/(1+r)^t, where I is time-zero investment, CF_t is incremental net cash flow at year-end t, and r is the annual discount rate. All amounts must use a consistent currency and inflation convention.",
+        "pdf_pages": [
+          24
+        ]
+      },
+      {
+        "book": 3,
+        "chapter": "9 Investment economics benefits and uncertainty",
+        "section": "Work an investment decision with an imperfect pilot",
+        "file": "book3/manuscript/09.md",
+        "line": 30,
+        "ieee_reference": 12,
+        "citation_paragraph": "The following is an original decision-analysis exercise. It is separate from Helios's three-million-euro NPV example and does not add another budget commitment. All values are already expressed at the same valuation date, in millions of euros. Discounting is therefore embedded in the stated option values; do not discount them again. Net present value supplies the common-date comparison, while the conditional probabilities and pilot design below are hypothetical. {REF:npv}",
+        "pdf_pages": [
+          26
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "AC27",
+    "bounded_claim": "Difference-in-differences uses a change comparison whose causal interpretation depends on counterfactual parallel trends.",
+    "source_key": "did",
+    "author": "N. Huntington-Klein",
+    "source_title": "Difference-in-differences",
+    "publication_details": "in The Effect: An Introduction to Research Design and Causality, online version, ch. 18",
+    "canonical_url": "https://theeffectbook.net/ch-DifferenceinDifference.html",
+    "inspected_copy_url": "https://theeffectbook.net/ch-DifferenceinDifference.html",
+    "copy_note": "Author’s full online textbook chapter",
+    "source_locator": "The Effect, chapter 18, sections 18.1.1 and 18.1.4",
+    "verification_status": "FULL_TEXT_PASSAGES",
+    "checked_on": "2026-10-04",
+    "reviewer": "Assistant-led editorial review",
+    "limitation_and_disposition": "Pre-intervention trends cannot prove the unobserved counterfactual; the book’s numerical illustration has no sample-size evidence for inference.",
+    "locations": [
+      {
+        "book": 3,
+        "chapter": "13 Measuring enterprise outcomes and architecture value",
+        "section": "A comparison group changes the interpretation",
+        "file": "book3/manuscript/13.md",
+        "line": 29,
+        "ieee_reference": 14,
+        "citation_paragraph": "Huntington-Klein explains the comparison and parallel-trends assumption for difference-in-differences. {REF:did} To interpret the difference causally, the untreated trajectory of the participating division would need to be represented adequately by the comparison. Examine prior trends, customer mix, policy changes, staffing and measurement definitions. If the pilot division simultaneously adds experienced staff, the estimate combines interventions. If both divisions share the new customer-matching service, the comparison is exposed too. A pilot chosen because it has unusually bad recent performance can also improve without the proposed mechanism being responsible.",
+        "pdf_pages": [
+          36
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "AC28",
+    "bounded_claim": "NIST CSF 2.0 has six functions including Govern, which relates cybersecurity to enterprise risk management.",
+    "source_key": "csf",
+    "author": "C. Pascoe, S. Quinn, and K. Scarfone",
+    "source_title": "The NIST Cybersecurity Framework CSF 2.0",
+    "publication_details": "NIST CSWP 29, Feb. 26, 2024",
+    "canonical_url": "https://doi.org/10.6028/NIST.CSWP.29",
+    "inspected_copy_url": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf",
+    "copy_note": "https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf",
+    "source_locator": "Section 2; printed pp. 3–5",
+    "verification_status": "FULL_TEXT_PASSAGES",
+    "checked_on": "2026-10-04",
+    "reviewer": "Assistant-led editorial review",
+    "limitation_and_disposition": "Functions are concurrent categories, not a mandatory serial implementation checklist.",
+    "locations": [
+      {
+        "book": 3,
+        "chapter": "8 Enterprise risk security and assurance",
+        "section": "Begin with the service the organisation must preserve",
+        "file": "book3/manuscript/08.md",
+        "line": 7,
+        "ieee_reference": 10,
+        "citation_paragraph": "NIST CSF 2.0 organises cybersecurity outcomes under Govern, Identify, Protect, Detect, Respond and Recover. Its Govern function connects cybersecurity strategy, responsibilities, policy and oversight to enterprise risk management. {REF:csf} The framework is not a universal implementation checklist; the organisation must choose appropriate controls and evidence for its context.",
+        "pdf_pages": [
+          22
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "AC29",
+    "bounded_claim": "The publisher abstract names alignment, information availability, portfolio optimisation and complementarity as benefit enablers.",
+    "source_key": "eavalue",
+    "author": "T. Tamm, P. B. Seddon, G. Shanks, and P. Reynolds",
+    "source_title": "How does enterprise architecture add value to organisations?",
+    "publication_details": "Communications of the Association for Information Systems, vol. 28, art. 10, 2011, doi: 10.17705/1CAIS.02810",
+    "canonical_url": "https://aisel.aisnet.org/cais/vol28/iss1/10/",
+    "inspected_copy_url": "https://aisel.aisnet.org/cais/vol28/iss1/10/",
+    "copy_note": "https://aisel.aisnet.org/cais/vol28/iss1/10/",
+    "source_locator": "Publisher abstract only",
+    "verification_status": "ABSTRACT_ONLY_OPEN",
+    "checked_on": "2026-10-04",
+    "reviewer": "Assistant-led editorial review",
+    "limitation_and_disposition": "Full article could not be read. Publisher PDF and accessible repository alternatives failed. Manuscript explicitly attributes this to the abstract; no full-text endorsement.",
+    "locations": [
+      {
+        "book": 3,
+        "chapter": "1 The enterprise architecture problem",
+        "section": "Helios needs a causal argument",
+        "file": "book3/manuscript/01.md",
+        "line": 11,
+        "ieee_reference": 2,
+        "citation_paragraph": "The publisher abstract for Tamm and colleagues' literature-based EA Benefits Model proposes organisational alignment, information availability, resource portfolio optimisation and resource complementarity as benefit enablers. {REF:eavalue} Treat these as analytical mechanisms to investigate, not guaranteed returns from producing architecture documents. For Helios, select observable changes that would support or challenge the proposed chain.",
+        "pdf_pages": [
+          5
+        ]
+      },
+      {
+        "book": 3,
+        "chapter": "13 Measuring enterprise outcomes and architecture value",
+        "section": "Attribution needs a credible comparison",
+        "file": "book3/manuscript/13.md",
+        "line": 16,
+        "ieee_reference": 2,
+        "citation_paragraph": "The publisher abstract for Tamm and colleagues' paper proposes mechanisms through which enterprise architecture may contribute to organisational benefits. {REF:eavalue} Use such a model to form questions about Helios, not as proof that its programme will deliver the same benefit. A useful research critique asks what evidence supports each causal link and what contextual conditions could break it.",
+        "pdf_pages": [
+          35
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "AC30",
+    "bounded_claim": "The institutional abstract frames governance through IT decision alignment and accountability.",
+    "source_key": "governance",
+    "author": "P. Weill and J. W. Ross",
+    "source_title": "IT governance on one page",
+    "publication_details": "MIT Sloan Center for Information Systems Research, working paper no. 349, Nov. 30, 2004",
+    "canonical_url": "https://cisr.mit.edu/publication/MIT_CISRwp349_ITGovOnOnePage",
+    "inspected_copy_url": "https://dspace.mit.edu/entities/publication/4f18b470-9c3a-479c-9bfe-12503bbb0d0f",
+    "copy_note": "https://dspace.mit.edu/entities/publication/4f18b470-9c3a-479c-9bfe-12503bbb0d0f",
+    "source_locator": "MIT CISR / MIT DSpace institutional abstract only",
+    "verification_status": "ABSTRACT_ONLY_OPEN",
+    "checked_on": "2026-10-04",
+    "reviewer": "Assistant-led editorial review",
+    "limitation_and_disposition": "Full paper download unavailable. Course decision-right categories are original application, not a verified reproduction of the complete framework.",
+    "locations": [
+      {
+        "book": 3,
+        "chapter": "7 Governance decision rights and exceptions",
+        "section": "Governance determines who may decide",
+        "file": "book3/manuscript/07.md",
+        "line": 5,
+        "ieee_reference": 9,
+        "citation_paragraph": "Governance is more than a review board. It establishes who provides input, who decides, who implements and who is accountable for outcomes. The institutional abstract for Weill and Ross's paper frames IT governance around alignment of IT decisions with performance goals and accountability. {REF:governance} The case design below applies that principle through explicit decision categories.",
+        "pdf_pages": [
+          19
+        ]
+      }
+    ]
+  },
+  {
+    "claim_id": "AC31",
+    "bounded_claim": "The briefing abstract uses integration and standardisation requirements to frame the operating model.",
+    "source_key": "operatingmodel",
+    "author": "J. W. Ross",
+    "source_title": "Forget strategy: Focus IT on your operating model",
+    "publication_details": "MIT Sloan Center for Information Systems Research, research briefing, Dec. 2005",
+    "canonical_url": "https://cisr.mit.edu/publication/2005_12_3C_OperatingModels",
+    "inspected_copy_url": "https://cisr.mit.edu/publication/2005_12_3C_OperatingModels",
+    "copy_note": "https://cisr.mit.edu/publication/2005_12_3C_OperatingModels",
+    "source_locator": "MIT CISR research briefing abstract only",
+    "verification_status": "ABSTRACT_ONLY_OPEN",
+    "checked_on": "2026-10-04",
+    "reviewer": "Assistant-led editorial review",
+    "limitation_and_disposition": "Full 2005 briefing unavailable. The separately cited 2009 lecture supports only its own described example; it does not close this access gap.",
+    "locations": [
+      {
+        "book": 3,
+        "chapter": "3 Operating models and strategic alignment",
+        "section": "Sharing data and sharing processes are different choices",
+        "file": "book3/manuscript/03.md",
+        "line": 6,
+        "ieee_reference": 3,
+        "citation_paragraph": "The abstract of Ross's 2005 operating-model briefing uses the required levels of integration and standardisation to clarify the organisational foundation that IT must support. {REF:operatingmodel} The course applies those dimensions to individual capabilities instead of assuming one uniform answer for all of Helios. A group may standardise financial reporting strongly while allowing differentiated service delivery.",
+        "pdf_pages": [
+          9
+        ]
+      }
+    ]
+  }
+]

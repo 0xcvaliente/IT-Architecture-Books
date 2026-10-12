@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 682" width="860" height="682" role="img" aria-labelledby="dc-2cf48fe94e-title dc-2cf48fe94e-desc" font-family="DejaVu Sans">
+<title id="dc-2cf48fe94e-title">Meridian utility tree</title>
+<desc id="dc-2cf48fe94e-desc">Utility is refined into reliability, performance, security and modifiability, and then into six scenarios rated by importance and difficulty: H high, M medium, L low.</desc>
+<defs><marker id="dc-2cf48fe94e-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 4 L0 8 Z" fill="#323232"/></marker></defs>
+<rect width="860" height="682" fill="#ffffff" aria-hidden="true"/>
+<rect x="355" y="10" width="495" height="662" rx="8" fill="none" stroke="#323232" stroke-dasharray="4 4"/>
+<text x="371" y="34" font-size="13" font-weight="600" fill="#323232" text-anchor="start"><tspan x="371" dy="0">Scenarios rated (importance, difficulty)</tspan></text>
+<polyline data-edge="e_rel_l1" points="340,147.0 350,147.0 350,96.0 370,96.0" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-2cf48fe94e-arrow)"/>
+<polyline data-edge="e_rel_l2" points="340,147.0 350,147.0 350,198.0 370,198.0" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-2cf48fe94e-arrow)"/>
+<polyline data-edge="e_perf_l3" points="340,300.0 370,300.0" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-2cf48fe94e-arrow)"/>
+<polyline data-edge="e_sec_l4" points="340,453.0 350,453.0 350,402.0 370,402.0" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-2cf48fe94e-arrow)"/>
+<polyline data-edge="e_sec_l5" points="340,453.0 350,453.0 350,504.0 370,504.0" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-2cf48fe94e-arrow)"/>
+<polyline data-edge="e_mod_l6" points="340,606.0 370,606.0" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-2cf48fe94e-arrow)"/>
+<polyline data-edge="e_root_rel" points="138,351.0 151,351.0 151,147.0 162,147.0" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-2cf48fe94e-arrow)"/>
+<polyline data-edge="e_root_perf" points="138,351.0 151,351.0 151,300.0 162,300.0" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-2cf48fe94e-arrow)"/>
+<polyline data-edge="e_root_sec" points="138,351.0 151,351.0 151,453.0 162,453.0" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-2cf48fe94e-arrow)"/>
+<polyline data-edge="e_root_mod" points="138,351.0 151,351.0 151,606.0 162,606.0" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-2cf48fe94e-arrow)"/>
+<g id="dc-2cf48fe94e-node-l1" data-node="l1" data-x="370" data-y="50" data-w="470" data-h="92">
+<rect x="370" y="50" width="470" height="92" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="388" y="84.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="l1"><tspan x="388" dy="0">Durable receipt (H, M)</tspan></text>
+<text x="388" y="110.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="l1"><tspan x="388" dy="0">CRM down for 30 minutes: every accepted request reaches</tspan><tspan x="388" dy="18">the CRM after recovery</tspan></text>
+</g>
+<g id="dc-2cf48fe94e-node-l2" data-node="l2" data-x="370" data-y="152" data-w="470" data-h="92">
+<rect x="370" y="152" width="470" height="92" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="388" y="186.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="l2"><tspan x="388" dy="0">Duplicate safety (H, L)</tspan></text>
+<text x="388" y="212.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="l2"><tspan x="388" dy="0">Same key repeated: the first receipt returns, no second</tspan><tspan x="388" dy="18">case</tspan></text>
+</g>
+<g id="dc-2cf48fe94e-node-l3" data-node="l3" data-x="370" data-y="254" data-w="470" data-h="92">
+<rect x="370" y="254" width="470" height="92" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="388" y="288.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="l3"><tspan x="388" dy="0">Receipt latency (H, M)</tspan></text>
+<text x="388" y="314.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="l3"><tspan x="388" dy="0">20 submissions per second for 10 minutes: 95% of receipts</tspan><tspan x="388" dy="18">within 1 second</tspan></text>
+</g>
+<g id="dc-2cf48fe94e-node-l4" data-node="l4" data-x="370" data-y="356" data-w="470" data-h="92">
+<rect x="370" y="356" width="470" height="92" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="388" y="390.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="l4"><tspan x="388" dy="0">Tenant isolation (H, L)</tspan></text>
+<text x="388" y="416.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="l4"><tspan x="388" dy="0">Agent requests a record outside their scopes: denied and</tspan><tspan x="388" dy="18">logged</tspan></text>
+</g>
+<g id="dc-2cf48fe94e-node-l5" data-node="l5" data-x="370" data-y="458" data-w="470" data-h="92">
+<rect x="370" y="458" width="470" height="92" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="388" y="492.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="l5"><tspan x="388" dy="0">Attachment safety (M, M)</tspan></text>
+<text x="388" y="518.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="l5"><tspan x="388" dy="0">Malicious file uploaded: never released to staff before</tspan><tspan x="388" dy="18">scanning</tspan></text>
+</g>
+<g id="dc-2cf48fe94e-node-l6" data-node="l6" data-x="370" data-y="560" data-w="470" data-h="92">
+<rect x="370" y="560" width="470" height="92" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="388" y="594.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="l6"><tspan x="388" dy="0">CRM replacement (M, H)</tspan></text>
+<text x="388" y="620.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="l6"><tspan x="388" dy="0">New CRM vendor: changes confined to the adapter, done</tspan><tspan x="388" dy="18">within six weeks</tspan></text>
+</g>
+<g id="dc-2cf48fe94e-node-rel" data-node="rel" data-x="162" data-y="107.0" data-w="178" data-h="80">
+<rect x="162" y="107.0" width="178" height="80" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="180" y="153.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="rel"><tspan x="180" dy="0">Reliability</tspan></text>
+</g>
+<g id="dc-2cf48fe94e-node-perf" data-node="perf" data-x="162" data-y="260.0" data-w="178" data-h="80">
+<rect x="162" y="260.0" width="178" height="80" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="180" y="306.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="perf"><tspan x="180" dy="0">Performance</tspan></text>
+</g>
+<g id="dc-2cf48fe94e-node-sec" data-node="sec" data-x="162" data-y="413.0" data-w="178" data-h="80">
+<rect x="162" y="413.0" width="178" height="80" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="180" y="459.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="sec"><tspan x="180" dy="0">Security</tspan></text>
+</g>
+<g id="dc-2cf48fe94e-node-mod" data-node="mod" data-x="162" data-y="566.0" data-w="178" data-h="80">
+<rect x="162" y="566.0" width="178" height="80" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="180" y="612.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="mod"><tspan x="180" dy="0">Modifiability</tspan></text>
+</g>
+<g id="dc-2cf48fe94e-node-root" data-node="root" data-x="10" data-y="306.0" data-w="128" data-h="90">
+<rect x="10" y="306.0" width="128" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="28" y="339.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="root"><tspan x="28" dy="0">Utility</tspan></text>
+<text x="28" y="365.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="root"><tspan x="28" dy="0">Overall</tspan><tspan x="28" dy="18">goodness</tspan></text>
+</g>
+</svg>

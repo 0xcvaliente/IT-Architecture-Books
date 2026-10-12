@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 570" width="880" height="570" role="img" aria-labelledby="dc-6e7e1799dd-title dc-6e7e1799dd-desc" font-family="DejaVu Sans">
+<title id="dc-6e7e1799dd-title">Meridian integration paths</title>
+<desc id="dc-6e7e1799dd-desc">The portal API commits each submission with its handoff record in one transaction; a worker path per business unit claims its own handoffs and calls that unit&#x27;s CRM under its contract.</desc>
+<defs><marker id="dc-6e7e1799dd-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 4 L0 8 Z" fill="#323232"/></marker></defs>
+<rect width="880" height="570" fill="#ffffff" aria-hidden="true"/>
+<polyline data-edge="commit" points="260,95 330,95" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-6e7e1799dd-arrow)"/>
+<polyline data-edge="cla" points="380,150 380,205 135,205 135,250" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-6e7e1799dd-arrow)"/>
+<polyline data-edge="clb" points="440,150 440,250" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-6e7e1799dd-arrow)"/>
+<polyline data-edge="clc" points="600,150 600,205 745,205 745,250" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-6e7e1799dd-arrow)"/>
+<polyline data-edge="a" points="135,340 135,450" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-6e7e1799dd-arrow)" stroke-dasharray="6 5"/>
+<polyline data-edge="b" points="440,340 440,450" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-6e7e1799dd-arrow)" stroke-dasharray="6 5"/>
+<polyline data-edge="c" points="745,340 745,450" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-6e7e1799dd-arrow)" stroke-dasharray="6 5"/>
+<g id="dc-6e7e1799dd-node-api" data-node="api" data-x="20" data-y="40" data-w="240" data-h="110">
+<rect x="20" y="40" width="240" height="110" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="38" y="83.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="api"><tspan x="38" dy="0">Portal API</tspan></text>
+<text x="38" y="109.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="api"><tspan x="38" dy="0">Validates, checks access,</tspan><tspan x="38" dy="18">returns receipt</tspan></text>
+</g>
+<g id="dc-6e7e1799dd-node-db" data-node="db" data-x="330" data-y="30" data-w="300" data-h="120">
+<rect x="330" y="30" width="300" height="120" rx="6" fill="#e8f0fe" stroke="#276ef1" stroke-width="2"/>
+<path d="M340 39 H620 M340 141 H620" stroke="#276ef1" fill="none"/>
+<text x="348" y="78.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="db"><tspan x="348" dy="0">Portal database</tspan></text>
+<text x="348" y="104.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="db"><tspan x="348" dy="0">Submission and handoff in one</tspan><tspan x="348" dy="18">transaction</tspan></text>
+</g>
+<g id="dc-6e7e1799dd-node-wa" data-node="wa" data-x="20" data-y="250" data-w="230" data-h="90">
+<rect x="20" y="250" width="230" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="38" y="283.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="wa"><tspan x="38" dy="0">Worker path A</tspan></text>
+<text x="38" y="309.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="wa"><tspan x="38" dy="0">Own concurrency and rate</tspan><tspan x="38" dy="18">limit</tspan></text>
+</g>
+<g id="dc-6e7e1799dd-node-wb" data-node="wb" data-x="325" data-y="250" data-w="230" data-h="90">
+<rect x="325" y="250" width="230" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="343" y="283.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="wb"><tspan x="343" dy="0">Worker path B</tspan></text>
+<text x="343" y="309.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="wb"><tspan x="343" dy="0">Own concurrency and rate</tspan><tspan x="343" dy="18">limit</tspan></text>
+</g>
+<g id="dc-6e7e1799dd-node-wc" data-node="wc" data-x="630" data-y="250" data-w="230" data-h="90">
+<rect x="630" y="250" width="230" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="648" y="283.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="wc"><tspan x="648" dy="0">Worker path C</tspan></text>
+<text x="648" y="309.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="wc"><tspan x="648" dy="0">Own concurrency and rate</tspan><tspan x="648" dy="18">limit</tspan></text>
+</g>
+<g id="dc-6e7e1799dd-node-ca" data-node="ca" data-x="20" data-y="450" data-w="230" data-h="100">
+<rect x="20" y="450" width="230" height="100" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="38" y="497.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="ca"><tspan x="38" dy="0">CRM A</tspan></text>
+<text x="38" y="523.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="ca"><tspan x="38" dy="0">Unique external reference</tspan></text>
+</g>
+<g id="dc-6e7e1799dd-node-cb" data-node="cb" data-x="325" data-y="450" data-w="230" data-h="100">
+<rect x="325" y="450" width="230" height="100" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="343" y="488.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="cb"><tspan x="343" dy="0">CRM B</tspan></text>
+<text x="343" y="514.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="cb"><tspan x="343" dy="0">No unique key; search</tspan><tspan x="343" dy="18">index lags</tspan></text>
+</g>
+<g id="dc-6e7e1799dd-node-cc" data-node="cc" data-x="630" data-y="450" data-w="230" data-h="100">
+<rect x="630" y="450" width="230" height="100" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="648" y="488.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="cc"><tspan x="648" dy="0">CRM C</tspan></text>
+<text x="648" y="514.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="cc"><tspan x="648" dy="0">Idempotency key kept for</tspan><tspan x="648" dy="18">24 hours</tspan></text>
+</g>
+<g data-label="commit" data-x="264" data-y="52" data-w="64" data-h="30"><rect x="264" y="52" width="64" height="30" rx="4" fill="#ffffff"/>
+<text x="272" y="71" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="272" dy="0">Commit</tspan></text>
+</g>
+<g data-label="clb" data-x="450" data-y="170" data-w="120" data-h="30"><rect x="450" y="170" width="120" height="30" rx="4" fill="#ffffff"/>
+<text x="458" y="189" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="458" dy="0">Claim by unit</tspan></text>
+</g>
+<g data-label="a" data-x="145" data-y="378" data-w="120" data-h="48"><rect x="145" y="378" width="120" height="48" rx="4" fill="#ffffff"/>
+<text x="153" y="397" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="153" dy="0">Send or look</tspan><tspan x="153" dy="18">up</tspan></text>
+</g>
+<g data-label="b" data-x="450" data-y="378" data-w="120" data-h="48"><rect x="450" y="378" width="120" height="48" rx="4" fill="#ffffff"/>
+<text x="458" y="397" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="458" dy="0">Send or look</tspan><tspan x="458" dy="18">up</tspan></text>
+</g>
+<g data-label="c" data-x="755" data-y="378" data-w="120" data-h="48"><rect x="755" y="378" width="120" height="48" rx="4" fill="#ffffff"/>
+<text x="763" y="397" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="763" dy="0">Send or look</tspan><tspan x="763" dy="18">up</tspan></text>
+</g>
+</svg>

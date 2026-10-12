@@ -1,0 +1,236 @@
+{
+ "title": "Buckets and regional allocations",
+ "description": "In one database, buckets rebalance with a local transaction; between two regions, units move through a transfer record that is debited once and credited once.",
+ "width": 880,
+ "height": 700,
+ "theme": "light",
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "nodes": [
+  {
+   "id": "req",
+   "label": "Reservation",
+   "x": 310,
+   "y": 45,
+   "w": 260,
+   "h": 90,
+   "status": "provided",
+   "detail": "Picks a bucket at random"
+  },
+  {
+   "id": "b3",
+   "label": "Bucket 3",
+   "x": 60,
+   "y": 220,
+   "w": 260,
+   "h": 90,
+   "status": "provided",
+   "detail": "Own row and own lock"
+  },
+  {
+   "id": "b7",
+   "label": "Bucket 7",
+   "x": 560,
+   "y": 220,
+   "w": 260,
+   "h": 90,
+   "status": "provided",
+   "detail": "Own row and own lock"
+  },
+  {
+   "id": "west",
+   "label": "West",
+   "x": 60,
+   "y": 400,
+   "w": 240,
+   "h": 90,
+   "status": "provided",
+   "detail": "Own allocation"
+  },
+  {
+   "id": "east",
+   "label": "East",
+   "x": 580,
+   "y": 400,
+   "w": 240,
+   "h": 90,
+   "status": "provided",
+   "detail": "Own allocation"
+  },
+  {
+   "id": "tr",
+   "label": "Transfer record",
+   "x": 300,
+   "y": 570,
+   "w": 280,
+   "h": 100,
+   "status": "provided",
+   "shape": "store",
+   "emphasis": true,
+   "detail": "T-17: 100 units in transit"
+  }
+ ],
+ "edges": [
+  {
+   "id": "pick",
+   "from": "req",
+   "to": "b3",
+   "points": [
+    [
+     360,
+     135
+    ],
+    [
+     360,
+     175
+    ],
+    [
+     190,
+     175
+    ],
+    [
+     190,
+     220
+    ]
+   ],
+   "status": "provided",
+   "label": "Random pick",
+   "label_at": [
+    200,
+    140
+   ],
+   "label_w": 110
+  },
+  {
+   "id": "fb",
+   "from": "req",
+   "to": "b7",
+   "points": [
+    [
+     520,
+     135
+    ],
+    [
+     520,
+     175
+    ],
+    [
+     690,
+     175
+    ],
+    [
+     690,
+     220
+    ]
+   ],
+   "status": "provided",
+   "label": "If empty, try another",
+   "label_at": [
+    530,
+    138
+   ],
+   "label_w": 180,
+   "style": "dashed"
+  },
+  {
+   "id": "rb",
+   "from": "b3",
+   "to": "b7",
+   "points": [
+    [
+     320,
+     265
+    ],
+    [
+     560,
+     265
+    ]
+   ],
+   "status": "provided",
+   "label": "Rebalance locally",
+   "label_at": [
+    365,
+    226
+   ],
+   "label_w": 150
+  },
+  {
+   "id": "d",
+   "from": "west",
+   "to": "tr",
+   "points": [
+    [
+     180,
+     490
+    ],
+    [
+     180,
+     620
+    ],
+    [
+     300,
+     620
+    ]
+   ],
+   "status": "provided",
+   "label": "Debit once",
+   "label_at": [
+    190,
+    530
+   ],
+   "label_w": 96
+  },
+  {
+   "id": "c",
+   "from": "tr",
+   "to": "east",
+   "points": [
+    [
+     580,
+     620
+    ],
+    [
+     700,
+     620
+    ],
+    [
+     700,
+     490
+    ]
+   ],
+   "status": "provided",
+   "label": "Credit once",
+   "label_at": [
+    710,
+    530
+   ],
+   "label_w": 100
+  }
+ ],
+ "regions": [
+  {
+   "id": "onedb",
+   "label": "One database: 8 buckets of 250 units",
+   "x": 10,
+   "y": 10,
+   "w": 860,
+   "h": 330
+  },
+  {
+   "id": "tworeg",
+   "label": "Two regional databases",
+   "x": 10,
+   "y": 360,
+   "w": 860,
+   "h": 330
+  }
+ ]
+}

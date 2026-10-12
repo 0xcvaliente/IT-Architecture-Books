@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" width="860" height="440" role="img" aria-labelledby="dc-30cce1705e-title dc-30cce1705e-desc" font-family="DejaVu Sans">
+<title id="dc-30cce1705e-title">Cutover sequence</title>
+<desc id="dc-30cce1705e-desc">Fence all source writes, drain and capture the final position, reconcile and decide go or no-go, then route target writes, observe and reconcile, and retire the old path after evidence. Before target writes the source remains the authority; after them, recovery must preserve the new business state.</desc>
+<defs><marker id="dc-30cce1705e-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 4 L0 8 Z" fill="#323232"/></marker></defs>
+<rect width="860" height="440" fill="#ffffff" aria-hidden="true"/>
+<polyline data-edge="t0" points="260,65 310,65" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-30cce1705e-arrow)"/>
+<polyline data-edge="b0" points="600,375 550,375" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-30cce1705e-arrow)"/>
+<polyline data-edge="t1" points="550,65 600,65" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-30cce1705e-arrow)"/>
+<polyline data-edge="b1" points="310,375 260,375" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-30cce1705e-arrow)"/>
+<polyline data-edge="down" points="720,110 720,330" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-30cce1705e-arrow)"/>
+<g id="dc-30cce1705e-node-fence" data-node="fence" data-x="20" data-y="20" data-w="240" data-h="90">
+<rect x="20" y="20" width="240" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="38" y="62.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="fence"><tspan x="38" dy="0">1 Fence</tspan></text>
+<text x="38" y="88.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="fence"><tspan x="38" dy="0">All source writes</tspan></text>
+</g>
+<g id="dc-30cce1705e-node-drain" data-node="drain" data-x="310" data-y="20" data-w="240" data-h="90">
+<rect x="310" y="20" width="240" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="328" y="53.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="drain"><tspan x="328" dy="0">2 Drain</tspan></text>
+<text x="328" y="79.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="drain"><tspan x="328" dy="0">Apply changes to the final</tspan><tspan x="328" dy="18">position</tspan></text>
+</g>
+<g id="dc-30cce1705e-node-rec" data-node="rec" data-x="600" data-y="20" data-w="240" data-h="90">
+<rect x="600" y="20" width="240" height="90" rx="6" fill="#e8f0fe" stroke="#276ef1" stroke-width="2"/>
+<text x="618" y="62.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="rec"><tspan x="618" dy="0">3 Reconcile</tspan></text>
+<text x="618" y="88.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="rec"><tspan x="618" dy="0">Then decide</tspan></text>
+</g>
+<g id="dc-30cce1705e-node-route" data-node="route" data-x="600" data-y="330" data-w="240" data-h="90">
+<rect x="600" y="330" width="240" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="618" y="372.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="route"><tspan x="618" dy="0">4 Route</tspan></text>
+<text x="618" y="398.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="route"><tspan x="618" dy="0">Target takes the writes</tspan></text>
+</g>
+<g id="dc-30cce1705e-node-observe" data-node="observe" data-x="310" data-y="330" data-w="240" data-h="90">
+<rect x="310" y="330" width="240" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="328" y="372.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="observe"><tspan x="328" dy="0">5 Observe</tspan></text>
+<text x="328" y="398.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="observe"><tspan x="328" dy="0">And reconcile</tspan></text>
+</g>
+<g id="dc-30cce1705e-node-retire" data-node="retire" data-x="20" data-y="330" data-w="240" data-h="90">
+<rect x="20" y="330" width="240" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="38" y="372.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="retire"><tspan x="38" dy="0">6 Retire</tspan></text>
+<text x="38" y="398.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="retire"><tspan x="38" dy="0">After evidence</tspan></text>
+</g>
+<g id="dc-30cce1705e-node-note" data-node="note" data-x="270" data-y="150" data-w="320" data-h="130">
+<rect x="270" y="150" width="320" height="130" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="288" y="194.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="note"><tspan x="288" dy="0">Authority rule</tspan></text>
+<text x="288" y="220.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="note"><tspan x="288" dy="0">Before target writes, the source is</tspan><tspan x="288" dy="18">the authority; after them, recovery</tspan><tspan x="288" dy="18">must keep new business state</tspan></text>
+</g>
+<g data-label="down" data-x="730" data-y="190" data-w="110" data-h="30"><rect x="730" y="190" width="110" height="30" rx="4" fill="#ffffff"/>
+<text x="738" y="209" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="738" dy="0">Go or no-go</tspan></text>
+</g>
+</svg>

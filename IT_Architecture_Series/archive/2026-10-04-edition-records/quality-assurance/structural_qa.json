@@ -1,0 +1,35 @@
+[
+  {
+    "book": 1,
+    "questions": 81,
+    "answers": 81,
+    "figures": 32,
+    "references": 55,
+    "normal_font": "Nimbus Sans",
+    "normal_size": 10,
+    "normal_line_spacing": 1.0,
+    "tables": 11
+  },
+  {
+    "book": 2,
+    "questions": 54,
+    "answers": 54,
+    "figures": 19,
+    "references": 19,
+    "normal_font": "Nimbus Sans",
+    "normal_size": 10,
+    "normal_line_spacing": 1.0,
+    "tables": 5
+  },
+  {
+    "book": 3,
+    "questions": 58,
+    "answers": 58,
+    "figures": 21,
+    "references": 19,
+    "normal_font": "Nimbus Sans",
+    "normal_size": 10,
+    "normal_line_spacing": 1.0,
+    "tables": 13
+  }
+]

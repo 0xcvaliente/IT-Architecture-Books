@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 320" width="860" height="320" role="img" aria-labelledby="dc-dea0dd833c-title dc-dea0dd833c-desc" font-family="DejaVu Sans">
+<title id="dc-dea0dd833c-title">Stock movements</title>
+<desc id="dc-dea0dd833c-desc">Reservation, confirmation and release move units between available, reserved and committed quantities whose sum stays at 2,000.</desc>
+<defs><marker id="dc-dea0dd833c-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 4 L0 8 Z" fill="#323232"/></marker></defs>
+<rect width="860" height="320" fill="#ffffff" aria-hidden="true"/>
+<polyline data-edge="res" points="220,70 330,70" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-dea0dd833c-arrow)"/>
+<polyline data-edge="rel" points="330,108 220,108" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-dea0dd833c-arrow)"/>
+<polyline data-edge="con" points="530,88 640,88" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-dea0dd833c-arrow)"/>
+<g id="dc-dea0dd833c-node-a" data-node="a" data-x="20" data-y="40" data-w="200" data-h="96">
+<rect x="20" y="40" width="200" height="96" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="38" y="85.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="a"><tspan x="38" dy="0">A: available</tspan></text>
+<text x="38" y="111.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="a"><tspan x="38" dy="0">Units free to reserve</tspan></text>
+</g>
+<g id="dc-dea0dd833c-node-r" data-node="r" data-x="330" data-y="40" data-w="200" data-h="96">
+<rect x="330" y="40" width="200" height="96" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="348" y="85.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="r"><tspan x="348" dy="0">R: reserved</tspan></text>
+<text x="348" y="111.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="r"><tspan x="348" dy="0">Active reservations</tspan></text>
+</g>
+<g id="dc-dea0dd833c-node-c" data-node="c" data-x="640" data-y="40" data-w="200" data-h="96">
+<rect x="640" y="40" width="200" height="96" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="658" y="85.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="c"><tspan x="658" dy="0">C: committed</tspan></text>
+<text x="658" y="111.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="c"><tspan x="658" dy="0">Confirmed orders</tspan></text>
+</g>
+<g id="dc-dea0dd833c-node-inv" data-node="inv" data-x="180" data-y="220" data-w="500" data-h="80">
+<rect x="180" y="220" width="500" height="80" rx="6" fill="#e8f0fe" stroke="#276ef1" stroke-width="2"/>
+<text x="198" y="257.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="inv"><tspan x="198" dy="0">A + R + C = 2,000</tspan></text>
+<text x="198" y="283.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="inv"><tspan x="198" dy="0">None of the three is ever negative</tspan></text>
+</g>
+<g data-label="res" data-x="235" data-y="30" data-w="80" data-h="30"><rect x="235" y="30" width="80" height="30" rx="4" fill="#ffffff"/>
+<text x="243" y="49" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="243" dy="0">Reserve</tspan></text>
+</g>
+<g data-label="rel" data-x="225" data-y="116" data-w="100" data-h="48"><rect x="225" y="116" width="100" height="48" rx="4" fill="#ffffff"/>
+<text x="233" y="135" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="233" dy="0">Release or</tspan><tspan x="233" dy="18">expire</tspan></text>
+</g>
+<g data-label="con" data-x="545" data-y="48" data-w="80" data-h="30"><rect x="545" y="48" width="80" height="30" rx="4" fill="#ffffff"/>
+<text x="553" y="67" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="553" dy="0">Confirm</tspan></text>
+</g>
+</svg>

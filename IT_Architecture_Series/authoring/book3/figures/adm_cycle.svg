@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="640" viewBox="0 0 880 640" role="img" aria-labelledby="t d" font-family="DejaVu Sans">
+<title id="t">The TOGAF Architecture Development Method cycle</title>
+<desc id="d">Phases A to H run clockwise around requirements management. A preliminary phase precedes the cycle. Every phase exchanges requirements with the centre.</desc>
+<rect width="880" height="640" fill="#ffffff"/>
+<ellipse cx="448" cy="338" rx="300" ry="222" fill="none" stroke="#323232" stroke-width="2.5"/>
+<polygon points="587.7,141.5 577.9,130.8 573.2,142.9" fill="#323232"/>
+<polygon points="731.2,264.8 731.6,250.3 719.8,255.8" fill="#323232"/>
+<polygon points="723.6,425.6 735.8,417.7 724.5,411.1" fill="#323232"/>
+<polygon points="568.8,541.2 583.2,543.4 579.2,531.0" fill="#323232"/>
+<polygon points="308.3,534.5 318.1,545.2 322.8,533.1" fill="#323232"/>
+<polygon points="164.8,411.2 164.4,425.7 176.2,420.2" fill="#323232"/>
+<polygon points="172.4,250.4 160.2,258.3 171.5,264.9" fill="#323232"/>
+<polygon points="327.2,134.8 312.8,132.6 316.8,145.0" fill="#323232"/>
+<line x1="448.0" y1="294.0" x2="448.0" y2="149.0" stroke="#323232" stroke-width="1.6" stroke-dasharray="6 5"/>
+<line x1="507.5" y1="294.0" x2="615.5" y2="214.0" stroke="#323232" stroke-width="1.6" stroke-dasharray="6 5"/>
+<line x1="552.0" y1="338.0" x2="641.0" y2="338.0" stroke="#323232" stroke-width="1.6" stroke-dasharray="6 5"/>
+<line x1="507.5" y1="382.0" x2="615.5" y2="462.0" stroke="#323232" stroke-width="1.6" stroke-dasharray="6 5"/>
+<line x1="448.0" y1="382.0" x2="448.0" y2="527.0" stroke="#323232" stroke-width="1.6" stroke-dasharray="6 5"/>
+<line x1="388.5" y1="382.0" x2="280.5" y2="462.0" stroke="#323232" stroke-width="1.6" stroke-dasharray="6 5"/>
+<line x1="344.0" y1="338.0" x2="255.0" y2="338.0" stroke="#323232" stroke-width="1.6" stroke-dasharray="6 5"/>
+<line x1="388.5" y1="294.0" x2="280.5" y2="214.0" stroke="#323232" stroke-width="1.6" stroke-dasharray="6 5"/>
+<rect x="345.0" y="87.0" width="206" height="58" rx="8" fill="#f3f3f3" stroke="#323232" stroke-width="2"/>
+<text x="448.0" y="121.2" font-size="15" text-anchor="middle" fill="#000000">A. Architecture vision</text>
+<rect x="557.1" y="152.0" width="206" height="58" rx="8" fill="#f3f3f3" stroke="#323232" stroke-width="2"/>
+<text x="660.1" y="176.8" font-size="15" text-anchor="middle" fill="#000000">B. Business</text>
+<text x="660.1" y="195.8" font-size="15" text-anchor="middle" fill="#000000">architecture</text>
+<rect x="645.0" y="309.0" width="206" height="58" rx="8" fill="#f3f3f3" stroke="#323232" stroke-width="2"/>
+<text x="748.0" y="333.8" font-size="15" text-anchor="middle" fill="#000000">C. Information systems</text>
+<text x="748.0" y="352.8" font-size="15" text-anchor="middle" fill="#000000">architectures</text>
+<rect x="557.1" y="466.0" width="206" height="58" rx="8" fill="#f3f3f3" stroke="#323232" stroke-width="2"/>
+<text x="660.1" y="490.7" font-size="15" text-anchor="middle" fill="#000000">D. Technology</text>
+<text x="660.1" y="509.7" font-size="15" text-anchor="middle" fill="#000000">architecture</text>
+<rect x="345.0" y="531.0" width="206" height="58" rx="8" fill="#f3f3f3" stroke="#323232" stroke-width="2"/>
+<text x="448.0" y="555.8" font-size="15" text-anchor="middle" fill="#000000">E. Opportunities</text>
+<text x="448.0" y="574.8" font-size="15" text-anchor="middle" fill="#000000">and solutions</text>
+<rect x="132.9" y="466.0" width="206" height="58" rx="8" fill="#f3f3f3" stroke="#323232" stroke-width="2"/>
+<text x="235.9" y="500.2" font-size="15" text-anchor="middle" fill="#000000">F. Migration planning</text>
+<rect x="45.0" y="309.0" width="206" height="58" rx="8" fill="#f3f3f3" stroke="#323232" stroke-width="2"/>
+<text x="148.0" y="333.8" font-size="15" text-anchor="middle" fill="#000000">G. Implementation</text>
+<text x="148.0" y="352.8" font-size="15" text-anchor="middle" fill="#000000">governance</text>
+<rect x="132.9" y="152.0" width="206" height="58" rx="8" fill="#f3f3f3" stroke="#323232" stroke-width="2"/>
+<text x="235.9" y="176.8" font-size="15" text-anchor="middle" fill="#000000">H. Architecture</text>
+<text x="235.9" y="195.8" font-size="15" text-anchor="middle" fill="#000000">change management</text>
+<rect x="348.0" y="298.0" width="200" height="80" rx="8" fill="#e8f0fe" stroke="#276ef1" stroke-width="2"/>
+<text x="448.0" y="333.6" font-size="16" text-anchor="middle" fill="#000000">Requirements</text>
+<text x="448.0" y="353.6" font-size="16" text-anchor="middle" fill="#000000">management</text>
+<rect x="20.0" y="10.0" width="170" height="52" rx="8" fill="#f3f3f3" stroke="#323232" stroke-width="2"/>
+<text x="105.0" y="41.2" font-size="15" text-anchor="middle" fill="#000000">Preliminary</text>
+<polyline points="190,36.0 398.0,36.0 398.0,75.0" fill="none" stroke="#323232" stroke-width="2.5"/>
+<polygon points="398.0,86.0 404.5,73.0 391.5,73.0" fill="#323232"/>
+<line x1="40" y1="612" x2="90" y2="612" stroke="#323232" stroke-width="2.5"/>
+<polygon points="92.0,612.0 79.0,605.5 79.0,618.5" fill="#323232"/>
+<text x="104" y="618" font-size="13" fill="#323232">Usual order of phases</text>
+<line x1="290" y1="612" x2="340" y2="612" stroke="#323232" stroke-width="1.6" stroke-dasharray="6 5"/>
+<text x="352" y="618" font-size="13" fill="#323232">Each phase reads and updates the managed requirements</text>
+</svg>

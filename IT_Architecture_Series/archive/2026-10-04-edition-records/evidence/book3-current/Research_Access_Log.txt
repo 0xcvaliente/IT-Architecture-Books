@@ -1,0 +1,9 @@
+BOOK 3 RESEARCH ACCESS — 4 OCTOBER 2026
+
+New full sources were read using browser search-service extraction of the accessible publisher/repository PDFs. Direct workspace downloads returned HTTP 403; no local PDF copy is represented as retrieved. Passage verification means the relevant claim, methods, findings and limitations were inspected, not that every sentence in each source was audited.
+
+Tamm et al. (2011), Weill and Ross (2004), Ross (2005): institutional/publisher records found, but full texts not retrieved. Their abstract-based roles are retired, not marked verified.
+
+Dang and Pekkola: accepted manuscript inspected; Springer chapter metadata confirms citation year 2023, first online 22 September 2022, pp. 49–64 and DOI 10.1007/978-981-19-3804-7_4. The accepted copy is identified separately from the publication citation.
+
+The selected claim ledger retains earlier full-text passage checks for unchanged sources with explicit provenance. Official implementation and framework descriptions remain a different evidence category from empirical academic studies.

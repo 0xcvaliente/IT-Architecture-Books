@@ -1,0 +1,138 @@
+{
+ "title": "Facts at different grains sharing conformed dimensions",
+ "description": "Three fact tables at different grains, FactServiceEvent, FactRequestDaily and FactOrderLine, each relate many facts to one key in the shared conformed dimensions. Aggregate to an agreed common grain before comparing facts.",
+ "width": 860,
+ "height": 440,
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "regions": [],
+ "nodes": [
+  {
+   "id": "dim",
+   "label": "Conformed dimensions",
+   "x": 230,
+   "y": 20,
+   "w": 400,
+   "h": 110,
+   "detail": "Date, customer, product, business unit; governed keys and history",
+   "emphasis": true
+  },
+  {
+   "id": "f1",
+   "label": "FactServiceEvent",
+   "x": 20,
+   "y": 300,
+   "w": 240,
+   "h": 120,
+   "detail": "One row per source event and version; event and ingestion time"
+  },
+  {
+   "id": "f2",
+   "label": "FactRequestDaily",
+   "x": 310,
+   "y": 300,
+   "w": 240,
+   "h": 120,
+   "detail": "One row per request per day; end-of-day state"
+  },
+  {
+   "id": "f3",
+   "label": "FactOrderLine",
+   "x": 600,
+   "y": 300,
+   "w": 240,
+   "h": 120,
+   "detail": "One row per order line; quantity and currency"
+  }
+ ],
+ "edges": [
+  {
+   "id": "k1",
+   "from": "dim",
+   "to": "f1",
+   "points": [
+    [
+     300,
+     130
+    ],
+    [
+     300,
+     200
+    ],
+    [
+     140,
+     200
+    ],
+    [
+     140,
+     300
+    ]
+   ],
+   "label": "Many facts : one key",
+   "label_at": [
+    146,
+    208
+   ],
+   "label_w": 170
+  },
+  {
+   "id": "k2",
+   "from": "dim",
+   "to": "f2",
+   "points": [
+    [
+     430,
+     130
+    ],
+    [
+     430,
+     300
+    ]
+   ],
+   "label": "Many : one",
+   "label_at": [
+    440,
+    220
+   ],
+   "label_w": 96
+  },
+  {
+   "id": "k3",
+   "from": "dim",
+   "to": "f3",
+   "points": [
+    [
+     560,
+     130
+    ],
+    [
+     560,
+     200
+    ],
+    [
+     720,
+     200
+    ],
+    [
+     720,
+     300
+    ]
+   ],
+   "label": "Many facts : one key",
+   "label_at": [
+    546,
+    208
+   ],
+   "label_w": 170
+  }
+ ],
+ "notes": []
+}

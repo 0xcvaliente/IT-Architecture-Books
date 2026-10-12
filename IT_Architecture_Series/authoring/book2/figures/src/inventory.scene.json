@@ -1,0 +1,128 @@
+{
+ "title": "Stock movements",
+ "description": "Reservation, confirmation and release move units between available, reserved and committed quantities whose sum stays at 2,000.",
+ "width": 860,
+ "height": 320,
+ "theme": "light",
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "nodes": [
+  {
+   "id": "a",
+   "label": "A: available",
+   "x": 20,
+   "y": 40,
+   "w": 200,
+   "h": 96,
+   "status": "provided",
+   "detail": "Units free to reserve"
+  },
+  {
+   "id": "r",
+   "label": "R: reserved",
+   "x": 330,
+   "y": 40,
+   "w": 200,
+   "h": 96,
+   "status": "provided",
+   "detail": "Active reservations"
+  },
+  {
+   "id": "c",
+   "label": "C: committed",
+   "x": 640,
+   "y": 40,
+   "w": 200,
+   "h": 96,
+   "status": "provided",
+   "detail": "Confirmed orders"
+  },
+  {
+   "id": "inv",
+   "label": "A + R + C = 2,000",
+   "x": 180,
+   "y": 220,
+   "w": 500,
+   "h": 80,
+   "status": "provided",
+   "emphasis": true,
+   "detail": "None of the three is ever negative"
+  }
+ ],
+ "edges": [
+  {
+   "id": "res",
+   "from": "a",
+   "to": "r",
+   "points": [
+    [
+     220,
+     70
+    ],
+    [
+     330,
+     70
+    ]
+   ],
+   "status": "provided",
+   "label": "Reserve",
+   "label_at": [
+    235,
+    30
+   ],
+   "label_w": 80
+  },
+  {
+   "id": "rel",
+   "from": "r",
+   "to": "a",
+   "points": [
+    [
+     330,
+     108
+    ],
+    [
+     220,
+     108
+    ]
+   ],
+   "status": "provided",
+   "label": "Release or expire",
+   "label_at": [
+    225,
+    116
+   ],
+   "label_w": 100
+  },
+  {
+   "id": "con",
+   "from": "r",
+   "to": "c",
+   "points": [
+    [
+     530,
+     88
+    ],
+    [
+     640,
+     88
+    ]
+   ],
+   "status": "provided",
+   "label": "Confirm",
+   "label_at": [
+    545,
+    48
+   ],
+   "label_w": 80
+  }
+ ]
+}

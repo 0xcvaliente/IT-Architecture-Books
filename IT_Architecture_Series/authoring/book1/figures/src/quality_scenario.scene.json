@@ -1,0 +1,161 @@
+{
+ "title": "Anatomy of a quality attribute scenario",
+ "description": "A source of stimulus raises a stimulus that arrives at an artefact operating in a stated environment. The artefact produces a response, which is judged by a response measure. Example values come from the Meridian peak submission scenario.",
+ "width": 860,
+ "height": 570,
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "regions": [
+  {
+   "id": "env",
+   "label": "Environment: incident peak, CRM up or down",
+   "x": 20,
+   "y": 180,
+   "w": 820,
+   "h": 190
+  }
+ ],
+ "nodes": [
+  {
+   "id": "source",
+   "label": "Source of stimulus",
+   "x": 20,
+   "y": 20,
+   "w": 370,
+   "h": 100,
+   "detail": "Customers reporting a widespread equipment fault"
+  },
+  {
+   "id": "stimulus",
+   "label": "Stimulus",
+   "x": 470,
+   "y": 20,
+   "w": 370,
+   "h": 100,
+   "detail": "Valid submissions at 20 per second for ten minutes"
+  },
+  {
+   "id": "artefact",
+   "label": "Artefact",
+   "x": 480,
+   "y": 230,
+   "w": 340,
+   "h": 110,
+   "detail": "Portal receipt API, excluding file upload",
+   "emphasis": true
+  },
+  {
+   "id": "response",
+   "label": "Response",
+   "x": 40,
+   "y": 230,
+   "w": 340,
+   "h": 110,
+   "detail": "Stores the submission and handoff record, then returns a receipt"
+  },
+  {
+   "id": "measure",
+   "label": "Response measure",
+   "x": 40,
+   "y": 440,
+   "w": 340,
+   "h": 110,
+   "detail": "95% of receipts within one second; no accepted submission lost"
+  }
+ ],
+ "edges": [
+  {
+   "id": "raises",
+   "from": "source",
+   "to": "stimulus",
+   "points": [
+    [
+     390,
+     70
+    ],
+    [
+     470,
+     70
+    ]
+   ],
+   "label": "raises",
+   "label_at": [
+    396,
+    36
+   ],
+   "label_w": 68
+  },
+  {
+   "id": "arrives",
+   "from": "stimulus",
+   "to": "artefact",
+   "points": [
+    [
+     650,
+     120
+    ],
+    [
+     650,
+     230
+    ]
+   ],
+   "label": "arrives at",
+   "label_at": [
+    660,
+    128
+   ],
+   "label_w": 96
+  },
+  {
+   "id": "produces",
+   "from": "artefact",
+   "to": "response",
+   "points": [
+    [
+     480,
+     285
+    ],
+    [
+     380,
+     285
+    ]
+   ],
+   "label": "produces",
+   "label_at": [
+    388,
+    248
+   ],
+   "label_w": 84
+  },
+  {
+   "id": "judged",
+   "from": "response",
+   "to": "measure",
+   "points": [
+    [
+     210,
+     340
+    ],
+    [
+     210,
+     440
+    ]
+   ],
+   "label": "judged by",
+   "label_at": [
+    220,
+    374
+   ],
+   "label_w": 92
+  }
+ ],
+ "notes": []
+}

@@ -1,0 +1,238 @@
+{
+ "title": "Admission control",
+ "description": "Admission control limits in-flight reservations; refused, pending and final outcomes stay explicit.",
+ "width": 880,
+ "height": 440,
+ "theme": "light",
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "nodes": [
+  {
+   "id": "demand",
+   "label": "Checkout demand",
+   "x": 20,
+   "y": 30,
+   "w": 210,
+   "h": 96,
+   "status": "provided",
+   "detail": "Distinct operation IDs"
+  },
+  {
+   "id": "adm",
+   "label": "Admission policy",
+   "x": 335,
+   "y": 30,
+   "w": 210,
+   "h": 96,
+   "status": "provided",
+   "emphasis": true,
+   "detail": "At most 50 reservations in flight"
+  },
+  {
+   "id": "tx",
+   "label": "Transaction path",
+   "x": 650,
+   "y": 30,
+   "w": 210,
+   "h": 96,
+   "status": "provided",
+   "detail": "Reserve, then coordinate payment"
+  },
+  {
+   "id": "rej",
+   "label": "Rejected",
+   "x": 20,
+   "y": 240,
+   "w": 210,
+   "h": 96,
+   "status": "provided",
+   "detail": "Clear message: try again later"
+  },
+  {
+   "id": "pend",
+   "label": "Pending",
+   "x": 335,
+   "y": 240,
+   "w": 210,
+   "h": 96,
+   "status": "provided",
+   "detail": "Owned and visible"
+  },
+  {
+   "id": "final",
+   "label": "Final outcome",
+   "x": 650,
+   "y": 240,
+   "w": 210,
+   "h": 96,
+   "status": "provided",
+   "detail": "Confirmed or cancelled"
+  }
+ ],
+ "edges": [
+  {
+   "id": "req",
+   "from": "demand",
+   "to": "adm",
+   "points": [
+    [
+     230,
+     78
+    ],
+    [
+     335,
+     78
+    ]
+   ],
+   "status": "provided",
+   "label": "Request",
+   "label_at": [
+    244,
+    38
+   ],
+   "label_w": 78
+  },
+  {
+   "id": "admit",
+   "from": "adm",
+   "to": "tx",
+   "points": [
+    [
+     545,
+     78
+    ],
+    [
+     650,
+     78
+    ]
+   ],
+   "status": "provided",
+   "label": "Admit",
+   "label_at": [
+    562,
+    38
+   ],
+   "label_w": 70
+  },
+  {
+   "id": "refuse",
+   "from": "adm",
+   "to": "rej",
+   "points": [
+    [
+     380,
+     126
+    ],
+    [
+     380,
+     190
+    ],
+    [
+     125,
+     190
+    ],
+    [
+     125,
+     240
+    ]
+   ],
+   "status": "provided",
+   "label": "Refuse",
+   "label_at": [
+    190,
+    146
+   ],
+   "label_w": 70
+  },
+  {
+   "id": "done",
+   "from": "tx",
+   "to": "final",
+   "points": [
+    [
+     755,
+     126
+    ],
+    [
+     755,
+     240
+    ]
+   ],
+   "status": "provided",
+   "label": "Complete",
+   "label_at": [
+    765,
+    165
+   ],
+   "label_w": 90
+  },
+  {
+   "id": "unk",
+   "from": "tx",
+   "to": "pend",
+   "points": [
+    [
+     690,
+     126
+    ],
+    [
+     690,
+     190
+    ],
+    [
+     440,
+     190
+    ],
+    [
+     440,
+     240
+    ]
+   ],
+   "status": "provided",
+   "label": "Outcome unknown",
+   "label_at": [
+    490,
+    146
+   ],
+   "label_w": 140
+  },
+  {
+   "id": "rec",
+   "from": "pend",
+   "to": "final",
+   "points": [
+    [
+     440,
+     336
+    ],
+    [
+     440,
+     390
+    ],
+    [
+     755,
+     390
+    ],
+    [
+     755,
+     336
+    ]
+   ],
+   "status": "provided",
+   "label": "Reconcile",
+   "label_at": [
+    550,
+    398
+   ],
+   "label_w": 90
+  }
+ ]
+}

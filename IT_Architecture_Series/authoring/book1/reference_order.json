@@ -1,0 +1,992 @@
+[
+  {
+    "number": 1,
+    "key": "iso25010",
+    "source": [
+      "ISO/IEC",
+      "Systems and software engineering \u2014 Systems and software Quality Requirements and Evaluation (SQuaRE) \u2014 Product quality model",
+      "https://www.iso.org/standard/78176.html",
+      "ISO/IEC 25010:2023, Nov. 2023"
+    ]
+  },
+  {
+    "number": 2,
+    "key": "awswa",
+    "source": [
+      "Amazon Web Services",
+      "The pillars of the framework",
+      "https://docs.aws.amazon.com/wellarchitected/latest/framework/the-pillars-of-the-framework.html",
+      "*AWS Well-Architected Framework*"
+    ]
+  },
+  {
+    "number": 3,
+    "key": "azurewa",
+    "source": [
+      "Microsoft",
+      "Microsoft Azure Well-Architected Framework pillars",
+      "https://learn.microsoft.com/en-us/azure/well-architected/pillars",
+      ""
+    ]
+  },
+  {
+    "number": 4,
+    "key": "adr",
+    "source": [
+      "M. Nygard",
+      "Documenting architecture decisions",
+      "https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions",
+      "Nov. 15, 2011"
+    ]
+  },
+  {
+    "number": 5,
+    "key": "bass",
+    "source": [
+      "L. Bass, P. Clements, and R. Kazman",
+      "Software Architecture in Practice",
+      "https://www.informit.com/store/software-architecture-in-practice-9780136886099",
+      "4th ed. Addison-Wesley, 2021, ISBN: 978-0-13-688609-9"
+    ]
+  },
+  {
+    "number": 6,
+    "key": "slo",
+    "source": [
+      "C. Jones, J. Wilkes, and N. R. Murphy, with C. Smith",
+      "Service level objectives",
+      "https://sre.google/sre-book/service-level-objectives/",
+      "in *Site Reliability Engineering*, B. Beyer, C. Jones, J. Petoff, and N. R. Murphy, Eds. O'Reilly Media, 2016, ch. 4"
+    ]
+  },
+  {
+    "number": 7,
+    "key": "iso42010",
+    "source": [
+      "ISO/IEC/IEEE",
+      "Software, systems and enterprise \u2014 Architecture description",
+      "https://www.iso.org/standard/74393.html",
+      "ISO/IEC/IEEE 42010:2022, Nov. 2022"
+    ]
+  },
+  {
+    "number": 8,
+    "key": "c4",
+    "source": [
+      "S. Brown",
+      "The C4 model for visualising software architecture",
+      "https://c4model.com/",
+      ""
+    ]
+  },
+  {
+    "number": 9,
+    "key": "kruchten",
+    "source": [
+      "P. B. Kruchten",
+      "The 4+1 view model of architecture",
+      "https://doi.org/10.1109/52.469759",
+      "*IEEE Software*, vol. 12, no. 6, pp. 42-50, Nov. 1995, doi: 10.1109/52.469759"
+    ]
+  },
+  {
+    "number": 10,
+    "key": "arc42",
+    "source": [
+      "G. Starke and P. Hruschka",
+      "The arc42 template",
+      "https://arc42.org/overview",
+      "arc42.org"
+    ]
+  },
+  {
+    "number": 11,
+    "key": "dns",
+    "source": [
+      "P. Mockapetris",
+      "Domain names \u2013 concepts and facilities",
+      "https://datatracker.ietf.org/doc/html/rfc1034",
+      "RFC 1034, Nov. 1987, doi: 10.17487/RFC1034"
+    ]
+  },
+  {
+    "number": 12,
+    "key": "dns6",
+    "source": [
+      "S. Thomson, C. Huitema, V. Ksinant, and M. Souissi",
+      "DNS extensions to support IP version 6",
+      "https://datatracker.ietf.org/doc/html/rfc3596",
+      "RFC 3596, Oct. 2003"
+    ]
+  },
+  {
+    "number": 13,
+    "key": "tls",
+    "source": [
+      "E. Rescorla",
+      "The Transport Layer Security (TLS) protocol version 1.3",
+      "https://datatracker.ietf.org/doc/html/rfc9846",
+      "RFC 9846, Jul. 2026, doi: 10.17487/RFC9846"
+    ]
+  },
+  {
+    "number": 14,
+    "key": "http",
+    "source": [
+      "R. Fielding, M. Nottingham, and J. Reschke, Eds.",
+      "HTTP semantics",
+      "https://www.rfc-editor.org/rfc/rfc9110.html",
+      "RFC 9110, Jun. 2022"
+    ]
+  },
+  {
+    "number": 15,
+    "key": "endtoend",
+    "source": [
+      "J. H. Saltzer, D. P. Reed, and D. D. Clark",
+      "End-to-end arguments in system design",
+      "https://web.mit.edu/Saltzer/www/publications/endtoend/endtoend.pdf",
+      "*ACM Transactions on Computer Systems*, vol. 2, no. 4, pp. 277-288, Nov. 1984, doi: 10.1145/357401.357402"
+    ]
+  },
+  {
+    "number": 16,
+    "key": "vpn",
+    "source": [
+      "E. Rosen and Y. Rekhter",
+      "BGP/MPLS IP virtual private networks (VPNs)",
+      "https://datatracker.ietf.org/doc/html/rfc4364",
+      "RFC 4364, Feb. 2006"
+    ]
+  },
+  {
+    "number": 17,
+    "key": "parnas",
+    "source": [
+      "D. L. Parnas",
+      "On the criteria to be used in decomposing systems into modules",
+      "https://www.cs.lafayette.edu/~gexia/cs301/resources/parnas.html",
+      "*Communications of the ACM*, vol. 15, no. 12, pp. 1053-1058, Dec. 1972, doi: 10.1145/361598.361623"
+    ]
+  },
+  {
+    "number": 18,
+    "key": "git",
+    "source": [
+      "S. Chacon and B. Straub",
+      "Getting started \u2013 About version control",
+      "https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control",
+      "in *Pro Git*, 2nd ed. Apress, 2014"
+    ]
+  },
+  {
+    "number": 19,
+    "key": "codd",
+    "source": [
+      "E. F. Codd",
+      "A relational model of data for large shared data banks",
+      "https://www.engineering.upenn.edu/~zives/03f/cis550/codd.pdf",
+      "*Communications of the ACM*, vol. 13, no. 6, pp. 377-387, Jun. 1970, doi: 10.1145/362384.362685"
+    ]
+  },
+  {
+    "number": 20,
+    "key": "constraints",
+    "source": [
+      "PostgreSQL Global Development Group",
+      "Constraints",
+      "https://www.postgresql.org/docs/18/ddl-constraints.html",
+      "PostgreSQL 18 documentation"
+    ]
+  },
+  {
+    "number": 21,
+    "key": "tenancy",
+    "source": [
+      "Amazon Web Services",
+      "Silo, pool, and bridge models",
+      "https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/silo-pool-and-bridge-models.html",
+      "in *SaaS Lens*, *AWS Well-Architected Framework*"
+    ]
+  },
+  {
+    "number": 22,
+    "key": "saasstorage",
+    "source": [
+      "Amazon Web Services",
+      "SaaS partitioning models",
+      "https://docs.aws.amazon.com/whitepapers/latest/multi-tenant-saas-storage-strategies/saas-partitioning-models.html",
+      "in *SaaS Storage Strategies: Building a Multitenant Storage Model on AWS*, AWS whitepaper"
+    ]
+  },
+  {
+    "number": 23,
+    "key": "rls",
+    "source": [
+      "PostgreSQL Global Development Group",
+      "Row security policies",
+      "https://www.postgresql.org/docs/18/ddl-rowsecurity.html",
+      "PostgreSQL 18 documentation, sec. 5.9"
+    ]
+  },
+  {
+    "number": 24,
+    "key": "isolation",
+    "source": [
+      "PostgreSQL Global Development Group",
+      "Transaction isolation",
+      "https://www.postgresql.org/docs/18/transaction-iso.html",
+      "PostgreSQL 18 documentation"
+    ]
+  },
+  {
+    "number": 25,
+    "key": "kleppmann",
+    "source": [
+      "M. Kleppmann and C. Riccomini",
+      "Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems",
+      "https://www.oreilly.com/library/view/designing-data-intensive-applications/9781098119058/",
+      "2nd ed. Sebastopol, CA, USA: O'Reilly Media, 2026, ISBN: 978-1-098-11906-5"
+    ]
+  },
+  {
+    "number": 26,
+    "key": "berenson",
+    "source": [
+      "H. Berenson, P. Bernstein, J. Gray, J. Melton, E. O'Neil, and P. O'Neil",
+      "A critique of ANSI SQL isolation levels",
+      "https://doi.org/10.1145/223784.223785",
+      "in *Proc. ACM SIGMOD Int. Conf. Management of Data*, San Jose, CA, USA, 1995, pp. 1-10, doi: 10.1145/223784.223785"
+    ]
+  },
+  {
+    "number": 27,
+    "key": "cahill",
+    "source": [
+      "M. J. Cahill, U. R\u00f6hm, and A. D. Fekete",
+      "Serializable isolation for snapshot databases",
+      "https://doi.org/10.1145/1376616.1376690",
+      "in *Proc. ACM SIGMOD Int. Conf. Management of Data*, Vancouver, BC, Canada, Jun. 2008, pp. 729-738, doi: 10.1145/1376616.1376690"
+    ]
+  },
+  {
+    "number": 28,
+    "key": "ports",
+    "source": [
+      "D. R. K. Ports and K. Grittner",
+      "Serializable snapshot isolation in PostgreSQL",
+      "https://vldb.org/pvldb/vol5/p1850_danrkports_vldb2012.pdf",
+      "*Proceedings of the VLDB Endowment*, vol. 5, no. 12, pp. 1850-1861, Aug. 2012, doi: 10.14778/2367502.2367523"
+    ]
+  },
+  {
+    "number": 29,
+    "key": "explain",
+    "source": [
+      "PostgreSQL Global Development Group",
+      "Using EXPLAIN",
+      "https://www.postgresql.org/docs/18/using-explain.html",
+      "PostgreSQL 18 documentation"
+    ]
+  },
+  {
+    "number": 30,
+    "key": "kimball",
+    "source": [
+      "R. Kimball",
+      "Fact tables",
+      "https://www.kimballgroup.com/2008/11/fact-tables/",
+      "Nov. 5, 2008"
+    ]
+  },
+  {
+    "number": 31,
+    "key": "genai",
+    "source": [
+      "C. Autio, R. Schwartz, J. Dunietz, S. Jain, M. Stanley, E. Tabassi, P. Hall, and K. Roberts",
+      "Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile",
+      "https://doi.org/10.6028/NIST.AI.600-1",
+      "NIST AI 600-1, Jul. 2024, doi: 10.6028/NIST.AI.600-1"
+    ]
+  },
+  {
+    "number": 32,
+    "key": "owaspllm",
+    "source": [
+      "OWASP GenAI Security Project",
+      "OWASP Top 10 for LLM applications 2025",
+      "https://genai.owasp.org/llm-top-10/",
+      "OWASP Foundation, version 2025, Nov. 18, 2024"
+    ]
+  },
+  {
+    "number": 33,
+    "key": "airmf",
+    "source": [
+      "E. Tabassi",
+      "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+      "https://doi.org/10.6028/NIST.AI.100-1",
+      "NIST AI 100-1, Jan. 2023, doi: 10.6028/NIST.AI.100-1"
+    ]
+  },
+  {
+    "number": 34,
+    "key": "eip",
+    "source": [
+      "G. Hohpe and B. Woolf",
+      "Introduction to integration styles",
+      "https://www.enterpriseintegrationpatterns.com/patterns/messaging/IntegrationStylesIntro.html",
+      "in *Enterprise Integration Patterns: Designing, Building, and Deploying Messaging Solutions*. Addison-Wesley, 2003"
+    ]
+  },
+  {
+    "number": 35,
+    "key": "rest",
+    "source": [
+      "R. T. Fielding",
+      "Representational State Transfer (REST)",
+      "https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm",
+      "in *Architectural Styles and the Design of Network-based Software Architectures*, Ph.D. dissertation, University of California, Irvine, 2000, ch. 5"
+    ]
+  },
+  {
+    "number": 36,
+    "key": "idemkey",
+    "source": [
+      "J. Jena and S. Dalal",
+      "The Idempotency-Key HTTP header field",
+      "https://datatracker.ietf.org/doc/html/draft-ietf-httpapi-idempotency-key-header-07",
+      "IETF Internet-Draft draft-ietf-httpapi-idempotency-key-header-07, work in progress, Oct. 15, 2025"
+    ]
+  },
+  {
+    "number": 37,
+    "key": "openapi",
+    "source": [
+      "OpenAPI Initiative",
+      "OpenAPI Specification",
+      "https://spec.openapis.org/oas/v3.2.1.html",
+      "version 3.2.1, Sep. 10, 2026"
+    ]
+  },
+  {
+    "number": 38,
+    "key": "grpc",
+    "source": [
+      "gRPC Authors",
+      "Introduction to gRPC",
+      "https://grpc.io/docs/what-is-grpc/introduction/",
+      "grpc.io"
+    ]
+  },
+  {
+    "number": 39,
+    "key": "grpcabout",
+    "source": [
+      "gRPC Authors",
+      "About gRPC",
+      "https://grpc.io/about/",
+      "grpc.io"
+    ]
+  },
+  {
+    "number": 40,
+    "key": "asyncapi",
+    "source": [
+      "AsyncAPI Initiative",
+      "AsyncAPI specification",
+      "https://www.asyncapi.com/docs/reference/specification/v3.1.0",
+      "version 3.1.0, Jan. 31, 2026"
+    ]
+  },
+  {
+    "number": 41,
+    "key": "schemareg",
+    "source": [
+      "Confluent",
+      "Schema evolution and compatibility for Schema Registry on Confluent Platform",
+      "https://docs.confluent.io/platform/current/schema-registry/fundamentals/schema-evolution.html",
+      "Confluent Platform documentation"
+    ]
+  },
+  {
+    "number": 42,
+    "key": "oidc",
+    "source": [
+      "N. Sakimura, J. Bradley, M. Jones, B. de Medeiros, and C. Mortimore",
+      "OpenID Connect Core 1.0 incorporating errata set 2",
+      "https://openid.net/specs/openid-connect-core-1_0.html",
+      "OpenID Foundation, Dec. 15, 2023"
+    ]
+  },
+  {
+    "number": 43,
+    "key": "oauth",
+    "source": [
+      "T. Lodderstedt, J. Bradley, A. Labunets, and D. Fett",
+      "Best current practice for OAuth 2.0 security",
+      "https://www.rfc-editor.org/rfc/rfc9700",
+      "RFC 9700, Jan. 2025, doi: 10.17487/RFC9700"
+    ]
+  },
+  {
+    "number": 44,
+    "key": "apisec",
+    "source": [
+      "OWASP Foundation",
+      "OWASP Top 10 API security risks \u2013 2023",
+      "https://api-security.owasp.org/editions/2023/en/0x11-t10/",
+      "2023"
+    ]
+  },
+  {
+    "number": 45,
+    "key": "rabbit",
+    "source": [
+      "RabbitMQ",
+      "Consumer acknowledgements and publisher confirms",
+      "https://www.rabbitmq.com/docs/confirms",
+      ""
+    ]
+  },
+  {
+    "number": 46,
+    "key": "kafka",
+    "source": [
+      "Apache Software Foundation",
+      "Design",
+      "https://kafka.apache.org/43/design/design/",
+      "Apache Kafka 4.3 documentation"
+    ]
+  },
+  {
+    "number": 47,
+    "key": "richardson",
+    "source": [
+      "C. Richardson",
+      "Pattern: Transactional outbox",
+      "https://microservices.io/patterns/data/transactional-outbox.html",
+      "microservices.io"
+    ]
+  },
+  {
+    "number": 48,
+    "key": "outbox",
+    "source": [
+      "Amazon Web Services",
+      "Transactional outbox pattern",
+      "https://docs.aws.amazon.com/prescriptive-guidance/latest/cloud-design-patterns/transactional-outbox.html",
+      "AWS Prescriptive Guidance"
+    ]
+  },
+  {
+    "number": 49,
+    "key": "saga",
+    "source": [
+      "H. Garcia-Molina and K. Salem",
+      "Sagas",
+      "https://www.cs.cornell.edu/andru/cs711/2002fa/reading/sagas.pdf",
+      "in *Proc. ACM SIGMOD Int. Conf. Management of Data*, San Francisco, CA, USA, May 1987, pp. 249-259, doi: 10.1145/38713.38742"
+    ]
+  },
+  {
+    "number": 50,
+    "key": "ddd",
+    "source": [
+      "E. Evans",
+      "Domain-Driven Design reference: Definitions and pattern summaries",
+      "https://www.domainlanguage.com/wp-content/uploads/2016/05/DDD_Reference_2015-03.pdf",
+      "Domain Language, 2015"
+    ]
+  },
+  {
+    "number": 51,
+    "key": "conway",
+    "source": [
+      "M. E. Conway",
+      "How do committees invent?",
+      "https://www.melconway.com/Home/Committees_Paper.html",
+      "*Datamation*, vol. 14, no. 4, pp. 28-31, Apr. 1968"
+    ]
+  },
+  {
+    "number": 52,
+    "key": "mirroring",
+    "source": [
+      "A. MacCormack, C. Baldwin, and J. Rusnak",
+      "Exploring the duality between product and organizational architectures: A test of the \u2018mirroring\u2019 hypothesis",
+      "https://www.hbs.edu/ris/Publication%20Files/Research%20Policy%2041%20(2012)%201309%E2%80%93%201324_c5c2350e-013c-4065-a2f9-d95eb32177d5.pdf",
+      "*Research Policy*, vol. 41, no. 8, pp. 1309-1324, Oct. 2012, doi: 10.1016/j.respol.2012.04.011"
+    ]
+  },
+  {
+    "number": 53,
+    "key": "fowlercqrs",
+    "source": [
+      "M. Fowler",
+      "CQRS",
+      "https://martinfowler.com/bliki/CQRS.html",
+      "martinfowler.com, Jul. 14, 2011"
+    ]
+  },
+  {
+    "number": 54,
+    "key": "eventsourcing",
+    "source": [
+      "M. Fowler",
+      "Event sourcing",
+      "https://martinfowler.com/eaaDev/EventSourcing.html",
+      "martinfowler.com, Dec. 12, 2005"
+    ]
+  },
+  {
+    "number": 55,
+    "key": "hexagonal",
+    "source": [
+      "A. Cockburn",
+      "Hexagonal architecture",
+      "https://alistair.cockburn.us/hexagonal-architecture",
+      "2005"
+    ]
+  },
+  {
+    "number": 56,
+    "key": "little",
+    "source": [
+      "J. D. C. Little",
+      "A proof for the queuing formula: L = \u03bbW",
+      "https://doi.org/10.1287/opre.9.3.383",
+      "*Operations Research*, vol. 9, no. 3, pp. 383-387, 1961, doi: 10.1287/opre.9.3.383"
+    ]
+  },
+  {
+    "number": 57,
+    "key": "tail",
+    "source": [
+      "J. Dean and L. A. Barroso",
+      "The tail at scale",
+      "https://barroso.org/publications/TheTailAtScale.pdf",
+      "*Communications of the ACM*, vol. 56, no. 2, pp. 74-80, Feb. 2013, doi: 10.1145/2408776.2408794"
+    ]
+  },
+  {
+    "number": 58,
+    "key": "nygard",
+    "source": [
+      "M. T. Nygard",
+      "Release It! Design and Deploy Production-Ready Software",
+      "https://pragprog.com/titles/mnee2/release-it-second-edition/",
+      "2nd ed. Pragmatic Bookshelf, 2018, ISBN: 978-1-68050-239-8"
+    ]
+  },
+  {
+    "number": 59,
+    "key": "circuit",
+    "source": [
+      "Microsoft",
+      "Circuit breaker pattern",
+      "https://learn.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker",
+      "Azure Architecture Center"
+    ]
+  },
+  {
+    "number": 60,
+    "key": "terry",
+    "source": [
+      "D. B. Terry, A. J. Demers, K. Petersen, M. J. Spreitzer, M. M. Theimer, and B. B. Welch",
+      "Session guarantees for weakly consistent replicated data",
+      "https://doi.org/10.1109/PDIS.1994.331722",
+      "in *Proc. 3rd Int. Conf. Parallel and Distributed Information Systems*, Austin, TX, USA, Sep. 1994, pp. 140-149, doi: 10.1109/PDIS.1994.331722"
+    ]
+  },
+  {
+    "number": 61,
+    "key": "cap",
+    "source": [
+      "S. Gilbert and N. Lynch",
+      "Brewer's conjecture and the feasibility of consistent, available, partition-tolerant web services",
+      "https://www.cs.princeton.edu/courses/archive/spr22/cos418/papers/cap.pdf",
+      "*ACM SIGACT News*, vol. 33, no. 2, pp. 51-59, Jun. 2002, doi: 10.1145/564585.564601"
+    ]
+  },
+  {
+    "number": 62,
+    "key": "linearizability",
+    "source": [
+      "M. P. Herlihy and J. M. Wing",
+      "Linearizability: A correctness condition for concurrent objects",
+      "https://www.cs.cmu.edu/~wing/publications/HerlihyWing90.pdf",
+      "*ACM Transactions on Programming Languages and Systems*, vol. 12, no. 3, pp. 463-492, Jul. 1990, doi: 10.1145/78969.78972"
+    ]
+  },
+  {
+    "number": 63,
+    "key": "lamport",
+    "source": [
+      "L. Lamport",
+      "Time, clocks, and the ordering of events in a distributed system",
+      "https://lamport.azurewebsites.net/pubs/time-clocks.pdf",
+      "*Communications of the ACM*, vol. 21, no. 7, pp. 558-565, Jul. 1978, doi: 10.1145/359545.359563"
+    ]
+  },
+  {
+    "number": 64,
+    "key": "raft",
+    "source": [
+      "D. Ongaro and J. Ousterhout",
+      "In search of an understandable consensus algorithm",
+      "https://www.usenix.org/system/files/conference/atc14/atc14-paper-ongaro.pdf",
+      "in *Proc. 2014 USENIX Annual Technical Conference*, Philadelphia, PA, USA, Jun. 2014, pp. 305-319"
+    ]
+  },
+  {
+    "number": 65,
+    "key": "cloud",
+    "source": [
+      "P. Mell and T. Grance",
+      "The NIST definition of cloud computing",
+      "https://doi.org/10.6028/NIST.SP.800-145",
+      "NIST SP 800-145, Sep. 2011"
+    ]
+  },
+  {
+    "number": 66,
+    "key": "cloudmap",
+    "source": [
+      "Microsoft",
+      "Azure for AWS professionals",
+      "https://learn.microsoft.com/en-us/azure/architecture/aws-professional/",
+      ""
+    ]
+  },
+  {
+    "number": 67,
+    "key": "awsdr",
+    "source": [
+      "Amazon Web Services",
+      "Disaster recovery of workloads on AWS: Recovery in the cloud",
+      "https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-options-in-the-cloud.html",
+      "AWS whitepaper, Feb. 12, 2021"
+    ]
+  },
+  {
+    "number": 68,
+    "key": "azuredr",
+    "source": [
+      "Microsoft",
+      "Architecture strategies for disaster recovery",
+      "https://learn.microsoft.com/en-us/azure/well-architected/reliability/disaster-recovery",
+      "*Microsoft Azure Well-Architected Framework*"
+    ]
+  },
+  {
+    "number": 69,
+    "key": "docker",
+    "source": [
+      "Docker",
+      "What is a container?",
+      "https://docs.docker.com/get-started/docker-concepts/the-basics/what-is-a-container/",
+      ""
+    ]
+  },
+  {
+    "number": 70,
+    "key": "k8s",
+    "source": [
+      "The Kubernetes Authors",
+      "Overview",
+      "https://kubernetes.io/docs/concepts/overview/",
+      ""
+    ]
+  },
+  {
+    "number": 71,
+    "key": "probes",
+    "source": [
+      "The Kubernetes Authors",
+      "Liveness, readiness, and startup probes",
+      "https://kubernetes.io/docs/concepts/configuration/liveness-readiness-startup-probes/",
+      "Kubernetes documentation"
+    ]
+  },
+  {
+    "number": 72,
+    "key": "terraform",
+    "source": [
+      "HashiCorp",
+      "State",
+      "https://developer.hashicorp.com/terraform/language/state",
+      "Terraform documentation"
+    ]
+  },
+  {
+    "number": 73,
+    "key": "shostack",
+    "source": [
+      "A. Shostack",
+      "Threat Modeling: Designing for Security",
+      "https://www.wiley.com/en-us/Threat+Modeling%3A+Designing+for+Security-p-9781118809990",
+      "Indianapolis, IN, USA: Wiley, 2014, ISBN 978-1-118-80999-0"
+    ]
+  },
+  {
+    "number": 74,
+    "key": "threat",
+    "source": [
+      "V. Drake",
+      "Threat modeling",
+      "https://community.owasp.org/Threat_Modeling",
+      "OWASP Foundation"
+    ]
+  },
+  {
+    "number": 75,
+    "key": "stride",
+    "source": [
+      "L. Kohnfelder and P. Garg",
+      "The threats to our products",
+      "https://threatmodelingbook.com/files/microsoft/The-Threats-To-Our-Products.docx",
+      "*Microsoft Interface*, internal journal, Apr. 1, 1999"
+    ]
+  },
+  {
+    "number": 76,
+    "key": "protection",
+    "source": [
+      "J. H. Saltzer and M. D. Schroeder",
+      "The protection of information in computer systems",
+      "https://www.cs.virginia.edu/~evans/cs551/saltzer/",
+      "*Proceedings of the IEEE*, vol. 63, no. 9, pp. 1278-1308, Sep. 1975, doi: 10.1109/PROC.1975.9939"
+    ]
+  },
+  {
+    "number": 77,
+    "key": "zerotrust",
+    "source": [
+      "S. Rose, O. Borchert, S. Mitchell, and S. Connelly",
+      "Zero trust architecture",
+      "https://doi.org/10.6028/NIST.SP.800-207",
+      "NIST SP 800-207, Aug. 2020"
+    ]
+  },
+  {
+    "number": 78,
+    "key": "gdpr",
+    "source": [
+      "European Parliament and Council of the European Union",
+      "Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation)",
+      "https://eur-lex.europa.eu/eli/reg/2016/679",
+      "Official Journal of the European Union, L 119, pp. 1-88, May 4, 2016"
+    ]
+  },
+  {
+    "number": 79,
+    "key": "asvs",
+    "source": [
+      "OWASP Foundation",
+      "Application Security Verification Standard",
+      "https://owasp.org/projects/asvs",
+      "version 5.0.0, May 2025"
+    ]
+  },
+  {
+    "number": 80,
+    "key": "parallelchange",
+    "source": [
+      "D. Sato",
+      "Parallel change",
+      "https://martinfowler.com/bliki/ParallelChange.html",
+      "martinfowler.com, May 13, 2014"
+    ]
+  },
+  {
+    "number": 81,
+    "key": "ssdf",
+    "source": [
+      "M. Souppaya, K. Scarfone, and D. Dodson",
+      "Secure Software Development Framework (SSDF) version 1.1: Recommendations for mitigating the risk of software vulnerabilities",
+      "https://csrc.nist.gov/pubs/sp/800/218/final",
+      "NIST SP 800-218, Feb. 2022, doi: 10.6028/NIST.SP.800-218"
+    ]
+  },
+  {
+    "number": 82,
+    "key": "ssdf12",
+    "source": [
+      "H. Booth, M. Ogata, K. Kent, M. Souppaya, and D. Dodson",
+      "Secure Software Development Framework (SSDF) version 1.2: Recommendations for mitigating the risk of software vulnerabilities",
+      "https://csrc.nist.gov/pubs/sp/800/218/r1/ipd",
+      "NIST SP 800-218 Rev. 1, initial public draft, Dec. 17, 2025"
+    ]
+  },
+  {
+    "number": 83,
+    "key": "dora",
+    "source": [
+      "N. Harvey",
+      "DORA's software delivery performance metrics",
+      "https://dora.dev/guides/dora-metrics/",
+      "updated Jan. 5, 2026"
+    ]
+  },
+  {
+    "number": 84,
+    "key": "otel",
+    "source": [
+      "OpenTelemetry Authors",
+      "Signals",
+      "https://opentelemetry.io/docs/concepts/signals/",
+      ""
+    ]
+  },
+  {
+    "number": 85,
+    "key": "otelbaggage",
+    "source": [
+      "OpenTelemetry Authors",
+      "Baggage",
+      "https://opentelemetry.io/docs/concepts/signals/baggage/",
+      "OpenTelemetry documentation"
+    ]
+  },
+  {
+    "number": 86,
+    "key": "golden",
+    "source": [
+      "R. Ewaschuk",
+      "Monitoring distributed systems",
+      "https://sre.google/sre-book/monitoring-distributed-systems/",
+      "in *Site Reliability Engineering*, B. Beyer, C. Jones, J. Petoff, and N. R. Murphy, Eds. O'Reilly Media, 2016, ch. 6"
+    ]
+  },
+  {
+    "number": 87,
+    "key": "sloalert",
+    "source": [
+      "S. Thurgood, J. Frame, A. Lenton, C. Quinito, A. Tolchanov, and N. Trdin",
+      "Alerting on SLOs",
+      "https://sre.google/workbook/alerting-on-slos/",
+      "in *The Site Reliability Workbook*, B. Beyer, N. R. Murphy, D. K. Rensin, K. Kawahara, and S. Thorne, Eds. O'Reilly Media, 2018, ch. 5"
+    ]
+  },
+  {
+    "number": 88,
+    "key": "finopsrate",
+    "source": [
+      "FinOps Foundation",
+      "Rate optimization",
+      "https://www.finops.org/framework/capabilities/rate-optimization/",
+      "FinOps Framework capability"
+    ]
+  },
+  {
+    "number": 89,
+    "key": "savingsplans",
+    "source": [
+      "Amazon Web Services",
+      "What are Savings Plans?",
+      "https://docs.aws.amazon.com/savingsplans/latest/userguide/what-is-savings-plans.html",
+      "Savings Plans User Guide"
+    ]
+  },
+  {
+    "number": 90,
+    "key": "azurereserve",
+    "source": [
+      "Microsoft",
+      "What are Azure Reservations?",
+      "https://learn.microsoft.com/en-us/azure/cost-management-billing/reservations/save-compute-costs-reservations",
+      "Microsoft Cost Management documentation"
+    ]
+  },
+  {
+    "number": 91,
+    "key": "s3classes",
+    "source": [
+      "Amazon Web Services",
+      "Understanding and managing Amazon S3 storage classes",
+      "https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html",
+      "Amazon S3 User Guide"
+    ]
+  },
+  {
+    "number": 92,
+    "key": "blobtiers",
+    "source": [
+      "Microsoft",
+      "Access tiers for blob data",
+      "https://learn.microsoft.com/en-us/azure/storage/blobs/access-tiers-overview",
+      "Azure Storage documentation"
+    ]
+  },
+  {
+    "number": 93,
+    "key": "finops",
+    "source": [
+      "FinOps Foundation",
+      "Unit economics",
+      "https://www.finops.org/framework/capabilities/unit-economics/",
+      ""
+    ]
+  },
+  {
+    "number": 94,
+    "key": "togaf",
+    "source": [
+      "The Open Group",
+      "The TOGAF Standard",
+      "https://www.opengroup.org/togaf",
+      "10th ed., Apr. 2022"
+    ]
+  },
+  {
+    "number": 95,
+    "key": "fowlerstrangler",
+    "source": [
+      "M. Fowler",
+      "Strangler fig",
+      "https://martinfowler.com/bliki/StranglerFigApplication.html",
+      "martinfowler.com, first published as StranglerApplication, Jun. 29, 2004; revised Aug. 22, 2024"
+    ]
+  },
+  {
+    "number": 96,
+    "key": "strangler",
+    "source": [
+      "Microsoft",
+      "Strangler fig pattern",
+      "https://learn.microsoft.com/en-us/azure/architecture/patterns/strangler-fig",
+      ""
+    ]
+  },
+  {
+    "number": 97,
+    "key": "atam",
+    "source": [
+      "R. Kazman, M. Klein, and P. Clements",
+      "ATAM: Method for architecture evaluation",
+      "https://www.sei.cmu.edu/documents/629/2000_005_001_13706.pdf",
+      "Carnegie Mellon University, Software Engineering Institute, CMU/SEI-2000-TR-004, Aug. 2000"
+    ]
+  },
+  {
+    "number": 98,
+    "key": "kimballtoolkit",
+    "source": [
+      "R. Kimball and M. Ross",
+      "The Data Warehouse Toolkit: The Definitive Guide to Dimensional Modeling",
+      "https://www.oreilly.com/library/view/the-data-warehouse/9781118530801/",
+      "3rd ed. Indianapolis, IN, USA: Wiley, 2013, ISBN: 978-1-118-53080-1"
+    ]
+  },
+  {
+    "number": 99,
+    "key": "dataflow",
+    "source": [
+      "T. Akidau, R. Bradshaw, C. Chambers, S. Chernyak, R. J. Fern\u00e1ndez-Moctezuma, R. Lax, S. McVeety, D. Mills, F. Perry, E. Schmidt, and S. Whittle",
+      "The Dataflow Model: A practical approach to balancing correctness, latency, and cost in massive-scale, unbounded, out-of-order data processing",
+      "https://www.vldb.org/pvldb/vol8/p1792-Akidau.pdf",
+      "*Proceedings of the VLDB Endowment*, vol. 8, no. 12, pp. 1792-1803, Aug. 2015, doi: 10.14778/2824032.2824076"
+    ]
+  }
+]

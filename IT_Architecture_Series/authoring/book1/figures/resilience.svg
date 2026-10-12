@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 540" width="860" height="540" role="img" aria-labelledby="dc-ed1770210e-title dc-ed1770210e-desc" font-family="DejaVu Sans">
+<title id="dc-ed1770210e-title">A guarded dependency call and circuit breaker states</title>
+<desc id="dc-ed1770210e-desc">The caller sends requests through a bounded client that applies a deadline, a bulkhead pool and a circuit breaker before calling the dependency. The breaker moves from closed to open when failures cross a threshold, from open to half-open when a wait elapses, from half-open to closed when trial calls succeed, and back to open when a trial call fails.</desc>
+<defs><marker id="dc-ed1770210e-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 4 L0 8 Z" fill="#323232"/></marker></defs>
+<rect width="860" height="540" fill="#ffffff" aria-hidden="true"/>
+<rect x="20" y="180" width="820" height="340" rx="8" fill="none" stroke="#323232" stroke-dasharray="4 4"/>
+<text x="36" y="204" font-size="13" font-weight="600" fill="#323232" text-anchor="start"><tspan x="36" dy="0">Circuit breaker states</tspan></text>
+<polyline data-edge="req" points="240,108 320,108" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-ed1770210e-arrow)"/>
+<polyline data-edge="call" points="540,108 620,108" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-ed1770210e-arrow)"/>
+<polyline data-edge="trip" points="280,270 580,270" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-ed1770210e-arrow)"/>
+<polyline data-edge="wait" points="740,330 740,450 540,450" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-ed1770210e-arrow)"/>
+<polyline data-edge="fail" points="540,420 660,420 660,330" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-ed1770210e-arrow)"/>
+<polyline data-edge="reset" points="320,445 170,445 170,330" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-ed1770210e-arrow)"/>
+<g id="dc-ed1770210e-node-caller" data-node="caller" data-x="20" data-y="30" data-w="220" data-h="100">
+<rect x="20" y="30" width="220" height="100" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="38" y="77.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="caller"><tspan x="38" dy="0">Caller</tspan></text>
+<text x="38" y="103.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="caller"><tspan x="38" dy="0">Handoff worker</tspan></text>
+</g>
+<g id="dc-ed1770210e-node-client" data-node="client" data-x="320" data-y="30" data-w="220" data-h="100">
+<rect x="320" y="30" width="220" height="100" rx="6" fill="#e8f0fe" stroke="#276ef1" stroke-width="2"/>
+<text x="338" y="68.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="client"><tspan x="338" dy="0">Bounded client</tspan></text>
+<text x="338" y="94.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="client"><tspan x="338" dy="0">Deadline, bulkhead pool,</tspan><tspan x="338" dy="18">circuit breaker</tspan></text>
+</g>
+<g id="dc-ed1770210e-node-dep" data-node="dep" data-x="620" data-y="30" data-w="220" data-h="100">
+<rect x="620" y="30" width="220" height="100" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="638" y="77.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="dep"><tspan x="638" dy="0">Dependency</tspan></text>
+<text x="638" y="103.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="dep"><tspan x="638" dy="0">CRM API</tspan></text>
+</g>
+<g id="dc-ed1770210e-node-closed" data-node="closed" data-x="60" data-y="240" data-w="220" data-h="90">
+<rect x="60" y="240" width="220" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="78" y="273.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="closed"><tspan x="78" dy="0">Closed</tspan></text>
+<text x="78" y="299.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="closed"><tspan x="78" dy="0">Calls flow; failures</tspan><tspan x="78" dy="18">counted</tspan></text>
+</g>
+<g id="dc-ed1770210e-node-open" data-node="open" data-x="580" data-y="240" data-w="220" data-h="90">
+<rect x="580" y="240" width="220" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="598" y="282.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="open"><tspan x="598" dy="0">Open</tspan></text>
+<text x="598" y="308.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="open"><tspan x="598" dy="0">Calls fail fast</tspan></text>
+</g>
+<g id="dc-ed1770210e-node-half" data-node="half" data-x="320" data-y="400" data-w="220" data-h="90">
+<rect x="320" y="400" width="220" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="338" y="442.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="half"><tspan x="338" dy="0">Half-open</tspan></text>
+<text x="338" y="468.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="half"><tspan x="338" dy="0">A few trial calls</tspan></text>
+</g>
+<g data-label="req" data-x="246" data-y="70" data-w="70" data-h="30"><rect x="246" y="70" width="70" height="30" rx="4" fill="#ffffff"/>
+<text x="254" y="89" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="254" dy="0">request</tspan></text>
+</g>
+<g data-label="call" data-x="546" data-y="52" data-w="72" data-h="48"><rect x="546" y="52" width="72" height="48" rx="4" fill="#ffffff"/>
+<text x="554" y="71" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="554" dy="0">guarded</tspan><tspan x="554" dy="18">call</tspan></text>
+</g>
+<g data-label="trip" data-x="334" data-y="232" data-w="190" data-h="30"><rect x="334" y="232" width="190" height="30" rx="4" fill="#ffffff"/>
+<text x="342" y="251" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="342" dy="0">failures over threshold</tspan></text>
+</g>
+<g data-label="wait" data-x="748" data-y="360" data-w="90" data-h="48"><rect x="748" y="360" width="90" height="48" rx="4" fill="#ffffff"/>
+<text x="756" y="379" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="756" dy="0">wait</tspan><tspan x="756" dy="18">elapses</tspan></text>
+</g>
+<g data-label="fail" data-x="500" data-y="346" data-w="150" data-h="48"><rect x="500" y="346" width="150" height="48" rx="4" fill="#ffffff"/>
+<text x="508" y="365" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="508" dy="0">a trial call</tspan><tspan x="508" dy="18">fails</tspan></text>
+</g>
+<g data-label="reset" data-x="178" data-y="352" data-w="162" data-h="30"><rect x="178" y="352" width="162" height="30" rx="4" fill="#ffffff"/>
+<text x="186" y="371" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="186" dy="0">trial calls succeed</tspan></text>
+</g>
+</svg>

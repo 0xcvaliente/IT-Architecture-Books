@@ -1,0 +1,167 @@
+{
+ "title": "Cutover sequence",
+ "description": "Fence all source writes, drain and capture the final position, reconcile and decide go or no-go, then route target writes, observe and reconcile, and retire the old path after evidence. Before target writes the source remains the authority; after them, recovery must preserve the new business state.",
+ "width": 860,
+ "height": 440,
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "regions": [],
+ "nodes": [
+  {
+   "id": "fence",
+   "label": "1 Fence",
+   "x": 20,
+   "y": 20,
+   "w": 240,
+   "h": 90,
+   "detail": "All source writes"
+  },
+  {
+   "id": "drain",
+   "label": "2 Drain",
+   "x": 310,
+   "y": 20,
+   "w": 240,
+   "h": 90,
+   "detail": "Apply changes to the final position"
+  },
+  {
+   "id": "rec",
+   "label": "3 Reconcile",
+   "x": 600,
+   "y": 20,
+   "w": 240,
+   "h": 90,
+   "detail": "Then decide",
+   "emphasis": true
+  },
+  {
+   "id": "route",
+   "label": "4 Route",
+   "x": 600,
+   "y": 330,
+   "w": 240,
+   "h": 90,
+   "detail": "Target takes the writes"
+  },
+  {
+   "id": "observe",
+   "label": "5 Observe",
+   "x": 310,
+   "y": 330,
+   "w": 240,
+   "h": 90,
+   "detail": "And reconcile"
+  },
+  {
+   "id": "retire",
+   "label": "6 Retire",
+   "x": 20,
+   "y": 330,
+   "w": 240,
+   "h": 90,
+   "detail": "After evidence"
+  },
+  {
+   "id": "note",
+   "label": "Authority rule",
+   "x": 270,
+   "y": 150,
+   "w": 320,
+   "h": 130,
+   "detail": "Before target writes, the source is the authority; after them, recovery must keep new business state"
+  }
+ ],
+ "edges": [
+  {
+   "id": "t0",
+   "from": "fence",
+   "to": "drain",
+   "points": [
+    [
+     260,
+     65
+    ],
+    [
+     310,
+     65
+    ]
+   ]
+  },
+  {
+   "id": "b0",
+   "from": "route",
+   "to": "observe",
+   "points": [
+    [
+     600,
+     375
+    ],
+    [
+     550,
+     375
+    ]
+   ]
+  },
+  {
+   "id": "t1",
+   "from": "drain",
+   "to": "rec",
+   "points": [
+    [
+     550,
+     65
+    ],
+    [
+     600,
+     65
+    ]
+   ]
+  },
+  {
+   "id": "b1",
+   "from": "observe",
+   "to": "retire",
+   "points": [
+    [
+     310,
+     375
+    ],
+    [
+     260,
+     375
+    ]
+   ]
+  },
+  {
+   "id": "down",
+   "from": "rec",
+   "to": "route",
+   "points": [
+    [
+     720,
+     110
+    ],
+    [
+     720,
+     330
+    ]
+   ],
+   "label": "Go or no-go",
+   "label_at": [
+    730,
+    190
+   ],
+   "label_w": 110
+  }
+ ],
+ "notes": []
+}

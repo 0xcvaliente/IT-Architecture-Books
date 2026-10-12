@@ -1,0 +1,165 @@
+{
+ "title": "Components inside the portal API",
+ "description": "Inside one portal API process, the HTTP controller passes trusted input to the policy and domain component, which persists the intent through a unit of work and repositories. A separate worker process uses the CRM adapter through a port contract, so the receipt path never waits for the CRM.",
+ "width": 860,
+ "height": 490,
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "regions": [
+  {
+   "id": "api",
+   "label": "Portal API process: code responsibilities, not separate services",
+   "x": 20,
+   "y": 20,
+   "w": 820,
+   "h": 300
+  }
+ ],
+ "nodes": [
+  {
+   "id": "ctl",
+   "label": "HTTP controller",
+   "x": 40,
+   "y": 70,
+   "w": 200,
+   "h": 100,
+   "detail": "Contract mapping"
+  },
+  {
+   "id": "pol",
+   "label": "Policy and domain",
+   "x": 330,
+   "y": 70,
+   "w": 200,
+   "h": 100,
+   "detail": "Scope and rules"
+  },
+  {
+   "id": "uow",
+   "label": "Unit of work",
+   "x": 620,
+   "y": 70,
+   "w": 200,
+   "h": 100,
+   "detail": "Receipt and outbox",
+   "emphasis": true
+  },
+  {
+   "id": "repo",
+   "label": "Repositories",
+   "x": 620,
+   "y": 210,
+   "w": 200,
+   "h": 90,
+   "detail": "Database boundary",
+   "shape": "store"
+  },
+  {
+   "id": "worker",
+   "label": "Worker process",
+   "x": 40,
+   "y": 380,
+   "w": 230,
+   "h": 90,
+   "detail": "State coordinator"
+  },
+  {
+   "id": "adapter",
+   "label": "CRM adapter",
+   "x": 330,
+   "y": 380,
+   "w": 230,
+   "h": 90,
+   "detail": "Vendor translation"
+  }
+ ],
+ "edges": [
+  {
+   "id": "trusted",
+   "from": "ctl",
+   "to": "pol",
+   "points": [
+    [
+     240,
+     145
+    ],
+    [
+     330,
+     145
+    ]
+   ],
+   "label": "trusted input",
+   "label_at": [
+    242,
+    92
+   ],
+   "label_w": 86
+  },
+  {
+   "id": "persist",
+   "from": "pol",
+   "to": "uow",
+   "points": [
+    [
+     530,
+     145
+    ],
+    [
+     620,
+     145
+    ]
+   ],
+   "label": "persist intent",
+   "label_at": [
+    532,
+    92
+   ],
+   "label_w": 86
+  },
+  {
+   "id": "store",
+   "from": "uow",
+   "to": "repo",
+   "points": [
+    [
+     720,
+     170
+    ],
+    [
+     720,
+     210
+    ]
+   ]
+  },
+  {
+   "id": "port",
+   "from": "worker",
+   "to": "adapter",
+   "points": [
+    [
+     270,
+     425
+    ],
+    [
+     330,
+     425
+    ]
+   ],
+   "label": "port",
+   "label_at": [
+    276,
+    390
+   ],
+   "label_w": 48
+  }
+ ],
+ "notes": []
+}

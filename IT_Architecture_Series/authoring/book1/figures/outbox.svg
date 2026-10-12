@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 580" width="860" height="580" role="img" aria-labelledby="dc-4d3545abdf-title dc-4d3545abdf-desc" font-family="DejaVu Sans">
+<title id="dc-4d3545abdf-title">Transactional outbox for the CRM handoff</title>
+<desc id="dc-4d3545abdf-desc">The portal API stores the service_request row and the outbox row in one local database transaction. A worker reads pending outbox rows, delivers each handoff to the CRM with the submission ID as idempotency key, and records the result in the outbox row.</desc>
+<defs><marker id="dc-4d3545abdf-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 4 L0 8 Z" fill="#323232"/></marker></defs>
+<rect width="860" height="580" fill="#ffffff" aria-hidden="true"/>
+<rect x="30" y="170" width="800" height="180" rx="8" fill="none" stroke="#323232" stroke-dasharray="4 4"/>
+<text x="46" y="194" font-size="13" font-weight="600" fill="#323232" text-anchor="start"><tspan x="46" dy="0">One local database transaction</tspan></text>
+<polyline data-edge="store_req" points="150,120 150,220" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-4d3545abdf-arrow)"/>
+<polyline data-edge="store_out" points="280,75 650,75 650,220" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-4d3545abdf-arrow)"/>
+<polyline data-edge="read" points="590,330 590,450" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-4d3545abdf-arrow)" stroke-dasharray="6 5"/>
+<polyline data-edge="record" points="710,450 710,330" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-4d3545abdf-arrow)" stroke-dasharray="6 5"/>
+<polyline data-edge="deliver" points="490,505 370,505" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-4d3545abdf-arrow)"/>
+<g id="dc-4d3545abdf-node-api" data-node="api" data-x="20" data-y="30" data-w="260" data-h="90">
+<rect x="20" y="30" width="260" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="38" y="72.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="api"><tspan x="38" dy="0">Portal API</tspan></text>
+<text x="38" y="98.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="api"><tspan x="38" dy="0">Validates and checks access</tspan></text>
+</g>
+<g id="dc-4d3545abdf-node-req" data-node="req" data-x="50" data-y="220" data-w="320" data-h="110">
+<rect x="50" y="220" width="320" height="110" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<path d="M60 229 H360 M60 321 H360" stroke="#323232" fill="none"/>
+<text x="68" y="272.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="req"><tspan x="68" dy="0">service_request row</tspan></text>
+<text x="68" y="298.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="req"><tspan x="68" dy="0">The request is received</tspan></text>
+</g>
+<g id="dc-4d3545abdf-node-out" data-node="out" data-x="490" data-y="220" data-w="320" data-h="110">
+<rect x="490" y="220" width="320" height="110" rx="6" fill="#e8f0fe" stroke="#276ef1" stroke-width="2"/>
+<path d="M500 229 H800 M500 321 H800" stroke="#276ef1" fill="none"/>
+<text x="508" y="272.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="out"><tspan x="508" dy="0">outbox row</tspan></text>
+<text x="508" y="298.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="out"><tspan x="508" dy="0">Handoff state: pending</tspan></text>
+</g>
+<g id="dc-4d3545abdf-node-worker" data-node="worker" data-x="490" data-y="450" data-w="320" data-h="110">
+<rect x="490" y="450" width="320" height="110" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="508" y="502.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="worker"><tspan x="508" dy="0">Worker</tspan></text>
+<text x="508" y="528.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="worker"><tspan x="508" dy="0">Claims, delivers, records</tspan></text>
+</g>
+<g id="dc-4d3545abdf-node-crm" data-node="crm" data-x="50" data-y="450" data-w="320" data-h="110">
+<rect x="50" y="450" width="320" height="110" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="68" y="502.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="crm"><tspan x="68" dy="0">CRM</tspan></text>
+<text x="68" y="528.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="crm"><tspan x="68" dy="0">Idempotency key: submission ID</tspan></text>
+</g>
+<g data-label="store_req" data-x="160" data-y="128" data-w="120" data-h="48"><rect x="160" y="128" width="120" height="48" rx="4" fill="#ffffff"/>
+<text x="168" y="147" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="168" dy="0">stores</tspan><tspan x="168" dy="18">request</tspan></text>
+</g>
+<g data-label="store_out" data-x="400" data-y="40" data-w="180" data-h="30"><rect x="400" y="40" width="180" height="30" rx="4" fill="#ffffff"/>
+<text x="408" y="59" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="408" dy="0">stores handoff record</tspan></text>
+</g>
+<g data-label="read" data-x="462" data-y="392" data-w="120" data-h="30"><rect x="462" y="392" width="120" height="30" rx="4" fill="#ffffff"/>
+<text x="470" y="411" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="470" dy="0">reads pending</tspan></text>
+</g>
+<g data-label="record" data-x="718" data-y="392" data-w="126" data-h="30"><rect x="718" y="392" width="126" height="30" rx="4" fill="#ffffff"/>
+<text x="726" y="411" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="726" dy="0">records result</tspan></text>
+</g>
+<g data-label="deliver" data-x="384" data-y="451" data-w="92" data-h="48"><rect x="384" y="451" width="92" height="48" rx="4" fill="#ffffff"/>
+<text x="392" y="470" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="392" dy="0">delivers</tspan><tspan x="392" dy="18">handoff</tspan></text>
+</g>
+</svg>

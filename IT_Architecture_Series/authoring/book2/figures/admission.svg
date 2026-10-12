@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 440" width="880" height="440" role="img" aria-labelledby="dc-3a3a87ec2e-title dc-3a3a87ec2e-desc" font-family="DejaVu Sans">
+<title id="dc-3a3a87ec2e-title">Admission control</title>
+<desc id="dc-3a3a87ec2e-desc">Admission control limits in-flight reservations; refused, pending and final outcomes stay explicit.</desc>
+<defs><marker id="dc-3a3a87ec2e-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 4 L0 8 Z" fill="#323232"/></marker></defs>
+<rect width="880" height="440" fill="#ffffff" aria-hidden="true"/>
+<polyline data-edge="req" points="230,78 335,78" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-3a3a87ec2e-arrow)"/>
+<polyline data-edge="admit" points="545,78 650,78" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-3a3a87ec2e-arrow)"/>
+<polyline data-edge="refuse" points="380,126 380,190 125,190 125,240" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-3a3a87ec2e-arrow)"/>
+<polyline data-edge="done" points="755,126 755,240" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-3a3a87ec2e-arrow)"/>
+<polyline data-edge="unk" points="690,126 690,190 440,190 440,240" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-3a3a87ec2e-arrow)"/>
+<polyline data-edge="rec" points="440,336 440,390 755,390 755,336" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-3a3a87ec2e-arrow)"/>
+<g id="dc-3a3a87ec2e-node-demand" data-node="demand" data-x="20" data-y="30" data-w="210" data-h="96">
+<rect x="20" y="30" width="210" height="96" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="38" y="75.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="demand"><tspan x="38" dy="0">Checkout demand</tspan></text>
+<text x="38" y="101.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="demand"><tspan x="38" dy="0">Distinct operation IDs</tspan></text>
+</g>
+<g id="dc-3a3a87ec2e-node-adm" data-node="adm" data-x="335" data-y="30" data-w="210" data-h="96">
+<rect x="335" y="30" width="210" height="96" rx="6" fill="#e8f0fe" stroke="#276ef1" stroke-width="2"/>
+<text x="353" y="66.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="adm"><tspan x="353" dy="0">Admission policy</tspan></text>
+<text x="353" y="92.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="adm"><tspan x="353" dy="0">At most 50 reservations</tspan><tspan x="353" dy="18">in flight</tspan></text>
+</g>
+<g id="dc-3a3a87ec2e-node-tx" data-node="tx" data-x="650" data-y="30" data-w="210" data-h="96">
+<rect x="650" y="30" width="210" height="96" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="668" y="66.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="tx"><tspan x="668" dy="0">Transaction path</tspan></text>
+<text x="668" y="92.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="tx"><tspan x="668" dy="0">Reserve, then</tspan><tspan x="668" dy="18">coordinate payment</tspan></text>
+</g>
+<g id="dc-3a3a87ec2e-node-rej" data-node="rej" data-x="20" data-y="240" data-w="210" data-h="96">
+<rect x="20" y="240" width="210" height="96" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="38" y="276.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="rej"><tspan x="38" dy="0">Rejected</tspan></text>
+<text x="38" y="302.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="rej"><tspan x="38" dy="0">Clear message: try</tspan><tspan x="38" dy="18">again later</tspan></text>
+</g>
+<g id="dc-3a3a87ec2e-node-pend" data-node="pend" data-x="335" data-y="240" data-w="210" data-h="96">
+<rect x="335" y="240" width="210" height="96" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="353" y="285.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="pend"><tspan x="353" dy="0">Pending</tspan></text>
+<text x="353" y="311.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="pend"><tspan x="353" dy="0">Owned and visible</tspan></text>
+</g>
+<g id="dc-3a3a87ec2e-node-final" data-node="final" data-x="650" data-y="240" data-w="210" data-h="96">
+<rect x="650" y="240" width="210" height="96" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="668" y="285.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="final"><tspan x="668" dy="0">Final outcome</tspan></text>
+<text x="668" y="311.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="final"><tspan x="668" dy="0">Confirmed or cancelled</tspan></text>
+</g>
+<g data-label="req" data-x="244" data-y="38" data-w="78" data-h="30"><rect x="244" y="38" width="78" height="30" rx="4" fill="#ffffff"/>
+<text x="252" y="57" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="252" dy="0">Request</tspan></text>
+</g>
+<g data-label="admit" data-x="562" data-y="38" data-w="70" data-h="30"><rect x="562" y="38" width="70" height="30" rx="4" fill="#ffffff"/>
+<text x="570" y="57" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="570" dy="0">Admit</tspan></text>
+</g>
+<g data-label="refuse" data-x="190" data-y="146" data-w="70" data-h="30"><rect x="190" y="146" width="70" height="30" rx="4" fill="#ffffff"/>
+<text x="198" y="165" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="198" dy="0">Refuse</tspan></text>
+</g>
+<g data-label="done" data-x="765" data-y="165" data-w="90" data-h="30"><rect x="765" y="165" width="90" height="30" rx="4" fill="#ffffff"/>
+<text x="773" y="184" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="773" dy="0">Complete</tspan></text>
+</g>
+<g data-label="unk" data-x="490" data-y="146" data-w="140" data-h="30"><rect x="490" y="146" width="140" height="30" rx="4" fill="#ffffff"/>
+<text x="498" y="165" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="498" dy="0">Outcome unknown</tspan></text>
+</g>
+<g data-label="rec" data-x="550" data-y="398" data-w="90" data-h="30"><rect x="550" y="398" width="90" height="30" rx="4" fill="#ffffff"/>
+<text x="558" y="417" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="558" dy="0">Reconcile</tspan></text>
+</g>
+</svg>

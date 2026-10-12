@@ -1,0 +1,636 @@
+{
+ "active structure": [
+  15
+ ],
+ "ADKAR": [
+  62,
+  63,
+  66
+ ],
+ "alignment perspective": [
+  24,
+  26
+ ],
+ "annual total": [
+  58,
+  60
+ ],
+ "application portfolio": [
+  28
+ ],
+ "ArchiMate": [
+  11,
+  14,
+  15,
+  16,
+  17,
+  79
+ ],
+ "architecture": [
+  5,
+  6,
+  7,
+  11,
+  12,
+  13
+ ],
+ "architecture board": [
+  7,
+  9,
+  46
+ ],
+ "architecture description": [
+  5,
+  11
+ ],
+ "Architecture Development Method (ADM)": [
+  11,
+  12,
+  13
+ ],
+ "architecture principle": [
+  11,
+  14,
+  17,
+  43,
+  82
+ ],
+ "aspect": [
+  11,
+  14,
+  15,
+  16,
+  17
+ ],
+ "assurance": [
+  47,
+  48,
+  49,
+  60,
+  82,
+  83
+ ],
+ "authoritative source": [
+  14,
+  32,
+  35
+ ],
+ "backward pass": [
+  59
+ ],
+ "benefit chain": [
+  8,
+  9
+ ],
+ "benefit enablers": [
+  73
+ ],
+ "benefits register": [
+  43,
+  51,
+  54,
+  56,
+  82
+ ],
+ "Bimodal IT": [
+  42,
+  45,
+  46
+ ],
+ "bounded experiments": [
+  76,
+  78
+ ],
+ "bounded learning": [
+  78
+ ],
+ "business capability": [
+  16,
+  18
+ ],
+ "business units": [
+  19,
+  24,
+  25,
+  43,
+  44,
+  63
+ ],
+ "capability heat map": [
+  18,
+  20
+ ],
+ "capability map": [
+  16,
+  18,
+  19,
+  20,
+  21,
+  82
+ ],
+ "capability-based planning": [
+  16
+ ],
+ "capacity benefits": [
+  54
+ ],
+ "causal claim": [
+  8,
+  9
+ ],
+ "causal effect": [
+  79,
+  81
+ ],
+ "central allocation": [
+  45
+ ],
+ "COBIT 2019": [
+  42,
+  43,
+  46
+ ],
+ "common domain": [
+  15,
+  16
+ ],
+ "common-mode failure": [
+  38,
+  40
+ ],
+ "consumption charges": [
+  45
+ ],
+ "Conway's law": [
+  37,
+  39,
+  40,
+  41
+ ],
+ "critical path": [
+  57,
+  58,
+  59,
+  61
+ ],
+ "critical path method": [
+  58
+ ],
+ "customer identity resolution": [
+  19,
+  20,
+  51,
+  58,
+  67,
+  84
+ ],
+ "data contract": [
+  9,
+  31,
+  32,
+  34,
+  36
+ ],
+ "data governance": [
+  29,
+  32,
+  34
+ ],
+ "data owner": [
+  17,
+  32,
+  33,
+  46,
+  64,
+  65
+ ],
+ "data steward": [
+  11,
+  32,
+  33,
+  44
+ ],
+ "decision domains": [
+  42,
+  46
+ ],
+ "decision rights": [
+  9,
+  14,
+  42,
+  43,
+  46,
+  82
+ ],
+ "design factor": [
+  43,
+  46
+ ],
+ "difference-in-differences": [
+  71,
+  72,
+  73,
+  75,
+  79
+ ],
+ "digital platform": [
+  22,
+  24,
+  25,
+  26,
+  27
+ ],
+ "domain": [
+  6,
+  15,
+  16,
+  24,
+  42,
+  43
+ ],
+ "domain architects": [
+  6,
+  7
+ ],
+ "DORA": [
+  74
+ ],
+ "engage stakeholders": [
+  43
+ ],
+ "enterprise architects": [
+  6
+ ],
+ "enterprise architecture": [
+  5,
+  6,
+  9,
+  11,
+  16,
+  73
+ ],
+ "enterprise architecture function": [
+  5,
+  6
+ ],
+ "exception record": [
+  44
+ ],
+ "expected value of the information": [
+  55
+ ],
+ "exploration and exploitation": [
+  76,
+  78,
+  79
+ ],
+ "federated governance": [
+  34
+ ],
+ "flow efficiency": [
+  19,
+  21
+ ],
+ "forward pass": [
+  59
+ ],
+ "foundation for execution": [
+  22
+ ],
+ "functional integration": [
+  24,
+  27
+ ],
+ "functional unit": [
+  76,
+  77,
+  78
+ ],
+ "fundamental content": [
+  12
+ ],
+ "governance objectives": [
+  43,
+  46
+ ],
+ "grain": [
+  34,
+  35,
+  36
+ ],
+ "group customer identifier": [
+  33,
+  34,
+  42,
+  65
+ ],
+ "implementation and migration": [
+  15,
+  16
+ ],
+ "input rights": [
+  43,
+  46
+ ],
+ "internal rate of return (IRR)": [
+  51,
+  52
+ ],
+ "ISO/IEC 38500": [
+  42,
+  43,
+  44,
+  46
+ ],
+ "IT governance": [
+  24,
+  42,
+  43,
+  46
+ ],
+ "Kotter": [
+  62,
+  63,
+  66
+ ],
+ "Lewin": [
+  62,
+  63,
+  66
+ ],
+ "management objectives": [
+  43,
+  44,
+  46
+ ],
+ "master data": [
+  32,
+  33,
+  34,
+  35
+ ],
+ "master data management style": [
+  32,
+  33
+ ],
+ "match status": [
+  33,
+  35
+ ],
+ "measurement contract": [
+  71,
+  75
+ ],
+ "mechanism": [
+  7,
+  8,
+  45,
+  46,
+  79,
+  82
+ ],
+ "mirroring hypothesis": [
+  37,
+  39,
+  41
+ ],
+ "modelling language": [
+  11,
+  14,
+  17
+ ],
+ "multiplicity": [
+  15,
+  16
+ ],
+ "net present value (NPV)": [
+  51
+ ],
+ "operating model": [
+  22,
+  23,
+  26,
+  33,
+  79,
+  82
+ ],
+ "operational backbone": [
+  22,
+  24,
+  26,
+  27
+ ],
+ "organisational anchoring": [
+  74
+ ],
+ "parallel trends": [
+  73
+ ],
+ "passive structure": [
+  15
+ ],
+ "payback": [
+  51,
+  52,
+  53,
+  56
+ ],
+ "plateau": [
+  15,
+  16,
+  57
+ ],
+ "platform team": [
+  25,
+  37,
+  39,
+  45,
+  63,
+  64
+ ],
+ "policy administrator": [
+  48
+ ],
+ "policy enforcement point": [
+  48
+ ],
+ "policy engine": [
+  48
+ ],
+ "priority candidate": [
+  20
+ ],
+ "process integration": [
+  22,
+  23,
+  26,
+  79
+ ],
+ "process standardisation": [
+  22,
+  23,
+  26
+ ],
+ "project decision": [
+  37,
+  40
+ ],
+ "real option": [
+  51,
+  54,
+  56
+ ],
+ "reference design": [
+  6,
+  37,
+  40
+ ],
+ "regression to the mean": [
+  71,
+  72,
+  73,
+  75
+ ],
+ "requirements management": [
+  13,
+  17
+ ],
+ "review trigger": [
+  7,
+  14,
+  42,
+  44
+ ],
+ "risk": [
+  43,
+  44,
+  47,
+  48,
+  54,
+  78
+ ],
+ "risk benefits": [
+  51,
+  54,
+  56
+ ],
+ "risk statement": [
+  47,
+  48,
+  49,
+  50
+ ],
+ "roadmap": [
+  51,
+  57,
+  60,
+  61,
+  82,
+  83
+ ],
+ "series guides": [
+  12
+ ],
+ "Seven Rs": [
+  30,
+  31
+ ],
+ "shared platform teams": [
+  25
+ ],
+ "Simpson's paradox": [
+  71,
+  75
+ ],
+ "slack": [
+  57,
+  58,
+  59,
+  60,
+  61
+ ],
+ "Software Carbon Intensity": [
+  77
+ ],
+ "Software Carbon Intensity (SCI)": [
+  77
+ ],
+ "solution architect": [
+  7
+ ],
+ "standardised rate": [
+  71,
+  72
+ ],
+ "strategic alignment model": [
+  22,
+  24,
+  26
+ ],
+ "strategic fit": [
+  24,
+  27
+ ],
+ "strict reuse": [
+  78
+ ],
+ "target architecture": [
+  44,
+  48,
+  57
+ ],
+ "technical custodian": [
+  32,
+  33
+ ],
+ "technical debt": [
+  39
+ ],
+ "TIME model": [
+  28,
+  31
+ ],
+ "TOGAF Standard": [
+  12
+ ],
+ "total cost of ownership (TCO)": [
+  51,
+  54,
+  67
+ ],
+ "transaction cost economics": [
+  67
+ ],
+ "transition architecture": [
+  13,
+  57
+ ],
+ "value stream": [
+  16,
+  18,
+  19,
+  20,
+  21,
+  82
+ ],
+ "vendor lock-in": [
+  67
+ ],
+ "workforce identity and access": [
+  28,
+  37,
+  51,
+  57,
+  58,
+  60
+ ],
+ "Zachman Framework": [
+  11,
+  17
+ ],
+ "zero trust": [
+  47,
+  48,
+  50
+ ]
+}

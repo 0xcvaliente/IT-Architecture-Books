@@ -1,0 +1,51 @@
+IT ARCHITECTURE SERIES — REVIEW RECORD
+Revised edition, October 2026
+
+WHAT WAS DONE
+The three books were rewritten as self-contained textbooks: every lab listing, dataset and template is
+printed in the book, and the content describes fictional teaching organisations only. The revision ran in
+four rounds. After each round, separate reviewers who had not edited the books read every manuscript file,
+ran the listings, recomputed worked numbers, checked a sample of references online and inspected the PDFs.
+Their findings drove the next round.
+
+SCORES (1–10, independent automated review)
+                        Book 1            Book 2            Book 3
+                        before  after     before  after     before  after
+Technical accuracy      8       9         8       8         7       8.5
+Teaching design         6       8         6       7.5       6       8.5
+Writing                 5       8         5       8.5       5       8
+References              7       9         6       8         4       8
+Internal consistency    6       9         7       7.5       7       9
+Labs and code           8       9         6       7.5       8       9
+Layout and production   –       7         –       7         –       7
+
+"Before" is the review of the 4 October 2026 edition (layout was not scored then). "After" is the last
+full review, made after round 3. Round 4 then fixed the issues those reviews raised, including the Book 2
+write-fence privilege model and CDC lag model, the Book 3 option appraisal (answer 5.5), several
+cross-references in Book 1, and figure placement; round 4 was not re-scored.
+
+CHECKS IN THIS EDITION
+  Every Python listing in the three books runs with python3 -I (Python 3.13); every printed output that
+    follows a listing matches the program's output exactly. The practice/ copies equal the printed listings.
+  Book 2's SQL was run on PostgreSQL 18.6 scratch instances, including concurrent sessions and a real
+    logical-replication publication and subscription for the Chapter 13 write fence.
+  Exercises and answers match one to one (Book 1: 137, Book 2: 86, Book 3: 97).
+  Every figure and citation key resolves; no reference is defined without being cited.
+  New and changed sources were checked online before they were added.
+  Contents and index page numbers are taken from the exported PDF and verified on each build.
+  Figure text prints at 6.8 pt or larger.
+
+LIMITS
+  No human expert, academic or learner has reviewed this edition. The reviews above were automated and
+    should not be read as an endorsement.
+  Some details rest on secondary sources: the ArchiMate 4 concept counts (the author's published summary),
+    COBIT 2019 details (ISACA articles), and the attribution of the TIME model and master-data styles to
+    Gartner, which is stated without a citation.
+  Product documentation (cloud services, PostgreSQL, Kafka, OpenTelemetry) changes; the books cite the
+    versions current in October 2026.
+  The PDFs are the checked layout. Word pagination differs if the fonts (Nimbus Sans, DejaVu Sans Mono) are
+    not installed.
+  Some chapters still end with a short page, because every chapter starts on a new page, and a few long
+    listings that are kept on one page leave a gap before them.
+
+The previous edition and its records are kept unchanged in archive/2026-10-04-edition-records/.

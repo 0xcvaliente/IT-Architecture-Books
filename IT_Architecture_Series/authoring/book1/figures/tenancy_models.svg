@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 600" width="860" height="600" role="img" aria-labelledby="dc-051d750f21-title dc-051d750f21-desc" font-family="DejaVu Sans">
+<title id="dc-051d750f21-title">Silo, bridge and pool tenancy models</title>
+<desc id="dc-051d750f21-desc">Silo gives each tenant its own application and database. Bridge shares the application and one database but keeps separate tables per tenant. Pool shares the application and the tables, with a tenant identifier on every row and row-level security.</desc>
+<defs><marker id="dc-051d750f21-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 4 L0 8 Z" fill="#323232"/></marker></defs>
+<rect width="860" height="600" fill="#ffffff" aria-hidden="true"/>
+<rect x="20" y="10" width="820" height="150" rx="8" fill="none" stroke="#323232" stroke-dasharray="4 4"/>
+<text x="36" y="34" font-size="13" font-weight="600" fill="#323232" text-anchor="start"><tspan x="36" dy="0">Silo: separate resources per tenant</tspan></text>
+<rect x="20" y="175" width="820" height="230" rx="8" fill="none" stroke="#323232" stroke-dasharray="4 4"/>
+<text x="36" y="199" font-size="13" font-weight="600" fill="#323232" text-anchor="start"><tspan x="36" dy="0">Bridge: shared application, tables per tenant</tspan></text>
+<rect x="440" y="210" width="380" height="180" rx="8" fill="none" stroke="#323232" stroke-dasharray="4 4"/>
+<text x="456" y="234" font-size="13" font-weight="600" fill="#323232" text-anchor="start"><tspan x="456" dy="0">One database</tspan></text>
+<rect x="20" y="420" width="820" height="170" rx="8" fill="none" stroke="#323232" stroke-dasharray="4 4"/>
+<text x="36" y="444" font-size="13" font-weight="600" fill="#323232" text-anchor="start"><tspan x="36" dy="0">Pool: shared application and shared tables</tspan></text>
+<polyline data-edge="e_a" points="210,95 240,95" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-051d750f21-arrow)"/>
+<polyline data-edge="e_b" points="620,95 650,95" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-051d750f21-arrow)"/>
+<polyline data-edge="e_ta" points="340,275 470,275" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-051d750f21-arrow)"/>
+<polyline data-edge="e_tb" points="340,325 400,325 400,350 470,350" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-051d750f21-arrow)"/>
+<polyline data-edge="e_pool" points="340,520 440,520" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-051d750f21-arrow)"/>
+<g id="dc-051d750f21-node-app_a" data-node="app_a" data-x="40" data-y="55" data-w="170" data-h="80">
+<rect x="40" y="55" width="170" height="80" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="58" y="92.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="app_a"><tspan x="58" dy="0">App A</tspan></text>
+<text x="58" y="118.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="app_a"><tspan x="58" dy="0">Tenant A only</tspan></text>
+</g>
+<g id="dc-051d750f21-node-db_a" data-node="db_a" data-x="240" data-y="55" data-w="170" data-h="80">
+<rect x="240" y="55" width="170" height="80" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<path d="M250 64 H400 M250 126 H400" stroke="#323232" fill="none"/>
+<text x="258" y="101.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="db_a"><tspan x="258" dy="0">Database A</tspan></text>
+</g>
+<g id="dc-051d750f21-node-app_b" data-node="app_b" data-x="450" data-y="55" data-w="170" data-h="80">
+<rect x="450" y="55" width="170" height="80" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="468" y="92.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="app_b"><tspan x="468" dy="0">App B</tspan></text>
+<text x="468" y="118.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="app_b"><tspan x="468" dy="0">Tenant B only</tspan></text>
+</g>
+<g id="dc-051d750f21-node-db_b" data-node="db_b" data-x="650" data-y="55" data-w="170" data-h="80">
+<rect x="650" y="55" width="170" height="80" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<path d="M660 64 H810 M660 126 H810" stroke="#323232" fill="none"/>
+<text x="668" y="101.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="db_b"><tspan x="668" dy="0">Database B</tspan></text>
+</g>
+<g id="dc-051d750f21-node-bridge_app" data-node="bridge_app" data-x="40" data-y="250" data-w="300" data-h="100">
+<rect x="40" y="250" width="300" height="100" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="58" y="297.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="bridge_app"><tspan x="58" dy="0">Shared application</tspan></text>
+<text x="58" y="323.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="bridge_app"><tspan x="58" dy="0">All tenants</tspan></text>
+</g>
+<g id="dc-051d750f21-node-tables_a" data-node="tables_a" data-x="470" data-y="245" data-w="320" data-h="60">
+<rect x="470" y="245" width="320" height="60" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<path d="M480 254 H780 M480 296 H780" stroke="#323232" fill="none"/>
+<text x="488" y="281.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="tables_a"><tspan x="488" dy="0">A tables</tspan></text>
+</g>
+<g id="dc-051d750f21-node-tables_b" data-node="tables_b" data-x="470" data-y="320" data-w="320" data-h="60">
+<rect x="470" y="320" width="320" height="60" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<path d="M480 329 H780 M480 371 H780" stroke="#323232" fill="none"/>
+<text x="488" y="356.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="tables_b"><tspan x="488" dy="0">B tables</tspan></text>
+</g>
+<g id="dc-051d750f21-node-pool_app" data-node="pool_app" data-x="40" data-y="470" data-w="300" data-h="100">
+<rect x="40" y="470" width="300" height="100" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="58" y="517.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="pool_app"><tspan x="58" dy="0">Shared application</tspan></text>
+<text x="58" y="543.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="pool_app"><tspan x="58" dy="0">All tenants</tspan></text>
+</g>
+<g id="dc-051d750f21-node-pool_tables" data-node="pool_tables" data-x="440" data-y="465" data-w="380" data-h="110">
+<rect x="440" y="465" width="380" height="110" rx="6" fill="#e8f0fe" stroke="#276ef1" stroke-width="2"/>
+<path d="M450 474 H810 M450 566 H810" stroke="#276ef1" fill="none"/>
+<text x="458" y="508.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="pool_tables"><tspan x="458" dy="0">Shared tables</tspan></text>
+<text x="458" y="534.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="pool_tables"><tspan x="458" dy="0">tenant_id on every row, filtered by row-level</tspan><tspan x="458" dy="18">security</tspan></text>
+</g>
+</svg>

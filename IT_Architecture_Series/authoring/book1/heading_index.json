@@ -1,0 +1,162 @@
+[
+  {
+    "raw": "How to use this course",
+    "title": "How to use this course",
+    "chapter": null
+  },
+  {
+    "raw": "1 Thinking like an architect",
+    "title": "Thinking like an architect",
+    "chapter": 1
+  },
+  {
+    "raw": "2 Business requirements and quality scenarios",
+    "title": "Business requirements and quality scenarios",
+    "chapter": 2
+  },
+  {
+    "raw": "3 Architecture models and technical communication",
+    "title": "Architecture models and technical communication",
+    "chapter": 3
+  },
+  {
+    "raw": "4 Operating systems, networking and the request journey",
+    "title": "Operating systems, networking and the request journey",
+    "chapter": 4
+  },
+  {
+    "raw": "5 Software foundations for architecture work",
+    "title": "Software foundations for architecture work",
+    "chapter": 5
+  },
+  {
+    "raw": "6 Databases and transactional data design",
+    "title": "Databases and transactional data design",
+    "chapter": 6
+  },
+  {
+    "raw": "7 Data architecture, analytics and AI",
+    "title": "Data architecture, analytics and AI",
+    "chapter": 7
+  },
+  {
+    "raw": "8 APIs and integration contracts",
+    "title": "APIs and integration contracts",
+    "chapter": 8
+  },
+  {
+    "raw": "9 Identity, authentication and authorisation",
+    "title": "Identity, authentication and authorisation",
+    "chapter": 9
+  },
+  {
+    "raw": "10 Messaging, events and reliable handoffs",
+    "title": "Messaging, events and reliable handoffs",
+    "chapter": 10
+  },
+  {
+    "raw": "11 Software architecture patterns and boundaries",
+    "title": "Software architecture patterns and boundaries",
+    "chapter": 11
+  },
+  {
+    "raw": "12 Distributed systems, performance and resilience",
+    "title": "Distributed systems, performance and resilience",
+    "chapter": 12
+  },
+  {
+    "raw": "13 Cloud architecture with Azure and AWS examples",
+    "title": "Cloud architecture with Azure and AWS examples",
+    "chapter": 13
+  },
+  {
+    "raw": "14 Containers, orchestration and infrastructure as code",
+    "title": "Containers, orchestration and infrastructure as code",
+    "chapter": 14
+  },
+  {
+    "raw": "15 Security, privacy and threat modelling",
+    "title": "Security, privacy and threat modelling",
+    "chapter": 15
+  },
+  {
+    "raw": "16 DevOps, testing and controlled delivery",
+    "title": "DevOps, testing and controlled delivery",
+    "chapter": 16
+  },
+  {
+    "raw": "17 Observability, service objectives and operations",
+    "title": "Observability, service objectives and operations",
+    "chapter": 17
+  },
+  {
+    "raw": "18 Economics, procurement and build-or-buy decisions",
+    "title": "Economics, procurement and build-or-buy decisions",
+    "chapter": 18
+  },
+  {
+    "raw": "19 Enterprise architecture, governance and migration",
+    "title": "Enterprise architecture, governance and migration",
+    "chapter": 19
+  },
+  {
+    "raw": "20 Architecture evaluation and evidence",
+    "title": "Architecture evaluation and evidence",
+    "chapter": 20
+  },
+  {
+    "raw": "21 Worked architecture: customer portal and enterprise integration",
+    "title": "Worked architecture: customer portal and enterprise integration",
+    "chapter": 21
+  },
+  {
+    "raw": "22 Worked architecture: commerce, inventory and payments",
+    "title": "Worked architecture: commerce, inventory and payments",
+    "chapter": 22
+  },
+  {
+    "raw": "23 Worked architecture: a governed analytical platform",
+    "title": "Worked architecture: a governed analytical platform",
+    "chapter": 23
+  },
+  {
+    "raw": "24 Worked architecture: cloud migration and modernisation",
+    "title": "Worked architecture: cloud migration and modernisation",
+    "chapter": 24
+  },
+  {
+    "raw": "25 Architect practice and the final capstone",
+    "title": "Architect practice and the final capstone",
+    "chapter": 25
+  },
+  {
+    "raw": "Practical labs",
+    "title": "Practical labs",
+    "chapter": null
+  },
+  {
+    "raw": "Exercise answers and assessment guidance",
+    "title": "Exercise answers and assessment guidance",
+    "chapter": null
+  },
+  {
+    "raw": "Glossary and final review",
+    "title": "Glossary and final review",
+    "chapter": null
+  },
+  {
+    "raw": "Research study guide",
+    "title": "Research study guide",
+    "chapter": null
+  },
+  {
+    "raw": "References",
+    "title": "References",
+    "chapter": null
+  },
+  {
+    "raw": "Index",
+    "title": "Index",
+    "chapter": null
+  }
+]

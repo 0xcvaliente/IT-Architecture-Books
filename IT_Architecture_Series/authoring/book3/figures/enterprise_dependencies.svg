@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" width="860" height="400" role="img" aria-labelledby="dc-b11560b64b-title dc-b11560b64b-desc" font-family="DejaVu Sans">
+<title id="dc-b11560b64b-title">Technical and approval dependencies</title>
+<desc id="dc-b11560b64b-desc">Left: three applications write directly to a shared database (solid arrows, technical dependencies). Right: three service teams need approval from a central change owner (dashed arrows, approval dependencies).</desc>
+<defs><marker id="dc-b11560b64b-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 4 L0 8 Z" fill="#323232"/></marker></defs>
+<rect width="860" height="400" fill="#ffffff" aria-hidden="true"/>
+<rect x="15" y="15" width="410" height="370" rx="8" fill="none" stroke="#323232" stroke-dasharray="4 4"/>
+<text x="31" y="39" font-size="13" font-weight="600" fill="#323232" text-anchor="start"><tspan x="31" dy="0">TECHNICAL: SOLID ARROWS</tspan></text>
+<rect x="432" y="15" width="418" height="370" rx="8" fill="none" stroke="#323232" stroke-dasharray="4 4"/>
+<text x="448" y="39" font-size="13" font-weight="600" fill="#323232" text-anchor="start"><tspan x="448" dy="0">APPROVAL: DASHED ARROWS</tspan></text>
+<polyline data-edge="t1" points="215,90 235,90 235,180 255,180" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-b11560b64b-arrow)"/>
+<polyline data-edge="t2" points="215,200 255,200" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-b11560b64b-arrow)"/>
+<polyline data-edge="t3" points="215,310 235,310 235,220 255,220" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-b11560b64b-arrow)"/>
+<polyline data-edge="q1" points="655,90 637,90 637,180 620,180" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-b11560b64b-arrow)" stroke-dasharray="6 5"/>
+<polyline data-edge="q2" points="655,200 620,200" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-b11560b64b-arrow)" stroke-dasharray="6 5"/>
+<polyline data-edge="q3" points="655,310 637,310 637,220 620,220" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-b11560b64b-arrow)" stroke-dasharray="6 5"/>
+<g id="dc-b11560b64b-node-a" data-node="a" data-x="30" data-y="60" data-w="185" data-h="60">
+<rect x="30" y="60" width="185" height="60" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="48" y="96.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="a"><tspan x="48" dy="0">Application A</tspan></text>
+</g>
+<g id="dc-b11560b64b-node-b" data-node="b" data-x="30" data-y="170" data-w="185" data-h="60">
+<rect x="30" y="170" width="185" height="60" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="48" y="206.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="b"><tspan x="48" dy="0">Application B</tspan></text>
+</g>
+<g id="dc-b11560b64b-node-c" data-node="c" data-x="30" data-y="280" data-w="185" data-h="60">
+<rect x="30" y="280" width="185" height="60" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="48" y="316.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="c"><tspan x="48" dy="0">Application C</tspan></text>
+</g>
+<g id="dc-b11560b64b-node-db" data-node="db" data-x="255" data-y="150" data-w="160" data-h="100">
+<rect x="255" y="150" width="160" height="100" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<path d="M265 159 H405 M265 241 H405" stroke="#323232" fill="none"/>
+<text x="273" y="195.0" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="db"><tspan x="273" dy="0">Shared</tspan><tspan x="273" dy="23">database</tspan></text>
+</g>
+<g id="dc-b11560b64b-node-own" data-node="own" data-x="445" data-y="150" data-w="175" data-h="100">
+<rect x="445" y="150" width="175" height="100" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="463" y="195.0" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="own"><tspan x="463" dy="0">Central</tspan><tspan x="463" dy="23">change owner</tspan></text>
+</g>
+<g id="dc-b11560b64b-node-ta" data-node="ta" data-x="655" data-y="60" data-w="185" data-h="60">
+<rect x="655" y="60" width="185" height="60" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="673" y="96.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="ta"><tspan x="673" dy="0">Service team A</tspan></text>
+</g>
+<g id="dc-b11560b64b-node-tb" data-node="tb" data-x="655" data-y="170" data-w="185" data-h="60">
+<rect x="655" y="170" width="185" height="60" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="673" y="206.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="tb"><tspan x="673" dy="0">Service team B</tspan></text>
+</g>
+<g id="dc-b11560b64b-node-tc" data-node="tc" data-x="655" data-y="280" data-w="185" data-h="60">
+<rect x="655" y="280" width="185" height="60" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="673" y="316.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="tc"><tspan x="673" dy="0">Service team C</tspan></text>
+</g>
+</svg>

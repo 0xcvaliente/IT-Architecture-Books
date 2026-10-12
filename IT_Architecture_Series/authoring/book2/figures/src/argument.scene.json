@@ -1,0 +1,213 @@
+{
+ "title": "Architecture argument",
+ "description": "A requirement leads through a claim, mechanism, evidence and finding to a decision, which can send the team back to the requirement.",
+ "width": 880,
+ "height": 370,
+ "theme": "light",
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "nodes": [
+  {
+   "id": "req",
+   "label": "Requirement",
+   "x": 20,
+   "y": 30,
+   "w": 210,
+   "h": 96,
+   "status": "provided",
+   "detail": "Observable promise"
+  },
+  {
+   "id": "claim",
+   "label": "Claim",
+   "x": 335,
+   "y": 30,
+   "w": 210,
+   "h": 96,
+   "status": "provided",
+   "detail": "Expected outcome"
+  },
+  {
+   "id": "mech",
+   "label": "Mechanism",
+   "x": 650,
+   "y": 30,
+   "w": 210,
+   "h": 96,
+   "status": "provided",
+   "detail": "How the design keeps the promise"
+  },
+  {
+   "id": "dec",
+   "label": "Decision",
+   "x": 20,
+   "y": 240,
+   "w": 210,
+   "h": 96,
+   "status": "provided",
+   "detail": "Scope and conditions"
+  },
+  {
+   "id": "find",
+   "label": "Finding",
+   "x": 335,
+   "y": 240,
+   "w": 210,
+   "h": 96,
+   "status": "provided",
+   "detail": "Supported or still open"
+  },
+  {
+   "id": "ev",
+   "label": "Evidence",
+   "x": 650,
+   "y": 240,
+   "w": 210,
+   "h": 96,
+   "status": "provided",
+   "detail": "Test, calculation or contract"
+  }
+ ],
+ "edges": [
+  {
+   "id": "i",
+   "from": "req",
+   "to": "claim",
+   "points": [
+    [
+     230,
+     78
+    ],
+    [
+     335,
+     78
+    ]
+   ],
+   "status": "provided",
+   "label": "Interpret",
+   "label_at": [
+    242,
+    38
+   ],
+   "label_w": 86
+  },
+  {
+   "id": "x",
+   "from": "claim",
+   "to": "mech",
+   "points": [
+    [
+     545,
+     78
+    ],
+    [
+     650,
+     78
+    ]
+   ],
+   "status": "provided",
+   "label": "Explain",
+   "label_at": [
+    560,
+    38
+   ],
+   "label_w": 76
+  },
+  {
+   "id": "c",
+   "from": "mech",
+   "to": "ev",
+   "points": [
+    [
+     755,
+     126
+    ],
+    [
+     755,
+     240
+    ]
+   ],
+   "status": "provided",
+   "label": "Challenge",
+   "label_at": [
+    765,
+    165
+   ],
+   "label_w": 92
+  },
+  {
+   "id": "a",
+   "from": "ev",
+   "to": "find",
+   "points": [
+    [
+     650,
+     288
+    ],
+    [
+     545,
+     288
+    ]
+   ],
+   "status": "provided",
+   "label": "Assess",
+   "label_at": [
+    560,
+    248
+   ],
+   "label_w": 70
+  },
+  {
+   "id": "d",
+   "from": "find",
+   "to": "dec",
+   "points": [
+    [
+     335,
+     288
+    ],
+    [
+     230,
+     288
+    ]
+   ],
+   "status": "provided",
+   "label": "Decide",
+   "label_at": [
+    245,
+    248
+   ],
+   "label_w": 70
+  },
+  {
+   "id": "r",
+   "from": "dec",
+   "to": "req",
+   "points": [
+    [
+     125,
+     240
+    ],
+    [
+     125,
+     126
+    ]
+   ],
+   "status": "provided",
+   "label": "Revisit",
+   "label_at": [
+    135,
+    165
+   ],
+   "label_w": 76
+  }
+ ]
+}

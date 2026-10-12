@@ -1,0 +1,193 @@
+{
+ "title": "Consensus boundary and external payment",
+ "description": "Inside the consensus boundary, the order API appends a command to the leader's durable log, which is replicated to voters B and C. A worker recovers committed intents from the log and sends a payment attempt with a key to the payment provider, which lies outside the consensus boundary; a timeout can leave the payment outcome unknown.",
+ "width": 860,
+ "height": 570,
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "regions": [
+  {
+   "id": "boundary",
+   "label": "Consensus boundary: replicated order log",
+   "x": 20,
+   "y": 20,
+   "w": 820,
+   "h": 360
+  }
+ ],
+ "nodes": [
+  {
+   "id": "api",
+   "label": "Order API",
+   "x": 40,
+   "y": 80,
+   "w": 210,
+   "h": 90,
+   "detail": "Command identity"
+  },
+  {
+   "id": "leader",
+   "label": "Leader",
+   "x": 330,
+   "y": 80,
+   "w": 210,
+   "h": 90,
+   "detail": "Durable log",
+   "emphasis": true
+  },
+  {
+   "id": "vb",
+   "label": "Voter B",
+   "x": 630,
+   "y": 60,
+   "w": 190,
+   "h": 70
+  },
+  {
+   "id": "vc",
+   "label": "Voter C",
+   "x": 630,
+   "y": 170,
+   "w": 190,
+   "h": 70
+  },
+  {
+   "id": "worker",
+   "label": "Worker",
+   "x": 330,
+   "y": 260,
+   "w": 210,
+   "h": 90,
+   "detail": "Recovers committed intents"
+  },
+  {
+   "id": "provider",
+   "label": "Payment provider",
+   "x": 250,
+   "y": 450,
+   "w": 370,
+   "h": 100,
+   "detail": "Outside the consensus boundary; a timeout leaves the outcome unknown"
+  }
+ ],
+ "edges": [
+  {
+   "id": "append",
+   "from": "api",
+   "to": "leader",
+   "points": [
+    [
+     250,
+     125
+    ],
+    [
+     330,
+     125
+    ]
+   ],
+   "label": "append",
+   "label_at": [
+    254,
+    88
+   ],
+   "label_w": 72
+  },
+  {
+   "id": "rep_b",
+   "from": "leader",
+   "to": "vb",
+   "points": [
+    [
+     540,
+     105
+    ],
+    [
+     585,
+     105
+    ],
+    [
+     585,
+     95
+    ],
+    [
+     630,
+     95
+    ]
+   ]
+  },
+  {
+   "id": "rep_c",
+   "from": "leader",
+   "to": "vc",
+   "points": [
+    [
+     540,
+     150
+    ],
+    [
+     585,
+     150
+    ],
+    [
+     585,
+     205
+    ],
+    [
+     630,
+     205
+    ]
+   ]
+  },
+  {
+   "id": "intent",
+   "from": "leader",
+   "to": "worker",
+   "points": [
+    [
+     435,
+     170
+    ],
+    [
+     435,
+     260
+    ]
+   ],
+   "label": "committed intent",
+   "label_at": [
+    282,
+    198
+   ],
+   "label_w": 146
+  },
+  {
+   "id": "attempt",
+   "from": "worker",
+   "to": "provider",
+   "points": [
+    [
+     435,
+     350
+    ],
+    [
+     435,
+     450
+    ]
+   ],
+   "label": "attempt with a payment key",
+   "label_at": [
+    445,
+    384
+   ],
+   "label_w": 226
+  }
+ ],
+ "notes": []
+}

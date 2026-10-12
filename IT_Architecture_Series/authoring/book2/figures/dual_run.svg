@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 555" width="880" height="555" role="img" aria-labelledby="dc-0849d9b35f-title dc-0849d9b35f-desc" font-family="DejaVu Sans">
+<title id="dc-0849d9b35f-title">Dual run</title>
+<desc id="dc-0849d9b35f-desc">During the dual run the legacy database stays authoritative, CDC fills the new store, the new service runs in shadow, and a daily reconciliation compares replicated data and shadow results.</desc>
+<defs><marker id="dc-0849d9b35f-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 4 L0 8 Z" fill="#323232"/></marker></defs>
+<rect width="880" height="555" fill="#ffffff" aria-hidden="true"/>
+<polyline data-edge="w" points="240,80 330,80" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-0849d9b35f-arrow)"/>
+<polyline data-edge="l" points="550,80 640,80" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-0849d9b35f-arrow)"/>
+<polyline data-edge="a" points="750,130 750,220" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-0849d9b35f-arrow)"/>
+<polyline data-edge="lr" points="440,130 440,370 680,370 680,420" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-0849d9b35f-arrow)"/>
+<polyline data-edge="rr" points="830,320 830,420" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-0849d9b35f-arrow)"/>
+<polyline data-edge="c" points="240,468 330,468" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-0849d9b35f-arrow)" stroke-dasharray="6 5"/>
+<polyline data-edge="sr" points="550,468 640,468" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-0849d9b35f-arrow)"/>
+<g id="dc-0849d9b35f-node-writers" data-node="writers" data-x="20" data-y="30" data-w="220" data-h="100">
+<rect x="20" y="30" width="220" height="100" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="38" y="68.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="writers"><tspan x="38" dy="0">Legacy writers</tspan></text>
+<text x="38" y="94.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="writers"><tspan x="38" dy="0">Web shop, call centre,</tspan><tspan x="38" dy="18">jobs, partner</tspan></text>
+</g>
+<g id="dc-0849d9b35f-node-legacy" data-node="legacy" data-x="330" data-y="30" data-w="220" data-h="100">
+<rect x="330" y="30" width="220" height="100" rx="6" fill="#e8f0fe" stroke="#276ef1" stroke-width="2"/>
+<path d="M340 39 H540 M340 121 H540" stroke="#276ef1" fill="none"/>
+<text x="348" y="77.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="legacy"><tspan x="348" dy="0">Legacy database</tspan></text>
+<text x="348" y="103.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="legacy"><tspan x="348" dy="0">Authoritative for orders</tspan></text>
+</g>
+<g id="dc-0849d9b35f-node-cdc" data-node="cdc" data-x="640" data-y="30" data-w="220" data-h="100">
+<rect x="640" y="30" width="220" height="100" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="658" y="77.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="cdc"><tspan x="658" dy="0">CDC applier</tspan></text>
+<text x="658" y="103.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="cdc"><tspan x="658" dy="0">Writes with epoch 7</tspan></text>
+</g>
+<g id="dc-0849d9b35f-node-target" data-node="target" data-x="640" data-y="220" data-w="220" data-h="100">
+<rect x="640" y="220" width="220" height="100" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<path d="M650 229 H850 M650 311 H850" stroke="#323232" fill="none"/>
+<text x="658" y="267.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="target"><tspan x="658" dy="0">New order store</tspan></text>
+<text x="658" y="293.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="target"><tspan x="658" dy="0">Replica of legacy data</tspan></text>
+</g>
+<g id="dc-0849d9b35f-node-mirror" data-node="mirror" data-x="20" data-y="420" data-w="220" data-h="96">
+<rect x="20" y="420" width="220" height="96" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="38" y="456.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="mirror"><tspan x="38" dy="0">Mirrored requests</tspan></text>
+<text x="38" y="482.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="mirror"><tspan x="38" dy="0">A copy of each order</tspan><tspan x="38" dy="18">request</tspan></text>
+</g>
+<g id="dc-0849d9b35f-node-shadow" data-node="shadow" data-x="330" data-y="420" data-w="220" data-h="96">
+<rect x="330" y="420" width="220" height="96" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="348" y="456.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="shadow"><tspan x="348" dy="0">New order service</tspan></text>
+<text x="348" y="482.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="shadow"><tspan x="348" dy="0">Shadow mode; results</tspan><tspan x="348" dy="18">never shown</tspan></text>
+</g>
+<g id="dc-0849d9b35f-node-recon" data-node="recon" data-x="640" data-y="420" data-w="220" data-h="116">
+<rect x="640" y="420" width="220" height="116" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="658" y="455.0" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="recon"><tspan x="658" dy="0">Daily</tspan><tspan x="658" dy="23">reconciliation</tspan></text>
+<text x="658" y="504.0" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="recon"><tspan x="658" dy="0">Key sets, values and</tspan><tspan x="658" dy="18">shadow results</tspan></text>
+</g>
+<g data-label="w" data-x="250" data-y="38" data-w="70" data-h="30"><rect x="250" y="38" width="70" height="30" rx="4" fill="#ffffff"/>
+<text x="258" y="57" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="258" dy="0">Write</tspan></text>
+</g>
+<g data-label="l" data-x="565" data-y="38" data-w="60" data-h="30"><rect x="565" y="38" width="60" height="30" rx="4" fill="#ffffff"/>
+<text x="573" y="57" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="573" dy="0">Log</tspan></text>
+</g>
+<g data-label="a" data-x="760" data-y="160" data-w="64" data-h="30"><rect x="760" y="160" width="64" height="30" rx="4" fill="#ffffff"/>
+<text x="768" y="179" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="768" dy="0">Apply</tspan></text>
+</g>
+<g data-label="lr" data-x="470" data-y="332" data-w="100" data-h="30"><rect x="470" y="332" width="100" height="30" rx="4" fill="#ffffff"/>
+<text x="478" y="351" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="478" dy="0">Legacy rows</tspan></text>
+</g>
+<g data-label="rr" data-x="696" data-y="378" data-w="112" data-h="30"><rect x="696" y="378" width="112" height="30" rx="4" fill="#ffffff"/>
+<text x="704" y="397" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="704" dy="0">Replica rows</tspan></text>
+</g>
+<g data-label="c" data-x="256" data-y="428" data-w="56" data-h="30"><rect x="256" y="428" width="56" height="30" rx="4" fill="#ffffff"/>
+<text x="264" y="447" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="264" dy="0">Copy</tspan></text>
+</g>
+<g data-label="sr" data-x="559" data-y="428" data-w="72" data-h="30"><rect x="559" y="428" width="72" height="30" rx="4" fill="#ffffff"/>
+<text x="567" y="447" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="567" dy="0">Results</tspan></text>
+</g>
+</svg>

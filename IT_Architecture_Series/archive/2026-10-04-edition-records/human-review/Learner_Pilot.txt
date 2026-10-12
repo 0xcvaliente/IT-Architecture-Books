@@ -1,0 +1,33 @@
+LEARNER FEEDBACK AND REVISION PROTOCOL
+Current Book 3 academic revision | prepared, not yet performed
+
+Use three study sessions of 4–5 hours, with breaks. This is a targeted pilot of the revised material, not the full course schedule. Record the actual time and prior knowledge; no learner outcomes have yet been observed.
+
+SESSION 1 — consistency and external effects
+Before reading, explain in your own words why a successful local write may not prove that a payment happened, and what a completed write implies for a later read. Save the explanation without grading it yet.
+Read Book 1 chapter 12 and the relevant Book 2 chapters 4 and 7. Spend about 90 minutes reading, 60 minutes on exercises 12.4, 12.5, 4.4 and 7.4, 45 minutes drawing a failure trace, and 30–45 minutes reviewing and reporting confusion. Adjust within the daily limit.
+Transfer task: change the case from stock units to appointment slots. Identify which invariant transfers and which policy assumptions change. Answer before opening the model answers.
+
+SESSION 2 — security architecture
+Explain the difference between knowing a user's identity and permitting that user to read a particular file. Predict how access removal affects a previously issued URL.
+Read Book 1 chapters 9 and 15 and Book 2 chapter 11. Attempt Book 1 exercises 9.4, 15.4 and 15.5 and Book 2 exercise 11.4. Run authorisation_matrix.py, then describe what its passing result does not establish.
+Transfer task: add a preview service and a support export. Draw their access paths and specify how they inherit, transform or enforce policy. Test one allowed and one denied case for each.
+
+SESSION 3 — enterprise judgement and research interpretation
+Before reading, explain what evidence would distinguish a successful programme from a merely successful pilot.
+Read Book 3 chapters 3, 6, 9 and 13–15 selectively around the new sections. Attempt exercises 6.4, 9.4, 13.4 and 15.4. Recalculate the pilot decision and difference-in-differences values without consulting the answer.
+Transfer task: introduce an acquisition whose customer identifiers conflict with Helios. Compare two options and name an observation that would cause you to reverse the preferred decision.
+
+FEEDBACK TO RECORD
+Use Learner_Feedback.csv. Identify the exact passage, figure or exercise; expected understanding; your interpretation; time spent; difficulty; missing prerequisite; and a proposed improvement if you have one. Mark whether the confusion occurred before or after consulting the answer. A useful report says what decision or explanation was impossible, not only 'too difficult'.
+
+FORMATIVE ASSESSMENT
+For each selected exercise, assess five dimensions as absent, partial or demonstrated: correct mechanism; explicit assumptions; defensible alternative; discriminating evidence/test; clear communication. Cite the answer or diagram supporting the judgement. These are teaching indicators, not validated psychometric scores or proof of role readiness.
+Compare the saved pre-reading and post-reading explanations. Distinguish better recall from ability to analyse the changed transfer case. Use the same criteria before and after, and do not attribute improvement to the book alone when tutoring or prior exposure also contributed.
+
+REVISION RULES
+A factual misunderstanding supported by the text requires correction. Repeated confusion about a prerequisite suggests a short explanation or worked step. Difficulty caused by an intentionally challenging task may need a hint and clearer criteria, not removal of the challenge. Conflicting learner preferences should be considered against the learning outcome and the user's compact-format requirement.
+Record every adopted change in Revision_Decisions.csv, link it to the feedback row, recheck the answer and ask the learner to try a new equivalent transfer task. Mark closure only after an actual response or retest. Preserve unresolved feedback honestly.
+
+CURRENT BOOK 3 EXTENSION — use a fourth session if needed
+Spend 4–5 hours with chapters 1, 7, 11, 13 and 15, concentrating on the new research critiques and original alternatives. Attempt exercises 7.4, 11.4, 13.5 and 15.5 before reading their answers. For one source, record the exact method, supporting passage, limit and what would disconfirm your Helios recommendation. Then explain the same choice to a business stakeholder in five minutes. Record actual time, difficulty, figure legibility at normal reading size, and whether the compact typography helps or hinders study. This is a proposed pilot; no response or learning gain has been observed.

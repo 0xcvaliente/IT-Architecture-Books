@@ -1,0 +1,180 @@
+{
+ "title": "From requirement to decision",
+ "description": "A scenario leads to a claim and a mechanism, which is investigated to produce evidence, a finding and a decision; the decision can send the team back to the scenario.",
+ "width": 860,
+ "height": 440,
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "regions": [],
+ "nodes": [
+  {
+   "id": "scen",
+   "label": "Scenario",
+   "x": 20,
+   "y": 20,
+   "w": 240,
+   "h": 90,
+   "detail": "Conditions and response"
+  },
+  {
+   "id": "claim",
+   "label": "Claim",
+   "x": 310,
+   "y": 20,
+   "w": 240,
+   "h": 90,
+   "detail": "Expected behaviour"
+  },
+  {
+   "id": "mech",
+   "label": "Mechanism",
+   "x": 600,
+   "y": 20,
+   "w": 240,
+   "h": 90,
+   "detail": "Boundary and guarantee"
+  },
+  {
+   "id": "evid",
+   "label": "Evidence",
+   "x": 600,
+   "y": 330,
+   "w": 240,
+   "h": 90,
+   "detail": "Test or analysis",
+   "emphasis": true
+  },
+  {
+   "id": "find",
+   "label": "Finding",
+   "x": 310,
+   "y": 330,
+   "w": 240,
+   "h": 90,
+   "detail": "Risk and uncertainty"
+  },
+  {
+   "id": "dec",
+   "label": "Decision",
+   "x": 20,
+   "y": 330,
+   "w": 240,
+   "h": 90,
+   "detail": "Conditions and owner"
+  }
+ ],
+ "edges": [
+  {
+   "id": "t0",
+   "from": "scen",
+   "to": "claim",
+   "points": [
+    [
+     260,
+     65
+    ],
+    [
+     310,
+     65
+    ]
+   ]
+  },
+  {
+   "id": "b0",
+   "from": "evid",
+   "to": "find",
+   "points": [
+    [
+     600,
+     375
+    ],
+    [
+     550,
+     375
+    ]
+   ]
+  },
+  {
+   "id": "t1",
+   "from": "claim",
+   "to": "mech",
+   "points": [
+    [
+     550,
+     65
+    ],
+    [
+     600,
+     65
+    ]
+   ]
+  },
+  {
+   "id": "b1",
+   "from": "find",
+   "to": "dec",
+   "points": [
+    [
+     310,
+     375
+    ],
+    [
+     260,
+     375
+    ]
+   ]
+  },
+  {
+   "id": "down",
+   "from": "mech",
+   "to": "evid",
+   "points": [
+    [
+     720,
+     110
+    ],
+    [
+     720,
+     330
+    ]
+   ],
+   "label": "Investigate",
+   "label_at": [
+    730,
+    190
+   ],
+   "label_w": 110
+  },
+  {
+   "id": "up",
+   "from": "dec",
+   "to": "scen",
+   "points": [
+    [
+     140,
+     330
+    ],
+    [
+     140,
+     110
+    ]
+   ],
+   "label": "Revisit",
+   "label_at": [
+    150,
+    190
+   ],
+   "label_w": 100,
+   "style": "dashed"
+  }
+ ],
+ "notes": []
+}

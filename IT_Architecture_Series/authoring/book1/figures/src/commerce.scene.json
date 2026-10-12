@@ -1,0 +1,216 @@
+{
+ "title": "Aster commerce responsibilities",
+ "description": "Inside Aster's modular application, the order module and inventory module share a local transaction boundary, and a payment adapter isolates the external payment provider. Orders and reservations commit to one database; a fulfilment worker claims outbox records and sends commands to the warehouse system.",
+ "width": 860,
+ "height": 510,
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "regions": [
+  {
+   "id": "app",
+   "label": "Aster modular application: local order and reservation boundary",
+   "x": 20,
+   "y": 20,
+   "w": 560,
+   "h": 330
+  }
+ ],
+ "nodes": [
+  {
+   "id": "order",
+   "label": "Order module",
+   "x": 40,
+   "y": 70,
+   "w": 210,
+   "h": 90,
+   "detail": "Price snapshot and state",
+   "emphasis": true
+  },
+  {
+   "id": "inv",
+   "label": "Inventory module",
+   "x": 330,
+   "y": 70,
+   "w": 230,
+   "h": 90,
+   "detail": "Atomic reservation"
+  },
+  {
+   "id": "padapt",
+   "label": "Payment adapter",
+   "x": 40,
+   "y": 210,
+   "w": 210,
+   "h": 90,
+   "detail": "Stable payment outcomes"
+  },
+  {
+   "id": "pay",
+   "label": "Payment provider",
+   "x": 620,
+   "y": 210,
+   "w": 220,
+   "h": 90,
+   "detail": "External side effect"
+  },
+  {
+   "id": "db",
+   "label": "Database",
+   "x": 40,
+   "y": 390,
+   "w": 210,
+   "h": 90,
+   "detail": "Orders and reservations",
+   "shape": "store"
+  },
+  {
+   "id": "worker",
+   "label": "Fulfilment worker",
+   "x": 330,
+   "y": 390,
+   "w": 220,
+   "h": 100,
+   "detail": "Outbox and reconciliation"
+  },
+  {
+   "id": "wh",
+   "label": "Warehouse",
+   "x": 630,
+   "y": 390,
+   "w": 210,
+   "h": 100,
+   "detail": "System with shipment authority"
+  }
+ ],
+ "edges": [
+  {
+   "id": "local",
+   "from": "order",
+   "to": "inv",
+   "points": [
+    [
+     250,
+     125
+    ],
+    [
+     330,
+     125
+    ]
+   ],
+   "label": "local",
+   "label_at": [
+    258,
+    88
+   ],
+   "label_w": 62
+  },
+  {
+   "id": "pcall",
+   "from": "order",
+   "to": "padapt",
+   "points": [
+    [
+     145,
+     160
+    ],
+    [
+     145,
+     210
+    ]
+   ]
+  },
+  {
+   "id": "payment",
+   "from": "padapt",
+   "to": "pay",
+   "points": [
+    [
+     250,
+     255
+    ],
+    [
+     620,
+     255
+    ]
+   ],
+   "label": "authorise, void, query",
+   "label_at": [
+    340,
+    220
+   ],
+   "label_w": 192
+  },
+  {
+   "id": "commit",
+   "from": "padapt",
+   "to": "db",
+   "points": [
+    [
+     145,
+     300
+    ],
+    [
+     145,
+     390
+    ]
+   ],
+   "label": "commit outcome",
+   "label_at": [
+    155,
+    320
+   ],
+   "label_w": 130
+  },
+  {
+   "id": "claim",
+   "from": "db",
+   "to": "worker",
+   "points": [
+    [
+     250,
+     445
+    ],
+    [
+     330,
+     445
+    ]
+   ],
+   "label": "claim",
+   "label_at": [
+    258,
+    406
+   ],
+   "label_w": 62
+  },
+  {
+   "id": "command",
+   "from": "worker",
+   "to": "wh",
+   "points": [
+    [
+     550,
+     445
+    ],
+    [
+     630,
+     445
+    ]
+   ],
+   "label": "command",
+   "label_at": [
+    553,
+    406
+   ],
+   "label_w": 76
+  }
+ ],
+ "notes": []
+}

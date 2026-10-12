@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 598" width="860" height="598" role="img" aria-labelledby="t d" font-family="DejaVu Sans">
+<title id="t">Sign-in and resource access</title>
+<desc id="d">Authorisation code flow with PKCE: the browser starts sign-in, is redirected to the identity provider with a code challenge, returns with a code, and the portal backend exchanges code and verifier for tokens. The backend then calls the protected API with an access token.</desc>
+<defs><marker id="ah" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 4 L0 8 Z" fill="#323232"/></marker></defs>
+<rect width="860" height="598" fill="#ffffff"/>
+<line x1="90.0" y1="60" x2="90.0" y2="578" stroke="#323232" stroke-width="1.2" stroke-dasharray="5 4"/>
+<rect x="5.0" y="12" width="170" height="48" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="90.0" y="42" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">Browser</text>
+<line x1="316.66666666666663" y1="60" x2="316.66666666666663" y2="578" stroke="#323232" stroke-width="1.2" stroke-dasharray="5 4"/>
+<rect x="231.66666666666663" y="12" width="170" height="48" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="316.66666666666663" y="42" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">Portal backend</text>
+<line x1="543.3333333333333" y1="60" x2="543.3333333333333" y2="578" stroke="#323232" stroke-width="1.2" stroke-dasharray="5 4"/>
+<rect x="458.33333333333326" y="12" width="170" height="48" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="543.3333333333333" y="42" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">Identity provider</text>
+<line x1="770.0" y1="60" x2="770.0" y2="578" stroke="#323232" stroke-width="1.2" stroke-dasharray="5 4"/>
+<rect x="685.0" y="12" width="170" height="48" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="770.0" y="42" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">Protected API</text>
+<line x1="90.0" y1="100" x2="310.66666666666663" y2="100" stroke="#323232" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="139.08333333333331" y="76" width="128.5" height="19" fill="#ffffff"/>
+<text x="203.33333333333331" y="91" font-size="13" fill="#000000" text-anchor="middle">1 Start sign-in</text>
+<line x1="316.66666666666663" y1="152" x2="96.0" y2="152" stroke="#323232" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="107.4833333333333" y="128" width="191.70000000000002" height="19" fill="#ffffff"/>
+<text x="203.33333333333331" y="143" font-size="13" fill="#000000" text-anchor="middle">2 Redirect instructions</text>
+<line x1="90.0" y1="204" x2="537.3333333333333" y2="204" stroke="#323232" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="189.21666666666664" y="180" width="254.9" height="19" fill="#ffffff"/>
+<text x="316.66666666666663" y="195" font-size="13" fill="#000000" text-anchor="middle">3 Authorise with code challenge</text>
+<line x1="543.3333333333333" y1="256" x2="96.0" y2="256" stroke="#323232" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="232.66666666666663" y="232" width="168.0" height="19" fill="#ffffff"/>
+<text x="316.66666666666663" y="247" font-size="13" fill="#000000" text-anchor="middle">4 Redirect with code</text>
+<line x1="90.0" y1="308" x2="310.66666666666663" y2="308" stroke="#323232" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="119.33333333333331" y="284" width="168.0" height="19" fill="#ffffff"/>
+<text x="203.33333333333331" y="299" font-size="13" fill="#000000" text-anchor="middle">5 Callback with code</text>
+<line x1="316.66666666666663" y1="360" x2="537.3333333333333" y2="360" stroke="#323232" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="349.94999999999993" y="336" width="160.1" height="19" fill="#ffffff"/>
+<text x="429.99999999999994" y="351" font-size="13" fill="#000000" text-anchor="middle">6 Code and verifier</text>
+<line x1="543.3333333333333" y1="412" x2="322.66666666666663" y2="412" stroke="#323232" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="342.04999999999995" y="388" width="175.9" height="19" fill="#ffffff"/>
+<text x="429.99999999999994" y="403" font-size="13" fill="#000000" text-anchor="middle">7 Tokens per audience</text>
+<line x1="316.66666666666663" y1="464" x2="764.0" y2="464" stroke="#323232" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="443.53333333333325" y="440" width="199.60000000000002" height="19" fill="#ffffff"/>
+<text x="543.3333333333333" y="455" font-size="13" fill="#000000" text-anchor="middle">8 Call with access token</text>
+<line x1="770.0" y1="516" x2="322.66666666666663" y2="516" stroke="#323232" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="455.38333333333327" y="492" width="175.9" height="19" fill="#ffffff"/>
+<text x="543.3333333333333" y="507" font-size="13" fill="#000000" text-anchor="middle">9 Authorised response</text>
+</svg>

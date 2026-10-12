@@ -1,0 +1,329 @@
+{
+ "title": "Meridian context view",
+ "description": "Customers submit service requests to the service portal, which delegates sign-in to the identity provider, hands submissions off to the CRM, receives case status back, reads asset and entitlement facts from ERP and sends reporting data to analytics. Service agents read authorised requests in the portal and approve cases in the CRM. The CRM emits a ServiceCaseApproved event that the work-order integration consumes to create the ERP work order. The dashed arrow is an asynchronous event; solid arrows are requests or data exchanges.",
+ "width": 860,
+ "height": 670,
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "regions": [
+  {
+   "id": "solution",
+   "label": "Meridian solution (portal team)",
+   "x": 240,
+   "y": 70,
+   "w": 360,
+   "h": 460
+  }
+ ],
+ "nodes": [
+  {
+   "id": "customer",
+   "label": "Customer",
+   "x": 10,
+   "y": 120,
+   "w": 160,
+   "h": 100,
+   "detail": "Users in 600 organisations"
+  },
+  {
+   "id": "idp",
+   "label": "Identity provider",
+   "x": 10,
+   "y": 290,
+   "w": 170,
+   "h": 90
+  },
+  {
+   "id": "analytics",
+   "label": "Analytics",
+   "x": 10,
+   "y": 450,
+   "w": 170,
+   "h": 70
+  },
+  {
+   "id": "portal",
+   "label": "Service portal",
+   "x": 260,
+   "y": 110,
+   "w": 290,
+   "h": 110,
+   "detail": "Receipts and customer-visible status",
+   "emphasis": true
+  },
+  {
+   "id": "woi",
+   "label": "Work-order integration",
+   "x": 380,
+   "y": 330,
+   "w": 200,
+   "h": 120,
+   "detail": "Turns approvals into ERP work orders"
+  },
+  {
+   "id": "agent",
+   "label": "Service agent",
+   "x": 660,
+   "y": 10,
+   "w": 180,
+   "h": 90,
+   "detail": "40 in three business units"
+  },
+  {
+   "id": "crm",
+   "label": "CRM",
+   "x": 660,
+   "y": 160,
+   "w": 180,
+   "h": 130,
+   "detail": "Owns the service case"
+  },
+  {
+   "id": "erp",
+   "label": "ERP",
+   "x": 240,
+   "y": 560,
+   "w": 380,
+   "h": 96,
+   "detail": "Owns assets, contracts, entitlements and work orders"
+  }
+ ],
+ "edges": [
+  {
+   "id": "submits",
+   "from": "customer",
+   "to": "portal",
+   "points": [
+    [
+     170,
+     170
+    ],
+    [
+     260,
+     170
+    ]
+   ],
+   "label": "Submits requests",
+   "label_at": [
+    172,
+    116
+   ],
+   "label_w": 86
+  },
+  {
+   "id": "signin",
+   "from": "portal",
+   "to": "idp",
+   "points": [
+    [
+     285,
+     220
+    ],
+    [
+     285,
+     330
+    ],
+    [
+     180,
+     330
+    ]
+   ],
+   "label": "Signs users in",
+   "label_at": [
+    190,
+    250
+   ],
+   "label_w": 88
+  },
+  {
+   "id": "reporting",
+   "from": "portal",
+   "to": "analytics",
+   "points": [
+    [
+     310,
+     220
+    ],
+    [
+     310,
+     485
+    ],
+    [
+     180,
+     485
+    ]
+   ],
+   "label": "Reporting data",
+   "label_at": [
+    196,
+    420
+   ],
+   "label_w": 100
+  },
+  {
+   "id": "reads",
+   "from": "agent",
+   "to": "portal",
+   "points": [
+    [
+     660,
+     55
+    ],
+    [
+     500,
+     55
+    ],
+    [
+     500,
+     110
+    ]
+   ],
+   "label": "Reads requests",
+   "label_at": [
+    520,
+    20
+   ],
+   "label_w": 124
+  },
+  {
+   "id": "approves",
+   "from": "agent",
+   "to": "crm",
+   "points": [
+    [
+     780,
+     100
+    ],
+    [
+     780,
+     160
+    ]
+   ],
+   "label": "Approves cases",
+   "label_at": [
+    664,
+    104
+   ],
+   "label_w": 106
+  },
+  {
+   "id": "handoff",
+   "from": "portal",
+   "to": "crm",
+   "points": [
+    [
+     550,
+     178
+    ],
+    [
+     660,
+     178
+    ]
+   ],
+   "label": "Hands off submissions",
+   "label_at": [
+    553,
+    126
+   ],
+   "label_w": 104
+  },
+  {
+   "id": "status",
+   "from": "crm",
+   "to": "portal",
+   "points": [
+    [
+     660,
+     210
+    ],
+    [
+     550,
+     210
+    ]
+   ],
+   "label": "Case status",
+   "label_at": [
+    553,
+    216
+   ],
+   "label_w": 104
+  },
+  {
+   "id": "approved",
+   "from": "crm",
+   "to": "woi",
+   "points": [
+    [
+     750,
+     290
+    ],
+    [
+     750,
+     390
+    ],
+    [
+     580,
+     390
+    ]
+   ],
+   "label": "ServiceCaseApproved event",
+   "label_at": [
+    596,
+    396
+   ],
+   "label_w": 160,
+   "style": "dashed"
+  },
+  {
+   "id": "erpread",
+   "from": "portal",
+   "to": "erp",
+   "points": [
+    [
+     340,
+     220
+    ],
+    [
+     340,
+     560
+    ]
+   ],
+   "label": "Reads assets and entitlements",
+   "label_at": [
+    346,
+    462
+   ],
+   "label_w": 150
+  },
+  {
+   "id": "workorder",
+   "from": "woi",
+   "to": "erp",
+   "points": [
+    [
+     540,
+     450
+    ],
+    [
+     540,
+     560
+    ]
+   ],
+   "label": "Creates work orders",
+   "label_at": [
+    546,
+    470
+   ],
+   "label_w": 110
+  }
+ ],
+ "notes": []
+}

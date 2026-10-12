@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680" role="img" aria-labelledby="t d" font-family="DejaVu Sans">
+<title id="t">CRM B backlog when CRM B fails at the start of a two-hour recall surge</title>
+<desc id="d">The backlog grows to 9,000 during the thirty-minute outage. With 16 calls per second and polling on it clears at about minute 50. With 8 calls per second and status polling paused it clears at about minute 98. With 8 calls per second and polling on it falls slowly to 6,840 at minute 120, when the surge ends, and clears at about minute 141. The recovery deadline is minute 60. All lines assume 10 percent failed attempts and 5 new requests per second until minute 120.</desc>
+<rect width="1200" height="680" fill="#ffffff"/>
+<rect x="120.0" y="60" width="204.0" height="440" fill="#f3f3f3"/>
+<text x="222.0" y="84" font-size="18" text-anchor="middle" fill="#323232">CRM B down</text>
+<g stroke="#d9d9d9" stroke-width="1"><line x1="120" y1="390.0" x2="1140" y2="390.0"/><line x1="120" y1="280.0" x2="1140" y2="280.0"/><line x1="120" y1="170.0" x2="1140" y2="170.0"/><line x1="120" y1="60.0" x2="1140" y2="60.0"/></g>
+<g stroke="#323232" stroke-width="2"><line x1="120" y1="500" x2="1140" y2="500"/><line x1="120" y1="60" x2="120" y2="500"/></g>
+<g font-size="18" fill="#000000" text-anchor="middle"><text x="120.0" y="526">0</text><text x="324.0" y="526">30</text><text x="528.0" y="526">60</text><text x="732.0" y="526">90</text><text x="936.0" y="526">120</text><text x="1140.0" y="526">150</text><text x="630.0" y="562" font-size="19">Minutes from the start of the outage and the surge</text></g>
+<g font-size="18" fill="#000000" text-anchor="end"><text x="110" y="506.0">0</text><text x="110" y="396.0">2,500</text><text x="110" y="286.0">5,000</text><text x="110" y="176.0">7,500</text><text x="110" y="66.0">10,000</text></g>
+<text x="30" y="280" font-size="19" text-anchor="middle" transform="rotate(-90 30 280)">Pending handoffs</text>
+<line x1="528.0" y1="60" x2="528.0" y2="500" stroke="#323232" stroke-width="2" stroke-dasharray="4 5"/>
+<text x="538.0" y="84" font-size="18">Recovery deadline</text>
+<line x1="936.0" y1="60" x2="936.0" y2="500" stroke="#9a9a9a" stroke-width="2" stroke-dasharray="2 4"/>
+<text x="944.0" y="84" font-size="18">Surge ends</text>
+<polyline points="324.0,104.0 936.0,199.0 1079.5,500.0" fill="none" stroke="#000000" stroke-width="3" stroke-dasharray="2 6" stroke-linecap="round"/>
+<polyline points="324.0,104.0 787.8,500.0" fill="none" stroke="#323232" stroke-width="3" stroke-dasharray="12 7"/>
+<polyline points="120.0,500.0 324.0,104.0 458.0,500.0" fill="none" stroke="#276ef1" stroke-width="3.5"/>
+<g font-size="18" fill="#000000">
+<line x1="120" y1="600" x2="170" y2="600" stroke="#276ef1" stroke-width="3.5"/><text x="180" y="606">16 calls/s, polling on: clears at minute 50</text>
+<line x1="120" y1="628" x2="170" y2="628" stroke="#323232" stroke-width="3" stroke-dasharray="12 7"/><text x="180" y="634">8 calls/s, polling paused: clears at minute 98</text>
+<line x1="120" y1="656" x2="170" y2="656" stroke="#000000" stroke-width="3" stroke-dasharray="2 6" stroke-linecap="round"/><text x="180" y="662">8 calls/s, polling on: clears at minute 141</text>
+</g></svg>

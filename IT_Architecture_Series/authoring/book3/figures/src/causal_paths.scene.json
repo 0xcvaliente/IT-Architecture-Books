@@ -1,0 +1,145 @@
+{
+ "title": "Proposed benefit mechanism and a competing influence",
+ "description": "Solid arrows: the link service and correction process lead to the correct customer role being used in routing, which leads to fewer misrouted eligible requests. Dashed arrows: staffing and local capacity influence both which division is selected for the pilot and its service outcome.",
+ "width": 860,
+ "height": 400,
+ "theme": "light",
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "regions": [],
+ "nodes": [
+  {
+   "id": "staff",
+   "label": "Staffing and local capacity",
+   "x": 255,
+   "y": 20,
+   "w": 350,
+   "h": 90,
+   "status": "provided",
+   "detail": "Competing influence"
+  },
+  {
+   "id": "link",
+   "label": "Link service and correction",
+   "x": 20,
+   "y": 250,
+   "w": 250,
+   "h": 110,
+   "status": "provided",
+   "detail": "Intervention",
+   "emphasis": true
+  },
+  {
+   "id": "role",
+   "label": "Correct customer role in routing",
+   "x": 305,
+   "y": 250,
+   "w": 250,
+   "h": 110,
+   "status": "provided",
+   "detail": "Changed work"
+  },
+  {
+   "id": "out",
+   "label": "Fewer misrouted requests",
+   "x": 590,
+   "y": 250,
+   "w": 250,
+   "h": 110,
+   "status": "provided",
+   "detail": "Outcome"
+  }
+ ],
+ "edges": [
+  {
+   "id": "c1",
+   "from": "link",
+   "to": "role",
+   "points": [
+    [
+     270,
+     305
+    ],
+    [
+     305,
+     305
+    ]
+   ]
+  },
+  {
+   "id": "c2",
+   "from": "role",
+   "to": "out",
+   "points": [
+    [
+     555,
+     305
+    ],
+    [
+     590,
+     305
+    ]
+   ]
+  },
+  {
+   "id": "c3",
+   "from": "staff",
+   "to": "link",
+   "points": [
+    [
+     255,
+     65
+    ],
+    [
+     145,
+     65
+    ],
+    [
+     145,
+     250
+    ]
+   ],
+   "label": "pilot selection",
+   "label_at": [
+    155,
+    140
+   ],
+   "label_w": 140,
+   "style": "dashed"
+  },
+  {
+   "id": "c4",
+   "from": "staff",
+   "to": "out",
+   "points": [
+    [
+     605,
+     65
+    ],
+    [
+     715,
+     65
+    ],
+    [
+     715,
+     250
+    ]
+   ],
+   "label": "service outcome",
+   "label_at": [
+    565,
+    140
+   ],
+   "label_w": 140,
+   "style": "dashed"
+  }
+ ]
+}

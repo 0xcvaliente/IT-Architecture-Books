@@ -1,0 +1,18 @@
+claim_id,record_role,chapter,section,ieee_reference,pdf_page_paragraph_starts,source_locator
+AC18,direct_manuscript_claim,8 Enterprise risk security and assurance,Separate risk statements from control lists,10,23,"Executive summary and section 2.1; printed pp. ii, 6–7"
+AC20,direct_manuscript_claim,14 Innovation AI and sustainable technology decisions,Exploration competes with current delivery,15,38,"Introduction and section 2, A Model of Mutual Learning; printed pp. 71–75"
+AC20,direct_manuscript_claim,14 Innovation AI and sustainable technology decisions,Organisational learning can conflict with standardisation,15,40,"Introduction and section 2, A Model of Mutual Learning; printed pp. 71–75"
+AC21,direct_manuscript_claim,14 Innovation AI and sustainable technology decisions,Exploration competes with current delivery,15,38,Section 2; printed pp. 74–75 and subsequent convergence analysis
+AC21,direct_manuscript_claim,14 Innovation AI and sustainable technology decisions,Organisational learning can conflict with standardisation,15,40,Section 2; printed pp. 74–75 and subsequent convergence analysis
+AC22,direct_manuscript_claim,6 Technology strategy and shared platforms,Product architecture and organisation structure,7,18,Sections 5 and 6; printed pp. 1316–1318
+AC23,direct_manuscript_claim,6 Technology strategy and shared platforms,Product architecture and organisation structure,7,18,Discussion and limitations; printed pp. 1318–1319
+AC24,direct_manuscript_claim,3 Operating models and strategic alignment,Work through competing operating designs,3,11,Slides 4–5; PDF pp. 6–7
+AC25,direct_manuscript_claim,1 The enterprise architecture problem,Local quality does not guarantee enterprise coherence,1,4,"Classic Topics: Enterprise Architecture, main definition and two key concepts"
+AC25,direct_manuscript_claim,3 Operating models and strategic alignment,Sharing data and sharing processes are different choices,1,10,"Classic Topics: Enterprise Architecture, main definition and two key concepts"
+AC26,direct_manuscript_claim,9 Investment economics benefits and uncertainty,Discounting a fictional modernisation project,11,24,"Principles of Finance, section 16.2; calculation and advantages/limitations"
+AC26,direct_manuscript_claim,9 Investment economics benefits and uncertainty,Work an investment decision with an imperfect pilot,11,26,"Principles of Finance, section 16.2; calculation and advantages/limitations"
+AC27,direct_manuscript_claim,13 Measuring enterprise outcomes and architecture value,A comparison group changes the interpretation,14,37,"The Effect, chapter 18, sections 18.1.1 and 18.1.4"
+AC28,direct_manuscript_claim,8 Enterprise risk security and assurance,Begin with the service the organisation must preserve,9,23,Section 2; printed pp. 3–5
+B3-32,direct_manuscript_claim,1 The enterprise architecture problem,Helios needs a causal argument,2,4,"Sections 2.2, 4.1–4.2 and 7; PDF pp. 5, 9–12, 18."
+B3-33,direct_manuscript_claim,7 Governance decision rights and exceptions,Research critique: mechanisms can help or obstruct coordination,8,21,"Sections 3, 4.3 and 5.4; printed/PDF pp. 5–6, 9–10, 13."
+B3-34,direct_manuscript_claim,11 Organisational change adoption and architecture leadership,Research critique: adoption unfolds across levels,12,31,Accepted manuscript sections 3–6; PDF pp. 6–14; printed pp. 54–61 for the central method/results/discussion.

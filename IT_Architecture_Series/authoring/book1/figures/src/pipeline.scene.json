@@ -1,0 +1,178 @@
+{
+ "title": "Delivery pipeline",
+ "description": "A change is reviewed, built and tested, verified in staging, and the same artefact is promoted under release controls. Production is observed, and the team learns and feeds improvements back into review. The same tested build is promoted and configuration stays controlled.",
+ "width": 860,
+ "height": 440,
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "regions": [],
+ "nodes": [
+  {
+   "id": "review",
+   "label": "Review change",
+   "x": 20,
+   "y": 20,
+   "w": 240,
+   "h": 90
+  },
+  {
+   "id": "build",
+   "label": "Build and test",
+   "x": 310,
+   "y": 20,
+   "w": 240,
+   "h": 90,
+   "detail": "One identified artefact"
+  },
+  {
+   "id": "stage",
+   "label": "Verify in staging",
+   "x": 600,
+   "y": 20,
+   "w": 240,
+   "h": 90,
+   "detail": "Realistic identity"
+  },
+  {
+   "id": "promote",
+   "label": "Promote artefact",
+   "x": 600,
+   "y": 330,
+   "w": 240,
+   "h": 90,
+   "detail": "Same tested build",
+   "emphasis": true
+  },
+  {
+   "id": "observe",
+   "label": "Observe production",
+   "x": 310,
+   "y": 330,
+   "w": 240,
+   "h": 90,
+   "detail": "Signals after release"
+  },
+  {
+   "id": "learn",
+   "label": "Learn and improve",
+   "x": 20,
+   "y": 330,
+   "w": 240,
+   "h": 90
+  }
+ ],
+ "edges": [
+  {
+   "id": "t0",
+   "from": "review",
+   "to": "build",
+   "points": [
+    [
+     260,
+     65
+    ],
+    [
+     310,
+     65
+    ]
+   ]
+  },
+  {
+   "id": "b0",
+   "from": "promote",
+   "to": "observe",
+   "points": [
+    [
+     600,
+     375
+    ],
+    [
+     550,
+     375
+    ]
+   ]
+  },
+  {
+   "id": "t1",
+   "from": "build",
+   "to": "stage",
+   "points": [
+    [
+     550,
+     65
+    ],
+    [
+     600,
+     65
+    ]
+   ]
+  },
+  {
+   "id": "b1",
+   "from": "observe",
+   "to": "learn",
+   "points": [
+    [
+     310,
+     375
+    ],
+    [
+     260,
+     375
+    ]
+   ]
+  },
+  {
+   "id": "down",
+   "from": "stage",
+   "to": "promote",
+   "points": [
+    [
+     720,
+     110
+    ],
+    [
+     720,
+     330
+    ]
+   ],
+   "label": "Release controls",
+   "label_at": [
+    730,
+    190
+   ],
+   "label_w": 110
+  },
+  {
+   "id": "up",
+   "from": "learn",
+   "to": "review",
+   "points": [
+    [
+     140,
+     330
+    ],
+    [
+     140,
+     110
+    ]
+   ],
+   "label": "Feedback",
+   "label_at": [
+    150,
+    190
+   ],
+   "label_w": 100,
+   "style": "dashed"
+  }
+ ],
+ "notes": []
+}

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 460" width="860" height="460" role="img" aria-labelledby="dc-2244596244-title dc-2244596244-desc" font-family="DejaVu Sans">
+<title id="dc-2244596244-title">Majority quorums with five voters</title>
+<desc id="dc-2244596244-desc">In a 3 | 2 partition, the side with three of five voters can elect a leader and commit, while the side with two cannot. In a 2 | 2 | 1 partition, no group holds three voters, so nothing new commits until connections return.</desc>
+<defs><marker id="dc-2244596244-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 4 L0 8 Z" fill="#323232"/></marker></defs>
+<rect width="860" height="460" fill="#ffffff" aria-hidden="true"/>
+<rect x="10" y="10" width="840" height="210" rx="8" fill="none" stroke="#323232" stroke-dasharray="4 4"/>
+<text x="26" y="34" font-size="13" font-weight="600" fill="#323232" text-anchor="start"><tspan x="26" dy="0">3 | 2 partition</tspan></text>
+<rect x="30" y="50" width="446" height="155" rx="8" fill="none" stroke="#323232" stroke-dasharray="4 4"/>
+<text x="46" y="74" font-size="13" font-weight="600" fill="#323232" text-anchor="start"><tspan x="46" dy="0">3 of 5 voters: elects a leader and commits</tspan></text>
+<rect x="496" y="50" width="304" height="155" rx="8" fill="none" stroke="#323232" stroke-dasharray="4 4"/>
+<text x="512" y="74" font-size="13" font-weight="600" fill="#323232" text-anchor="start"><tspan x="512" dy="0">2 of 5 voters: cannot commit</tspan></text>
+<rect x="10" y="240" width="840" height="210" rx="8" fill="none" stroke="#323232" stroke-dasharray="4 4"/>
+<text x="26" y="264" font-size="13" font-weight="600" fill="#323232" text-anchor="start"><tspan x="26" dy="0">2 | 2 | 1 partition: no group holds 3 of 5 voters, so nothing commits</tspan></text>
+<rect x="30" y="280" width="304" height="155" rx="8" fill="none" stroke="#323232" stroke-dasharray="4 4"/>
+<text x="46" y="304" font-size="13" font-weight="600" fill="#323232" text-anchor="start"><tspan x="46" dy="0">2 of 5</tspan></text>
+<rect x="350" y="280" width="304" height="155" rx="8" fill="none" stroke="#323232" stroke-dasharray="4 4"/>
+<text x="366" y="304" font-size="13" font-weight="600" fill="#323232" text-anchor="start"><tspan x="366" dy="0">2 of 5</tspan></text>
+<rect x="670" y="280" width="162" height="155" rx="8" fill="none" stroke="#323232" stroke-dasharray="4 4"/>
+<text x="686" y="304" font-size="13" font-weight="600" fill="#323232" text-anchor="start"><tspan x="686" dy="0">1 of 5</tspan></text>
+<g id="dc-2244596244-node-t1" data-node="t1" data-x="46" data-y="100" data-w="130" data-h="85">
+<rect x="46" y="100" width="130" height="85" rx="6" fill="#e8f0fe" stroke="#276ef1" stroke-width="2"/>
+<text x="64" y="140.0" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="t1"><tspan x="64" dy="0">Voter 1</tspan></text>
+<text x="64" y="166.0" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="t1"><tspan x="64" dy="0">Leader</tspan></text>
+</g>
+<g id="dc-2244596244-node-t2" data-node="t2" data-x="188" data-y="100" data-w="130" data-h="85">
+<rect x="188" y="100" width="130" height="85" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="206" y="140.0" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="t2"><tspan x="206" dy="0">Voter 2</tspan></text>
+<text x="206" y="166.0" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="t2"><tspan x="206" dy="0">Follower</tspan></text>
+</g>
+<g id="dc-2244596244-node-t3" data-node="t3" data-x="330" data-y="100" data-w="130" data-h="85">
+<rect x="330" y="100" width="130" height="85" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="348" y="140.0" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="t3"><tspan x="348" dy="0">Voter 3</tspan></text>
+<text x="348" y="166.0" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="t3"><tspan x="348" dy="0">Follower</tspan></text>
+</g>
+<g id="dc-2244596244-node-t4" data-node="t4" data-x="512" data-y="100" data-w="130" data-h="85">
+<rect x="512" y="100" width="130" height="85" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="530" y="140.0" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="t4"><tspan x="530" dy="0">Voter 4</tspan></text>
+<text x="530" y="166.0" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="t4"><tspan x="530" dy="0">No leader</tspan></text>
+</g>
+<g id="dc-2244596244-node-t5" data-node="t5" data-x="654" data-y="100" data-w="130" data-h="85">
+<rect x="654" y="100" width="130" height="85" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="672" y="140.0" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="t5"><tspan x="672" dy="0">Voter 5</tspan></text>
+<text x="672" y="166.0" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="t5"><tspan x="672" dy="0">No leader</tspan></text>
+</g>
+<g id="dc-2244596244-node-b1" data-node="b1" data-x="46" data-y="330" data-w="130" data-h="85">
+<rect x="46" y="330" width="130" height="85" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="64" y="370.0" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="b1"><tspan x="64" dy="0">Voter 1</tspan></text>
+<text x="64" y="396.0" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="b1"><tspan x="64" dy="0">No leader</tspan></text>
+</g>
+<g id="dc-2244596244-node-b2" data-node="b2" data-x="188" data-y="330" data-w="130" data-h="85">
+<rect x="188" y="330" width="130" height="85" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="206" y="370.0" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="b2"><tspan x="206" dy="0">Voter 2</tspan></text>
+<text x="206" y="396.0" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="b2"><tspan x="206" dy="0">No leader</tspan></text>
+</g>
+<g id="dc-2244596244-node-b3" data-node="b3" data-x="366" data-y="330" data-w="130" data-h="85">
+<rect x="366" y="330" width="130" height="85" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="384" y="370.0" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="b3"><tspan x="384" dy="0">Voter 3</tspan></text>
+<text x="384" y="396.0" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="b3"><tspan x="384" dy="0">No leader</tspan></text>
+</g>
+<g id="dc-2244596244-node-b4" data-node="b4" data-x="508" data-y="330" data-w="130" data-h="85">
+<rect x="508" y="330" width="130" height="85" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="526" y="370.0" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="b4"><tspan x="526" dy="0">Voter 4</tspan></text>
+<text x="526" y="396.0" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="b4"><tspan x="526" dy="0">No leader</tspan></text>
+</g>
+<g id="dc-2244596244-node-b5" data-node="b5" data-x="686" data-y="330" data-w="130" data-h="85">
+<rect x="686" y="330" width="130" height="85" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="704" y="370.0" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="b5"><tspan x="704" dy="0">Voter 5</tspan></text>
+<text x="704" y="396.0" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="b5"><tspan x="704" dy="0">No leader</tspan></text>
+</g>
+</svg>

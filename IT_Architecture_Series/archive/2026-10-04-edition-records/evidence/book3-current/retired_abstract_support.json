@@ -1,0 +1,69 @@
+[
+  {
+    "claim_id": "AC29",
+    "bounded_claim": "The publisher abstract names alignment, information availability, portfolio optimisation and complementarity as benefit enablers.",
+    "source_key": "eavalue",
+    "author": "T. Tamm, P. B. Seddon, G. Shanks, and P. Reynolds",
+    "source_title": "How does enterprise architecture add value to organisations?",
+    "publication_details": "Communications of the Association for Information Systems, vol. 28, art. 10, 2011, doi: 10.17705/1CAIS.02810",
+    "canonical_url": "https://aisel.aisnet.org/cais/vol28/iss1/10/",
+    "inspected_copy_url": "https://aisel.aisnet.org/cais/vol28/iss1/10/",
+    "copy_note": "https://aisel.aisnet.org/cais/vol28/iss1/10/",
+    "source_locator": "Publisher abstract only",
+    "verification_status": "RETIRED_SUPPORT_REPLACED",
+    "checked_on": "2026-10-04",
+    "reviewer": "Assistant-led editorial review",
+    "limitation_and_disposition": "Full article could not be read. Publisher PDF and accessible repository alternatives failed. Manuscript explicitly attributes this to the abstract; no full-text endorsement.",
+    "locations": [],
+    "previous_review_id": "AC29",
+    "replaced_by": [
+      "dynamic"
+    ],
+    "disposition": "Original full text remains unavailable; abstract-based supporting role removed. Replacement sources support revised, bounded claims, not the complete original framework."
+  },
+  {
+    "claim_id": "AC30",
+    "bounded_claim": "The institutional abstract frames governance through IT decision alignment and accountability.",
+    "source_key": "governance",
+    "author": "P. Weill and J. W. Ross",
+    "source_title": "IT governance on one page",
+    "publication_details": "MIT Sloan Center for Information Systems Research, working paper no. 349, Nov. 30, 2004",
+    "canonical_url": "https://cisr.mit.edu/publication/MIT_CISRwp349_ITGovOnOnePage",
+    "inspected_copy_url": "https://dspace.mit.edu/entities/publication/4f18b470-9c3a-479c-9bfe-12503bbb0d0f",
+    "copy_note": "https://dspace.mit.edu/entities/publication/4f18b470-9c3a-479c-9bfe-12503bbb0d0f",
+    "source_locator": "MIT CISR / MIT DSpace institutional abstract only",
+    "verification_status": "RETIRED_SUPPORT_REPLACED",
+    "checked_on": "2026-10-04",
+    "reviewer": "Assistant-led editorial review",
+    "limitation_and_disposition": "Full paper download unavailable. Course decision-right categories are original application, not a verified reproduction of the complete framework.",
+    "locations": [],
+    "previous_review_id": "AC30",
+    "replaced_by": [
+      "bimodal"
+    ],
+    "disposition": "Original full text remains unavailable; abstract-based supporting role removed. Replacement sources support revised, bounded claims, not the complete original framework."
+  },
+  {
+    "claim_id": "AC31",
+    "bounded_claim": "The briefing abstract uses integration and standardisation requirements to frame the operating model.",
+    "source_key": "operatingmodel",
+    "author": "J. W. Ross",
+    "source_title": "Forget strategy: Focus IT on your operating model",
+    "publication_details": "MIT Sloan Center for Information Systems Research, research briefing, Dec. 2005",
+    "canonical_url": "https://cisr.mit.edu/publication/2005_12_3C_OperatingModels",
+    "inspected_copy_url": "https://cisr.mit.edu/publication/2005_12_3C_OperatingModels",
+    "copy_note": "https://cisr.mit.edu/publication/2005_12_3C_OperatingModels",
+    "source_locator": "MIT CISR research briefing abstract only",
+    "verification_status": "RETIRED_SUPPORT_REPLACED",
+    "checked_on": "2026-10-04",
+    "reviewer": "Assistant-led editorial review",
+    "limitation_and_disposition": "Full 2005 briefing unavailable. The separately cited 2009 lecture supports only its own described example; it does not close this access gap.",
+    "locations": [],
+    "previous_review_id": "AC31",
+    "replaced_by": [
+      "eacisr",
+      "coordination"
+    ],
+    "disposition": "Original full text remains unavailable; abstract-based supporting role removed. Replacement sources support revised, bounded claims, not the complete original framework."
+  }
+]

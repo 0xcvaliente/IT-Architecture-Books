@@ -1,0 +1,184 @@
+{
+ "title": "Publication decision",
+ "description": "Coverage, meaning, access and reproducibility checks feed one publication decision, which routes exceptions to owners.",
+ "width": 860,
+ "height": 480,
+ "theme": "light",
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "nodes": [
+  {
+   "id": "cov",
+   "label": "Coverage",
+   "x": 20,
+   "y": 30,
+   "w": 195,
+   "h": 110,
+   "status": "provided",
+   "detail": "Reconcile key sets and source positions"
+  },
+  {
+   "id": "mea",
+   "label": "Meaning",
+   "x": 235,
+   "y": 30,
+   "w": 195,
+   "h": 110,
+   "status": "provided",
+   "detail": "Validate grain and mappings"
+  },
+  {
+   "id": "acc",
+   "label": "Access",
+   "x": 450,
+   "y": 30,
+   "w": 195,
+   "h": 110,
+   "status": "provided",
+   "detail": "Enforce on every derived copy"
+  },
+  {
+   "id": "rep",
+   "label": "Reproducibility",
+   "x": 665,
+   "y": 30,
+   "w": 195,
+   "h": 110,
+   "status": "provided",
+   "detail": "Explain versions and lineage"
+  },
+  {
+   "id": "dec",
+   "label": "Publication decision",
+   "x": 250,
+   "y": 230,
+   "w": 380,
+   "h": 96,
+   "status": "provided",
+   "emphasis": true,
+   "detail": "Publish, withhold or mark partial"
+  },
+  {
+   "id": "exc",
+   "label": "Exceptions",
+   "x": 250,
+   "y": 390,
+   "w": 380,
+   "h": 76,
+   "status": "provided",
+   "detail": "Owner, measures affected and expiry"
+  }
+ ],
+ "edges": [
+  {
+   "id": "e1",
+   "from": "cov",
+   "to": "dec",
+   "points": [
+    [
+     117,
+     140
+    ],
+    [
+     117,
+     190
+    ],
+    [
+     290,
+     190
+    ],
+    [
+     290,
+     230
+    ]
+   ],
+   "status": "provided"
+  },
+  {
+   "id": "e2",
+   "from": "mea",
+   "to": "dec",
+   "points": [
+    [
+     332,
+     140
+    ],
+    [
+     332,
+     230
+    ]
+   ],
+   "status": "provided"
+  },
+  {
+   "id": "e3",
+   "from": "acc",
+   "to": "dec",
+   "points": [
+    [
+     547,
+     140
+    ],
+    [
+     547,
+     230
+    ]
+   ],
+   "status": "provided"
+  },
+  {
+   "id": "e4",
+   "from": "rep",
+   "to": "dec",
+   "points": [
+    [
+     762,
+     140
+    ],
+    [
+     762,
+     190
+    ],
+    [
+     590,
+     190
+    ],
+    [
+     590,
+     230
+    ]
+   ],
+   "status": "provided"
+  },
+  {
+   "id": "ex",
+   "from": "dec",
+   "to": "exc",
+   "points": [
+    [
+     440,
+     326
+    ],
+    [
+     440,
+     390
+    ]
+   ],
+   "status": "provided",
+   "label": "Route",
+   "label_at": [
+    450,
+    343
+   ],
+   "label_w": 64
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="600" viewBox="0 0 880 600" role="img" aria-labelledby="t d" font-family="DejaVu Sans">
+<title id="t">Four operating models</title>
+<desc id="d">A two-by-two grid with business process standardisation on the horizontal axis and business process integration on the vertical axis. Coordination is high integration and low standardisation; Unification is high on both; Diversification is low on both; Replication is low integration and high standardisation. An arrow shows Helios moving from Diversification towards Coordination.</desc>
+<rect width="880" height="600" fill="#ffffff"/>
+<rect x="125" y="20" width="350" height="240" rx="0" fill="#e8f0fe" stroke="#276ef1" stroke-width="3"/>
+<text x="300.0" y="68" font-size="21" font-weight="bold" text-anchor="middle" fill="#000000">Coordination</text>
+<text x="300.0" y="102" font-size="14" font-weight="normal" text-anchor="middle" fill="#323232">Units share customer, product or</text>
+<text x="300.0" y="121" font-size="14" font-weight="normal" text-anchor="middle" fill="#323232">supplier data; each keeps its</text>
+<text x="300.0" y="140" font-size="14" font-weight="normal" text-anchor="middle" fill="#323232">own processes</text>
+<rect x="475" y="20" width="350" height="240" rx="0" fill="#f3f3f3" stroke="#323232" stroke-width="2"/>
+<text x="650.0" y="68" font-size="21" font-weight="bold" text-anchor="middle" fill="#000000">Unification</text>
+<text x="650.0" y="102" font-size="14" font-weight="normal" text-anchor="middle" fill="#323232">One business with standard</text>
+<text x="650.0" y="121" font-size="14" font-weight="normal" text-anchor="middle" fill="#323232">processes and shared data</text>
+<rect x="125" y="260" width="350" height="240" rx="0" fill="#f3f3f3" stroke="#323232" stroke-width="2"/>
+<text x="300.0" y="308" font-size="21" font-weight="bold" text-anchor="middle" fill="#000000">Diversification</text>
+<text x="300.0" y="342" font-size="14" font-weight="normal" text-anchor="middle" fill="#323232">Independent units with few</text>
+<text x="300.0" y="361" font-size="14" font-weight="normal" text-anchor="middle" fill="#323232">shared customers or data</text>
+<rect x="475" y="260" width="350" height="240" rx="0" fill="#f3f3f3" stroke="#323232" stroke-width="2"/>
+<text x="650.0" y="308" font-size="21" font-weight="bold" text-anchor="middle" fill="#000000">Replication</text>
+<text x="650.0" y="342" font-size="14" font-weight="normal" text-anchor="middle" fill="#323232">Similar units run the same</text>
+<text x="650.0" y="361" font-size="14" font-weight="normal" text-anchor="middle" fill="#323232">standard processes; little</text>
+<text x="650.0" y="380" font-size="14" font-weight="normal" text-anchor="middle" fill="#323232">data is shared</text>
+<line x1="125" y1="540" x2="823.8" y2="540.0" stroke="#323232" stroke-width="2"/>
+<polygon points="835.0,540.0 821.0,533.0 821.0,547.0" fill="#323232"/>
+<text x="475" y="572" font-size="16" font-weight="normal" text-anchor="middle" fill="#000000">Business process standardisation</text>
+<text x="125" y="562" font-size="14" font-weight="normal" text-anchor="start" fill="#323232">Low</text>
+<text x="785" y="562" font-size="14" font-weight="normal" text-anchor="start" fill="#323232">High</text>
+<line x1="85" y1="500" x2="85.0" y2="21.200000000000003" stroke="#323232" stroke-width="2"/>
+<polygon points="85.0,10.0 78.0,24.0 92.0,24.0" fill="#323232"/>
+<text x="63" y="260" font-size="16" font-weight="normal" text-anchor="middle" fill="#000000" transform="rotate(-90 63 260)">Business process integration</text>
+<text x="37" y="496" font-size="14" font-weight="normal" text-anchor="start" fill="#323232">Low</text>
+<text x="33" y="36" font-size="14" font-weight="normal" text-anchor="start" fill="#323232">High</text>
+<circle cx="170" cy="460" r="9" fill="#323232"/>
+<text x="190" y="466" font-size="15" font-weight="bold" text-anchor="start" fill="#000000">Helios today</text>
+<line x1="170" y1="448" x2="170.0" y2="233.2" stroke="#276ef1" stroke-width="3"/>
+<polygon points="170.0,222.0 163.0,236.0 177.0,236.0" fill="#276ef1"/>
+<circle cx="170" cy="210" r="9" fill="#276ef1"/>
+<text x="190" y="216" font-size="15" font-weight="bold" text-anchor="start" fill="#000000">Helios year-one target</text>
+</svg>

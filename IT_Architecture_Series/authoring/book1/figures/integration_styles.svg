@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 662" width="860" height="662" role="img" aria-labelledby="dc-4d445e83dd-title dc-4d445e83dd-desc" font-family="DejaVu Sans">
+<title id="dc-4d445e83dd-title">Four integration styles</title>
+<desc id="dc-4d445e83dd-desc">File transfer: ERP writes a nightly asset file that analytics reads later. Shared database: the CRM and the portal both read and write the portal database. Remote procedure invocation: the portal calls the ERP read API and waits for the reply. Messaging: the CRM publishes an event to a channel, and the work-order integration consumes it later. Dashed arrows show asynchronous transfer; solid arrows show synchronous access.</desc>
+<defs><marker id="dc-4d445e83dd-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 4 L0 8 Z" fill="#323232"/></marker></defs>
+<rect width="860" height="662" fill="#ffffff" aria-hidden="true"/>
+<rect x="20" y="10" width="820" height="150" rx="8" fill="none" stroke="#323232" stroke-dasharray="4 4"/>
+<text x="36" y="34" font-size="13" font-weight="600" fill="#323232" text-anchor="start"><tspan x="36" dy="0">File transfer: a scheduled file, read later</tspan></text>
+<rect x="20" y="174" width="820" height="150" rx="8" fill="none" stroke="#323232" stroke-dasharray="4 4"/>
+<text x="36" y="198" font-size="13" font-weight="600" fill="#323232" text-anchor="start"><tspan x="36" dy="0">Shared database: one schema, two writers</tspan></text>
+<rect x="20" y="338" width="820" height="150" rx="8" fill="none" stroke="#323232" stroke-dasharray="4 4"/>
+<text x="36" y="362" font-size="13" font-weight="600" fill="#323232" text-anchor="start"><tspan x="36" dy="0">Remote procedure invocation: call and wait</tspan></text>
+<rect x="20" y="502" width="820" height="150" rx="8" fill="none" stroke="#323232" stroke-dasharray="4 4"/>
+<text x="36" y="526" font-size="13" font-weight="600" fill="#323232" text-anchor="start"><tspan x="36" dy="0">Messaging: asynchronous messages on a channel</tspan></text>
+<polyline data-edge="f1" points="260,97 320,97" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-4d445e83dd-arrow)" stroke-dasharray="6 5"/>
+<polyline data-edge="f2" points="540,97 600,97" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-4d445e83dd-arrow)" stroke-dasharray="6 5"/>
+<polyline data-edge="d1" points="260,261 320,261" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-4d445e83dd-arrow)"/>
+<polyline data-edge="d2" points="600,261 540,261" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-4d445e83dd-arrow)"/>
+<polyline data-edge="r1" points="300,408 560,408" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-4d445e83dd-arrow)"/>
+<polyline data-edge="r2" points="560,443 300,443" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-4d445e83dd-arrow)"/>
+<polyline data-edge="m1" points="260,589 320,589" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-4d445e83dd-arrow)" stroke-dasharray="6 5"/>
+<polyline data-edge="m2" points="540,589 600,589" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-4d445e83dd-arrow)" stroke-dasharray="6 5"/>
+<g id="dc-4d445e83dd-node-f_erp" data-node="f_erp" data-x="40" data-y="55" data-w="220" data-h="85">
+<rect x="40" y="55" width="220" height="85" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="58" y="95.0" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="f_erp"><tspan x="58" dy="0">ERP</tspan></text>
+<text x="58" y="121.0" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="f_erp"><tspan x="58" dy="0">Writes at night</tspan></text>
+</g>
+<g id="dc-4d445e83dd-node-f_file" data-node="f_file" data-x="320" data-y="55" data-w="220" data-h="85">
+<rect x="320" y="55" width="220" height="85" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<path d="M330 64 H530 M330 131 H530" stroke="#323232" fill="none"/>
+<text x="338" y="104.0" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="f_file"><tspan x="338" dy="0">Asset file</tspan></text>
+</g>
+<g id="dc-4d445e83dd-node-f_an" data-node="f_an" data-x="600" data-y="55" data-w="220" data-h="85">
+<rect x="600" y="55" width="220" height="85" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="618" y="95.0" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="f_an"><tspan x="618" dy="0">Analytics</tspan></text>
+<text x="618" y="121.0" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="f_an"><tspan x="618" dy="0">Reads the next day</tspan></text>
+</g>
+<g id="dc-4d445e83dd-node-d_crm" data-node="d_crm" data-x="40" data-y="219" data-w="220" data-h="85">
+<rect x="40" y="219" width="220" height="85" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="58" y="259.0" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="d_crm"><tspan x="58" dy="0">CRM</tspan></text>
+<text x="58" y="285.0" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="d_crm"><tspan x="58" dy="0">Reads and writes</tspan></text>
+</g>
+<g id="dc-4d445e83dd-node-d_db" data-node="d_db" data-x="320" data-y="219" data-w="220" data-h="85">
+<rect x="320" y="219" width="220" height="85" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<path d="M330 228 H530 M330 295 H530" stroke="#323232" fill="none"/>
+<text x="338" y="268.0" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="d_db"><tspan x="338" dy="0">Portal database</tspan></text>
+</g>
+<g id="dc-4d445e83dd-node-d_portal" data-node="d_portal" data-x="600" data-y="219" data-w="220" data-h="85">
+<rect x="600" y="219" width="220" height="85" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="618" y="259.0" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="d_portal"><tspan x="618" dy="0">Portal</tspan></text>
+<text x="618" y="285.0" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="d_portal"><tspan x="618" dy="0">Reads and writes</tspan></text>
+</g>
+<g id="dc-4d445e83dd-node-r_portal" data-node="r_portal" data-x="40" data-y="383" data-w="260" data-h="85">
+<rect x="40" y="383" width="260" height="85" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="58" y="423.0" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="r_portal"><tspan x="58" dy="0">Portal</tspan></text>
+<text x="58" y="449.0" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="r_portal"><tspan x="58" dy="0">Waits for the reply</tspan></text>
+</g>
+<g id="dc-4d445e83dd-node-r_erp" data-node="r_erp" data-x="560" data-y="383" data-w="260" data-h="85">
+<rect x="560" y="383" width="260" height="85" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="578" y="423.0" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="r_erp"><tspan x="578" dy="0">ERP read API</tspan></text>
+<text x="578" y="449.0" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="r_erp"><tspan x="578" dy="0">Entitlements</tspan></text>
+</g>
+<g id="dc-4d445e83dd-node-m_crm" data-node="m_crm" data-x="40" data-y="547" data-w="220" data-h="85">
+<rect x="40" y="547" width="220" height="85" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="58" y="587.0" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="m_crm"><tspan x="58" dy="0">CRM</tspan></text>
+<text x="58" y="613.0" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="m_crm"><tspan x="58" dy="0">Publishes an event</tspan></text>
+</g>
+<g id="dc-4d445e83dd-node-m_chan" data-node="m_chan" data-x="320" data-y="547" data-w="220" data-h="85">
+<rect x="320" y="547" width="220" height="85" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<path d="M330 556 H530 M330 623 H530" stroke="#323232" fill="none"/>
+<text x="338" y="596.0" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="m_chan"><tspan x="338" dy="0">Event channel</tspan></text>
+</g>
+<g id="dc-4d445e83dd-node-m_woi" data-node="m_woi" data-x="600" data-y="547" data-w="220" data-h="85">
+<rect x="600" y="547" width="220" height="85" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="618" y="575.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="m_woi"><tspan x="618" dy="0">Work-order</tspan><tspan x="618" dy="23">integration</tspan></text>
+<text x="618" y="624.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="m_woi"><tspan x="618" dy="0">Consumes it later</tspan></text>
+</g>
+<g data-label="r1" data-x="390" data-y="373" data-w="70" data-h="30"><rect x="390" y="373" width="70" height="30" rx="4" fill="#ffffff"/>
+<text x="398" y="392" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="398" dy="0">request</tspan></text>
+</g>
+<g data-label="r2" data-x="400" data-y="445" data-w="56" data-h="30"><rect x="400" y="445" width="56" height="30" rx="4" fill="#ffffff"/>
+<text x="408" y="464" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="408" dy="0">reply</tspan></text>
+</g>
+</svg>

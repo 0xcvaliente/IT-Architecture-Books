@@ -1,0 +1,390 @@
+{
+ "title": "Meridian Service Portal containers",
+ "description": "The portal API stores receipts and outbox records in one transaction and reads ERP facts from a versioned read model. A handoff worker delivers submissions to the CRM, and the CRM sends case status updates back to the portal API, which projects them for customers. When the CRM approves a case it emits ServiceCaseApproved; the work-order integration consumes it and creates the ERP work order. A sync job refreshes the ERP read model through ERP's read API. Everything inside the Meridian solution boundary is run by the portal team. Solid arrows are synchronous calls or writes; dashed arrows are asynchronous events or status updates.",
+ "width": 860,
+ "height": 740,
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "regions": [
+  {
+   "id": "solution",
+   "label": "Meridian solution",
+   "x": 20,
+   "y": 120,
+   "w": 576,
+   "h": 605
+  }
+ ],
+ "nodes": [
+  {
+   "id": "browser",
+   "label": "Browser",
+   "x": 40,
+   "y": 10,
+   "w": 250,
+   "h": 90,
+   "detail": "Customers and staff"
+  },
+  {
+   "id": "api",
+   "label": "Portal API",
+   "x": 40,
+   "y": 160,
+   "w": 210,
+   "h": 90,
+   "detail": "Access checks, receipts",
+   "emphasis": true
+  },
+  {
+   "id": "db",
+   "label": "Portal database",
+   "x": 360,
+   "y": 160,
+   "w": 220,
+   "h": 90,
+   "detail": "Submissions, outbox",
+   "shape": "store"
+  },
+  {
+   "id": "readmodel",
+   "label": "ERP read model",
+   "x": 40,
+   "y": 300,
+   "w": 210,
+   "h": 104,
+   "detail": "Source version, freshness",
+   "shape": "store"
+  },
+  {
+   "id": "worker",
+   "label": "Handoff worker",
+   "x": 360,
+   "y": 300,
+   "w": 220,
+   "h": 90,
+   "detail": "Delivers to the CRM"
+  },
+  {
+   "id": "files",
+   "label": "Object storage",
+   "x": 40,
+   "y": 470,
+   "w": 210,
+   "h": 90,
+   "detail": "Scanned attachments",
+   "shape": "store"
+  },
+  {
+   "id": "woi",
+   "label": "Work-order integration",
+   "x": 360,
+   "y": 470,
+   "w": 220,
+   "h": 100,
+   "detail": "Key: service case ID"
+  },
+  {
+   "id": "sync",
+   "label": "Read-model sync",
+   "x": 360,
+   "y": 620,
+   "w": 220,
+   "h": 90,
+   "detail": "Refreshes ERP facts"
+  },
+  {
+   "id": "crm",
+   "label": "CRM",
+   "x": 700,
+   "y": 280,
+   "w": 140,
+   "h": 120,
+   "detail": "Owns service cases"
+  },
+  {
+   "id": "erp",
+   "label": "ERP",
+   "x": 700,
+   "y": 500,
+   "w": 140,
+   "h": 210,
+   "detail": "Assets, contracts, work orders"
+  }
+ ],
+ "edges": [
+  {
+   "id": "submit",
+   "from": "browser",
+   "to": "api",
+   "points": [
+    [
+     215,
+     100
+    ],
+    [
+     215,
+     160
+    ]
+   ],
+   "label": "HTTPS",
+   "label_at": [
+    222,
+    102
+   ],
+   "label_w": 64
+  },
+  {
+   "id": "txn",
+   "from": "api",
+   "to": "db",
+   "points": [
+    [
+     250,
+     225
+    ],
+    [
+     360,
+     225
+    ]
+   ],
+   "label": "One transaction",
+   "label_at": [
+    253,
+    170
+   ],
+   "label_w": 104
+  },
+  {
+   "id": "readfacts",
+   "from": "api",
+   "to": "readmodel",
+   "points": [
+    [
+     145,
+     250
+    ],
+    [
+     145,
+     300
+    ]
+   ],
+   "label": "Read facts",
+   "label_at": [
+    155,
+    260
+   ],
+   "label_w": 94
+  },
+  {
+   "id": "claim",
+   "from": "worker",
+   "to": "db",
+   "points": [
+    [
+     470,
+     300
+    ],
+    [
+     470,
+     250
+    ]
+   ],
+   "label": "Claim, record",
+   "label_at": [
+    480,
+    262
+   ],
+   "label_w": 120
+  },
+  {
+   "id": "create",
+   "from": "worker",
+   "to": "crm",
+   "points": [
+    [
+     580,
+     320
+    ],
+    [
+     700,
+     320
+    ]
+   ],
+   "label": "Create case",
+   "label_at": [
+    604,
+    266
+   ],
+   "label_w": 92
+  },
+  {
+   "id": "status",
+   "from": "crm",
+   "to": "api",
+   "points": [
+    [
+     800,
+     280
+    ],
+    [
+     800,
+     136
+    ],
+    [
+     240,
+     136
+    ],
+    [
+     240,
+     160
+    ]
+   ],
+   "label": "Case status",
+   "label_at": [
+    600,
+    104
+   ],
+   "label_w": 100,
+   "style": "dashed"
+  },
+  {
+   "id": "approved",
+   "from": "crm",
+   "to": "woi",
+   "points": [
+    [
+     770,
+     400
+    ],
+    [
+     770,
+     432
+    ],
+    [
+     470,
+     432
+    ],
+    [
+     470,
+     470
+    ]
+   ],
+   "label": "ServiceCaseApproved",
+   "label_at": [
+    522,
+    436
+   ],
+   "label_w": 168,
+   "style": "dashed"
+  },
+  {
+   "id": "workorder",
+   "from": "woi",
+   "to": "erp",
+   "points": [
+    [
+     580,
+     530
+    ],
+    [
+     700,
+     530
+    ]
+   ],
+   "label": "Create work order",
+   "label_at": [
+    604,
+    538
+   ],
+   "label_w": 94
+  },
+  {
+   "id": "readapi",
+   "from": "sync",
+   "to": "erp",
+   "points": [
+    [
+     580,
+     665
+    ],
+    [
+     700,
+     665
+    ]
+   ],
+   "label": "Read API",
+   "label_at": [
+    604,
+    628
+   ],
+   "label_w": 84
+  },
+  {
+   "id": "store",
+   "from": "sync",
+   "to": "readmodel",
+   "points": [
+    [
+     360,
+     690
+    ],
+    [
+     300,
+     690
+    ],
+    [
+     300,
+     345
+    ],
+    [
+     250,
+     345
+    ]
+   ],
+   "label": "Versioned facts",
+   "label_at": [
+    306,
+    582
+   ],
+   "label_w": 146
+  },
+  {
+   "id": "upload",
+   "from": "browser",
+   "to": "files",
+   "points": [
+    [
+     40,
+     55
+    ],
+    [
+     14,
+     55
+    ],
+    [
+     14,
+     515
+    ],
+    [
+     40,
+     515
+    ]
+   ],
+   "label": "Authorised upload",
+   "label_at": [
+    24,
+    420
+   ],
+   "label_w": 150
+  }
+ ],
+ "notes": []
+}

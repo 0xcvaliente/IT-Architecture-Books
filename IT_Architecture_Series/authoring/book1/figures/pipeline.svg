@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" width="860" height="440" role="img" aria-labelledby="dc-9b02923e91-title dc-9b02923e91-desc" font-family="DejaVu Sans">
+<title id="dc-9b02923e91-title">Delivery pipeline</title>
+<desc id="dc-9b02923e91-desc">A change is reviewed, built and tested, verified in staging, and the same artefact is promoted under release controls. Production is observed, and the team learns and feeds improvements back into review. The same tested build is promoted and configuration stays controlled.</desc>
+<defs><marker id="dc-9b02923e91-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 4 L0 8 Z" fill="#323232"/></marker></defs>
+<rect width="860" height="440" fill="#ffffff" aria-hidden="true"/>
+<polyline data-edge="t0" points="260,65 310,65" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-9b02923e91-arrow)"/>
+<polyline data-edge="b0" points="600,375 550,375" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-9b02923e91-arrow)"/>
+<polyline data-edge="t1" points="550,65 600,65" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-9b02923e91-arrow)"/>
+<polyline data-edge="b1" points="310,375 260,375" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-9b02923e91-arrow)"/>
+<polyline data-edge="down" points="720,110 720,330" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-9b02923e91-arrow)"/>
+<polyline data-edge="up" points="140,330 140,110" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-9b02923e91-arrow)" stroke-dasharray="6 5"/>
+<g id="dc-9b02923e91-node-review" data-node="review" data-x="20" data-y="20" data-w="240" data-h="90">
+<rect x="20" y="20" width="240" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="38" y="71.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="review"><tspan x="38" dy="0">Review change</tspan></text>
+</g>
+<g id="dc-9b02923e91-node-build" data-node="build" data-x="310" data-y="20" data-w="240" data-h="90">
+<rect x="310" y="20" width="240" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="328" y="62.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="build"><tspan x="328" dy="0">Build and test</tspan></text>
+<text x="328" y="88.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="build"><tspan x="328" dy="0">One identified artefact</tspan></text>
+</g>
+<g id="dc-9b02923e91-node-stage" data-node="stage" data-x="600" data-y="20" data-w="240" data-h="90">
+<rect x="600" y="20" width="240" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="618" y="62.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="stage"><tspan x="618" dy="0">Verify in staging</tspan></text>
+<text x="618" y="88.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="stage"><tspan x="618" dy="0">Realistic identity</tspan></text>
+</g>
+<g id="dc-9b02923e91-node-promote" data-node="promote" data-x="600" data-y="330" data-w="240" data-h="90">
+<rect x="600" y="330" width="240" height="90" rx="6" fill="#e8f0fe" stroke="#276ef1" stroke-width="2"/>
+<text x="618" y="372.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="promote"><tspan x="618" dy="0">Promote artefact</tspan></text>
+<text x="618" y="398.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="promote"><tspan x="618" dy="0">Same tested build</tspan></text>
+</g>
+<g id="dc-9b02923e91-node-observe" data-node="observe" data-x="310" data-y="330" data-w="240" data-h="90">
+<rect x="310" y="330" width="240" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="328" y="372.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="observe"><tspan x="328" dy="0">Observe production</tspan></text>
+<text x="328" y="398.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="observe"><tspan x="328" dy="0">Signals after release</tspan></text>
+</g>
+<g id="dc-9b02923e91-node-learn" data-node="learn" data-x="20" data-y="330" data-w="240" data-h="90">
+<rect x="20" y="330" width="240" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="38" y="381.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="learn"><tspan x="38" dy="0">Learn and improve</tspan></text>
+</g>
+<g data-label="down" data-x="730" data-y="190" data-w="110" data-h="48"><rect x="730" y="190" width="110" height="48" rx="4" fill="#ffffff"/>
+<text x="738" y="209" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="738" dy="0">Release</tspan><tspan x="738" dy="18">controls</tspan></text>
+</g>
+<g data-label="up" data-x="150" data-y="190" data-w="100" data-h="30"><rect x="150" y="190" width="100" height="30" rx="4" fill="#ffffff"/>
+<text x="158" y="209" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="158" dy="0">Feedback</tspan></text>
+</g>
+</svg>

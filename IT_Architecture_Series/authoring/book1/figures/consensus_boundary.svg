@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 570" width="860" height="570" role="img" aria-labelledby="dc-7b7e071d3e-title dc-7b7e071d3e-desc" font-family="DejaVu Sans">
+<title id="dc-7b7e071d3e-title">Consensus boundary and external payment</title>
+<desc id="dc-7b7e071d3e-desc">Inside the consensus boundary, the order API appends a command to the leader&#x27;s durable log, which is replicated to voters B and C. A worker recovers committed intents from the log and sends a payment attempt with a key to the payment provider, which lies outside the consensus boundary; a timeout can leave the payment outcome unknown.</desc>
+<defs><marker id="dc-7b7e071d3e-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 4 L0 8 Z" fill="#323232"/></marker></defs>
+<rect width="860" height="570" fill="#ffffff" aria-hidden="true"/>
+<rect x="20" y="20" width="820" height="360" rx="8" fill="none" stroke="#323232" stroke-dasharray="4 4"/>
+<text x="36" y="44" font-size="13" font-weight="600" fill="#323232" text-anchor="start"><tspan x="36" dy="0">Consensus boundary: replicated order log</tspan></text>
+<polyline data-edge="append" points="250,125 330,125" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-7b7e071d3e-arrow)"/>
+<polyline data-edge="rep_b" points="540,105 585,105 585,95 630,95" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-7b7e071d3e-arrow)"/>
+<polyline data-edge="rep_c" points="540,150 585,150 585,205 630,205" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-7b7e071d3e-arrow)"/>
+<polyline data-edge="intent" points="435,170 435,260" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-7b7e071d3e-arrow)"/>
+<polyline data-edge="attempt" points="435,350 435,450" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-7b7e071d3e-arrow)"/>
+<g id="dc-7b7e071d3e-node-api" data-node="api" data-x="40" data-y="80" data-w="210" data-h="90">
+<rect x="40" y="80" width="210" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="58" y="122.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="api"><tspan x="58" dy="0">Order API</tspan></text>
+<text x="58" y="148.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="api"><tspan x="58" dy="0">Command identity</tspan></text>
+</g>
+<g id="dc-7b7e071d3e-node-leader" data-node="leader" data-x="330" data-y="80" data-w="210" data-h="90">
+<rect x="330" y="80" width="210" height="90" rx="6" fill="#e8f0fe" stroke="#276ef1" stroke-width="2"/>
+<text x="348" y="122.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="leader"><tspan x="348" dy="0">Leader</tspan></text>
+<text x="348" y="148.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="leader"><tspan x="348" dy="0">Durable log</tspan></text>
+</g>
+<g id="dc-7b7e071d3e-node-vb" data-node="vb" data-x="630" data-y="60" data-w="190" data-h="70">
+<rect x="630" y="60" width="190" height="70" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="648" y="101.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="vb"><tspan x="648" dy="0">Voter B</tspan></text>
+</g>
+<g id="dc-7b7e071d3e-node-vc" data-node="vc" data-x="630" data-y="170" data-w="190" data-h="70">
+<rect x="630" y="170" width="190" height="70" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="648" y="211.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="vc"><tspan x="648" dy="0">Voter C</tspan></text>
+</g>
+<g id="dc-7b7e071d3e-node-worker" data-node="worker" data-x="330" data-y="260" data-w="210" data-h="90">
+<rect x="330" y="260" width="210" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="348" y="293.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="worker"><tspan x="348" dy="0">Worker</tspan></text>
+<text x="348" y="319.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="worker"><tspan x="348" dy="0">Recovers committed</tspan><tspan x="348" dy="18">intents</tspan></text>
+</g>
+<g id="dc-7b7e071d3e-node-provider" data-node="provider" data-x="250" data-y="450" data-w="370" data-h="100">
+<rect x="250" y="450" width="370" height="100" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="268" y="488.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="provider"><tspan x="268" dy="0">Payment provider</tspan></text>
+<text x="268" y="514.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="provider"><tspan x="268" dy="0">Outside the consensus boundary; a timeout</tspan><tspan x="268" dy="18">leaves the outcome unknown</tspan></text>
+</g>
+<g data-label="append" data-x="254" data-y="88" data-w="72" data-h="30"><rect x="254" y="88" width="72" height="30" rx="4" fill="#ffffff"/>
+<text x="262" y="107" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="262" dy="0">append</tspan></text>
+</g>
+<g data-label="intent" data-x="282" data-y="198" data-w="146" data-h="30"><rect x="282" y="198" width="146" height="30" rx="4" fill="#ffffff"/>
+<text x="290" y="217" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="290" dy="0">committed intent</tspan></text>
+</g>
+<g data-label="attempt" data-x="445" data-y="384" data-w="226" data-h="30"><rect x="445" y="384" width="226" height="30" rx="4" fill="#ffffff"/>
+<text x="453" y="403" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="453" dy="0">attempt with a payment key</tspan></text>
+</g>
+</svg>

@@ -1,0 +1,170 @@
+{
+ "title": "Authority by fact, connected by governed links",
+ "description": "The party register, ERP Core and the division CRMs are each authoritative for different customer facts. The customer link hub connects their records with match status. Service agents use verified links only; group reporting uses a versioned mapping.",
+ "width": 860,
+ "height": 470,
+ "theme": "light",
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "regions": [],
+ "nodes": [
+  {
+   "id": "pr",
+   "label": "Party register",
+   "x": 20,
+   "y": 20,
+   "w": 250,
+   "h": 85,
+   "status": "provided",
+   "detail": "Legal organisation"
+  },
+  {
+   "id": "erp",
+   "label": "ERP Core",
+   "x": 305,
+   "y": 20,
+   "w": 250,
+   "h": 85,
+   "status": "provided",
+   "detail": "Billing account and invoices"
+  },
+  {
+   "id": "crm",
+   "label": "Division CRMs",
+   "x": 590,
+   "y": 20,
+   "w": 250,
+   "h": 85,
+   "status": "provided",
+   "detail": "Service cases and contacts"
+  },
+  {
+   "id": "hub",
+   "label": "Customer link hub",
+   "x": 230,
+   "y": 180,
+   "w": 400,
+   "h": 85,
+   "status": "provided",
+   "detail": "Governed links with match status",
+   "emphasis": true
+  },
+  {
+   "id": "svc",
+   "label": "Service agents",
+   "x": 40,
+   "y": 370,
+   "w": 330,
+   "h": 85,
+   "status": "provided",
+   "detail": "Case authority stays local"
+  },
+  {
+   "id": "rep",
+   "label": "Group reporting",
+   "x": 490,
+   "y": 370,
+   "w": 330,
+   "h": 85,
+   "status": "provided",
+   "detail": "Versioned customer mapping"
+  }
+ ],
+ "edges": [
+  {
+   "id": "a1",
+   "from": "pr",
+   "to": "hub",
+   "points": [
+    [
+     145,
+     105
+    ],
+    [
+     300,
+     180
+    ]
+   ]
+  },
+  {
+   "id": "a2",
+   "from": "erp",
+   "to": "hub",
+   "points": [
+    [
+     430,
+     105
+    ],
+    [
+     430,
+     180
+    ]
+   ]
+  },
+  {
+   "id": "a3",
+   "from": "crm",
+   "to": "hub",
+   "points": [
+    [
+     715,
+     105
+    ],
+    [
+     560,
+     180
+    ]
+   ]
+  },
+  {
+   "id": "a4",
+   "from": "hub",
+   "to": "svc",
+   "points": [
+    [
+     330,
+     265
+    ],
+    [
+     205,
+     370
+    ]
+   ],
+   "label": "verified links only",
+   "label_at": [
+    95,
+    302
+   ],
+   "label_w": 170
+  },
+  {
+   "id": "a5",
+   "from": "hub",
+   "to": "rep",
+   "points": [
+    [
+     530,
+     265
+    ],
+    [
+     655,
+     370
+    ]
+   ],
+   "label": "defined meaning",
+   "label_at": [
+    605,
+    302
+   ],
+   "label_w": 150
+  }
+ ]
+}

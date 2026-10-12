@@ -1,0 +1,11 @@
+{
+ "network": 1,
+ "dataflow": 4,
+ "integration_styles": 4,
+ "identity": 4,
+ "acceptance": 1,
+ "commerce": 1,
+ "saga": 2,
+ "analytics": 2,
+ "star": 3
+}

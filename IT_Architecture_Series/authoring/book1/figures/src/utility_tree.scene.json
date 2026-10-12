@@ -1,0 +1,340 @@
+{
+ "title": "Meridian utility tree",
+ "description": "Utility is refined into reliability, performance, security and modifiability, and then into six scenarios rated by importance and difficulty: H high, M medium, L low.",
+ "width": 860,
+ "height": 682,
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "regions": [
+  {
+   "id": "leaves",
+   "label": "Scenarios rated (importance, difficulty)",
+   "x": 355,
+   "y": 10,
+   "w": 495,
+   "h": 662
+  }
+ ],
+ "nodes": [
+  {
+   "id": "l1",
+   "label": "Durable receipt (H, M)",
+   "x": 370,
+   "y": 50,
+   "w": 470,
+   "h": 92,
+   "detail": "CRM down for 30 minutes: every accepted request reaches the CRM after recovery"
+  },
+  {
+   "id": "l2",
+   "label": "Duplicate safety (H, L)",
+   "x": 370,
+   "y": 152,
+   "w": 470,
+   "h": 92,
+   "detail": "Same key repeated: the first receipt returns, no second case"
+  },
+  {
+   "id": "l3",
+   "label": "Receipt latency (H, M)",
+   "x": 370,
+   "y": 254,
+   "w": 470,
+   "h": 92,
+   "detail": "20 submissions per second for 10 minutes: 95% of receipts within 1 second"
+  },
+  {
+   "id": "l4",
+   "label": "Tenant isolation (H, L)",
+   "x": 370,
+   "y": 356,
+   "w": 470,
+   "h": 92,
+   "detail": "Agent requests a record outside their scopes: denied and logged"
+  },
+  {
+   "id": "l5",
+   "label": "Attachment safety (M, M)",
+   "x": 370,
+   "y": 458,
+   "w": 470,
+   "h": 92,
+   "detail": "Malicious file uploaded: never released to staff before scanning"
+  },
+  {
+   "id": "l6",
+   "label": "CRM replacement (M, H)",
+   "x": 370,
+   "y": 560,
+   "w": 470,
+   "h": 92,
+   "detail": "New CRM vendor: changes confined to the adapter, done within six weeks"
+  },
+  {
+   "id": "rel",
+   "label": "Reliability",
+   "x": 162,
+   "y": 107.0,
+   "w": 178,
+   "h": 80
+  },
+  {
+   "id": "perf",
+   "label": "Performance",
+   "x": 162,
+   "y": 260.0,
+   "w": 178,
+   "h": 80
+  },
+  {
+   "id": "sec",
+   "label": "Security",
+   "x": 162,
+   "y": 413.0,
+   "w": 178,
+   "h": 80
+  },
+  {
+   "id": "mod",
+   "label": "Modifiability",
+   "x": 162,
+   "y": 566.0,
+   "w": 178,
+   "h": 80
+  },
+  {
+   "id": "root",
+   "label": "Utility",
+   "x": 10,
+   "y": 306.0,
+   "w": 128,
+   "h": 90,
+   "detail": "Overall goodness"
+  }
+ ],
+ "edges": [
+  {
+   "id": "e_rel_l1",
+   "from": "rel",
+   "to": "l1",
+   "points": [
+    [
+     340,
+     147.0
+    ],
+    [
+     350,
+     147.0
+    ],
+    [
+     350,
+     96.0
+    ],
+    [
+     370,
+     96.0
+    ]
+   ]
+  },
+  {
+   "id": "e_rel_l2",
+   "from": "rel",
+   "to": "l2",
+   "points": [
+    [
+     340,
+     147.0
+    ],
+    [
+     350,
+     147.0
+    ],
+    [
+     350,
+     198.0
+    ],
+    [
+     370,
+     198.0
+    ]
+   ]
+  },
+  {
+   "id": "e_perf_l3",
+   "from": "perf",
+   "to": "l3",
+   "points": [
+    [
+     340,
+     300.0
+    ],
+    [
+     370,
+     300.0
+    ]
+   ]
+  },
+  {
+   "id": "e_sec_l4",
+   "from": "sec",
+   "to": "l4",
+   "points": [
+    [
+     340,
+     453.0
+    ],
+    [
+     350,
+     453.0
+    ],
+    [
+     350,
+     402.0
+    ],
+    [
+     370,
+     402.0
+    ]
+   ]
+  },
+  {
+   "id": "e_sec_l5",
+   "from": "sec",
+   "to": "l5",
+   "points": [
+    [
+     340,
+     453.0
+    ],
+    [
+     350,
+     453.0
+    ],
+    [
+     350,
+     504.0
+    ],
+    [
+     370,
+     504.0
+    ]
+   ]
+  },
+  {
+   "id": "e_mod_l6",
+   "from": "mod",
+   "to": "l6",
+   "points": [
+    [
+     340,
+     606.0
+    ],
+    [
+     370,
+     606.0
+    ]
+   ]
+  },
+  {
+   "id": "e_root_rel",
+   "from": "root",
+   "to": "rel",
+   "points": [
+    [
+     138,
+     351.0
+    ],
+    [
+     151,
+     351.0
+    ],
+    [
+     151,
+     147.0
+    ],
+    [
+     162,
+     147.0
+    ]
+   ]
+  },
+  {
+   "id": "e_root_perf",
+   "from": "root",
+   "to": "perf",
+   "points": [
+    [
+     138,
+     351.0
+    ],
+    [
+     151,
+     351.0
+    ],
+    [
+     151,
+     300.0
+    ],
+    [
+     162,
+     300.0
+    ]
+   ]
+  },
+  {
+   "id": "e_root_sec",
+   "from": "root",
+   "to": "sec",
+   "points": [
+    [
+     138,
+     351.0
+    ],
+    [
+     151,
+     351.0
+    ],
+    [
+     151,
+     453.0
+    ],
+    [
+     162,
+     453.0
+    ]
+   ]
+  },
+  {
+   "id": "e_root_mod",
+   "from": "root",
+   "to": "mod",
+   "points": [
+    [
+     138,
+     351.0
+    ],
+    [
+     151,
+     351.0
+    ],
+    [
+     151,
+     606.0
+    ],
+    [
+     162,
+     606.0
+    ]
+   ]
+  }
+ ],
+ "notes": []
+}

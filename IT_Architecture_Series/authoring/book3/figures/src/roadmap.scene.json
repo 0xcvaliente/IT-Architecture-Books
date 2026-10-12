@@ -1,0 +1,171 @@
+{
+ "title": "Dependency network for the customer identity pilot",
+ "description": "Activity A precedes B and C; D follows both B and C; E follows D. The longest path A-B-D-E gives 16 weeks; C has three weeks of slack.",
+ "width": 860,
+ "height": 400,
+ "theme": "light",
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "regions": [],
+ "nodes": [
+  {
+   "id": "A",
+   "label": "A: agree semantics",
+   "x": 20,
+   "y": 150,
+   "w": 190,
+   "h": 80,
+   "status": "provided",
+   "detail": "4 weeks",
+   "emphasis": true
+  },
+  {
+   "id": "B",
+   "label": "B: identifiers",
+   "x": 300,
+   "y": 30,
+   "w": 210,
+   "h": 80,
+   "status": "provided",
+   "detail": "6 weeks",
+   "emphasis": true
+  },
+  {
+   "id": "C",
+   "label": "C: contracts",
+   "x": 300,
+   "y": 270,
+   "w": 210,
+   "h": 80,
+   "status": "provided",
+   "detail": "3 weeks, 3 slack"
+  },
+  {
+   "id": "D",
+   "label": "D: handoff pilot",
+   "x": 600,
+   "y": 150,
+   "w": 240,
+   "h": 80,
+   "status": "provided",
+   "detail": "4 weeks",
+   "emphasis": true
+  },
+  {
+   "id": "Ev",
+   "label": "E: evaluate",
+   "x": 600,
+   "y": 300,
+   "w": 240,
+   "h": 80,
+   "status": "provided",
+   "detail": "2 weeks",
+   "emphasis": true
+  }
+ ],
+ "edges": [
+  {
+   "id": "d1",
+   "from": "A",
+   "to": "B",
+   "points": [
+    [
+     115,
+     150
+    ],
+    [
+     115,
+     70
+    ],
+    [
+     300,
+     70
+    ]
+   ]
+  },
+  {
+   "id": "d2",
+   "from": "A",
+   "to": "C",
+   "points": [
+    [
+     115,
+     230
+    ],
+    [
+     115,
+     310
+    ],
+    [
+     300,
+     310
+    ]
+   ]
+  },
+  {
+   "id": "d3",
+   "from": "B",
+   "to": "D",
+   "points": [
+    [
+     510,
+     70
+    ],
+    [
+     720,
+     70
+    ],
+    [
+     720,
+     150
+    ]
+   ]
+  },
+  {
+   "id": "d4",
+   "from": "C",
+   "to": "D",
+   "points": [
+    [
+     510,
+     310
+    ],
+    [
+     555,
+     310
+    ],
+    [
+     555,
+     190
+    ],
+    [
+     600,
+     190
+    ]
+   ]
+  },
+  {
+   "id": "d5",
+   "from": "D",
+   "to": "Ev",
+   "points": [
+    [
+     720,
+     230
+    ],
+    [
+     720,
+     300
+    ]
+   ]
+  }
+ ]
+}

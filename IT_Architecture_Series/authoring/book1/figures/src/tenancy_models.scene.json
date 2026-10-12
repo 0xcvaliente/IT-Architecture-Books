@@ -1,0 +1,221 @@
+{
+ "title": "Silo, bridge and pool tenancy models",
+ "description": "Silo gives each tenant its own application and database. Bridge shares the application and one database but keeps separate tables per tenant. Pool shares the application and the tables, with a tenant identifier on every row and row-level security.",
+ "width": 860,
+ "height": 600,
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "regions": [
+  {
+   "id": "silo",
+   "label": "Silo: separate resources per tenant",
+   "x": 20,
+   "y": 10,
+   "w": 820,
+   "h": 150
+  },
+  {
+   "id": "bridge",
+   "label": "Bridge: shared application, tables per tenant",
+   "x": 20,
+   "y": 175,
+   "w": 820,
+   "h": 230
+  },
+  {
+   "id": "bridge_db",
+   "label": "One database",
+   "x": 440,
+   "y": 210,
+   "w": 380,
+   "h": 180
+  },
+  {
+   "id": "pool",
+   "label": "Pool: shared application and shared tables",
+   "x": 20,
+   "y": 420,
+   "w": 820,
+   "h": 170
+  }
+ ],
+ "nodes": [
+  {
+   "id": "app_a",
+   "label": "App A",
+   "x": 40,
+   "y": 55,
+   "w": 170,
+   "h": 80,
+   "detail": "Tenant A only"
+  },
+  {
+   "id": "db_a",
+   "label": "Database A",
+   "x": 240,
+   "y": 55,
+   "w": 170,
+   "h": 80,
+   "shape": "store"
+  },
+  {
+   "id": "app_b",
+   "label": "App B",
+   "x": 450,
+   "y": 55,
+   "w": 170,
+   "h": 80,
+   "detail": "Tenant B only"
+  },
+  {
+   "id": "db_b",
+   "label": "Database B",
+   "x": 650,
+   "y": 55,
+   "w": 170,
+   "h": 80,
+   "shape": "store"
+  },
+  {
+   "id": "bridge_app",
+   "label": "Shared application",
+   "x": 40,
+   "y": 250,
+   "w": 300,
+   "h": 100,
+   "detail": "All tenants"
+  },
+  {
+   "id": "tables_a",
+   "label": "A tables",
+   "x": 470,
+   "y": 245,
+   "w": 320,
+   "h": 60,
+   "shape": "store"
+  },
+  {
+   "id": "tables_b",
+   "label": "B tables",
+   "x": 470,
+   "y": 320,
+   "w": 320,
+   "h": 60,
+   "shape": "store"
+  },
+  {
+   "id": "pool_app",
+   "label": "Shared application",
+   "x": 40,
+   "y": 470,
+   "w": 300,
+   "h": 100,
+   "detail": "All tenants"
+  },
+  {
+   "id": "pool_tables",
+   "label": "Shared tables",
+   "x": 440,
+   "y": 465,
+   "w": 380,
+   "h": 110,
+   "detail": "tenant_id on every row, filtered by row-level security",
+   "shape": "store",
+   "emphasis": true
+  }
+ ],
+ "edges": [
+  {
+   "id": "e_a",
+   "from": "app_a",
+   "to": "db_a",
+   "points": [
+    [
+     210,
+     95
+    ],
+    [
+     240,
+     95
+    ]
+   ]
+  },
+  {
+   "id": "e_b",
+   "from": "app_b",
+   "to": "db_b",
+   "points": [
+    [
+     620,
+     95
+    ],
+    [
+     650,
+     95
+    ]
+   ]
+  },
+  {
+   "id": "e_ta",
+   "from": "bridge_app",
+   "to": "tables_a",
+   "points": [
+    [
+     340,
+     275
+    ],
+    [
+     470,
+     275
+    ]
+   ]
+  },
+  {
+   "id": "e_tb",
+   "from": "bridge_app",
+   "to": "tables_b",
+   "points": [
+    [
+     340,
+     325
+    ],
+    [
+     400,
+     325
+    ],
+    [
+     400,
+     350
+    ],
+    [
+     470,
+     350
+    ]
+   ]
+  },
+  {
+   "id": "e_pool",
+   "from": "pool_app",
+   "to": "pool_tables",
+   "points": [
+    [
+     340,
+     520
+    ],
+    [
+     440,
+     520
+    ]
+   ]
+  }
+ ],
+ "notes": []
+}

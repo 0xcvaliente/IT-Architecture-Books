@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 480" width="860" height="480" role="img" aria-labelledby="dc-849c341ffc-title dc-849c341ffc-desc" font-family="DejaVu Sans">
+<title id="dc-849c341ffc-title">Publication decision</title>
+<desc id="dc-849c341ffc-desc">Coverage, meaning, access and reproducibility checks feed one publication decision, which routes exceptions to owners.</desc>
+<defs><marker id="dc-849c341ffc-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 4 L0 8 Z" fill="#323232"/></marker></defs>
+<rect width="860" height="480" fill="#ffffff" aria-hidden="true"/>
+<polyline data-edge="e1" points="117,140 117,190 290,190 290,230" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-849c341ffc-arrow)"/>
+<polyline data-edge="e2" points="332,140 332,230" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-849c341ffc-arrow)"/>
+<polyline data-edge="e3" points="547,140 547,230" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-849c341ffc-arrow)"/>
+<polyline data-edge="e4" points="762,140 762,190 590,190 590,230" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-849c341ffc-arrow)"/>
+<polyline data-edge="ex" points="440,326 440,390" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-849c341ffc-arrow)"/>
+<g id="dc-849c341ffc-node-cov" data-node="cov" data-x="20" data-y="30" data-w="195" data-h="110">
+<rect x="20" y="30" width="195" height="110" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="38" y="73.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="cov"><tspan x="38" dy="0">Coverage</tspan></text>
+<text x="38" y="99.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="cov"><tspan x="38" dy="0">Reconcile key sets</tspan><tspan x="38" dy="18">and source positions</tspan></text>
+</g>
+<g id="dc-849c341ffc-node-mea" data-node="mea" data-x="235" data-y="30" data-w="195" data-h="110">
+<rect x="235" y="30" width="195" height="110" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="253" y="73.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="mea"><tspan x="253" dy="0">Meaning</tspan></text>
+<text x="253" y="99.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="mea"><tspan x="253" dy="0">Validate grain and</tspan><tspan x="253" dy="18">mappings</tspan></text>
+</g>
+<g id="dc-849c341ffc-node-acc" data-node="acc" data-x="450" data-y="30" data-w="195" data-h="110">
+<rect x="450" y="30" width="195" height="110" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="468" y="73.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="acc"><tspan x="468" dy="0">Access</tspan></text>
+<text x="468" y="99.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="acc"><tspan x="468" dy="0">Enforce on every</tspan><tspan x="468" dy="18">derived copy</tspan></text>
+</g>
+<g id="dc-849c341ffc-node-rep" data-node="rep" data-x="665" data-y="30" data-w="195" data-h="110">
+<rect x="665" y="30" width="195" height="110" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="683" y="73.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="rep"><tspan x="683" dy="0">Reproducibility</tspan></text>
+<text x="683" y="99.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="rep"><tspan x="683" dy="0">Explain versions and</tspan><tspan x="683" dy="18">lineage</tspan></text>
+</g>
+<g id="dc-849c341ffc-node-dec" data-node="dec" data-x="250" data-y="230" data-w="380" data-h="96">
+<rect x="250" y="230" width="380" height="96" rx="6" fill="#e8f0fe" stroke="#276ef1" stroke-width="2"/>
+<text x="268" y="275.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="dec"><tspan x="268" dy="0">Publication decision</tspan></text>
+<text x="268" y="301.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="dec"><tspan x="268" dy="0">Publish, withhold or mark partial</tspan></text>
+</g>
+<g id="dc-849c341ffc-node-exc" data-node="exc" data-x="250" data-y="390" data-w="380" data-h="76">
+<rect x="250" y="390" width="380" height="76" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="268" y="425.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="exc"><tspan x="268" dy="0">Exceptions</tspan></text>
+<text x="268" y="451.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="exc"><tspan x="268" dy="0">Owner, measures affected and expiry</tspan></text>
+</g>
+<g data-label="ex" data-x="450" data-y="343" data-w="64" data-h="30"><rect x="450" y="343" width="64" height="30" rx="4" fill="#ffffff"/>
+<text x="458" y="362" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="458" dy="0">Route</tspan></text>
+</g>
+</svg>

@@ -1,0 +1,192 @@
+{
+ "title": "Transactional outbox for the CRM handoff",
+ "description": "The portal API stores the service_request row and the outbox row in one local database transaction. A worker reads pending outbox rows, delivers each handoff to the CRM with the submission ID as idempotency key, and records the result in the outbox row.",
+ "width": 860,
+ "height": 580,
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "regions": [
+  {
+   "id": "tx",
+   "label": "One local database transaction",
+   "x": 30,
+   "y": 170,
+   "w": 800,
+   "h": 180
+  }
+ ],
+ "nodes": [
+  {
+   "id": "api",
+   "label": "Portal API",
+   "x": 20,
+   "y": 30,
+   "w": 260,
+   "h": 90,
+   "detail": "Validates and checks access"
+  },
+  {
+   "id": "req",
+   "label": "service_request row",
+   "x": 50,
+   "y": 220,
+   "w": 320,
+   "h": 110,
+   "detail": "The request is received",
+   "shape": "store"
+  },
+  {
+   "id": "out",
+   "label": "outbox row",
+   "x": 490,
+   "y": 220,
+   "w": 320,
+   "h": 110,
+   "detail": "Handoff state: pending",
+   "shape": "store",
+   "emphasis": true
+  },
+  {
+   "id": "worker",
+   "label": "Worker",
+   "x": 490,
+   "y": 450,
+   "w": 320,
+   "h": 110,
+   "detail": "Claims, delivers, records"
+  },
+  {
+   "id": "crm",
+   "label": "CRM",
+   "x": 50,
+   "y": 450,
+   "w": 320,
+   "h": 110,
+   "detail": "Idempotency key: submission ID"
+  }
+ ],
+ "edges": [
+  {
+   "id": "store_req",
+   "from": "api",
+   "to": "req",
+   "points": [
+    [
+     150,
+     120
+    ],
+    [
+     150,
+     220
+    ]
+   ],
+   "label": "stores request",
+   "label_at": [
+    160,
+    128
+   ],
+   "label_w": 120
+  },
+  {
+   "id": "store_out",
+   "from": "api",
+   "to": "out",
+   "points": [
+    [
+     280,
+     75
+    ],
+    [
+     650,
+     75
+    ],
+    [
+     650,
+     220
+    ]
+   ],
+   "label": "stores handoff record",
+   "label_at": [
+    400,
+    40
+   ],
+   "label_w": 180
+  },
+  {
+   "id": "read",
+   "from": "out",
+   "to": "worker",
+   "points": [
+    [
+     590,
+     330
+    ],
+    [
+     590,
+     450
+    ]
+   ],
+   "label": "reads pending",
+   "label_at": [
+    462,
+    392
+   ],
+   "label_w": 120,
+   "style": "dashed"
+  },
+  {
+   "id": "record",
+   "from": "worker",
+   "to": "out",
+   "points": [
+    [
+     710,
+     450
+    ],
+    [
+     710,
+     330
+    ]
+   ],
+   "label": "records result",
+   "label_at": [
+    718,
+    392
+   ],
+   "label_w": 126,
+   "style": "dashed"
+  },
+  {
+   "id": "deliver",
+   "from": "worker",
+   "to": "crm",
+   "points": [
+    [
+     490,
+     505
+    ],
+    [
+     370,
+     505
+    ]
+   ],
+   "label": "delivers handoff",
+   "label_at": [
+    384,
+    451
+   ],
+   "label_w": 92
+  }
+ ],
+ "notes": [
+  "Dashed arrows: background work after the commit."
+ ]
+}

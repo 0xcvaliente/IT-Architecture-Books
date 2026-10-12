@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 370" width="880" height="370" role="img" aria-labelledby="dc-3b14b87608-title dc-3b14b87608-desc" font-family="DejaVu Sans">
+<title id="dc-3b14b87608-title">Architecture argument</title>
+<desc id="dc-3b14b87608-desc">A requirement leads through a claim, mechanism, evidence and finding to a decision, which can send the team back to the requirement.</desc>
+<defs><marker id="dc-3b14b87608-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 4 L0 8 Z" fill="#323232"/></marker></defs>
+<rect width="880" height="370" fill="#ffffff" aria-hidden="true"/>
+<polyline data-edge="i" points="230,78 335,78" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-3b14b87608-arrow)"/>
+<polyline data-edge="x" points="545,78 650,78" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-3b14b87608-arrow)"/>
+<polyline data-edge="c" points="755,126 755,240" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-3b14b87608-arrow)"/>
+<polyline data-edge="a" points="650,288 545,288" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-3b14b87608-arrow)"/>
+<polyline data-edge="d" points="335,288 230,288" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-3b14b87608-arrow)"/>
+<polyline data-edge="r" points="125,240 125,126" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-3b14b87608-arrow)"/>
+<g id="dc-3b14b87608-node-req" data-node="req" data-x="20" data-y="30" data-w="210" data-h="96">
+<rect x="20" y="30" width="210" height="96" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="38" y="75.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="req"><tspan x="38" dy="0">Requirement</tspan></text>
+<text x="38" y="101.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="req"><tspan x="38" dy="0">Observable promise</tspan></text>
+</g>
+<g id="dc-3b14b87608-node-claim" data-node="claim" data-x="335" data-y="30" data-w="210" data-h="96">
+<rect x="335" y="30" width="210" height="96" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="353" y="75.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="claim"><tspan x="353" dy="0">Claim</tspan></text>
+<text x="353" y="101.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="claim"><tspan x="353" dy="0">Expected outcome</tspan></text>
+</g>
+<g id="dc-3b14b87608-node-mech" data-node="mech" data-x="650" data-y="30" data-w="210" data-h="96">
+<rect x="650" y="30" width="210" height="96" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="668" y="66.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="mech"><tspan x="668" dy="0">Mechanism</tspan></text>
+<text x="668" y="92.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="mech"><tspan x="668" dy="0">How the design keeps</tspan><tspan x="668" dy="18">the promise</tspan></text>
+</g>
+<g id="dc-3b14b87608-node-dec" data-node="dec" data-x="20" data-y="240" data-w="210" data-h="96">
+<rect x="20" y="240" width="210" height="96" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="38" y="285.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="dec"><tspan x="38" dy="0">Decision</tspan></text>
+<text x="38" y="311.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="dec"><tspan x="38" dy="0">Scope and conditions</tspan></text>
+</g>
+<g id="dc-3b14b87608-node-find" data-node="find" data-x="335" data-y="240" data-w="210" data-h="96">
+<rect x="335" y="240" width="210" height="96" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="353" y="285.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="find"><tspan x="353" dy="0">Finding</tspan></text>
+<text x="353" y="311.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="find"><tspan x="353" dy="0">Supported or still open</tspan></text>
+</g>
+<g id="dc-3b14b87608-node-ev" data-node="ev" data-x="650" data-y="240" data-w="210" data-h="96">
+<rect x="650" y="240" width="210" height="96" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="668" y="276.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="ev"><tspan x="668" dy="0">Evidence</tspan></text>
+<text x="668" y="302.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="ev"><tspan x="668" dy="0">Test, calculation or</tspan><tspan x="668" dy="18">contract</tspan></text>
+</g>
+<g data-label="i" data-x="242" data-y="38" data-w="86" data-h="30"><rect x="242" y="38" width="86" height="30" rx="4" fill="#ffffff"/>
+<text x="250" y="57" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="250" dy="0">Interpret</tspan></text>
+</g>
+<g data-label="x" data-x="560" data-y="38" data-w="76" data-h="30"><rect x="560" y="38" width="76" height="30" rx="4" fill="#ffffff"/>
+<text x="568" y="57" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="568" dy="0">Explain</tspan></text>
+</g>
+<g data-label="c" data-x="765" data-y="165" data-w="92" data-h="30"><rect x="765" y="165" width="92" height="30" rx="4" fill="#ffffff"/>
+<text x="773" y="184" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="773" dy="0">Challenge</tspan></text>
+</g>
+<g data-label="a" data-x="560" data-y="248" data-w="70" data-h="30"><rect x="560" y="248" width="70" height="30" rx="4" fill="#ffffff"/>
+<text x="568" y="267" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="568" dy="0">Assess</tspan></text>
+</g>
+<g data-label="d" data-x="245" data-y="248" data-w="70" data-h="30"><rect x="245" y="248" width="70" height="30" rx="4" fill="#ffffff"/>
+<text x="253" y="267" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="253" dy="0">Decide</tspan></text>
+</g>
+<g data-label="r" data-x="135" data-y="165" data-w="76" data-h="30"><rect x="135" y="165" width="76" height="30" rx="4" fill="#ffffff"/>
+<text x="143" y="184" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="143" dy="0">Revisit</tspan></text>
+</g>
+</svg>

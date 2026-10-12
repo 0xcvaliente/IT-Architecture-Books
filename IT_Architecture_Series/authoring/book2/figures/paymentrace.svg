@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 470" width="860" height="470" role="img" aria-labelledby="dc-cc79671861-title dc-cc79671861-desc" font-family="DejaVu Sans">
+<title id="dc-cc79671861-title">Expiry and confirmation race</title>
+<desc id="dc-cc79671861-desc">Expiry and confirmation compete for one guarded transition on an active reservation; only one wins, and the late event changes nothing or leads to a fresh reservation or void.</desc>
+<defs><marker id="dc-cc79671861-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 4 L0 8 Z" fill="#323232"/></marker></defs>
+<rect width="860" height="470" fill="#ffffff" aria-hidden="true"/>
+<polyline data-edge="g1" points="360,120 360,160 190,160 190,200" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-cc79671861-arrow)"/>
+<polyline data-edge="g2" points="500,120 500,160 670,160 670,200" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-cc79671861-arrow)"/>
+<polyline data-edge="l1" points="190,296 190,360" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-cc79671861-arrow)"/>
+<polyline data-edge="l2" points="670,296 670,360" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-cc79671861-arrow)"/>
+<g id="dc-cc79671861-node-act" data-node="act" data-x="310" data-y="30" data-w="240" data-h="90">
+<rect x="310" y="30" width="240" height="90" rx="6" fill="#e8f0fe" stroke="#276ef1" stroke-width="2"/>
+<text x="328" y="72.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="act"><tspan x="328" dy="0">Active reservation</tspan></text>
+<text x="328" y="98.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="act"><tspan x="328" dy="0">One unit held</tspan></text>
+</g>
+<g id="dc-cc79671861-node-cw" data-node="cw" data-x="40" data-y="200" data-w="300" data-h="96">
+<rect x="40" y="200" width="300" height="96" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="58" y="245.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="cw"><tspan x="58" dy="0">Confirmation wins</tspan></text>
+<text x="58" y="271.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="cw"><tspan x="58" dy="0">Unit committed to the order</tspan></text>
+</g>
+<g id="dc-cc79671861-node-ew" data-node="ew" data-x="520" data-y="200" data-w="300" data-h="96">
+<rect x="520" y="200" width="300" height="96" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="538" y="245.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="ew"><tspan x="538" dy="0">Expiry wins</tspan></text>
+<text x="538" y="271.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="ew"><tspan x="538" dy="0">Unit returns to stock</tspan></text>
+</g>
+<g id="dc-cc79671861-node-le" data-node="le" data-x="40" data-y="360" data-w="300" data-h="90">
+<rect x="40" y="360" width="300" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="58" y="402.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="le"><tspan x="58" dy="0">Late expiry</tspan></text>
+<text x="58" y="428.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="le"><tspan x="58" dy="0">Changes nothing</tspan></text>
+</g>
+<g id="dc-cc79671861-node-la" data-node="la" data-x="520" data-y="360" data-w="300" data-h="90">
+<rect x="520" y="360" width="300" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="538" y="402.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="la"><tspan x="538" dy="0">Late authorisation</tspan></text>
+<text x="538" y="428.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="la"><tspan x="538" dy="0">Fresh reservation or void</tspan></text>
+</g>
+<g data-label="g1" data-x="370" data-y="138" data-w="120" data-h="48"><rect x="370" y="138" width="120" height="48" rx="4" fill="#ffffff"/>
+<text x="378" y="157" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="378" dy="0">Guard: state</tspan><tspan x="378" dy="18">= active</tspan></text>
+</g>
+<g data-label="l1" data-x="200" data-y="313" data-w="170" data-h="30"><rect x="200" y="313" width="170" height="30" rx="4" fill="#ffffff"/>
+<text x="208" y="332" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="208" dy="0">Expiry arrives later</tspan></text>
+</g>
+<g data-label="l2" data-x="680" data-y="313" data-w="180" data-h="30"><rect x="680" y="313" width="180" height="30" rx="4" fill="#ffffff"/>
+<text x="688" y="332" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="688" dy="0">Payment arrives later</tspan></text>
+</g>
+</svg>

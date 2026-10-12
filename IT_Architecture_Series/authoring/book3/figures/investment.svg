@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="440" viewBox="0 0 880 440" role="img" aria-labelledby="t d" font-family="DejaVu Sans">
+<title id="t">Sensitivity of net present value</title>
+<desc id="d">Horizontal bars show NPV in thousands of euros for five scenarios: 830 at 4%, 593 at 8%, 382 at 12%, 363 with benefits one year later and minus 26 with 20% lower benefits.</desc>
+<rect width="880" height="440" fill="#ffffff"/>
+<text x="245" y="51" font-size="15" font-weight="normal" text-anchor="end" fill="#000000">Lower rate, 4%</text>
+<rect x="330" y="28" width="456.6" height="36" rx="2" fill="#276ef1" stroke="none" stroke-width="0"/>
+<text x="794.6" y="52" font-size="15" font-weight="bold" text-anchor="start" fill="#000000">830</text>
+<text x="245" y="121" font-size="15" font-weight="normal" text-anchor="end" fill="#000000">Base case, 8%</text>
+<rect x="330" y="98" width="325.9" height="36" rx="2" fill="#276ef1" stroke="none" stroke-width="0"/>
+<text x="663.9" y="122" font-size="15" font-weight="bold" text-anchor="start" fill="#000000">593</text>
+<text x="245" y="191" font-size="15" font-weight="normal" text-anchor="end" fill="#000000">Higher rate, 12%</text>
+<rect x="330" y="168" width="210.2" height="36" rx="2" fill="#276ef1" stroke="none" stroke-width="0"/>
+<text x="548.2" y="192" font-size="15" font-weight="bold" text-anchor="start" fill="#000000">382</text>
+<text x="245" y="261" font-size="15" font-weight="normal" text-anchor="end" fill="#000000">Benefits one year later</text>
+<rect x="330" y="238" width="199.9" height="36" rx="2" fill="#276ef1" stroke="none" stroke-width="0"/>
+<text x="537.9" y="262" font-size="15" font-weight="bold" text-anchor="start" fill="#000000">363</text>
+<text x="245" y="331" font-size="15" font-weight="normal" text-anchor="end" fill="#000000">Benefits 20% lower</text>
+<rect x="315.7" y="308" width="14.3" height="36" rx="2" fill="#323232" stroke="none" stroke-width="0"/>
+<text x="338" y="332" font-size="15" font-weight="bold" text-anchor="start" fill="#000000">−26</text>
+<line x1="330" y1="15" x2="330" y2="370" stroke="#000000" stroke-width="2"/>
+<line x1="275.0" y1="370" x2="275.0" y2="380" stroke="#000000" stroke-width="1.5"/>
+<text x="275.0" y="400" font-size="14" font-weight="normal" text-anchor="middle" fill="#323232">−100</text>
+<line x1="330.0" y1="370" x2="330.0" y2="380" stroke="#000000" stroke-width="1.5"/>
+<text x="330.0" y="400" font-size="14" font-weight="normal" text-anchor="middle" fill="#323232">0</text>
+<line x1="385.0" y1="370" x2="385.0" y2="380" stroke="#000000" stroke-width="1.5"/>
+<text x="385.0" y="400" font-size="14" font-weight="normal" text-anchor="middle" fill="#323232">100</text>
+<line x1="440.0" y1="370" x2="440.0" y2="380" stroke="#000000" stroke-width="1.5"/>
+<text x="440.0" y="400" font-size="14" font-weight="normal" text-anchor="middle" fill="#323232">200</text>
+<line x1="495.0" y1="370" x2="495.0" y2="380" stroke="#000000" stroke-width="1.5"/>
+<text x="495.0" y="400" font-size="14" font-weight="normal" text-anchor="middle" fill="#323232">300</text>
+<line x1="550.0" y1="370" x2="550.0" y2="380" stroke="#000000" stroke-width="1.5"/>
+<text x="550.0" y="400" font-size="14" font-weight="normal" text-anchor="middle" fill="#323232">400</text>
+<line x1="605.0" y1="370" x2="605.0" y2="380" stroke="#000000" stroke-width="1.5"/>
+<text x="605.0" y="400" font-size="14" font-weight="normal" text-anchor="middle" fill="#323232">500</text>
+<line x1="660.0" y1="370" x2="660.0" y2="380" stroke="#000000" stroke-width="1.5"/>
+<text x="660.0" y="400" font-size="14" font-weight="normal" text-anchor="middle" fill="#323232">600</text>
+<line x1="715.0" y1="370" x2="715.0" y2="380" stroke="#000000" stroke-width="1.5"/>
+<text x="715.0" y="400" font-size="14" font-weight="normal" text-anchor="middle" fill="#323232">700</text>
+<line x1="770.0" y1="370" x2="770.0" y2="380" stroke="#000000" stroke-width="1.5"/>
+<text x="770.0" y="400" font-size="14" font-weight="normal" text-anchor="middle" fill="#323232">800</text>
+<line x1="825.0" y1="370" x2="825.0" y2="380" stroke="#000000" stroke-width="1.5"/>
+<text x="825.0" y="400" font-size="14" font-weight="normal" text-anchor="middle" fill="#323232">900</text>
+<line x1="275.0" y1="370" x2="825.0" y2="370" stroke="#000000" stroke-width="1.5"/>
+<text x="550.0" y="430" font-size="15" font-weight="normal" text-anchor="middle" fill="#000000">Net present value, EUR thousands</text>
+</svg>

@@ -1,0 +1,257 @@
+{
+ "title": "Dual run",
+ "description": "During the dual run the legacy database stays authoritative, CDC fills the new store, the new service runs in shadow, and a daily reconciliation compares replicated data and shadow results.",
+ "width": 880,
+ "height": 555,
+ "theme": "light",
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "nodes": [
+  {
+   "id": "writers",
+   "label": "Legacy writers",
+   "x": 20,
+   "y": 30,
+   "w": 220,
+   "h": 100,
+   "status": "provided",
+   "detail": "Web shop, call centre, jobs, partner"
+  },
+  {
+   "id": "legacy",
+   "label": "Legacy database",
+   "x": 330,
+   "y": 30,
+   "w": 220,
+   "h": 100,
+   "status": "provided",
+   "shape": "store",
+   "emphasis": true,
+   "detail": "Authoritative for orders"
+  },
+  {
+   "id": "cdc",
+   "label": "CDC applier",
+   "x": 640,
+   "y": 30,
+   "w": 220,
+   "h": 100,
+   "status": "provided",
+   "detail": "Writes with epoch 7"
+  },
+  {
+   "id": "target",
+   "label": "New order store",
+   "x": 640,
+   "y": 220,
+   "w": 220,
+   "h": 100,
+   "status": "provided",
+   "shape": "store",
+   "detail": "Replica of legacy data"
+  },
+  {
+   "id": "mirror",
+   "label": "Mirrored requests",
+   "x": 20,
+   "y": 420,
+   "w": 220,
+   "h": 96,
+   "status": "provided",
+   "detail": "A copy of each order request"
+  },
+  {
+   "id": "shadow",
+   "label": "New order service",
+   "x": 330,
+   "y": 420,
+   "w": 220,
+   "h": 96,
+   "status": "provided",
+   "detail": "Shadow mode; results never shown"
+  },
+  {
+   "id": "recon",
+   "label": "Daily reconciliation",
+   "x": 640,
+   "y": 420,
+   "w": 220,
+   "h": 116,
+   "status": "provided",
+   "detail": "Key sets, values and shadow results"
+  }
+ ],
+ "edges": [
+  {
+   "id": "w",
+   "from": "writers",
+   "to": "legacy",
+   "points": [
+    [
+     240,
+     80
+    ],
+    [
+     330,
+     80
+    ]
+   ],
+   "status": "provided",
+   "label": "Write",
+   "label_at": [
+    250,
+    38
+   ],
+   "label_w": 70
+  },
+  {
+   "id": "l",
+   "from": "legacy",
+   "to": "cdc",
+   "points": [
+    [
+     550,
+     80
+    ],
+    [
+     640,
+     80
+    ]
+   ],
+   "status": "provided",
+   "label": "Log",
+   "label_at": [
+    565,
+    38
+   ],
+   "label_w": 60
+  },
+  {
+   "id": "a",
+   "from": "cdc",
+   "to": "target",
+   "points": [
+    [
+     750,
+     130
+    ],
+    [
+     750,
+     220
+    ]
+   ],
+   "status": "provided",
+   "label": "Apply",
+   "label_at": [
+    760,
+    160
+   ],
+   "label_w": 64
+  },
+  {
+   "id": "lr",
+   "from": "legacy",
+   "to": "recon",
+   "points": [
+    [
+     440,
+     130
+    ],
+    [
+     440,
+     370
+    ],
+    [
+     680,
+     370
+    ],
+    [
+     680,
+     420
+    ]
+   ],
+   "status": "provided",
+   "label": "Legacy rows",
+   "label_at": [
+    470,
+    332
+   ],
+   "label_w": 100
+  },
+  {
+   "id": "rr",
+   "from": "target",
+   "to": "recon",
+   "points": [
+    [
+     830,
+     320
+    ],
+    [
+     830,
+     420
+    ]
+   ],
+   "status": "provided",
+   "label": "Replica rows",
+   "label_at": [
+    696,
+    378
+   ],
+   "label_w": 112
+  },
+  {
+   "id": "c",
+   "from": "mirror",
+   "to": "shadow",
+   "points": [
+    [
+     240,
+     468
+    ],
+    [
+     330,
+     468
+    ]
+   ],
+   "status": "provided",
+   "label": "Copy",
+   "label_at": [
+    256,
+    428
+   ],
+   "label_w": 56,
+   "style": "dashed"
+  },
+  {
+   "id": "sr",
+   "from": "shadow",
+   "to": "recon",
+   "points": [
+    [
+     550,
+     468
+    ],
+    [
+     640,
+     468
+    ]
+   ],
+   "status": "provided",
+   "label": "Results",
+   "label_at": [
+    559,
+    428
+   ],
+   "label_w": 72
+  }
+ ]
+}

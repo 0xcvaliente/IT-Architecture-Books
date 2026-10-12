@@ -1,0 +1,170 @@
+{
+ "title": "Expiry and confirmation race",
+ "description": "Expiry and confirmation compete for one guarded transition on an active reservation; only one wins, and the late event changes nothing or leads to a fresh reservation or void.",
+ "width": 860,
+ "height": 470,
+ "theme": "light",
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "nodes": [
+  {
+   "id": "act",
+   "label": "Active reservation",
+   "x": 310,
+   "y": 30,
+   "w": 240,
+   "h": 90,
+   "status": "provided",
+   "emphasis": true,
+   "detail": "One unit held"
+  },
+  {
+   "id": "cw",
+   "label": "Confirmation wins",
+   "x": 40,
+   "y": 200,
+   "w": 300,
+   "h": 96,
+   "status": "provided",
+   "detail": "Unit committed to the order"
+  },
+  {
+   "id": "ew",
+   "label": "Expiry wins",
+   "x": 520,
+   "y": 200,
+   "w": 300,
+   "h": 96,
+   "status": "provided",
+   "detail": "Unit returns to stock"
+  },
+  {
+   "id": "le",
+   "label": "Late expiry",
+   "x": 40,
+   "y": 360,
+   "w": 300,
+   "h": 90,
+   "status": "provided",
+   "detail": "Changes nothing"
+  },
+  {
+   "id": "la",
+   "label": "Late authorisation",
+   "x": 520,
+   "y": 360,
+   "w": 300,
+   "h": 90,
+   "status": "provided",
+   "detail": "Fresh reservation or void"
+  }
+ ],
+ "edges": [
+  {
+   "id": "g1",
+   "from": "act",
+   "to": "cw",
+   "points": [
+    [
+     360,
+     120
+    ],
+    [
+     360,
+     160
+    ],
+    [
+     190,
+     160
+    ],
+    [
+     190,
+     200
+    ]
+   ],
+   "status": "provided",
+   "label": "Guard: state = active",
+   "label_at": [
+    370,
+    138
+   ],
+   "label_w": 120
+  },
+  {
+   "id": "g2",
+   "from": "act",
+   "to": "ew",
+   "points": [
+    [
+     500,
+     120
+    ],
+    [
+     500,
+     160
+    ],
+    [
+     670,
+     160
+    ],
+    [
+     670,
+     200
+    ]
+   ],
+   "status": "provided"
+  },
+  {
+   "id": "l1",
+   "from": "cw",
+   "to": "le",
+   "points": [
+    [
+     190,
+     296
+    ],
+    [
+     190,
+     360
+    ]
+   ],
+   "status": "provided",
+   "label": "Expiry arrives later",
+   "label_at": [
+    200,
+    313
+   ],
+   "label_w": 170
+  },
+  {
+   "id": "l2",
+   "from": "ew",
+   "to": "la",
+   "points": [
+    [
+     670,
+     296
+    ],
+    [
+     670,
+     360
+    ]
+   ],
+   "status": "provided",
+   "label": "Payment arrives later",
+   "label_at": [
+    680,
+    313
+   ],
+   "label_w": 180
+  }
+ ]
+}

@@ -1,0 +1,163 @@
+{
+ "title": "Dependencies of a critical business service",
+ "description": "The urgent maintenance service depends on applications and data, workforce identity, and people and suppliers. Recovery evidence must cover the whole business journey.",
+ "width": 860,
+ "height": 430,
+ "theme": "light",
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "regions": [],
+ "nodes": [
+  {
+   "id": "svc",
+   "label": "Urgent maintenance service",
+   "x": 230,
+   "y": 20,
+   "w": 400,
+   "h": 80,
+   "status": "provided",
+   "detail": "Critical business service",
+   "emphasis": true
+  },
+  {
+   "id": "app",
+   "label": "Applications and data",
+   "x": 20,
+   "y": 170,
+   "w": 250,
+   "h": 85,
+   "status": "provided",
+   "detail": "Entitlement, scheduling, ERP"
+  },
+  {
+   "id": "id",
+   "label": "Workforce identity",
+   "x": 305,
+   "y": 170,
+   "w": 250,
+   "h": 85,
+   "status": "provided",
+   "detail": "Staff sign-in and lifecycle"
+  },
+  {
+   "id": "ppl",
+   "label": "People and suppliers",
+   "x": 590,
+   "y": 170,
+   "w": 250,
+   "h": 85,
+   "status": "provided",
+   "detail": "Operation and support"
+  },
+  {
+   "id": "rec",
+   "label": "Recovery evidence",
+   "x": 130,
+   "y": 330,
+   "w": 600,
+   "h": 80,
+   "status": "provided",
+   "detail": "Tested across the complete business journey"
+  }
+ ],
+ "edges": [
+  {
+   "id": "r1",
+   "from": "app",
+   "to": "svc",
+   "points": [
+    [
+     145,
+     170
+    ],
+    [
+     330,
+     100
+    ]
+   ]
+  },
+  {
+   "id": "r2",
+   "from": "id",
+   "to": "svc",
+   "points": [
+    [
+     430,
+     170
+    ],
+    [
+     430,
+     100
+    ]
+   ]
+  },
+  {
+   "id": "r3",
+   "from": "ppl",
+   "to": "svc",
+   "points": [
+    [
+     715,
+     170
+    ],
+    [
+     530,
+     100
+    ]
+   ]
+  },
+  {
+   "id": "r4",
+   "from": "app",
+   "to": "rec",
+   "points": [
+    [
+     145,
+     255
+    ],
+    [
+     145,
+     330
+    ]
+   ]
+  },
+  {
+   "id": "r5",
+   "from": "id",
+   "to": "rec",
+   "points": [
+    [
+     430,
+     255
+    ],
+    [
+     430,
+     330
+    ]
+   ]
+  },
+  {
+   "id": "r6",
+   "from": "ppl",
+   "to": "rec",
+   "points": [
+    [
+     715,
+     255
+    ],
+    [
+     715,
+     330
+    ]
+   ]
+  }
+ ]
+}

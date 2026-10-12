@@ -1,0 +1,176 @@
+{
+ "title": "Shared platform services and their contracts",
+ "description": "Three product teams use shared platform services through published contracts. The platform has a named operating owner and must provide failure and exit evidence.",
+ "width": 860,
+ "height": 450,
+ "theme": "light",
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "regions": [],
+ "nodes": [
+  {
+   "id": "a",
+   "label": "Product team A",
+   "x": 20,
+   "y": 20,
+   "w": 250,
+   "h": 80,
+   "status": "provided",
+   "detail": "Maintenance service"
+  },
+  {
+   "id": "b",
+   "label": "Product team B",
+   "x": 305,
+   "y": 20,
+   "w": 250,
+   "h": 80,
+   "status": "provided",
+   "detail": "Retail service"
+  },
+  {
+   "id": "c",
+   "label": "Product team C",
+   "x": 590,
+   "y": 20,
+   "w": 250,
+   "h": 80,
+   "status": "provided",
+   "detail": "Digital service"
+  },
+  {
+   "id": "p",
+   "label": "Shared platform services",
+   "x": 100,
+   "y": 190,
+   "w": 660,
+   "h": 85,
+   "status": "provided",
+   "detail": "Workforce sign-in, deployment, monitoring and secrets",
+   "emphasis": true
+  },
+  {
+   "id": "o",
+   "label": "Platform operating owner",
+   "x": 60,
+   "y": 350,
+   "w": 330,
+   "h": 85,
+   "status": "provided",
+   "detail": "Support, change and lifecycle"
+  },
+  {
+   "id": "f",
+   "label": "Failure and exit evidence",
+   "x": 470,
+   "y": 350,
+   "w": 330,
+   "h": 85,
+   "status": "provided",
+   "detail": "Recovery, export and exceptions"
+  }
+ ],
+ "edges": [
+  {
+   "id": "p1",
+   "from": "a",
+   "to": "p",
+   "points": [
+    [
+     145,
+     100
+    ],
+    [
+     145,
+     190
+    ]
+   ],
+   "label": "contract",
+   "label_at": [
+    155,
+    130
+   ],
+   "label_w": 90
+  },
+  {
+   "id": "p2",
+   "from": "b",
+   "to": "p",
+   "points": [
+    [
+     430,
+     100
+    ],
+    [
+     430,
+     190
+    ]
+   ],
+   "label": "contract",
+   "label_at": [
+    440,
+    130
+   ],
+   "label_w": 90
+  },
+  {
+   "id": "p3",
+   "from": "c",
+   "to": "p",
+   "points": [
+    [
+     715,
+     100
+    ],
+    [
+     715,
+     190
+    ]
+   ],
+   "label": "contract",
+   "label_at": [
+    725,
+    130
+   ],
+   "label_w": 90
+  },
+  {
+   "id": "p4",
+   "from": "p",
+   "to": "o",
+   "points": [
+    [
+     225,
+     275
+    ],
+    [
+     225,
+     350
+    ]
+   ]
+  },
+  {
+   "id": "p5",
+   "from": "p",
+   "to": "f",
+   "points": [
+    [
+     635,
+     275
+    ],
+    [
+     635,
+     350
+    ]
+   ]
+  }
+ ]
+}

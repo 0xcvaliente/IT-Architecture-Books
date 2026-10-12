@@ -1,0 +1,343 @@
+{
+ "title": "Business state and delivery state",
+ "description": "Upper machine: the portal shows Received until the handoff is confirmed; the CRM then owns the case, which moves from under review to approved and resolved, or to rejected. Lower machine: the handoff moves from pending to in_flight when a worker claims it, then to confirmed, to retry_due after an uncertain or temporary failure, or to manual_review after a rejection or six hours of retries. An operator can return a manual_review handoff to retry_due.",
+ "width": 860,
+ "height": 720,
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "regions": [
+  {
+   "id": "business",
+   "label": "Service case status: Received in the portal, then the CRM's status",
+   "x": 20,
+   "y": 20,
+   "w": 820,
+   "h": 300
+  },
+  {
+   "id": "delivery",
+   "label": "Handoff delivery state: owned by the portal's worker",
+   "x": 20,
+   "y": 340,
+   "w": 820,
+   "h": 360
+  }
+ ],
+ "nodes": [
+  {
+   "id": "received",
+   "label": "Received",
+   "x": 40,
+   "y": 70,
+   "w": 200,
+   "h": 100,
+   "detail": "Portal, until the handoff is confirmed"
+  },
+  {
+   "id": "review",
+   "label": "Under review",
+   "x": 330,
+   "y": 70,
+   "w": 200,
+   "h": 100,
+   "detail": "CRM"
+  },
+  {
+   "id": "approved",
+   "label": "Approved",
+   "x": 620,
+   "y": 70,
+   "w": 200,
+   "h": 100,
+   "detail": "CRM; triggers the work order"
+  },
+  {
+   "id": "rejected",
+   "label": "Rejected",
+   "x": 330,
+   "y": 230,
+   "w": 200,
+   "h": 70,
+   "detail": "CRM"
+  },
+  {
+   "id": "resolved",
+   "label": "Resolved",
+   "x": 620,
+   "y": 230,
+   "w": 200,
+   "h": 70,
+   "detail": "CRM"
+  },
+  {
+   "id": "pending",
+   "label": "pending",
+   "x": 40,
+   "y": 390,
+   "w": 180,
+   "h": 70
+  },
+  {
+   "id": "inflight",
+   "label": "in_flight",
+   "x": 330,
+   "y": 390,
+   "w": 200,
+   "h": 70
+  },
+  {
+   "id": "confirmed",
+   "label": "confirmed",
+   "x": 640,
+   "y": 390,
+   "w": 180,
+   "h": 70,
+   "emphasis": true
+  },
+  {
+   "id": "retry",
+   "label": "retry_due",
+   "x": 330,
+   "y": 580,
+   "w": 200,
+   "h": 70
+  },
+  {
+   "id": "manual",
+   "label": "manual_review",
+   "x": 620,
+   "y": 580,
+   "w": 200,
+   "h": 70
+  }
+ ],
+ "edges": [
+  {
+   "id": "b1",
+   "from": "received",
+   "to": "review",
+   "points": [
+    [
+     240,
+     120
+    ],
+    [
+     330,
+     120
+    ]
+   ],
+   "label": "handoff confirmed",
+   "label_at": [
+    242,
+    64
+   ],
+   "label_w": 86
+  },
+  {
+   "id": "b2",
+   "from": "review",
+   "to": "approved",
+   "points": [
+    [
+     530,
+     120
+    ],
+    [
+     620,
+     120
+    ]
+   ],
+   "label": "agent approves",
+   "label_at": [
+    532,
+    64
+   ],
+   "label_w": 86
+  },
+  {
+   "id": "b3",
+   "from": "review",
+   "to": "rejected",
+   "points": [
+    [
+     430,
+     170
+    ],
+    [
+     430,
+     230
+    ]
+   ],
+   "label": "policy",
+   "label_at": [
+    440,
+    184
+   ],
+   "label_w": 66
+  },
+  {
+   "id": "b4",
+   "from": "approved",
+   "to": "resolved",
+   "points": [
+    [
+     720,
+     170
+    ],
+    [
+     720,
+     230
+    ]
+   ],
+   "label": "work done",
+   "label_at": [
+    730,
+    184
+   ],
+   "label_w": 90
+  },
+  {
+   "id": "d1",
+   "from": "pending",
+   "to": "inflight",
+   "points": [
+    [
+     220,
+     425
+    ],
+    [
+     330,
+     425
+    ]
+   ],
+   "label": "claim",
+   "label_at": [
+    246,
+    388
+   ],
+   "label_w": 60
+  },
+  {
+   "id": "d2",
+   "from": "inflight",
+   "to": "confirmed",
+   "points": [
+    [
+     530,
+     425
+    ],
+    [
+     640,
+     425
+    ]
+   ],
+   "label": "CRM confirms",
+   "label_at": [
+    540,
+    374
+   ],
+   "label_w": 90
+  },
+  {
+   "id": "d3",
+   "from": "inflight",
+   "to": "retry",
+   "points": [
+    [
+     380,
+     460
+    ],
+    [
+     380,
+     580
+    ]
+   ],
+   "label": "uncertain or temporary failure",
+   "label_at": [
+    196,
+    496
+   ],
+   "label_w": 178
+  },
+  {
+   "id": "d4",
+   "from": "retry",
+   "to": "inflight",
+   "points": [
+    [
+     480,
+     580
+    ],
+    [
+     480,
+     460
+    ]
+   ],
+   "label": "next attempt due",
+   "label_at": [
+    486,
+    496
+   ],
+   "label_w": 108
+  },
+  {
+   "id": "d5",
+   "from": "inflight",
+   "to": "manual",
+   "points": [
+    [
+     530,
+     445
+    ],
+    [
+     600,
+     445
+    ],
+    [
+     600,
+     605
+    ],
+    [
+     620,
+     605
+    ]
+   ],
+   "label": "rejected, or 6 h passed",
+   "label_at": [
+    608,
+    476
+   ],
+   "label_w": 192
+  },
+  {
+   "id": "d6",
+   "from": "manual",
+   "to": "retry",
+   "points": [
+    [
+     620,
+     635
+    ],
+    [
+     530,
+     635
+    ]
+   ],
+   "label": "operator replay",
+   "label_at": [
+    536,
+    656
+   ],
+   "label_w": 132
+  }
+ ],
+ "notes": []
+}

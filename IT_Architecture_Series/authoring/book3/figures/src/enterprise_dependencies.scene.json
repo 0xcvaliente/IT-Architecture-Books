@@ -1,0 +1,237 @@
+{
+ "title": "Technical and approval dependencies",
+ "description": "Left: three applications write directly to a shared database (solid arrows, technical dependencies). Right: three service teams need approval from a central change owner (dashed arrows, approval dependencies).",
+ "width": 860,
+ "height": 400,
+ "theme": "light",
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "regions": [
+  {
+   "id": "r1",
+   "label": "TECHNICAL: SOLID ARROWS",
+   "x": 15,
+   "y": 15,
+   "w": 410,
+   "h": 370
+  },
+  {
+   "id": "r2",
+   "label": "APPROVAL: DASHED ARROWS",
+   "x": 432,
+   "y": 15,
+   "w": 418,
+   "h": 370
+  }
+ ],
+ "nodes": [
+  {
+   "id": "a",
+   "label": "Application A",
+   "x": 30,
+   "y": 60,
+   "w": 185,
+   "h": 60,
+   "status": "provided"
+  },
+  {
+   "id": "b",
+   "label": "Application B",
+   "x": 30,
+   "y": 170,
+   "w": 185,
+   "h": 60,
+   "status": "provided"
+  },
+  {
+   "id": "c",
+   "label": "Application C",
+   "x": 30,
+   "y": 280,
+   "w": 185,
+   "h": 60,
+   "status": "provided"
+  },
+  {
+   "id": "db",
+   "label": "Shared database",
+   "x": 255,
+   "y": 150,
+   "w": 160,
+   "h": 100,
+   "status": "provided",
+   "shape": "store"
+  },
+  {
+   "id": "own",
+   "label": "Central change owner",
+   "x": 445,
+   "y": 150,
+   "w": 175,
+   "h": 100,
+   "status": "provided"
+  },
+  {
+   "id": "ta",
+   "label": "Service team A",
+   "x": 655,
+   "y": 60,
+   "w": 185,
+   "h": 60,
+   "status": "provided"
+  },
+  {
+   "id": "tb",
+   "label": "Service team B",
+   "x": 655,
+   "y": 170,
+   "w": 185,
+   "h": 60,
+   "status": "provided"
+  },
+  {
+   "id": "tc",
+   "label": "Service team C",
+   "x": 655,
+   "y": 280,
+   "w": 185,
+   "h": 60,
+   "status": "provided"
+  }
+ ],
+ "edges": [
+  {
+   "id": "t1",
+   "from": "a",
+   "to": "db",
+   "points": [
+    [
+     215,
+     90
+    ],
+    [
+     235,
+     90
+    ],
+    [
+     235,
+     180
+    ],
+    [
+     255,
+     180
+    ]
+   ]
+  },
+  {
+   "id": "t2",
+   "from": "b",
+   "to": "db",
+   "points": [
+    [
+     215,
+     200
+    ],
+    [
+     255,
+     200
+    ]
+   ]
+  },
+  {
+   "id": "t3",
+   "from": "c",
+   "to": "db",
+   "points": [
+    [
+     215,
+     310
+    ],
+    [
+     235,
+     310
+    ],
+    [
+     235,
+     220
+    ],
+    [
+     255,
+     220
+    ]
+   ]
+  },
+  {
+   "id": "q1",
+   "from": "ta",
+   "to": "own",
+   "points": [
+    [
+     655,
+     90
+    ],
+    [
+     637,
+     90
+    ],
+    [
+     637,
+     180
+    ],
+    [
+     620,
+     180
+    ]
+   ],
+   "style": "dashed"
+  },
+  {
+   "id": "q2",
+   "from": "tb",
+   "to": "own",
+   "points": [
+    [
+     655,
+     200
+    ],
+    [
+     620,
+     200
+    ]
+   ],
+   "style": "dashed"
+  },
+  {
+   "id": "q3",
+   "from": "tc",
+   "to": "own",
+   "points": [
+    [
+     655,
+     310
+    ],
+    [
+     637,
+     310
+    ],
+    [
+     637,
+     220
+    ],
+    [
+     620,
+     220
+    ]
+   ],
+   "style": "dashed"
+  }
+ ]
+}

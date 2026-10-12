@@ -1,0 +1,139 @@
+{
+ "title": "Procurement sequence: eligibility, value, conditions",
+ "description": "Procurement starts from the responsibility and scope, applies mandatory eligibility tests, compares eligible options by evidence and weighted fit, and then negotiates a conditional commitment. Options that fail a mandatory condition need a remedy or an explicit change to the requirement.",
+ "width": 860,
+ "height": 330,
+ "theme": "light",
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "regions": [],
+ "nodes": [
+  {
+   "id": "r",
+   "label": "Responsibility and scope",
+   "x": 20,
+   "y": 20,
+   "w": 250,
+   "h": 90,
+   "status": "provided",
+   "detail": "Lifecycle and exit needs"
+  },
+  {
+   "id": "e",
+   "label": "Eligibility tests",
+   "x": 305,
+   "y": 20,
+   "w": 250,
+   "h": 90,
+   "status": "provided",
+   "detail": "Mandatory conditions",
+   "emphasis": true
+  },
+  {
+   "id": "o",
+   "label": "Eligible options",
+   "x": 590,
+   "y": 20,
+   "w": 250,
+   "h": 90,
+   "status": "provided",
+   "detail": "Evidence and weighted fit"
+  },
+  {
+   "id": "i",
+   "label": "Ineligible option",
+   "x": 305,
+   "y": 220,
+   "w": 250,
+   "h": 90,
+   "status": "provided",
+   "detail": "Remedy or explicit change"
+  },
+  {
+   "id": "n",
+   "label": "Negotiation",
+   "x": 590,
+   "y": 220,
+   "w": 250,
+   "h": 90,
+   "status": "provided",
+   "detail": "Conditional commitment"
+  }
+ ],
+ "edges": [
+  {
+   "id": "s1",
+   "from": "r",
+   "to": "e",
+   "points": [
+    [
+     270,
+     65
+    ],
+    [
+     305,
+     65
+    ]
+   ]
+  },
+  {
+   "id": "s2",
+   "from": "e",
+   "to": "o",
+   "points": [
+    [
+     555,
+     65
+    ],
+    [
+     590,
+     65
+    ]
+   ]
+  },
+  {
+   "id": "s3",
+   "from": "e",
+   "to": "i",
+   "points": [
+    [
+     430,
+     110
+    ],
+    [
+     430,
+     220
+    ]
+   ],
+   "label": "fail",
+   "label_at": [
+    440,
+    145
+   ],
+   "label_w": 60
+  },
+  {
+   "id": "s4",
+   "from": "o",
+   "to": "n",
+   "points": [
+    [
+     715,
+     110
+    ],
+    [
+     715,
+     220
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 490" width="880" height="490" role="img" aria-labelledby="dc-ee24da965f-title dc-ee24da965f-desc" font-family="DejaVu Sans">
+<title id="dc-ee24da965f-title">Writers of the legacy order tables</title>
+<desc id="dc-ee24da965f-desc">The web shop and call centre write through the order API, while a partner account, scheduled jobs and a support script write directly to the tables.</desc>
+<defs><marker id="dc-ee24da965f-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 4 L0 8 Z" fill="#323232"/></marker></defs>
+<rect width="880" height="490" fill="#ffffff" aria-hidden="true"/>
+<rect x="575" y="10" width="285" height="465" rx="8" fill="none" stroke="#323232" stroke-dasharray="4 4"/>
+<text x="591" y="34" font-size="13" font-weight="600" fill="#323232" text-anchor="start"><tspan x="591" dy="0">Direct writers bypass the seam</tspan></text>
+<polyline data-edge="w1" points="145,140 145,200" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-ee24da965f-arrow)"/>
+<polyline data-edge="w2" points="270,250 320,250" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-ee24da965f-arrow)"/>
+<polyline data-edge="p" points="590,95 470,95 470,200" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-ee24da965f-arrow)"/>
+<polyline data-edge="j" points="590,250 540,250" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-ee24da965f-arrow)"/>
+<polyline data-edge="s" points="590,407 470,407 470,300" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-ee24da965f-arrow)"/>
+<g id="dc-ee24da965f-node-web" data-node="web" data-x="20" data-y="45" data-w="250" data-h="95">
+<rect x="20" y="45" width="250" height="95" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="38" y="78.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="web"><tspan x="38" dy="0">Web shop and call</tspan><tspan x="38" dy="23">centre</tspan></text>
+<text x="38" y="127.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="web"><tspan x="38" dy="0">Customer and agent orders</tspan></text>
+</g>
+<g id="dc-ee24da965f-node-api" data-node="api" data-x="20" data-y="200" data-w="250" data-h="100">
+<rect x="20" y="200" width="250" height="100" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="38" y="247.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="api"><tspan x="38" dy="0">Order API</tspan></text>
+<text x="38" y="273.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="api"><tspan x="38" dy="0">The routing seam</tspan></text>
+</g>
+<g id="dc-ee24da965f-node-tables" data-node="tables" data-x="320" data-y="200" data-w="220" data-h="100">
+<rect x="320" y="200" width="220" height="100" rx="6" fill="#e8f0fe" stroke="#276ef1" stroke-width="2"/>
+<path d="M330 209 H530 M330 291 H530" stroke="#276ef1" fill="none"/>
+<text x="338" y="236.0" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="tables"><tspan x="338" dy="0">Legacy order</tspan><tspan x="338" dy="23">tables</tspan></text>
+<text x="338" y="285.0" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="tables"><tspan x="338" dy="0">12 million orders</tspan></text>
+</g>
+<g id="dc-ee24da965f-node-partner" data-node="partner" data-x="590" data-y="45" data-w="250" data-h="100">
+<rect x="590" y="45" width="250" height="100" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="608" y="83.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="partner"><tspan x="608" dy="0">Partner account</tspan></text>
+<text x="608" y="109.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="partner"><tspan x="608" dy="0">wh_partner: status updates,</tspan><tspan x="608" dy="18">06:00 to 22:00</tspan></text>
+</g>
+<g id="dc-ee24da965f-node-jobs" data-node="jobs" data-x="590" data-y="200" data-w="250" data-h="100">
+<rect x="590" y="200" width="250" height="100" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="608" y="238.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="jobs"><tspan x="608" dy="0">Scheduled jobs</tspan></text>
+<text x="608" y="264.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="jobs"><tspan x="608" dy="0">Marketplace import; finance</tspan><tspan x="608" dy="18">month end</tspan></text>
+</g>
+<g id="dc-ee24da965f-node-script" data-node="script" data-x="590" data-y="360" data-w="250" data-h="95">
+<rect x="590" y="360" width="250" height="95" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="608" y="405.0" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="script"><tspan x="608" dy="0">Support script</tspan></text>
+<text x="608" y="431.0" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="script"><tspan x="608" dy="0">ops_batch closes idle orders</tspan></text>
+</g>
+</svg>

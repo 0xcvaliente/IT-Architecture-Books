@@ -1,0 +1,26 @@
+[
+  {
+    "file": "investment_model.py",
+    "exit_code": 0,
+    "stdout": "4% rate: NPV EUR 330,109.24\n8% base: NPV EUR 92,516.38\n12% rate: NPV EUR -117,802.48\nBenefits 20% lower: NPV EUR -525,986.89\nBenefits delayed one year: NPV EUR -136,558.90\nAssertions passed. Delayed case excludes extra transition cost.\n",
+    "stderr": ""
+  },
+  {
+    "file": "outcome_measurement.py",
+    "exit_code": 0,
+    "stdout": "Unit rates before: {'A': 0.1, 'B': 0.05} after: {'A': 0.08, 'B': 0.04}\nPooled before: 0.055 after: 0.076\nLater rates standardised to original mix: 0.044000000000000004\nFictional narrow estimate: 0.005 kg CO2e = 5.0 g CO2e\nTotal energy ratio after efficiency and demand changes: 1.5\nThese calculations do not establish causation or a complete lifecycle footprint.\n",
+    "stderr": ""
+  },
+  {
+    "file": "roadmap_dependencies.py",
+    "exit_code": 0,
+    "stdout": "A earliest (0, 4) latest (0, 4) slack 0\nB earliest (4, 10) latest (4, 10) slack 0\nC earliest (4, 7) latest (7, 10) slack 3\nD earliest (10, 14) latest (10, 14) slack 0\nE earliest (14, 16) latest (14, 16) slack 0\nPrecedence-only completion: 16 weeks; critical tasks: ['A', 'B', 'D', 'E']\nIf B and C require the same indivisible team sequentially: 19 weeks.\nCycle correctly rejected.\n",
+    "stderr": ""
+  },
+  {
+    "file": "supplier_sensitivity.py",
+    "exit_code": 0,
+    "stdout": "Base weights: {'A': 3.65, 'B': 3.7}\nRevised weights: {'A': 3.75, 'B': 3.5}\nRanking ties at operability weight 1/3 when the other weights sum to 2/3.\nC remains ineligible regardless of its hypothetical preference scores.\n",
+    "stderr": ""
+  }
+]

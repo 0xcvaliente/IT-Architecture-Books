@@ -1,0 +1,17 @@
+[
+  {
+    "book": 1,
+    "body_text_runs": 2052,
+    "body_exact_match": true
+  },
+  {
+    "book": 2,
+    "body_text_runs": 828,
+    "body_exact_match": true
+  },
+  {
+    "book": 3,
+    "body_text_runs": 998,
+    "body_exact_match": true
+  }
+]

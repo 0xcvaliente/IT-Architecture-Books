@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 700" width="880" height="700" role="img" aria-labelledby="dc-c39bf05a9e-title dc-c39bf05a9e-desc" font-family="DejaVu Sans">
+<title id="dc-c39bf05a9e-title">Buckets and regional allocations</title>
+<desc id="dc-c39bf05a9e-desc">In one database, buckets rebalance with a local transaction; between two regions, units move through a transfer record that is debited once and credited once.</desc>
+<defs><marker id="dc-c39bf05a9e-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 4 L0 8 Z" fill="#323232"/></marker></defs>
+<rect width="880" height="700" fill="#ffffff" aria-hidden="true"/>
+<rect x="10" y="10" width="860" height="330" rx="8" fill="none" stroke="#323232" stroke-dasharray="4 4"/>
+<text x="26" y="34" font-size="13" font-weight="600" fill="#323232" text-anchor="start"><tspan x="26" dy="0">One database: 8 buckets of 250 units</tspan></text>
+<rect x="10" y="360" width="860" height="330" rx="8" fill="none" stroke="#323232" stroke-dasharray="4 4"/>
+<text x="26" y="384" font-size="13" font-weight="600" fill="#323232" text-anchor="start"><tspan x="26" dy="0">Two regional databases</tspan></text>
+<polyline data-edge="pick" points="360,135 360,175 190,175 190,220" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-c39bf05a9e-arrow)"/>
+<polyline data-edge="fb" points="520,135 520,175 690,175 690,220" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-c39bf05a9e-arrow)" stroke-dasharray="6 5"/>
+<polyline data-edge="rb" points="320,265 560,265" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-c39bf05a9e-arrow)"/>
+<polyline data-edge="d" points="180,490 180,620 300,620" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-c39bf05a9e-arrow)"/>
+<polyline data-edge="c" points="580,620 700,620 700,490" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-c39bf05a9e-arrow)"/>
+<g id="dc-c39bf05a9e-node-req" data-node="req" data-x="310" data-y="45" data-w="260" data-h="90">
+<rect x="310" y="45" width="260" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="328" y="87.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="req"><tspan x="328" dy="0">Reservation</tspan></text>
+<text x="328" y="113.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="req"><tspan x="328" dy="0">Picks a bucket at random</tspan></text>
+</g>
+<g id="dc-c39bf05a9e-node-b3" data-node="b3" data-x="60" data-y="220" data-w="260" data-h="90">
+<rect x="60" y="220" width="260" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="78" y="262.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="b3"><tspan x="78" dy="0">Bucket 3</tspan></text>
+<text x="78" y="288.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="b3"><tspan x="78" dy="0">Own row and own lock</tspan></text>
+</g>
+<g id="dc-c39bf05a9e-node-b7" data-node="b7" data-x="560" data-y="220" data-w="260" data-h="90">
+<rect x="560" y="220" width="260" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="578" y="262.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="b7"><tspan x="578" dy="0">Bucket 7</tspan></text>
+<text x="578" y="288.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="b7"><tspan x="578" dy="0">Own row and own lock</tspan></text>
+</g>
+<g id="dc-c39bf05a9e-node-west" data-node="west" data-x="60" data-y="400" data-w="240" data-h="90">
+<rect x="60" y="400" width="240" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="78" y="442.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="west"><tspan x="78" dy="0">West</tspan></text>
+<text x="78" y="468.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="west"><tspan x="78" dy="0">Own allocation</tspan></text>
+</g>
+<g id="dc-c39bf05a9e-node-east" data-node="east" data-x="580" data-y="400" data-w="240" data-h="90">
+<rect x="580" y="400" width="240" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="598" y="442.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="east"><tspan x="598" dy="0">East</tspan></text>
+<text x="598" y="468.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="east"><tspan x="598" dy="0">Own allocation</tspan></text>
+</g>
+<g id="dc-c39bf05a9e-node-tr" data-node="tr" data-x="300" data-y="570" data-w="280" data-h="100">
+<rect x="300" y="570" width="280" height="100" rx="6" fill="#e8f0fe" stroke="#276ef1" stroke-width="2"/>
+<path d="M310 579 H570 M310 661 H570" stroke="#276ef1" fill="none"/>
+<text x="318" y="617.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="tr"><tspan x="318" dy="0">Transfer record</tspan></text>
+<text x="318" y="643.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="tr"><tspan x="318" dy="0">T-17: 100 units in transit</tspan></text>
+</g>
+<g data-label="pick" data-x="200" data-y="140" data-w="110" data-h="30"><rect x="200" y="140" width="110" height="30" rx="4" fill="#ffffff"/>
+<text x="208" y="159" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="208" dy="0">Random pick</tspan></text>
+</g>
+<g data-label="fb" data-x="530" data-y="138" data-w="180" data-h="30"><rect x="530" y="138" width="180" height="30" rx="4" fill="#ffffff"/>
+<text x="538" y="157" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="538" dy="0">If empty, try another</tspan></text>
+</g>
+<g data-label="rb" data-x="365" data-y="226" data-w="150" data-h="30"><rect x="365" y="226" width="150" height="30" rx="4" fill="#ffffff"/>
+<text x="373" y="245" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="373" dy="0">Rebalance locally</tspan></text>
+</g>
+<g data-label="d" data-x="190" data-y="530" data-w="96" data-h="30"><rect x="190" y="530" width="96" height="30" rx="4" fill="#ffffff"/>
+<text x="198" y="549" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="198" dy="0">Debit once</tspan></text>
+</g>
+<g data-label="c" data-x="710" data-y="530" data-w="100" data-h="30"><rect x="710" y="530" width="100" height="30" rx="4" fill="#ffffff"/>
+<text x="718" y="549" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="718" dy="0">Credit once</tspan></text>
+</g>
+</svg>

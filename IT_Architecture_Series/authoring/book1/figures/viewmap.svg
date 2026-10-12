@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 470" width="860" height="470" role="img" aria-labelledby="dc-d1e5a1212e-title dc-d1e5a1212e-desc" font-family="DejaVu Sans">
+<title id="dc-d1e5a1212e-title">Views connected through one requirement</title>
+<desc id="dc-d1e5a1212e-desc">Requirement R05, no accepted request lost, sits at the centre. The context view scopes it, the sequence view traces it, the container view realises it and the deployment view locates it. Shared names and identifiers connect the views.</desc>
+<defs><marker id="dc-d1e5a1212e-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 4 L0 8 Z" fill="#323232"/></marker></defs>
+<rect width="860" height="470" fill="#ffffff" aria-hidden="true"/>
+<polyline data-edge="scope" points="130,130 130,225 300,225" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-d1e5a1212e-arrow)"/>
+<polyline data-edge="trace" points="130,350 130,260 300,260" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-d1e5a1212e-arrow)"/>
+<polyline data-edge="realise" points="560,225 730,225 730,130" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-d1e5a1212e-arrow)"/>
+<polyline data-edge="locate" points="560,260 730,260 730,350" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-d1e5a1212e-arrow)"/>
+<g id="dc-d1e5a1212e-node-req" data-node="req" data-x="300" data-y="195" data-w="260" data-h="90">
+<rect x="300" y="195" width="260" height="90" rx="6" fill="#e8f0fe" stroke="#276ef1" stroke-width="2"/>
+<text x="318" y="237.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="req"><tspan x="318" dy="0">Requirement R05</tspan></text>
+<text x="318" y="263.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="req"><tspan x="318" dy="0">No accepted request lost</tspan></text>
+</g>
+<g id="dc-d1e5a1212e-node-ctx" data-node="ctx" data-x="20" data-y="30" data-w="220" data-h="100">
+<rect x="20" y="30" width="220" height="100" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="38" y="77.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="ctx"><tspan x="38" dy="0">Context</tspan></text>
+<text x="38" y="103.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="ctx"><tspan x="38" dy="0">System ownership</tspan></text>
+</g>
+<g id="dc-d1e5a1212e-node-seq" data-node="seq" data-x="20" data-y="350" data-w="220" data-h="100">
+<rect x="20" y="350" width="220" height="100" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="38" y="397.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="seq"><tspan x="38" dy="0">Sequence</tspan></text>
+<text x="38" y="423.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="seq"><tspan x="38" dy="0">Order and outcomes</tspan></text>
+</g>
+<g id="dc-d1e5a1212e-node-con" data-node="con" data-x="620" data-y="30" data-w="220" data-h="100">
+<rect x="620" y="30" width="220" height="100" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="638" y="77.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="con"><tspan x="638" dy="0">Containers</tspan></text>
+<text x="638" y="103.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="con"><tspan x="638" dy="0">Runtime duties</tspan></text>
+</g>
+<g id="dc-d1e5a1212e-node-dep" data-node="dep" data-x="620" data-y="350" data-w="220" data-h="100">
+<rect x="620" y="350" width="220" height="100" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="638" y="397.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="dep"><tspan x="638" dy="0">Deployment</tspan></text>
+<text x="638" y="423.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="dep"><tspan x="638" dy="0">Placement and faults</tspan></text>
+</g>
+<g data-label="scope" data-x="160" data-y="190" data-w="66" data-h="30"><rect x="160" y="190" width="66" height="30" rx="4" fill="#ffffff"/>
+<text x="168" y="209" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="168" dy="0">Scope</tspan></text>
+</g>
+<g data-label="trace" data-x="160" data-y="266" data-w="62" data-h="30"><rect x="160" y="266" width="62" height="30" rx="4" fill="#ffffff"/>
+<text x="168" y="285" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="168" dy="0">Trace</tspan></text>
+</g>
+<g data-label="realise" data-x="600" data-y="190" data-w="74" data-h="30"><rect x="600" y="190" width="74" height="30" rx="4" fill="#ffffff"/>
+<text x="608" y="209" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="608" dy="0">Realise</tspan></text>
+</g>
+<g data-label="locate" data-x="600" data-y="266" data-w="70" data-h="30"><rect x="600" y="266" width="70" height="30" rx="4" fill="#ffffff"/>
+<text x="608" y="285" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="608" dy="0">Locate</tspan></text>
+</g>
+</svg>

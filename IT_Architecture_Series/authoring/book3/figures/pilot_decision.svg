@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="600" viewBox="0 0 880 600" role="img" aria-labelledby="t d" font-family="DejaVu Sans">
+<title id="t">Expand now or run a pilot first</title>
+<desc id="d">A decision square chooses between expanding now and running a pilot costing 0.05. Expanding now leads to a chance node: high adoption with probability 0.5 gives +1.0, low adoption gives -0.6, an expected value of 0.20. The pilot leads to a chance node: a favourable result with probability 0.5 is followed by a decision to expand, worth 0.68; an unfavourable result is followed by a decision not to expand, worth 0. The pilot policy is worth 0.29 after its cost.</desc>
+<rect width="880" height="600" fill="#ffffff"/>
+<rect x="24" y="274" width="32" height="32" rx="2" fill="#f3f3f3" stroke="#000000" stroke-width="2"/>
+<line x1="56" y1="290" x2="90" y2="290" stroke="#323232" stroke-width="2"/>
+<line x1="90" y1="290" x2="90" y2="110" stroke="#323232" stroke-width="2"/>
+<line x1="90" y1="110" x2="284" y2="110" stroke="#323232" stroke-width="2"/>
+<text x="104" y="100" font-size="14" font-weight="normal" text-anchor="start" fill="#000000">Expand now</text>
+<line x1="56" y1="290" x2="90" y2="290" stroke="#323232" stroke-width="2"/>
+<line x1="90" y1="290" x2="90" y2="420" stroke="#323232" stroke-width="2"/>
+<line x1="90" y1="420" x2="284" y2="420" stroke="#323232" stroke-width="2"/>
+<text x="104" y="410" font-size="14" font-weight="normal" text-anchor="start" fill="#000000">Run pilot (cost 0.05)</text>
+<text x="48" y="336" font-size="14" font-weight="bold" text-anchor="middle" fill="#000000">Decide</text>
+<circle cx="300" cy="110" r="16" fill="#f3f3f3" stroke="#000000" stroke-width="2"/>
+<text x="250" y="148" font-size="14" font-weight="normal" text-anchor="middle" fill="#000000">EV 0.20</text>
+<line x1="316" y1="110" x2="340" y2="110" stroke="#323232" stroke-width="2" stroke-dasharray="7 5"/>
+<line x1="340" y1="110" x2="340" y2="60" stroke="#323232" stroke-width="2" stroke-dasharray="7 5"/>
+<line x1="340" y1="60" x2="560" y2="60" stroke="#323232" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="354" y="50" font-size="14" font-weight="normal" text-anchor="start" fill="#000000">High adoption, p = 0.5</text>
+<line x1="316" y1="110" x2="340" y2="110" stroke="#323232" stroke-width="2" stroke-dasharray="7 5"/>
+<line x1="340" y1="110" x2="340" y2="170" stroke="#323232" stroke-width="2" stroke-dasharray="7 5"/>
+<line x1="340" y1="170" x2="560" y2="170" stroke="#323232" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="354" y="160" font-size="14" font-weight="normal" text-anchor="start" fill="#000000">Low adoption, p = 0.5</text>
+<text x="580" y="65" font-size="14" font-weight="normal" text-anchor="start" fill="#323232">Expansion succeeds</text>
+<text x="840" y="65" font-size="14" font-weight="normal" text-anchor="end" fill="#323232">+1.0</text>
+<text x="580" y="175" font-size="14" font-weight="normal" text-anchor="start" fill="#323232">Expansion struggles</text>
+<text x="840" y="175" font-size="14" font-weight="normal" text-anchor="end" fill="#323232">−0.6</text>
+<circle cx="300" cy="420" r="16" fill="#f3f3f3" stroke="#000000" stroke-width="2"/>
+<text x="230" y="458" font-size="14" font-weight="normal" text-anchor="middle" fill="#000000">EV 0.34 − 0.05 = 0.29</text>
+<line x1="316" y1="420" x2="340" y2="420" stroke="#323232" stroke-width="2" stroke-dasharray="7 5"/>
+<line x1="340" y1="420" x2="340" y2="330" stroke="#323232" stroke-width="2" stroke-dasharray="7 5"/>
+<line x1="340" y1="330" x2="524" y2="330" stroke="#323232" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="350" y="320" font-size="14" font-weight="normal" text-anchor="start" fill="#000000">Favourable, p = 0.5</text>
+<line x1="316" y1="420" x2="340" y2="420" stroke="#323232" stroke-width="2" stroke-dasharray="7 5"/>
+<line x1="340" y1="420" x2="340" y2="510" stroke="#323232" stroke-width="2" stroke-dasharray="7 5"/>
+<line x1="340" y1="510" x2="524" y2="510" stroke="#323232" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="350" y="500" font-size="14" font-weight="normal" text-anchor="start" fill="#000000">Unfavourable, p = 0.5</text>
+<rect x="524" y="314" width="32" height="32" rx="2" fill="#f3f3f3" stroke="#000000" stroke-width="2"/>
+<rect x="524" y="494" width="32" height="32" rx="2" fill="#f3f3f3" stroke="#000000" stroke-width="2"/>
+<line x1="556" y1="330" x2="580" y2="330" stroke="#323232" stroke-width="2"/>
+<line x1="580" y1="330" x2="580" y2="295" stroke="#323232" stroke-width="2"/>
+<line x1="580" y1="295" x2="610" y2="295" stroke="#323232" stroke-width="2"/>
+<line x1="556" y1="330" x2="580" y2="330" stroke="#323232" stroke-width="2"/>
+<line x1="580" y1="330" x2="580" y2="365" stroke="#323232" stroke-width="2"/>
+<line x1="580" y1="365" x2="610" y2="365" stroke="#323232" stroke-width="2"/>
+<text x="620" y="300" font-size="14" font-weight="bold" text-anchor="start" fill="#000000">Expand, EV 0.68</text>
+<text x="840" y="300" font-size="14" font-weight="bold" text-anchor="end" fill="#000000">0.68</text>
+<text x="620" y="370" font-size="14" font-weight="normal" text-anchor="start" fill="#323232">Do not expand</text>
+<text x="840" y="370" font-size="14" font-weight="normal" text-anchor="end" fill="#323232">0</text>
+<line x1="556" y1="510" x2="580" y2="510" stroke="#323232" stroke-width="2"/>
+<line x1="580" y1="510" x2="580" y2="475" stroke="#323232" stroke-width="2"/>
+<line x1="580" y1="475" x2="610" y2="475" stroke="#323232" stroke-width="2"/>
+<line x1="556" y1="510" x2="580" y2="510" stroke="#323232" stroke-width="2"/>
+<line x1="580" y1="510" x2="580" y2="545" stroke="#323232" stroke-width="2"/>
+<line x1="580" y1="545" x2="610" y2="545" stroke="#323232" stroke-width="2"/>
+<text x="620" y="480" font-size="14" font-weight="normal" text-anchor="start" fill="#323232">Expand, EV −0.28</text>
+<text x="840" y="480" font-size="14" font-weight="normal" text-anchor="end" fill="#323232">−0.28</text>
+<text x="620" y="550" font-size="14" font-weight="bold" text-anchor="start" fill="#000000">Do not expand</text>
+<text x="840" y="550" font-size="14" font-weight="bold" text-anchor="end" fill="#000000">0</text>
+<rect x="20" y="573" width="16" height="16" rx="2" fill="#f3f3f3" stroke="#000000" stroke-width="2"/>
+<text x="44" y="586" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Decision</text>
+<circle cx="132" cy="581" r="8" fill="#f3f3f3" stroke="#000000" stroke-width="2"/>
+<text x="146" y="586" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Chance</text>
+<line x1="220" y1="581" x2="260" y2="581" stroke="#323232" stroke-width="2"/>
+<text x="268" y="586" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Choice</text>
+<line x1="340" y1="581" x2="380" y2="581" stroke="#323232" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="388" y="586" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Chance outcome</text>
+<text x="520" y="586" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Bold: the branch chosen at each decision</text>
+</svg>

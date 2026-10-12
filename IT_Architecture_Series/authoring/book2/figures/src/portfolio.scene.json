@@ -1,0 +1,152 @@
+{
+ "title": "Portfolio argument",
+ "description": "Each of the four studios contributes a different kind of evidence to one portfolio argument.",
+ "width": 860,
+ "height": 470,
+ "theme": "light",
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "nodes": [
+  {
+   "id": "m",
+   "label": "Integration: Meridian",
+   "x": 20,
+   "y": 30,
+   "w": 260,
+   "h": 100,
+   "status": "provided",
+   "detail": "Durable receipts and unknown CRM outcomes"
+  },
+  {
+   "id": "a",
+   "label": "Transactions: Aster",
+   "x": 580,
+   "y": 30,
+   "w": 260,
+   "h": 100,
+   "status": "provided",
+   "detail": "Stock invariant, hot row and late payments"
+  },
+  {
+   "id": "b",
+   "label": "Data: Beacon",
+   "x": 20,
+   "y": 340,
+   "w": 260,
+   "h": 100,
+   "status": "provided",
+   "detail": "Grain and the publication ledger"
+  },
+  {
+   "id": "o",
+   "label": "Modernisation: Orion",
+   "x": 580,
+   "y": 340,
+   "w": 260,
+   "h": 100,
+   "status": "provided",
+   "detail": "One write authority and a tested way back"
+  },
+  {
+   "id": "p",
+   "label": "Portfolio argument",
+   "x": 300,
+   "y": 185,
+   "w": 260,
+   "h": 100,
+   "status": "provided",
+   "emphasis": true,
+   "detail": "Decisions, evidence and revisions"
+  }
+ ],
+ "edges": [
+  {
+   "id": "em",
+   "from": "m",
+   "to": "p",
+   "points": [
+    [
+     150,
+     130
+    ],
+    [
+     150,
+     215
+    ],
+    [
+     300,
+     215
+    ]
+   ],
+   "status": "provided"
+  },
+  {
+   "id": "ea",
+   "from": "a",
+   "to": "p",
+   "points": [
+    [
+     710,
+     130
+    ],
+    [
+     710,
+     215
+    ],
+    [
+     560,
+     215
+    ]
+   ],
+   "status": "provided"
+  },
+  {
+   "id": "eb",
+   "from": "b",
+   "to": "p",
+   "points": [
+    [
+     150,
+     340
+    ],
+    [
+     150,
+     255
+    ],
+    [
+     300,
+     255
+    ]
+   ],
+   "status": "provided"
+  },
+  {
+   "id": "eo",
+   "from": "o",
+   "to": "p",
+   "points": [
+    [
+     710,
+     340
+    ],
+    [
+     710,
+     255
+    ],
+    [
+     560,
+     255
+    ]
+   ],
+   "status": "provided"
+  }
+ ]
+}

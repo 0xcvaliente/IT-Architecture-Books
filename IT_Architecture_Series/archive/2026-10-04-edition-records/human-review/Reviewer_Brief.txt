@@ -1,0 +1,58 @@
+IT ARCHITECTURE SERIES — HUMAN REVIEW BRIEF
+Book 3 academic revision and series design release | 4 October 2026
+
+STATUS AND PURPOSE
+No independent human review has yet taken place. This pack is ready to give to named reviewers after the learner/owner selects them. Assistant-led checks are recorded separately and must not be represented as expert endorsements. No invitation has been sent and no payment or review deadline has been agreed.
+
+The learner has an IT/IS bachelor degree, a master's in Business Information Systems and programming experience. The books refresh foundations and develop judgement for an IT architect role. They use a vendor-neutral approach, with Azure/AWS illustrations, original fictional cases and IEEE citations. Normal body text is 10 point, single spaced. The intended study commitment is 4–5 hours a day. The revision adds worked alternatives and more precise evidence boundaries, not a certification claim.
+
+REVIEWER SELECTION
+A. Experienced solution/distributed-systems architect: recent responsibility for production consistency, integration, incident recovery and architecture decisions. Ask for relevant experience and competing commercial interests; a job title alone is insufficient.
+B. Experienced security/enterprise architect: responsibility for identity and data-access design, migration controls, enterprise governance and organisational change. If no person covers both areas, split the assignment rather than implying expertise.
+C. Academic: researcher or university teacher in software architecture, distributed systems or information systems/enterprise architecture, able to examine primary literature and assess teaching quality. Declare areas outside their expertise and route those findings to the appropriate specialist.
+
+Each reviewer should disclose prior involvement in writing these books, relevant vendor relationships, limitations of expertise and exact review scope. Reviewers work independently before comparing conclusions. A disagreement is evidence to resolve, not a vote to average.
+
+ASSIGNMENTS
+A — distributed systems and practical designs
+Book 1 chapters 6, 10, 12, 20 and 22; Book 2 chapters 2, 4, 6–8, 13–14. Read the corresponding answers and figures, not only the narrative.
+Claim records AC05–AC11 and AC13–AC15 are central. Challenge the on-call write-skew schedule, linearizability histories, majority/term conditions, CAP operation choices, uncertain CRM outcomes, transfer-in-transit invariant and fencing boundary. Construct at least one counterexample to each chosen alternative before endorsing it. Check whether models, deployment assumptions and external-effect contracts have been confused.
+Required output: at least five substantive observations (including confirmed strengths if no defect), an independent solution to exercises 12.4 and 12.5 in Book 1 and 7.4 and 14.4 in Book 2, and a clear recommendation for the reviewed scope.
+
+B — security and enterprise practice
+Book 1 chapters 9, 15 and 21; Book 2 chapters 11 and 14; Book 3 chapters 3, 6–8, 11–12 and 16.
+Claim records AC12 and AC16–AC19 are central; consider AC24–AC25 and B3-32–B3-34 with their stated method and transfer limits. Trace each permitted and prohibited access route, including direct storage, exports, administrative paths and active sessions. Evaluate revocation timing, decision freshness and policy-service failure behaviour. Examine ownership, decision rights, transition capacity and whether business incentives undermine technical controls.
+Required output: an access-path challenge table, independent answers to Book 1 exercises 15.4–15.5 and Book 2 exercise 11.4, and a practical feasibility critique of one enterprise alternative.
+
+C — academic and teaching quality
+Book 1 chapters 5, 6, 8, 12, 15 and the research guide; Book 3 chapters 1, 3, 6, 9, 13–15. Inspect the claim register and the original sources in the assigned field.
+Prioritise AC01–AC06, AC13–AC14, AC20–AC28 and the new B3-32–B3-34 records. The current Book 3 record separates AC19 as a background source check; its direct teaching application is in Book 1 chapter 15. Verify that theory, empirical findings, official guidance and original inference are distinguished. Check the mirroring study's sample and causal limitations, March's model assumptions, the common-date investment comparison and the parallel-trends argument. Assess whether explanation and exercises support university-level reasoning, not mere terminology recall.
+Required output: passage-level findings, source locators, an independent solution to Book 3 exercises 9.4 and 13.4, and a judgement about depth and progression within the declared scope. Do not give an accreditation or whole-series endorsement based on selected chapters.
+
+CURRENT BOOK 3 SOURCE REVIEW
+Three earlier abstract-only supporting roles (AC29 Tamm 2011, AC30 Weill and Ross 2004, AC31 Ross 2005) have been retired from the current Book 3 bibliography and replaced. Their original full texts remain unverified; the replacement does not change that historical fact. Inspect evidence/book3-current/retired_abstract_support.json for disposition.
+
+Read the accessible full sources for B3-32 (cross-sectional EA capability survey), B3-33 (two governance cases) and B3-34 (organisational-change adoption case). Check the methods, bounded summaries and worked alternatives in chapters 1, 7 and 11; also assess the measurement and synthesis extensions in chapters 13 and 15. Independently answer exercises 7.4, 11.4, 13.5 and 15.5. Verify whether limitations justify the strength of each course inference. The MIT CISR operating-model definition and the distinct Ross 2009 teaching slides support different, limited roles in chapter 3.
+
+Books 1 and 2 received design changes only. Their historical prefaces still describe the preceding edition's three enterprise source gaps, because the learner expressly required their information to be preserved. Use this brief and the current Book 3 evidence record for the present disposition.
+
+FINDING FORMAT AND SEVERITY
+Use External_Findings.csv, one finding per row. Identify book, chapter/section, PDF page, paragraph or figure, claim ID if applicable, issue, source/evidence, consequence, proposed correction and a way to verify the correction.
+Critical: could teach an unsafe design or invalidate a central conclusion.
+Major: materially misteaches a concept, unsupported generalisation, incorrect worked solution or a missing assumption changing the decision.
+Minor: local precision, citation or presentation defect.
+Suggestion: optional enrichment with no demonstrated defect.
+Positive observation: a specific checked property, with evidence and scope.
+Do not inflate the result with a numerical quality score or an unexplained 'approved'.
+
+REVISION AND ACCEPTANCE
+1. Preserve the reviewed PDF/DOCX hashes and register the reviewer and scope.
+2. Triage each finding; reproduce it or inspect the cited passage. Record accept/reject/defer with rationale. Never delete disagreement silently.
+3. Apply accepted changes to the source; update associated examples, figures, answers, references and claim records together.
+4. Ask the relevant reviewer to check critical and major corrections. Record evidence of closure, not just author acknowledgement.
+5. Incorporate learner-pilot results and re-run affected content checks.
+6. Rebuild DOCX/PDF, update contents and claim-page mappings, and inspect every changed page plus affected neighbours. If pagination shifts widely, inspect the full render.
+7. Publish a final edition only with a truthful scope statement. Unresolved critical findings block release. Unresolved major findings require correction or an explicit limitation that the owner accepts; a source-access limitation cannot be described as completed verification.
+
+REVIEW DELIVERY
+Return External_Findings.csv and Reviewer_Declaration.txt plus any annotated copy. Do not include private production data in examples. Suggested review effort is 4–8 hours per specialist for this targeted assignment, explicitly an estimate; a full line-by-line review of all three books requires a separately agreed scope.

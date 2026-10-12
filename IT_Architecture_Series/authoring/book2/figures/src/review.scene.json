@@ -1,0 +1,214 @@
+{
+ "title": "Review cycle",
+ "description": "A decision brief is challenged, findings become owned conditions with closure evidence, and the result is a new version of the decision.",
+ "width": 880,
+ "height": 370,
+ "theme": "light",
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "nodes": [
+  {
+   "id": "brief",
+   "label": "Decision brief",
+   "x": 20,
+   "y": 30,
+   "w": 210,
+   "h": 96,
+   "status": "provided",
+   "detail": "Version and question"
+  },
+  {
+   "id": "ch",
+   "label": "Challenge",
+   "x": 335,
+   "y": 30,
+   "w": 210,
+   "h": 96,
+   "status": "provided",
+   "detail": "Owners test the evidence"
+  },
+  {
+   "id": "find",
+   "label": "Findings",
+   "x": 650,
+   "y": 30,
+   "w": 210,
+   "h": 96,
+   "status": "provided",
+   "emphasis": true,
+   "detail": "Severity and consequence"
+  },
+  {
+   "id": "up",
+   "label": "Updated decision",
+   "x": 20,
+   "y": 240,
+   "w": 210,
+   "h": 96,
+   "status": "provided",
+   "detail": "Scope and rationale"
+  },
+  {
+   "id": "clo",
+   "label": "Closure evidence",
+   "x": 335,
+   "y": 240,
+   "w": 210,
+   "h": 96,
+   "status": "provided",
+   "detail": "A release-specific check"
+  },
+  {
+   "id": "con",
+   "label": "Owned conditions",
+   "x": 650,
+   "y": 240,
+   "w": 210,
+   "h": 96,
+   "status": "provided",
+   "detail": "Owner, action and deadline"
+  }
+ ],
+ "edges": [
+  {
+   "id": "e1",
+   "from": "brief",
+   "to": "ch",
+   "points": [
+    [
+     230,
+     78
+    ],
+    [
+     335,
+     78
+    ]
+   ],
+   "status": "provided",
+   "label": "Review",
+   "label_at": [
+    246,
+    38
+   ],
+   "label_w": 72
+  },
+  {
+   "id": "e2",
+   "from": "ch",
+   "to": "find",
+   "points": [
+    [
+     545,
+     78
+    ],
+    [
+     650,
+     78
+    ]
+   ],
+   "status": "provided",
+   "label": "Record",
+   "label_at": [
+    562,
+    38
+   ],
+   "label_w": 70
+  },
+  {
+   "id": "e3",
+   "from": "find",
+   "to": "con",
+   "points": [
+    [
+     755,
+     126
+    ],
+    [
+     755,
+     240
+    ]
+   ],
+   "status": "provided",
+   "label": "Assign",
+   "label_at": [
+    765,
+    165
+   ],
+   "label_w": 70
+  },
+  {
+   "id": "e4",
+   "from": "con",
+   "to": "clo",
+   "points": [
+    [
+     650,
+     288
+    ],
+    [
+     545,
+     288
+    ]
+   ],
+   "status": "provided",
+   "label": "Verify",
+   "label_at": [
+    564,
+    248
+   ],
+   "label_w": 64
+  },
+  {
+   "id": "e5",
+   "from": "clo",
+   "to": "up",
+   "points": [
+    [
+     335,
+     288
+    ],
+    [
+     230,
+     288
+    ]
+   ],
+   "status": "provided",
+   "label": "Conclude",
+   "label_at": [
+    240,
+    248
+   ],
+   "label_w": 84
+  },
+  {
+   "id": "e6",
+   "from": "up",
+   "to": "brief",
+   "points": [
+    [
+     125,
+     240
+    ],
+    [
+     125,
+     126
+    ]
+   ],
+   "status": "provided",
+   "label": "Next version",
+   "label_at": [
+    135,
+    165
+   ],
+   "label_w": 110
+  }
+ ]
+}

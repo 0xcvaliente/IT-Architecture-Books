@@ -1,0 +1,3 @@
+# Terms with several senses: limit index pages to the chapters that use this sense.
+trigger (Dataflow Model) | 9-11
+window | 9-11

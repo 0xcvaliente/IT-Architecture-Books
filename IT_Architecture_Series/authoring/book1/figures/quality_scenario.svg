@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 570" width="860" height="570" role="img" aria-labelledby="dc-891b680778-title dc-891b680778-desc" font-family="DejaVu Sans">
+<title id="dc-891b680778-title">Anatomy of a quality attribute scenario</title>
+<desc id="dc-891b680778-desc">A source of stimulus raises a stimulus that arrives at an artefact operating in a stated environment. The artefact produces a response, which is judged by a response measure. Example values come from the Meridian peak submission scenario.</desc>
+<defs><marker id="dc-891b680778-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 4 L0 8 Z" fill="#323232"/></marker></defs>
+<rect width="860" height="570" fill="#ffffff" aria-hidden="true"/>
+<rect x="20" y="180" width="820" height="190" rx="8" fill="none" stroke="#323232" stroke-dasharray="4 4"/>
+<text x="36" y="204" font-size="13" font-weight="600" fill="#323232" text-anchor="start"><tspan x="36" dy="0">Environment: incident peak, CRM up or down</tspan></text>
+<polyline data-edge="raises" points="390,70 470,70" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-891b680778-arrow)"/>
+<polyline data-edge="arrives" points="650,120 650,230" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-891b680778-arrow)"/>
+<polyline data-edge="produces" points="480,285 380,285" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-891b680778-arrow)"/>
+<polyline data-edge="judged" points="210,340 210,440" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-891b680778-arrow)"/>
+<g id="dc-891b680778-node-source" data-node="source" data-x="20" data-y="20" data-w="370" data-h="100">
+<rect x="20" y="20" width="370" height="100" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="38" y="58.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="source"><tspan x="38" dy="0">Source of stimulus</tspan></text>
+<text x="38" y="84.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="source"><tspan x="38" dy="0">Customers reporting a widespread equipment</tspan><tspan x="38" dy="18">fault</tspan></text>
+</g>
+<g id="dc-891b680778-node-stimulus" data-node="stimulus" data-x="470" data-y="20" data-w="370" data-h="100">
+<rect x="470" y="20" width="370" height="100" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="488" y="58.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="stimulus"><tspan x="488" dy="0">Stimulus</tspan></text>
+<text x="488" y="84.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="stimulus"><tspan x="488" dy="0">Valid submissions at 20 per second for ten</tspan><tspan x="488" dy="18">minutes</tspan></text>
+</g>
+<g id="dc-891b680778-node-artefact" data-node="artefact" data-x="480" data-y="230" data-w="340" data-h="110">
+<rect x="480" y="230" width="340" height="110" rx="6" fill="#e8f0fe" stroke="#276ef1" stroke-width="2"/>
+<text x="498" y="273.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="artefact"><tspan x="498" dy="0">Artefact</tspan></text>
+<text x="498" y="299.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="artefact"><tspan x="498" dy="0">Portal receipt API, excluding file</tspan><tspan x="498" dy="18">upload</tspan></text>
+</g>
+<g id="dc-891b680778-node-response" data-node="response" data-x="40" data-y="230" data-w="340" data-h="110">
+<rect x="40" y="230" width="340" height="110" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="58" y="273.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="response"><tspan x="58" dy="0">Response</tspan></text>
+<text x="58" y="299.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="response"><tspan x="58" dy="0">Stores the submission and handoff</tspan><tspan x="58" dy="18">record, then returns a receipt</tspan></text>
+</g>
+<g id="dc-891b680778-node-measure" data-node="measure" data-x="40" data-y="440" data-w="340" data-h="110">
+<rect x="40" y="440" width="340" height="110" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="58" y="483.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="measure"><tspan x="58" dy="0">Response measure</tspan></text>
+<text x="58" y="509.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="measure"><tspan x="58" dy="0">95% of receipts within one second; no</tspan><tspan x="58" dy="18">accepted submission lost</tspan></text>
+</g>
+<g data-label="raises" data-x="396" data-y="36" data-w="68" data-h="30"><rect x="396" y="36" width="68" height="30" rx="4" fill="#ffffff"/>
+<text x="404" y="55" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="404" dy="0">raises</tspan></text>
+</g>
+<g data-label="arrives" data-x="660" data-y="128" data-w="96" data-h="30"><rect x="660" y="128" width="96" height="30" rx="4" fill="#ffffff"/>
+<text x="668" y="147" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="668" dy="0">arrives at</tspan></text>
+</g>
+<g data-label="produces" data-x="388" data-y="248" data-w="84" data-h="30"><rect x="388" y="248" width="84" height="30" rx="4" fill="#ffffff"/>
+<text x="396" y="267" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="396" dy="0">produces</tspan></text>
+</g>
+<g data-label="judged" data-x="220" data-y="374" data-w="92" data-h="30"><rect x="220" y="374" width="92" height="30" rx="4" fill="#ffffff"/>
+<text x="228" y="393" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="228" dy="0">judged by</tspan></text>
+</g>
+</svg>

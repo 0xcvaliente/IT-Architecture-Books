@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 596" width="860" height="596" role="img" aria-labelledby="t d" font-family="DejaVu Sans">
+<title id="t">Successful receipt sequence</title>
+<desc id="d">The browser posts a submission with its key; the API authorises and validates, commits the request, scoped key result and outbox record, and returns a 201 receipt with the handoff pending. A retry with the same key after a lost response returns the original receipt after the API verifies the submitter and payload hash.</desc>
+<defs><marker id="ah" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 4 L0 8 Z" fill="#323232"/></marker></defs>
+<rect width="860" height="596" fill="#ffffff"/>
+<line x1="90.0" y1="60" x2="90.0" y2="526" stroke="#323232" stroke-width="1.2" stroke-dasharray="5 4"/>
+<rect x="15.0" y="12" width="150" height="48" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="90.0" y="42" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">Browser</text>
+<line x1="430.0" y1="60" x2="430.0" y2="526" stroke="#323232" stroke-width="1.2" stroke-dasharray="5 4"/>
+<rect x="355.0" y="12" width="150" height="48" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="430.0" y="42" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">Portal API</text>
+<line x1="770.0" y1="60" x2="770.0" y2="526" stroke="#323232" stroke-width="1.2" stroke-dasharray="5 4"/>
+<rect x="695.0" y="12" width="150" height="48" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="770.0" y="42" font-size="15" font-weight="bold" fill="#000000" text-anchor="middle">Database</text>
+<line x1="90.0" y1="100" x2="424.0" y2="100" stroke="#323232" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="112.79999999999998" y="76" width="294.40000000000003" height="19" fill="#ffffff"/>
+<text x="260.0" y="91" font-size="13" fill="#000000" text-anchor="middle">1 POST + key + authenticated context</text>
+<rect x="278.0" y="130" width="304" height="32" rx="4" fill="#e8f0fe" stroke="#276ef1" stroke-width="1.5"/>
+<text x="430.0" y="151" font-size="13" fill="#000000" text-anchor="middle">2 Authorise scope; validate content</text>
+<line x1="430.0" y1="204" x2="764.0" y2="204" stroke="#323232" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="444.9" y="180" width="310.2" height="19" fill="#ffffff"/>
+<text x="600.0" y="195" font-size="13" fill="#000000" text-anchor="middle">3 BEGIN; request + scoped key + outbox</text>
+<line x1="770.0" y1="256" x2="436.0" y2="256" stroke="#323232" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#ah)"/>
+<rect x="523.9" y="232" width="152.20000000000002" height="19" fill="#ffffff"/>
+<text x="600.0" y="247" font-size="13" fill="#000000" text-anchor="middle">4 COMMIT confirmed</text>
+<line x1="430.0" y1="308" x2="96.0" y2="308" stroke="#323232" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#ah)"/>
+<rect x="136.5" y="284" width="247.0" height="19" fill="#ffffff"/>
+<text x="260.0" y="299" font-size="13" fill="#000000" text-anchor="middle">5 201 receipt; handoff pending</text>
+<line x1="90.0" y1="360" x2="424.0" y2="360" stroke="#323232" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="124.65" y="336" width="270.7" height="19" fill="#ffffff"/>
+<text x="260.0" y="351" font-size="13" fill="#000000" text-anchor="middle">6 Same key retry if response lost</text>
+<line x1="430.0" y1="412" x2="764.0" y2="412" stroke="#323232" stroke-width="2" marker-end="url(#ah)"/>
+<rect x="440.95" y="388" width="318.1" height="19" fill="#ffffff"/>
+<text x="600.0" y="403" font-size="13" fill="#000000" text-anchor="middle">7 Read; verify submitter + payload hash</text>
+<line x1="430.0" y1="464" x2="96.0" y2="464" stroke="#323232" stroke-width="2" stroke-dasharray="7 5" marker-end="url(#ah)"/>
+<rect x="140.45" y="440" width="239.10000000000002" height="19" fill="#ffffff"/>
+<text x="260.0" y="455" font-size="13" fill="#000000" text-anchor="middle">8 Return the original receipt</text>
+<text x="430.0" y="566" font-size="14" fill="#323232" text-anchor="middle">A receipt confirms local durable responsibility; CRM completion happens later.</text>
+</svg>

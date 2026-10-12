@@ -1,0 +1,6 @@
+{
+  "path": "practice/advanced-practice/pilot_and_outcomes.py",
+  "exit_code": 0,
+  "stdout": "Pilot values (EUR millions): {'without': 0.2, 'positive_probability': 0.5, 'posterior_positive': 0.8, 'posterior_negative': 0.2, 'value_positive': 0.68, 'value_negative': -0.28, 'gross': 0.34, 'net': 0.29, 'information_value': 0.14}\nUninformative pilot net value: 0.15; cost 0.16 pilot net value: 0.18.\nOutcome changes in percentage points: pilot -4; comparison -1; difference -3.\nPASS: exact arithmetic. Causal interpretation and probabilities remain assumptions.\n",
+  "scope": "Exact arithmetic under fictional assumptions; not causal or empirical verification."
+}

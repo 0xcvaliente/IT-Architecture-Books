@@ -1,0 +1,152 @@
+{
+ "title": "Portal schema relationships",
+ "description": "An asset has zero or more service requests, and a customer user submits zero or more service requests; each request names one asset and one submitter. A service request has zero or more attachments and one or more outbox records. The request holds the scoped submission key and payload hash. All keys include the tenant.",
+ "width": 860,
+ "height": 550,
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "regions": [],
+ "nodes": [
+  {
+   "id": "asset",
+   "label": "Asset",
+   "x": 20,
+   "y": 20,
+   "w": 370,
+   "h": 100,
+   "detail": "PK tenant + asset; cached from ERP"
+  },
+  {
+   "id": "user",
+   "label": "Customer user",
+   "x": 470,
+   "y": 20,
+   "w": 370,
+   "h": 100,
+   "detail": "PK tenant + user; identity from the identity provider"
+  },
+  {
+   "id": "req",
+   "label": "ServiceRequest",
+   "x": 130,
+   "y": 210,
+   "w": 600,
+   "h": 130,
+   "detail": "PK tenant + submission ID; FK tenant + asset; unique tenant + submitter + submission key; payload hash",
+   "emphasis": true
+  },
+  {
+   "id": "att",
+   "label": "Attachment",
+   "x": 20,
+   "y": 430,
+   "w": 370,
+   "h": 100,
+   "detail": "FK tenant + submission ID; object key; scan state"
+  },
+  {
+   "id": "out",
+   "label": "Outbox",
+   "x": 470,
+   "y": 430,
+   "w": 370,
+   "h": 100,
+   "detail": "PK event; FK tenant + submission ID; handoff state, attempts"
+  }
+ ],
+ "edges": [
+  {
+   "id": "r1",
+   "from": "asset",
+   "to": "req",
+   "points": [
+    [
+     250,
+     120
+    ],
+    [
+     250,
+     210
+    ]
+   ],
+   "label": "1 to 0..many",
+   "label_at": [
+    260,
+    146
+   ],
+   "label_w": 112
+  },
+  {
+   "id": "r2",
+   "from": "user",
+   "to": "req",
+   "points": [
+    [
+     610,
+     120
+    ],
+    [
+     610,
+     210
+    ]
+   ],
+   "label": "1 to 0..many",
+   "label_at": [
+    620,
+    146
+   ],
+   "label_w": 112
+  },
+  {
+   "id": "r3",
+   "from": "req",
+   "to": "att",
+   "points": [
+    [
+     250,
+     340
+    ],
+    [
+     250,
+     430
+    ]
+   ],
+   "label": "1 to 0..many",
+   "label_at": [
+    260,
+    366
+   ],
+   "label_w": 112
+  },
+  {
+   "id": "r4",
+   "from": "req",
+   "to": "out",
+   "points": [
+    [
+     610,
+     340
+    ],
+    [
+     610,
+     430
+    ]
+   ],
+   "label": "1 to 1..many",
+   "label_at": [
+    620,
+    366
+   ],
+   "label_w": 112
+  }
+ ],
+ "notes": []
+}

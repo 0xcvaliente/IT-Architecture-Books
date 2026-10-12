@@ -1,0 +1,17 @@
+[
+  {
+    "book": 1,
+    "contents_destinations_match": true,
+    "checked": 31
+  },
+  {
+    "book": 2,
+    "contents_destinations_match": true,
+    "checked": 20
+  },
+  {
+    "book": 3,
+    "contents_destinations_match": true,
+    "checked": 20
+  }
+]

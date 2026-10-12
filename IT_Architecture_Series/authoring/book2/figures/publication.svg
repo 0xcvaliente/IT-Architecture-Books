@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 535" width="880" height="535" role="img" aria-labelledby="dc-3c7bce9950-title dc-3c7bce9950-desc" font-family="DejaVu Sans">
+<title id="dc-3c7bce9950-title">Publication path</title>
+<desc id="dc-3c7bce9950-desc">Source positions and quality checks gate each publication; a passing run appends a new publication to the ledger, and a failing run leaves the previous publication visible.</desc>
+<defs><marker id="dc-3c7bce9950-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 4 L0 8 Z" fill="#323232"/></marker></defs>
+<rect width="880" height="535" fill="#ffffff" aria-hidden="true"/>
+<polyline data-edge="x" points="230,78 335,78" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-3c7bce9950-arrow)"/>
+<polyline data-edge="v" points="545,78 650,78" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-3c7bce9950-arrow)"/>
+<polyline data-edge="c" points="755,126 755,220" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-3c7bce9950-arrow)"/>
+<polyline data-edge="p" points="650,270 545,270" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-3c7bce9950-arrow)"/>
+<polyline data-edge="ap" points="440,320 440,400" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-3c7bce9950-arrow)"/>
+<polyline data-edge="f" points="755,320 755,400" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-3c7bce9950-arrow)"/>
+<g id="dc-3c7bce9950-node-src" data-node="src" data-x="20" data-y="30" data-w="210" data-h="96">
+<rect x="20" y="30" width="210" height="96" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="38" y="66.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="src"><tspan x="38" dy="0">Source positions</tspan></text>
+<text x="38" y="92.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="src"><tspan x="38" dy="0">Change position or</tspan><tspan x="38" dy="18">extract</tspan></text>
+</g>
+<g id="dc-3c7bce9950-node-land" data-node="land" data-x="335" data-y="30" data-w="210" data-h="96">
+<rect x="335" y="30" width="210" height="96" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="353" y="75.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="land"><tspan x="353" dy="0">Landing</tspan></text>
+<text x="353" y="101.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="land"><tspan x="353" dy="0">Identity and version</tspan></text>
+</g>
+<g id="dc-3c7bce9950-node-cur" data-node="cur" data-x="650" data-y="30" data-w="210" data-h="96">
+<rect x="650" y="30" width="210" height="96" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="668" y="66.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="cur"><tspan x="668" dy="0">Curated state</tspan></text>
+<text x="668" y="92.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="cur"><tspan x="668" dy="0">Current version of each</tspan><tspan x="668" dy="18">record</tspan></text>
+</g>
+<g id="dc-3c7bce9950-node-gate" data-node="gate" data-x="650" data-y="220" data-w="210" data-h="100">
+<rect x="650" y="220" width="210" height="100" rx="6" fill="#e8f0fe" stroke="#276ef1" stroke-width="2"/>
+<text x="668" y="258.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="gate"><tspan x="668" dy="0">Publication gate</tspan></text>
+<text x="668" y="284.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="gate"><tspan x="668" dy="0">Quality and</tspan><tspan x="668" dy="18">completeness</tspan></text>
+</g>
+<g id="dc-3c7bce9950-node-new" data-node="new" data-x="335" data-y="220" data-w="210" data-h="100">
+<rect x="335" y="220" width="210" height="100" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="353" y="258.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="new"><tspan x="353" dy="0">New publication</tspan></text>
+<text x="353" y="284.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="new"><tspan x="353" dy="0">ID, value, inputs and</tspan><tspan x="353" dy="18">what it supersedes</tspan></text>
+</g>
+<g id="dc-3c7bce9950-node-ledger" data-node="ledger" data-x="335" data-y="400" data-w="210" data-h="115">
+<rect x="335" y="400" width="210" height="115" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<path d="M345 409 H535 M345 506 H535" stroke="#323232" fill="none"/>
+<text x="353" y="443.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="ledger"><tspan x="353" dy="0">Publication</tspan><tspan x="353" dy="23">ledger</tspan></text>
+<text x="353" y="492.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="ledger"><tspan x="353" dy="0">Appended, never edited</tspan></text>
+</g>
+<g id="dc-3c7bce9950-node-prev" data-node="prev" data-x="650" data-y="400" data-w="210" data-h="115">
+<rect x="650" y="400" width="210" height="115" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="668" y="443.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="prev"><tspan x="668" dy="0">Previous</tspan><tspan x="668" dy="23">publication</tspan></text>
+<text x="668" y="492.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="prev"><tspan x="668" dy="0">Stays visible</tspan></text>
+</g>
+<g data-label="x" data-x="244" data-y="38" data-w="76" data-h="30"><rect x="244" y="38" width="76" height="30" rx="4" fill="#ffffff"/>
+<text x="252" y="57" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="252" dy="0">Extract</tspan></text>
+</g>
+<g data-label="v" data-x="560" data-y="38" data-w="80" data-h="30"><rect x="560" y="38" width="80" height="30" rx="4" fill="#ffffff"/>
+<text x="568" y="57" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="568" dy="0">Validate</tspan></text>
+</g>
+<g data-label="c" data-x="765" data-y="156" data-w="84" data-h="30"><rect x="765" y="156" width="84" height="30" rx="4" fill="#ffffff"/>
+<text x="773" y="175" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="773" dy="0">Compute</tspan></text>
+</g>
+<g data-label="p" data-x="562" data-y="228" data-w="56" data-h="30"><rect x="562" y="228" width="56" height="30" rx="4" fill="#ffffff"/>
+<text x="570" y="247" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="570" dy="0">Pass</tspan></text>
+</g>
+<g data-label="ap" data-x="450" data-y="345" data-w="76" data-h="30"><rect x="450" y="345" width="76" height="30" rx="4" fill="#ffffff"/>
+<text x="458" y="364" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="458" dy="0">Append</tspan></text>
+</g>
+<g data-label="f" data-x="765" data-y="345" data-w="56" data-h="30"><rect x="765" y="345" width="56" height="30" rx="4" fill="#ffffff"/>
+<text x="773" y="364" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="773" dy="0">Fail</tspan></text>
+</g>
+</svg>

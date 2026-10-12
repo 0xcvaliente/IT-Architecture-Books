@@ -1,0 +1,168 @@
+{
+ "title": "Views connected through one requirement",
+ "description": "Requirement R05, no accepted request lost, sits at the centre. The context view scopes it, the sequence view traces it, the container view realises it and the deployment view locates it. Shared names and identifiers connect the views.",
+ "width": 860,
+ "height": 470,
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "regions": [],
+ "nodes": [
+  {
+   "id": "req",
+   "label": "Requirement R05",
+   "x": 300,
+   "y": 195,
+   "w": 260,
+   "h": 90,
+   "detail": "No accepted request lost",
+   "emphasis": true
+  },
+  {
+   "id": "ctx",
+   "label": "Context",
+   "x": 20,
+   "y": 30,
+   "w": 220,
+   "h": 100,
+   "detail": "System ownership"
+  },
+  {
+   "id": "seq",
+   "label": "Sequence",
+   "x": 20,
+   "y": 350,
+   "w": 220,
+   "h": 100,
+   "detail": "Order and outcomes"
+  },
+  {
+   "id": "con",
+   "label": "Containers",
+   "x": 620,
+   "y": 30,
+   "w": 220,
+   "h": 100,
+   "detail": "Runtime duties"
+  },
+  {
+   "id": "dep",
+   "label": "Deployment",
+   "x": 620,
+   "y": 350,
+   "w": 220,
+   "h": 100,
+   "detail": "Placement and faults"
+  }
+ ],
+ "edges": [
+  {
+   "id": "scope",
+   "from": "ctx",
+   "to": "req",
+   "points": [
+    [
+     130,
+     130
+    ],
+    [
+     130,
+     225
+    ],
+    [
+     300,
+     225
+    ]
+   ],
+   "label": "Scope",
+   "label_at": [
+    160,
+    190
+   ],
+   "label_w": 66
+  },
+  {
+   "id": "trace",
+   "from": "seq",
+   "to": "req",
+   "points": [
+    [
+     130,
+     350
+    ],
+    [
+     130,
+     260
+    ],
+    [
+     300,
+     260
+    ]
+   ],
+   "label": "Trace",
+   "label_at": [
+    160,
+    266
+   ],
+   "label_w": 62
+  },
+  {
+   "id": "realise",
+   "from": "req",
+   "to": "con",
+   "points": [
+    [
+     560,
+     225
+    ],
+    [
+     730,
+     225
+    ],
+    [
+     730,
+     130
+    ]
+   ],
+   "label": "Realise",
+   "label_at": [
+    600,
+    190
+   ],
+   "label_w": 74
+  },
+  {
+   "id": "locate",
+   "from": "req",
+   "to": "dep",
+   "points": [
+    [
+     560,
+     260
+    ],
+    [
+     730,
+     260
+    ],
+    [
+     730,
+     350
+    ]
+   ],
+   "label": "Locate",
+   "label_at": [
+    600,
+    266
+   ],
+   "label_w": 70
+  }
+ ],
+ "notes": []
+}

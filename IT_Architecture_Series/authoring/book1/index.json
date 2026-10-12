@@ -1,0 +1,1466 @@
+{
+ "4+1 view model": [
+  14,
+  15,
+  18
+ ],
+ "AAAA record": [
+  19
+ ],
+ "ABAC": [
+  52
+ ],
+ "access token": [
+  26,
+  50,
+  51,
+  53,
+  54
+ ],
+ "accumulating and retracting": [
+  127
+ ],
+ "accumulating snapshot": [
+  39
+ ],
+ "ADR": [
+  8,
+  13,
+  16,
+  103,
+  135,
+  144
+ ],
+ "anti-corruption layer": [
+  60,
+  64,
+  104,
+  130,
+  133
+ ],
+ "API": [
+  45,
+  49,
+  54,
+  75,
+  113,
+  116
+ ],
+ "API gateway": [
+  21,
+  49,
+  75
+ ],
+ "application programming interface": [
+  45
+ ],
+ "application rollback": [
+  93,
+  129,
+  132
+ ],
+ "arc42": [
+  14,
+  15,
+  18
+ ],
+ "architectural pattern": [
+  60
+ ],
+ "architecture decision record": [
+  8
+ ],
+ "Architecture Tradeoff Analysis Method": [
+  106
+ ],
+ "asynchronous messaging": [
+  55
+ ],
+ "ATAM": [
+  106,
+  110,
+  153
+ ],
+ "attribute-based access control": [
+  52
+ ],
+ "authentication": [
+  50,
+  54,
+  61,
+  76,
+  84,
+  139
+ ],
+ "authorisation": [
+  50,
+  52,
+  54,
+  120,
+  121,
+  123
+ ],
+ "authorisation code flow with PKCE": [
+  50,
+  54
+ ],
+ "authorisation rejected": [
+  121
+ ],
+ "authorisation unknown": [
+  121
+ ],
+ "availability": [
+  12,
+  13,
+  67,
+  72,
+  75,
+  83
+ ],
+ "availability zone": [
+  75
+ ],
+ "available-to-promise": [
+  119
+ ],
+ "average cost": [
+  99,
+  101
+ ],
+ "B": [
+  34,
+  86,
+  120,
+  130,
+  133,
+  149
+ ],
+ "backpressure": [
+  65,
+  67,
+  72,
+  97
+ ],
+ "big-bang migration": [
+  104
+ ],
+ "bounded context": [
+  60,
+  62,
+  64
+ ],
+ "broken object level authorisation": [
+  52
+ ],
+ "bulkhead": [
+  65,
+  66,
+  72
+ ],
+ "burn rate": [
+  94,
+  95,
+  96,
+  97,
+  146,
+  147
+ ],
+ "business capability": [
+  10
+ ],
+ "business state": [
+  55,
+  57,
+  59,
+  119,
+  132
+ ],
+ "C": [
+  25,
+  70,
+  103,
+  130,
+  133,
+  149
+ ],
+ "C4 model": [
+  14,
+  15
+ ],
+ "cache stampede": [
+  67
+ ],
+ "canary release": [
+  93
+ ],
+ "CAP theorem": [
+  68
+ ],
+ "capability": [
+  10,
+  86,
+  100,
+  102,
+  105,
+  146
+ ],
+ "capability map": [
+  102,
+  105
+ ],
+ "causal consistency": [
+  67
+ ],
+ "change capture": [
+  104,
+  131
+ ],
+ "change data capture": [
+  39,
+  40
+ ],
+ "change fail rate": [
+  92,
+  93
+ ],
+ "change lead time": [
+  92
+ ],
+ "check constraint": [
+  30,
+  35,
+  37,
+  140
+ ],
+ "circuit breaker": [
+  65,
+  66,
+  72
+ ],
+ "CNAME": [
+  19
+ ],
+ "cohesion": [
+  24
+ ],
+ "column store": [
+  40
+ ],
+ "column-oriented analytical stores": [
+  37
+ ],
+ "command query responsibility segregation": [
+  62
+ ],
+ "commercial terms": [
+  100
+ ],
+ "commitment discount": [
+  98
+ ],
+ "compensating business actions": [
+  129,
+  132
+ ],
+ "compensating transaction": [
+  121
+ ],
+ "compensation": [
+  59,
+  121,
+  122,
+  123,
+  149,
+  153
+ ],
+ "compensation fails": [
+  121
+ ],
+ "complete mediation": [
+  84,
+  88
+ ],
+ "concern": [
+  7,
+  14,
+  18,
+  84,
+  113,
+  152
+ ],
+ "confabulation": [
+  42,
+  43
+ ],
+ "conformed dimensions": [
+  125,
+  126
+ ],
+ "consensus": [
+  69,
+  70,
+  71,
+  72,
+  73,
+  110
+ ],
+ "consistency": [
+  14,
+  33,
+  67,
+  73,
+  104,
+  115
+ ],
+ "consistency model": [
+  67,
+  73
+ ],
+ "construct validity": [
+  109
+ ],
+ "consumer acknowledgement": [
+  55
+ ],
+ "container": [
+  15,
+  16,
+  19,
+  77,
+  79,
+  112
+ ],
+ "container image": [
+  79
+ ],
+ "container view": [
+  16,
+  17,
+  18,
+  112,
+  135
+ ],
+ "content delivery network": [
+  20
+ ],
+ "continuous delivery": [
+  89
+ ],
+ "continuous deployment": [
+  89
+ ],
+ "continuous integration": [
+  89
+ ],
+ "contract": [
+  26,
+  29,
+  45,
+  48,
+  49,
+  90
+ ],
+ "contract test": [
+  27,
+  63,
+  90,
+  113
+ ],
+ "controlled conditions": [
+  109
+ ],
+ "Conway's law": [
+  60,
+  61,
+  63,
+  64
+ ],
+ "correlation identifier": [
+  27,
+  52,
+  94,
+  97
+ ],
+ "coupling": [
+  24,
+  26,
+  46,
+  49,
+  61,
+  63
+ ],
+ "CQRS": [
+  60,
+  61,
+  62,
+  64
+ ],
+ "CRM context": [
+  60
+ ],
+ "cursor pagination": [
+  48
+ ],
+ "D": [
+  28,
+  49,
+  103,
+  130,
+  133,
+  151
+ ],
+ "data flow view": [
+  14,
+  16
+ ],
+ "data governance": [
+  42
+ ],
+ "data lake": [
+  40
+ ],
+ "data owner": [
+  17,
+  42,
+  103
+ ],
+ "data residency": [
+  77
+ ],
+ "data steward": [
+  42
+ ],
+ "data transfer": [
+  98
+ ],
+ "data warehouse": [
+  39
+ ],
+ "database restore": [
+  129,
+  132
+ ],
+ "dead-letter queue": [
+  57
+ ],
+ "defence in depth": [
+  85
+ ],
+ "delivery review": [
+  134
+ ],
+ "delivery state": [
+  55,
+  57,
+  58,
+  59
+ ],
+ "denial of service": [
+  48,
+  84,
+  88
+ ],
+ "dependent variables": [
+  109
+ ],
+ "deployment frequency": [
+  92,
+  93
+ ],
+ "deployment rework rate": [
+  92,
+  93
+ ],
+ "deployment view": [
+  14,
+  16,
+  18,
+  111,
+  118,
+  135
+ ],
+ "disaster recovery": [
+  76,
+  116
+ ],
+ "document stores": [
+  37
+ ],
+ "Domain Name System": [
+  19
+ ],
+ "domain rule": [
+  24,
+  139
+ ],
+ "domain version": [
+  57
+ ],
+ "dual writing": [
+  104
+ ],
+ "dual-write problem": [
+  56
+ ],
+ "durability": [
+  33,
+  68,
+  113,
+  150
+ ],
+ "E": [
+  28,
+  103,
+  147,
+  150,
+  151
+ ],
+ "egress": [
+  22,
+  98,
+  99,
+  101
+ ],
+ "elasticity": [
+  74
+ ],
+ "elevation of privilege": [
+  84,
+  88
+ ],
+ "ELT": [
+  39,
+  40,
+  125
+ ],
+ "empirical claim": [
+  6,
+  8
+ ],
+ "end-to-end argument": [
+  19,
+  20,
+  23
+ ],
+ "end-to-end test": [
+  27,
+  90
+ ],
+ "enterprise architecture": [
+  102,
+  103,
+  105
+ ],
+ "ERP context": [
+  60
+ ],
+ "error budget": [
+  94,
+  95,
+  97,
+  146,
+  147
+ ],
+ "ETL": [
+  39,
+  40,
+  125
+ ],
+ "event": [
+  61,
+  62,
+  126,
+  127,
+  128,
+  150
+ ],
+ "event sourcing": [
+  60,
+  61,
+  62,
+  63,
+  64
+ ],
+ "event stream": [
+  55
+ ],
+ "event time": [
+  40,
+  57,
+  124,
+  125,
+  126,
+  128
+ ],
+ "event-driven architecture": [
+  17,
+  61,
+  62
+ ],
+ "eventual consistency": [
+  65,
+  67
+ ],
+ "exactly-once processing": [
+  55,
+  59
+ ],
+ "execution plan": [
+  36
+ ],
+ "expand and contract": [
+  90
+ ],
+ "exponential backoff": [
+  57
+ ],
+ "external validity": [
+  109
+ ],
+ "extract, load, transform": [
+  40
+ ],
+ "extract, transform, load": [
+  40
+ ],
+ "F": [
+  103,
+  145,
+  147,
+  149,
+  151,
+  152
+ ],
+ "fact table": [
+  39,
+  40,
+  44,
+  125
+ ],
+ "fail-safe defaults": [
+  84,
+  88
+ ],
+ "failed deployment recovery time": [
+  92,
+  93
+ ],
+ "feature flag": [
+  89,
+  91,
+  92
+ ],
+ "FinOps": [
+  98,
+  99
+ ],
+ "firewall policy": [
+  19,
+  22
+ ],
+ "fitness function": [
+  63,
+  64
+ ],
+ "fixed and variable costs": [
+  98
+ ],
+ "foreign key": [
+  30,
+  37,
+  140,
+  141,
+  142
+ ],
+ "formal result": [
+  6,
+  8,
+  9
+ ],
+ "frozen source": [
+  104
+ ],
+ "G": [
+  103
+ ],
+ "grain": [
+  39,
+  125,
+  126,
+  128,
+  131,
+  135
+ ],
+ "graph databases": [
+  37
+ ],
+ "grounding": [
+  42,
+  44
+ ],
+ "H": [
+  92,
+  99,
+  103,
+  107,
+  131,
+  153
+ ],
+ "happened-before": [
+  69
+ ],
+ "history-preserving dimension": [
+  126
+ ],
+ "horizontal scaling": [
+  80
+ ],
+ "ID token": [
+  50,
+  54
+ ],
+ "idempotency": [
+  47,
+  49,
+  108,
+  113,
+  115,
+  143
+ ],
+ "idempotency key": [
+  8,
+  26,
+  49,
+  108,
+  113,
+  114
+ ],
+ "inbox": [
+  55,
+  56,
+  59,
+  102,
+  115,
+  122
+ ],
+ "independent variables": [
+  109
+ ],
+ "information disclosure": [
+  84,
+  88
+ ],
+ "information hiding": [
+  24,
+  25,
+  28
+ ],
+ "infrastructure as a service": [
+  74
+ ],
+ "infrastructure as code": [
+  79,
+  80,
+  82
+ ],
+ "ingestion time": [
+  40,
+  41,
+  44,
+  125,
+  126,
+  128
+ ],
+ "integration styles": [
+  45,
+  46
+ ],
+ "integration test": [
+  27,
+  37,
+  90,
+  114
+ ],
+ "internal validity": [
+  109
+ ],
+ "invariant": [
+  33,
+  120,
+  122,
+  123,
+  135,
+  140
+ ],
+ "IP address": [
+  19
+ ],
+ "ISO/IEC 25010": [
+  6,
+  7,
+  9
+ ],
+ "isolation level": [
+  33,
+  35,
+  36,
+  138,
+  141,
+  142
+ ],
+ "IT architecture": [
+  6
+ ],
+ "JWT": [
+  51
+ ],
+ "key-value stores": [
+  37
+ ],
+ "landing zone": [
+  74,
+  75,
+  78,
+  126
+ ],
+ "large language model": [
+  42
+ ],
+ "latency": [
+  43,
+  65,
+  109,
+  138,
+  146,
+  147
+ ],
+ "latest safe decision point": [
+  129,
+  132,
+  133,
+  152
+ ],
+ "layered architecture": [
+  60
+ ],
+ "lease": [
+  34,
+  58,
+  81,
+  114,
+  142,
+  143
+ ],
+ "least privilege": [
+  42,
+  76,
+  79,
+  84,
+  88
+ ],
+ "lineage": [
+  40,
+  41,
+  44,
+  124,
+  128
+ ],
+ "linearizability": [
+  65,
+  67,
+  68,
+  69,
+  73
+ ],
+ "Little's law": [
+  65,
+  72,
+  123
+ ],
+ "liveness probe": [
+  79
+ ],
+ "load test": [
+  12,
+  72,
+  80,
+  116,
+  138
+ ],
+ "long window": [
+  96
+ ],
+ "majority quorum": [
+  70,
+  73
+ ],
+ "marginal cost": [
+  98,
+  99,
+  101
+ ],
+ "master data": [
+  42
+ ],
+ "mirroring hypothesis": [
+  60,
+  61,
+  63,
+  64
+ ],
+ "modular monolith": [
+  60,
+  61,
+  63,
+  64
+ ],
+ "monotonic reads": [
+  67
+ ],
+ "monotonic writes": [
+  67
+ ],
+ "normalisation": [
+  29
+ ],
+ "OAuth 2.0": [
+  50
+ ],
+ "observability": [
+  77,
+  81,
+  94
+ ],
+ "offset pagination": [
+  48
+ ],
+ "one-time and recurring costs": [
+  98,
+  148
+ ],
+ "opaque access token": [
+  51
+ ],
+ "OpenID Connect": [
+  50
+ ],
+ "optimistic concurrency control": [
+  34
+ ],
+ "partial failure": [
+  37,
+  65,
+  72
+ ],
+ "partition": [
+  36,
+  55,
+  57,
+  70,
+  71,
+  131
+ ],
+ "partition key": [
+  57
+ ],
+ "periodic snapshot": [
+  39,
+  125
+ ],
+ "phased migration": [
+  104
+ ],
+ "pilot light": [
+  76,
+  77,
+  78
+ ],
+ "PKCE": [
+  50,
+  54
+ ],
+ "platform as a service": [
+  74
+ ],
+ "portal context": [
+  60
+ ],
+ "ports and adapters": [
+  62
+ ],
+ "primary key": [
+  30,
+  34,
+  141,
+  143
+ ],
+ "principal": [
+  50,
+  52,
+  53,
+  87,
+  139,
+  140
+ ],
+ "processing time": [
+  41,
+  66,
+  124,
+  126,
+  128
+ ],
+ "prompt injection": [
+  42
+ ],
+ "publisher confirm": [
+  55
+ ],
+ "pure function": [
+  24,
+  25,
+  28
+ ],
+ "quality attribute": [
+  7,
+  11,
+  13,
+  106,
+  107,
+  110
+ ],
+ "quality attribute scenario": [
+  10,
+  11,
+  13
+ ],
+ "quorum": [
+  69,
+  70,
+  73
+ ],
+ "RBAC": [
+  52
+ ],
+ "read model": [
+  62,
+  111,
+  112,
+  113,
+  118,
+  135
+ ],
+ "read your writes": [
+  67,
+  73
+ ],
+ "readiness probe": [
+  79,
+  81
+ ],
+ "recovery point objective": [
+  37,
+  76
+ ],
+ "recovery time objective": [
+  37,
+  76
+ ],
+ "refinement modes": [
+  126
+ ],
+ "regional disaster": [
+  76,
+  116
+ ],
+ "relational databases": [
+  37
+ ],
+ "repudiation": [
+  84,
+  87,
+  88
+ ],
+ "resilience test": [
+  72
+ ],
+ "response measure": [
+  11,
+  12,
+  13,
+  108
+ ],
+ "REST": [
+  46,
+  47,
+  85,
+  104,
+  109,
+  123
+ ],
+ "retention of idempotency keys": [
+  108
+ ],
+ "role-based access control": [
+  52
+ ],
+ "routing rollback": [
+  129,
+  132
+ ],
+ "row-level security": [
+  29,
+  32,
+  37,
+  53
+ ],
+ "RPO": [
+  37,
+  76,
+  77,
+  78,
+  145
+ ],
+ "RTO": [
+  37,
+  76,
+  77,
+  78,
+  110
+ ],
+ "rule of three": [
+  109,
+  110
+ ],
+ "saga": [
+  59,
+  119,
+  121,
+  123,
+  148,
+  149
+ ],
+ "SBOM": [
+  91
+ ],
+ "schema registry": [
+  45,
+  48,
+  49
+ ],
+ "search index": [
+  40,
+  87,
+  146
+ ],
+ "semantic compatibility": [
+  45,
+  48,
+  49
+ ],
+ "sensitivity point": [
+  106,
+  107,
+  108,
+  110,
+  152,
+  153
+ ],
+ "sequence diagram": [
+  16,
+  17
+ ],
+ "serialisation failure": [
+  33,
+  120
+ ],
+ "serializability": [
+  68
+ ],
+ "serverless function": [
+  19,
+  62
+ ],
+ "service level agreement": [
+  12
+ ],
+ "service level indicator": [
+  12,
+  95
+ ],
+ "service level objective": [
+  12,
+  95
+ ],
+ "service-oriented architecture": [
+  60
+ ],
+ "session guarantees": [
+  65,
+  67,
+  73
+ ],
+ "sharding": [
+  36,
+  37
+ ],
+ "short window": [
+  96
+ ],
+ "SLA": [
+  12
+ ],
+ "SLI": [
+  12,
+  95,
+  146,
+  147
+ ],
+ "SLO": [
+  12,
+  95,
+  97,
+  134,
+  135,
+  146
+ ],
+ "slowly changing dimension": [
+  39,
+  43
+ ],
+ "snapshot isolation": [
+  29,
+  33,
+  35,
+  38
+ ],
+ "software as a service": [
+  74
+ ],
+ "software bill of materials": [
+  91
+ ],
+ "source of stimulus": [
+  11
+ ],
+ "source position": [
+  127,
+  131,
+  132
+ ],
+ "strangler fig": [
+  104,
+  105,
+  130
+ ],
+ "strict serializability": [
+  68
+ ],
+ "STRIDE": [
+  83,
+  84,
+  87,
+  88,
+  145
+ ],
+ "Submission ID": [
+  16,
+  30,
+  47,
+  113,
+  142,
+  144
+ ],
+ "submission key": [
+  30,
+  47,
+  109,
+  113,
+  135,
+  140
+ ],
+ "supporting material": [
+  15
+ ],
+ "synchronous call": [
+  55,
+  112
+ ],
+ "syntactic compatibility": [
+  48
+ ],
+ "system of record": [
+  8,
+  16,
+  62,
+  102,
+  103
+ ],
+ "tail latency": [
+  65
+ ],
+ "target architecture": [
+  103,
+  105
+ ],
+ "TCP": [
+  20
+ ],
+ "technical custodian": [
+  42
+ ],
+ "technical debt": [
+  15,
+  63,
+  64
+ ],
+ "tenancy model": [
+  29,
+  32
+ ],
+ "tenant": [
+  29,
+  30,
+  31,
+  36,
+  53,
+  139
+ ],
+ "threat modelling": [
+  16,
+  83,
+  88
+ ],
+ "throughput": [
+  65,
+  86,
+  92,
+  107,
+  117,
+  118
+ ],
+ "TLS": [
+  19,
+  20,
+  21,
+  22
+ ],
+ "token-validation caching": [
+  108
+ ],
+ "trade-off point": [
+  106,
+  107,
+  108,
+  110
+ ],
+ "transactional outbox": [
+  55,
+  56,
+  59,
+  62,
+  103
+ ],
+ "transition architecture": [
+  103,
+  105,
+  130
+ ],
+ "transition rules": [
+  57
+ ],
+ "trust boundary": [
+  87,
+  88
+ ],
+ "UDP": [
+  20
+ ],
+ "unique constraint": [
+  13,
+  30,
+  36,
+  47,
+  113,
+  140
+ ],
+ "unit cost": [
+  98,
+  99,
+  101
+ ],
+ "unit economics": [
+  99
+ ],
+ "unit test": [
+  24,
+  27,
+  90
+ ],
+ "utility tree": [
+  106,
+  107,
+  110,
+  123,
+  152
+ ],
+ "vertical scaling": [
+  80
+ ],
+ "view": [
+  14,
+  15,
+  16,
+  17,
+  18,
+  113
+ ],
+ "viewpoint": [
+  14,
+  18
+ ],
+ "virtual machine": [
+  19,
+  23,
+  74,
+  75,
+  77,
+  129
+ ],
+ "watermark": [
+  40,
+  124,
+  126,
+  128
+ ],
+ "work queue": [
+  37,
+  55,
+  62,
+  63,
+  75
+ ],
+ "worker concurrency": [
+  108
+ ],
+ "workload identity": [
+  53,
+  54,
+  84,
+  86
+ ],
+ "write skew": [
+  33,
+  34,
+  35,
+  36,
+  37,
+  38
+ ],
+ "writes follow reads": [
+  67
+ ],
+ "Zero Trust": [
+  85
+ ]
+}

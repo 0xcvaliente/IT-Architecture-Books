@@ -1,0 +1,295 @@
+{
+ "title": "Architecture dossier",
+ "description": "The parts of a dossier linked by stable identifiers; a change card triggers a revision of the quality scenarios.",
+ "width": 880,
+ "height": 560,
+ "theme": "light",
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "nodes": [
+  {
+   "id": "brief",
+   "label": "Studio brief",
+   "x": 20,
+   "y": 30,
+   "w": 210,
+   "h": 110,
+   "status": "provided",
+   "detail": "Problem, workload and constraints"
+  },
+  {
+   "id": "scen",
+   "label": "Quality scenarios",
+   "x": 335,
+   "y": 30,
+   "w": 210,
+   "h": 110,
+   "status": "provided",
+   "detail": "Measurable, with IDs such as Q3"
+  },
+  {
+   "id": "views",
+   "label": "Five views",
+   "x": 650,
+   "y": 30,
+   "w": 210,
+   "h": 110,
+   "status": "provided",
+   "detail": "Context, container, sequence, deployment and data"
+  },
+  {
+   "id": "change",
+   "label": "Change card",
+   "x": 20,
+   "y": 230,
+   "w": 210,
+   "h": 110,
+   "status": "provided",
+   "detail": "One new fact part-way through"
+  },
+  {
+   "id": "exp",
+   "label": "Experiments",
+   "x": 335,
+   "y": 230,
+   "w": 210,
+   "h": 110,
+   "status": "provided",
+   "detail": "Question, decision rule and result"
+  },
+  {
+   "id": "adr",
+   "label": "Decision records",
+   "x": 650,
+   "y": 230,
+   "w": 210,
+   "h": 110,
+   "status": "provided",
+   "emphasis": true,
+   "detail": "Options, consequences and review triggers"
+  },
+  {
+   "id": "find",
+   "label": "Findings",
+   "x": 335,
+   "y": 430,
+   "w": 210,
+   "h": 110,
+   "status": "provided",
+   "detail": "Supported or still open"
+  },
+  {
+   "id": "db",
+   "label": "Decision brief",
+   "x": 650,
+   "y": 430,
+   "w": 210,
+   "h": 110,
+   "status": "provided",
+   "detail": "One page for the sponsor"
+  }
+ ],
+ "edges": [
+  {
+   "id": "m",
+   "from": "brief",
+   "to": "scen",
+   "points": [
+    [
+     230,
+     85
+    ],
+    [
+     335,
+     85
+    ]
+   ],
+   "status": "provided",
+   "label": "Measure",
+   "label_at": [
+    244,
+    42
+   ],
+   "label_w": 80
+  },
+  {
+   "id": "s",
+   "from": "scen",
+   "to": "views",
+   "points": [
+    [
+     545,
+     85
+    ],
+    [
+     650,
+     85
+    ]
+   ],
+   "status": "provided",
+   "label": "Shape",
+   "label_at": [
+    562,
+    42
+   ],
+   "label_w": 66
+  },
+  {
+   "id": "j",
+   "from": "views",
+   "to": "adr",
+   "points": [
+    [
+     755,
+     140
+    ],
+    [
+     755,
+     230
+    ]
+   ],
+   "status": "provided",
+   "label": "Justify",
+   "label_at": [
+    765,
+    170
+   ],
+   "label_w": 74
+  },
+  {
+   "id": "t",
+   "from": "scen",
+   "to": "exp",
+   "points": [
+    [
+     440,
+     140
+    ],
+    [
+     440,
+     230
+    ]
+   ],
+   "status": "provided",
+   "label": "Test",
+   "label_at": [
+    450,
+    170
+   ],
+   "label_w": 56
+  },
+  {
+   "id": "r",
+   "from": "exp",
+   "to": "find",
+   "points": [
+    [
+     440,
+     340
+    ],
+    [
+     440,
+     430
+    ]
+   ],
+   "status": "provided",
+   "label": "Record",
+   "label_at": [
+    362,
+    370
+   ],
+   "label_w": 70
+  },
+  {
+   "id": "sr",
+   "from": "find",
+   "to": "adr",
+   "points": [
+    [
+     545,
+     485
+    ],
+    [
+     605,
+     485
+    ],
+    [
+     605,
+     300
+    ],
+    [
+     650,
+     300
+    ]
+   ],
+   "status": "provided",
+   "label": "Support or revise",
+   "label_at": [
+    462,
+    352
+   ],
+   "label_w": 136
+  },
+  {
+   "id": "sum",
+   "from": "adr",
+   "to": "db",
+   "points": [
+    [
+     755,
+     340
+    ],
+    [
+     755,
+     430
+    ]
+   ],
+   "status": "provided",
+   "label": "Summarise",
+   "label_at": [
+    765,
+    370
+   ],
+   "label_w": 92
+  },
+  {
+   "id": "rev",
+   "from": "change",
+   "to": "scen",
+   "points": [
+    [
+     125,
+     230
+    ],
+    [
+     125,
+     186
+    ],
+    [
+     380,
+     186
+    ],
+    [
+     380,
+     140
+    ]
+   ],
+   "status": "provided",
+   "label": "Revise",
+   "label_at": [
+    150,
+    146
+   ],
+   "label_w": 70,
+   "style": "dashed"
+  }
+ ]
+}

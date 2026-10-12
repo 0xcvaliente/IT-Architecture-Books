@@ -1,0 +1,199 @@
+{
+ "title": "Operating experience can revise a workflow or the contract",
+ "description": "An operational trial reveals a mismatch. Within the contract, the local workflow and support are updated and the trial is repeated. If shared meaning must change, an accountable owner reviews it, the enterprise contract is revised and released, and a new trial follows.",
+ "width": 860,
+ "height": 470,
+ "theme": "light",
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "regions": [],
+ "nodes": [
+  {
+   "id": "c",
+   "label": "Enterprise contract",
+   "x": 305,
+   "y": 20,
+   "w": 250,
+   "h": 85,
+   "status": "provided",
+   "detail": "Authorised shared meaning"
+  },
+  {
+   "id": "t",
+   "label": "Operational trial",
+   "x": 20,
+   "y": 190,
+   "w": 250,
+   "h": 85,
+   "status": "provided",
+   "detail": "With the intended users"
+  },
+  {
+   "id": "m",
+   "label": "Observed mismatch",
+   "x": 305,
+   "y": 190,
+   "w": 250,
+   "h": 85,
+   "status": "provided",
+   "detail": "Example records",
+   "emphasis": true
+  },
+  {
+   "id": "s",
+   "label": "Semantic review",
+   "x": 590,
+   "y": 190,
+   "w": 250,
+   "h": 85,
+   "status": "provided",
+   "detail": "By the accountable owner"
+  },
+  {
+   "id": "l",
+   "label": "Local workflow",
+   "x": 305,
+   "y": 365,
+   "w": 250,
+   "h": 85,
+   "status": "provided",
+   "detail": "And support update"
+  }
+ ],
+ "edges": [
+  {
+   "id": "f1",
+   "from": "c",
+   "to": "t",
+   "points": [
+    [
+     305,
+     62
+    ],
+    [
+     145,
+     62
+    ],
+    [
+     145,
+     190
+    ]
+   ],
+   "label": "release",
+   "label_at": [
+    60,
+    110
+   ],
+   "label_w": 80
+  },
+  {
+   "id": "f2",
+   "from": "t",
+   "to": "m",
+   "points": [
+    [
+     270,
+     232
+    ],
+    [
+     305,
+     232
+    ]
+   ]
+  },
+  {
+   "id": "f3",
+   "from": "m",
+   "to": "s",
+   "points": [
+    [
+     555,
+     232
+    ],
+    [
+     590,
+     232
+    ]
+   ]
+  },
+  {
+   "id": "f4",
+   "from": "s",
+   "to": "c",
+   "points": [
+    [
+     715,
+     190
+    ],
+    [
+     715,
+     62
+    ],
+    [
+     555,
+     62
+    ]
+   ],
+   "label": "revise meaning",
+   "label_at": [
+    700,
+    110
+   ],
+   "label_w": 140
+  },
+  {
+   "id": "f5",
+   "from": "m",
+   "to": "l",
+   "points": [
+    [
+     430,
+     275
+    ],
+    [
+     430,
+     365
+    ]
+   ],
+   "label": "within contract",
+   "label_at": [
+    440,
+    305
+   ],
+   "label_w": 140
+  },
+  {
+   "id": "f6",
+   "from": "l",
+   "to": "t",
+   "points": [
+    [
+     305,
+     407
+    ],
+    [
+     145,
+     407
+    ],
+    [
+     145,
+     275
+    ]
+   ],
+   "label": "retest",
+   "label_at": [
+    155,
+    330
+   ],
+   "label_w": 70
+  }
+ ]
+}

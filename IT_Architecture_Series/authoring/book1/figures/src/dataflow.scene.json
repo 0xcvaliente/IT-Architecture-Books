@@ -1,0 +1,210 @@
+{
+ "title": "Operational data to governed analytics",
+ "description": "Changes are extracted from the CRM and the portal into controlled staging, validated and transformed into a curated model, and published to reports. Quality and lineage checks run on each load and each publication, and a lifecycle policy governs retention, correction and deletion. Solid arrows show data movement; dashed arrows show checks and governance.",
+ "width": 860,
+ "height": 580,
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "regions": [],
+ "nodes": [
+  {
+   "id": "src",
+   "label": "CRM and portal",
+   "x": 20,
+   "y": 20,
+   "w": 330,
+   "h": 90,
+   "detail": "Operational sources"
+  },
+  {
+   "id": "stage",
+   "label": "Controlled staging",
+   "x": 20,
+   "y": 170,
+   "w": 330,
+   "h": 90,
+   "detail": "Raw changes, restricted access"
+  },
+  {
+   "id": "cur",
+   "label": "Curated model",
+   "x": 20,
+   "y": 320,
+   "w": 330,
+   "h": 90,
+   "detail": "Declared grain and dimensions",
+   "emphasis": true
+  },
+  {
+   "id": "rep",
+   "label": "Reports",
+   "x": 20,
+   "y": 470,
+   "w": 330,
+   "h": 90,
+   "detail": "Show the data timestamp"
+  },
+  {
+   "id": "qual",
+   "label": "Quality and lineage checks",
+   "x": 510,
+   "y": 230,
+   "w": 330,
+   "h": 120,
+   "detail": "Counts, key sets and rules on each load and publication; run and version recorded"
+  },
+  {
+   "id": "life",
+   "label": "Lifecycle policy",
+   "x": 510,
+   "y": 440,
+   "w": 330,
+   "h": 100,
+   "detail": "Retention, correction, deletion"
+  }
+ ],
+ "edges": [
+  {
+   "id": "extract",
+   "from": "src",
+   "to": "stage",
+   "points": [
+    [
+     185.0,
+     110
+    ],
+    [
+     185.0,
+     170
+    ]
+   ],
+   "label": "extract changes",
+   "label_at": [
+    195.0,
+    124
+   ],
+   "label_w": 140
+  },
+  {
+   "id": "transform",
+   "from": "stage",
+   "to": "cur",
+   "points": [
+    [
+     185.0,
+     260
+    ],
+    [
+     185.0,
+     320
+    ]
+   ],
+   "label": "validate, transform",
+   "label_at": [
+    195.0,
+    274
+   ],
+   "label_w": 160
+  },
+  {
+   "id": "publish",
+   "from": "cur",
+   "to": "rep",
+   "points": [
+    [
+     185.0,
+     410
+    ],
+    [
+     185.0,
+     470
+    ]
+   ],
+   "label": "publish",
+   "label_at": [
+    195.0,
+    424
+   ],
+   "label_w": 76
+  },
+  {
+   "id": "chk_load",
+   "from": "qual",
+   "to": "stage",
+   "points": [
+    [
+     510,
+     255
+    ],
+    [
+     430,
+     255
+    ],
+    [
+     430,
+     215
+    ],
+    [
+     350,
+     215
+    ]
+   ],
+   "style": "dashed"
+  },
+  {
+   "id": "chk_pub",
+   "from": "qual",
+   "to": "cur",
+   "points": [
+    [
+     510,
+     325
+    ],
+    [
+     430,
+     325
+    ],
+    [
+     430,
+     365
+    ],
+    [
+     350,
+     365
+    ]
+   ],
+   "style": "dashed"
+  },
+  {
+   "id": "governs",
+   "from": "life",
+   "to": "qual",
+   "points": [
+    [
+     675,
+     440
+    ],
+    [
+     675,
+     350
+    ]
+   ],
+   "label": "governs",
+   "label_at": [
+    685,
+    380
+   ],
+   "label_w": 80,
+   "style": "dashed"
+  }
+ ],
+ "notes": []
+}

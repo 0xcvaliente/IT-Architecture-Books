@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 400" width="860" height="400" role="img" aria-labelledby="dc-800efd474b-title dc-800efd474b-desc" font-family="DejaVu Sans">
+<title id="dc-800efd474b-title">Dependency network for the customer identity pilot</title>
+<desc id="dc-800efd474b-desc">Activity A precedes B and C; D follows both B and C; E follows D. The longest path A-B-D-E gives 16 weeks; C has three weeks of slack.</desc>
+<defs><marker id="dc-800efd474b-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 4 L0 8 Z" fill="#323232"/></marker></defs>
+<rect width="860" height="400" fill="#ffffff" aria-hidden="true"/>
+<polyline data-edge="d1" points="115,150 115,70 300,70" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-800efd474b-arrow)"/>
+<polyline data-edge="d2" points="115,230 115,310 300,310" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-800efd474b-arrow)"/>
+<polyline data-edge="d3" points="510,70 720,70 720,150" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-800efd474b-arrow)"/>
+<polyline data-edge="d4" points="510,310 555,310 555,190 600,190" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-800efd474b-arrow)"/>
+<polyline data-edge="d5" points="720,230 720,300" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-800efd474b-arrow)"/>
+<g id="dc-800efd474b-node-A" data-node="A" data-x="20" data-y="150" data-w="190" data-h="80">
+<rect x="20" y="150" width="190" height="80" rx="6" fill="#e8f0fe" stroke="#276ef1" stroke-width="2"/>
+<text x="38" y="176.0" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="A"><tspan x="38" dy="0">A: agree</tspan><tspan x="38" dy="23">semantics</tspan></text>
+<text x="38" y="225.0" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="A"><tspan x="38" dy="0">4 weeks</tspan></text>
+</g>
+<g id="dc-800efd474b-node-B" data-node="B" data-x="300" data-y="30" data-w="210" data-h="80">
+<rect x="300" y="30" width="210" height="80" rx="6" fill="#e8f0fe" stroke="#276ef1" stroke-width="2"/>
+<text x="318" y="67.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="B"><tspan x="318" dy="0">B: identifiers</tspan></text>
+<text x="318" y="93.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="B"><tspan x="318" dy="0">6 weeks</tspan></text>
+</g>
+<g id="dc-800efd474b-node-C" data-node="C" data-x="300" data-y="270" data-w="210" data-h="80">
+<rect x="300" y="270" width="210" height="80" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="318" y="307.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="C"><tspan x="318" dy="0">C: contracts</tspan></text>
+<text x="318" y="333.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="C"><tspan x="318" dy="0">3 weeks, 3 slack</tspan></text>
+</g>
+<g id="dc-800efd474b-node-D" data-node="D" data-x="600" data-y="150" data-w="240" data-h="80">
+<rect x="600" y="150" width="240" height="80" rx="6" fill="#e8f0fe" stroke="#276ef1" stroke-width="2"/>
+<text x="618" y="187.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="D"><tspan x="618" dy="0">D: handoff pilot</tspan></text>
+<text x="618" y="213.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="D"><tspan x="618" dy="0">4 weeks</tspan></text>
+</g>
+<g id="dc-800efd474b-node-Ev" data-node="Ev" data-x="600" data-y="300" data-w="240" data-h="80">
+<rect x="600" y="300" width="240" height="80" rx="6" fill="#e8f0fe" stroke="#276ef1" stroke-width="2"/>
+<text x="618" y="337.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="Ev"><tspan x="618" dy="0">E: evaluate</tspan></text>
+<text x="618" y="363.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="Ev"><tspan x="618" dy="0">2 weeks</tspan></text>
+</g>
+</svg>

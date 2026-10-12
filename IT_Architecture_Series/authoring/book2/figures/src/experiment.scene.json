@@ -1,0 +1,222 @@
+{
+ "title": "Experiment structure",
+ "description": "Demand and injected failures drive the system under test; business outcomes and attempt telemetry are recorded separately and analysed together.",
+ "width": 880,
+ "height": 370,
+ "theme": "light",
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "nodes": [
+  {
+   "id": "dem",
+   "label": "Offered demand",
+   "x": 20,
+   "y": 30,
+   "w": 210,
+   "h": 96,
+   "status": "provided",
+   "detail": "Schedule and workload"
+  },
+  {
+   "id": "sut",
+   "label": "System under test",
+   "x": 335,
+   "y": 30,
+   "w": 210,
+   "h": 96,
+   "status": "provided",
+   "emphasis": true,
+   "detail": "Build and configuration"
+  },
+  {
+   "id": "out",
+   "label": "Business outcomes",
+   "x": 650,
+   "y": 30,
+   "w": 210,
+   "h": 96,
+   "status": "provided",
+   "detail": "By submission ID"
+  },
+  {
+   "id": "fail",
+   "label": "Failure schedule",
+   "x": 20,
+   "y": 240,
+   "w": 210,
+   "h": 96,
+   "status": "provided",
+   "detail": "Controlled injection"
+  },
+  {
+   "id": "tel",
+   "label": "Attempt telemetry",
+   "x": 335,
+   "y": 240,
+   "w": 210,
+   "h": 96,
+   "status": "provided",
+   "detail": "Retries and throttling"
+  },
+  {
+   "id": "ana",
+   "label": "Analysis",
+   "x": 650,
+   "y": 240,
+   "w": 210,
+   "h": 96,
+   "status": "provided",
+   "detail": "Does the claim hold?"
+  }
+ ],
+ "edges": [
+  {
+   "id": "arr",
+   "from": "dem",
+   "to": "sut",
+   "points": [
+    [
+     230,
+     78
+    ],
+    [
+     335,
+     78
+    ]
+   ],
+   "status": "provided",
+   "label": "Arrivals",
+   "label_at": [
+    244,
+    38
+   ],
+   "label_w": 80
+  },
+  {
+   "id": "obs",
+   "from": "sut",
+   "to": "out",
+   "points": [
+    [
+     545,
+     78
+    ],
+    [
+     650,
+     78
+    ]
+   ],
+   "status": "provided",
+   "label": "Observe",
+   "label_at": [
+    560,
+    38
+   ],
+   "label_w": 78
+  },
+  {
+   "id": "inj",
+   "from": "fail",
+   "to": "sut",
+   "points": [
+    [
+     125,
+     240
+    ],
+    [
+     125,
+     190
+    ],
+    [
+     380,
+     190
+    ],
+    [
+     380,
+     126
+    ]
+   ],
+   "status": "provided",
+   "label": "Inject",
+   "label_at": [
+    180,
+    148
+   ],
+   "label_w": 64
+  },
+  {
+   "id": "ins",
+   "from": "sut",
+   "to": "tel",
+   "points": [
+    [
+     480,
+     126
+    ],
+    [
+     480,
+     240
+    ]
+   ],
+   "status": "provided",
+   "label": "Instrument",
+   "label_at": [
+    490,
+    165
+   ],
+   "label_w": 100
+  },
+  {
+   "id": "eva",
+   "from": "out",
+   "to": "ana",
+   "points": [
+    [
+     755,
+     126
+    ],
+    [
+     755,
+     240
+    ]
+   ],
+   "status": "provided",
+   "label": "Evaluate",
+   "label_at": [
+    765,
+    165
+   ],
+   "label_w": 86
+  },
+  {
+   "id": "exp",
+   "from": "tel",
+   "to": "ana",
+   "points": [
+    [
+     545,
+     288
+    ],
+    [
+     650,
+     288
+    ]
+   ],
+   "status": "provided",
+   "label": "Explain",
+   "label_at": [
+    560,
+    248
+   ],
+   "label_w": 76
+  }
+ ]
+}

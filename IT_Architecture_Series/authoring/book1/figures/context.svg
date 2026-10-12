@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 670" width="860" height="670" role="img" aria-labelledby="dc-12aa16db16-title dc-12aa16db16-desc" font-family="DejaVu Sans">
+<title id="dc-12aa16db16-title">Meridian context view</title>
+<desc id="dc-12aa16db16-desc">Customers submit service requests to the service portal, which delegates sign-in to the identity provider, hands submissions off to the CRM, receives case status back, reads asset and entitlement facts from ERP and sends reporting data to analytics. Service agents read authorised requests in the portal and approve cases in the CRM. The CRM emits a ServiceCaseApproved event that the work-order integration consumes to create the ERP work order. The dashed arrow is an asynchronous event; solid arrows are requests or data exchanges.</desc>
+<defs><marker id="dc-12aa16db16-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 4 L0 8 Z" fill="#323232"/></marker></defs>
+<rect width="860" height="670" fill="#ffffff" aria-hidden="true"/>
+<rect x="240" y="70" width="360" height="460" rx="8" fill="none" stroke="#323232" stroke-dasharray="4 4"/>
+<text x="256" y="94" font-size="13" font-weight="600" fill="#323232" text-anchor="start"><tspan x="256" dy="0">Meridian solution (portal team)</tspan></text>
+<polyline data-edge="submits" points="170,170 260,170" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-12aa16db16-arrow)"/>
+<polyline data-edge="signin" points="285,220 285,330 180,330" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-12aa16db16-arrow)"/>
+<polyline data-edge="reporting" points="310,220 310,485 180,485" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-12aa16db16-arrow)"/>
+<polyline data-edge="reads" points="660,55 500,55 500,110" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-12aa16db16-arrow)"/>
+<polyline data-edge="approves" points="780,100 780,160" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-12aa16db16-arrow)"/>
+<polyline data-edge="handoff" points="550,178 660,178" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-12aa16db16-arrow)"/>
+<polyline data-edge="status" points="660,210 550,210" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-12aa16db16-arrow)"/>
+<polyline data-edge="approved" points="750,290 750,390 580,390" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-12aa16db16-arrow)" stroke-dasharray="6 5"/>
+<polyline data-edge="erpread" points="340,220 340,560" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-12aa16db16-arrow)"/>
+<polyline data-edge="workorder" points="540,450 540,560" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-12aa16db16-arrow)"/>
+<g id="dc-12aa16db16-node-customer" data-node="customer" data-x="10" data-y="120" data-w="160" data-h="100">
+<rect x="10" y="120" width="160" height="100" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="28" y="158.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="customer"><tspan x="28" dy="0">Customer</tspan></text>
+<text x="28" y="184.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="customer"><tspan x="28" dy="0">Users in 600</tspan><tspan x="28" dy="18">organisations</tspan></text>
+</g>
+<g id="dc-12aa16db16-node-idp" data-node="idp" data-x="10" data-y="290" data-w="170" data-h="90">
+<rect x="10" y="290" width="170" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="28" y="330.0" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="idp"><tspan x="28" dy="0">Identity</tspan><tspan x="28" dy="23">provider</tspan></text>
+</g>
+<g id="dc-12aa16db16-node-analytics" data-node="analytics" data-x="10" data-y="450" data-w="170" data-h="70">
+<rect x="10" y="450" width="170" height="70" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="28" y="491.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="analytics"><tspan x="28" dy="0">Analytics</tspan></text>
+</g>
+<g id="dc-12aa16db16-node-portal" data-node="portal" data-x="260" data-y="110" data-w="290" data-h="110">
+<rect x="260" y="110" width="290" height="110" rx="6" fill="#e8f0fe" stroke="#276ef1" stroke-width="2"/>
+<text x="278" y="153.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="portal"><tspan x="278" dy="0">Service portal</tspan></text>
+<text x="278" y="179.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="portal"><tspan x="278" dy="0">Receipts and customer-visible</tspan><tspan x="278" dy="18">status</tspan></text>
+</g>
+<g id="dc-12aa16db16-node-woi" data-node="woi" data-x="380" data-y="330" data-w="200" data-h="120">
+<rect x="380" y="330" width="200" height="120" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="398" y="367.0" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="woi"><tspan x="398" dy="0">Work-order</tspan><tspan x="398" dy="23">integration</tspan></text>
+<text x="398" y="416.0" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="woi"><tspan x="398" dy="0">Turns approvals into</tspan><tspan x="398" dy="18">ERP work orders</tspan></text>
+</g>
+<g id="dc-12aa16db16-node-agent" data-node="agent" data-x="660" data-y="10" data-w="180" data-h="90">
+<rect x="660" y="10" width="180" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="678" y="43.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="agent"><tspan x="678" dy="0">Service agent</tspan></text>
+<text x="678" y="69.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="agent"><tspan x="678" dy="0">40 in three</tspan><tspan x="678" dy="18">business units</tspan></text>
+</g>
+<g id="dc-12aa16db16-node-crm" data-node="crm" data-x="660" data-y="160" data-w="180" data-h="130">
+<rect x="660" y="160" width="180" height="130" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="678" y="213.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="crm"><tspan x="678" dy="0">CRM</tspan></text>
+<text x="678" y="239.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="crm"><tspan x="678" dy="0">Owns the service</tspan><tspan x="678" dy="18">case</tspan></text>
+</g>
+<g id="dc-12aa16db16-node-erp" data-node="erp" data-x="240" data-y="560" data-w="380" data-h="96">
+<rect x="240" y="560" width="380" height="96" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="258" y="596.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="erp"><tspan x="258" dy="0">ERP</tspan></text>
+<text x="258" y="622.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="erp"><tspan x="258" dy="0">Owns assets, contracts, entitlements and work</tspan><tspan x="258" dy="18">orders</tspan></text>
+</g>
+<g data-label="submits" data-x="172" data-y="116" data-w="86" data-h="48"><rect x="172" y="116" width="86" height="48" rx="4" fill="#ffffff"/>
+<text x="180" y="135" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="180" dy="0">Submits</tspan><tspan x="180" dy="18">requests</tspan></text>
+</g>
+<g data-label="signin" data-x="190" data-y="250" data-w="88" data-h="48"><rect x="190" y="250" width="88" height="48" rx="4" fill="#ffffff"/>
+<text x="198" y="269" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="198" dy="0">Signs</tspan><tspan x="198" dy="18">users in</tspan></text>
+</g>
+<g data-label="reporting" data-x="196" data-y="420" data-w="100" data-h="48"><rect x="196" y="420" width="100" height="48" rx="4" fill="#ffffff"/>
+<text x="204" y="439" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="204" dy="0">Reporting</tspan><tspan x="204" dy="18">data</tspan></text>
+</g>
+<g data-label="reads" data-x="520" data-y="20" data-w="124" data-h="30"><rect x="520" y="20" width="124" height="30" rx="4" fill="#ffffff"/>
+<text x="528" y="39" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="528" dy="0">Reads requests</tspan></text>
+</g>
+<g data-label="approves" data-x="664" data-y="104" data-w="106" data-h="48"><rect x="664" y="104" width="106" height="48" rx="4" fill="#ffffff"/>
+<text x="672" y="123" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="672" dy="0">Approves</tspan><tspan x="672" dy="18">cases</tspan></text>
+</g>
+<g data-label="handoff" data-x="553" data-y="126" data-w="104" data-h="48"><rect x="553" y="126" width="104" height="48" rx="4" fill="#ffffff"/>
+<text x="561" y="145" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="561" dy="0">Hands off</tspan><tspan x="561" dy="18">submissions</tspan></text>
+</g>
+<g data-label="status" data-x="553" data-y="216" data-w="104" data-h="30"><rect x="553" y="216" width="104" height="30" rx="4" fill="#ffffff"/>
+<text x="561" y="235" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="561" dy="0">Case status</tspan></text>
+</g>
+<g data-label="approved" data-x="596" data-y="396" data-w="160" data-h="48"><rect x="596" y="396" width="160" height="48" rx="4" fill="#ffffff"/>
+<text x="604" y="415" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="604" dy="0">ServiceCaseApproved</tspan><tspan x="604" dy="18">event</tspan></text>
+</g>
+<g data-label="erpread" data-x="346" data-y="462" data-w="150" data-h="48"><rect x="346" y="462" width="150" height="48" rx="4" fill="#ffffff"/>
+<text x="354" y="481" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="354" dy="0">Reads assets and</tspan><tspan x="354" dy="18">entitlements</tspan></text>
+</g>
+<g data-label="workorder" data-x="546" data-y="470" data-w="110" data-h="48"><rect x="546" y="470" width="110" height="48" rx="4" fill="#ffffff"/>
+<text x="554" y="489" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="554" dy="0">Creates work</tspan><tspan x="554" dy="18">orders</tspan></text>
+</g>
+</svg>

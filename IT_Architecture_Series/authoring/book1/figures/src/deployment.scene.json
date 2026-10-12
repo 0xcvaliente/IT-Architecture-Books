@@ -1,0 +1,280 @@
+{
+ "title": "Meridian deployment across three zones",
+ "description": "A public edge sends HTTPS traffic to one API replica in each of three zones. Zones A and B also run a handoff worker, and each worker calls the external CRM. Every API replica and every worker connects to the same zone-redundant managed database, drawn across the zones. Identity, DNS, secrets and deployment configuration are shared by all zones.",
+ "width": 860,
+ "height": 640,
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "regions": [
+  {
+   "id": "zone_a",
+   "label": "Zone A",
+   "x": 140,
+   "y": 20,
+   "w": 600,
+   "h": 150
+  },
+  {
+   "id": "zone_b",
+   "label": "Zone B",
+   "x": 140,
+   "y": 190,
+   "w": 600,
+   "h": 150
+  },
+  {
+   "id": "zone_c",
+   "label": "Zone C",
+   "x": 140,
+   "y": 360,
+   "w": 600,
+   "h": 150
+  }
+ ],
+ "nodes": [
+  {
+   "id": "edge",
+   "label": "Public edge",
+   "x": 10,
+   "y": 60,
+   "w": 110,
+   "h": 450,
+   "detail": "Load balancer; HTTPS to healthy APIs"
+  },
+  {
+   "id": "api_a",
+   "label": "API A",
+   "x": 160,
+   "y": 65,
+   "w": 150,
+   "h": 90,
+   "detail": "Bounded connection pool"
+  },
+  {
+   "id": "worker_a",
+   "label": "Worker A",
+   "x": 570,
+   "y": 65,
+   "w": 140,
+   "h": 90,
+   "detail": "Claims under a lease"
+  },
+  {
+   "id": "api_b",
+   "label": "API B",
+   "x": 160,
+   "y": 235,
+   "w": 150,
+   "h": 90,
+   "detail": "Bounded connection pool"
+  },
+  {
+   "id": "worker_b",
+   "label": "Worker B",
+   "x": 570,
+   "y": 235,
+   "w": 140,
+   "h": 90,
+   "detail": "Claims under a lease"
+  },
+  {
+   "id": "api_c",
+   "label": "API C",
+   "x": 160,
+   "y": 405,
+   "w": 150,
+   "h": 90,
+   "detail": "Bounded connection pool"
+  },
+  {
+   "id": "db",
+   "label": "Managed database",
+   "x": 365,
+   "y": 50,
+   "w": 150,
+   "h": 460,
+   "detail": "PostgreSQL, zone-redundant; failover tested",
+   "shape": "store",
+   "emphasis": true
+  },
+  {
+   "id": "crm",
+   "label": "CRM",
+   "x": 750,
+   "y": 60,
+   "w": 100,
+   "h": 280,
+   "detail": "External vendor; quota limits"
+  },
+  {
+   "id": "shared",
+   "label": "Shared dependencies",
+   "x": 140,
+   "y": 540,
+   "w": 600,
+   "h": 80,
+   "detail": "Identity provider, DNS, secrets and deployment configuration, used in every zone"
+  }
+ ],
+ "edges": [
+  {
+   "id": "lb_a",
+   "from": "edge",
+   "to": "api_a",
+   "points": [
+    [
+     120,
+     110
+    ],
+    [
+     160,
+     110
+    ]
+   ]
+  },
+  {
+   "id": "a_db",
+   "from": "api_a",
+   "to": "db",
+   "points": [
+    [
+     310,
+     110
+    ],
+    [
+     365,
+     110
+    ]
+   ]
+  },
+  {
+   "id": "wa_db",
+   "from": "worker_a",
+   "to": "db",
+   "points": [
+    [
+     570,
+     110
+    ],
+    [
+     515,
+     110
+    ]
+   ]
+  },
+  {
+   "id": "wa_crm",
+   "from": "worker_a",
+   "to": "crm",
+   "points": [
+    [
+     710,
+     110
+    ],
+    [
+     750,
+     110
+    ]
+   ]
+  },
+  {
+   "id": "lb_b",
+   "from": "edge",
+   "to": "api_b",
+   "points": [
+    [
+     120,
+     280
+    ],
+    [
+     160,
+     280
+    ]
+   ]
+  },
+  {
+   "id": "b_db",
+   "from": "api_b",
+   "to": "db",
+   "points": [
+    [
+     310,
+     280
+    ],
+    [
+     365,
+     280
+    ]
+   ]
+  },
+  {
+   "id": "wb_db",
+   "from": "worker_b",
+   "to": "db",
+   "points": [
+    [
+     570,
+     280
+    ],
+    [
+     515,
+     280
+    ]
+   ]
+  },
+  {
+   "id": "wb_crm",
+   "from": "worker_b",
+   "to": "crm",
+   "points": [
+    [
+     710,
+     280
+    ],
+    [
+     750,
+     280
+    ]
+   ]
+  },
+  {
+   "id": "lb_c",
+   "from": "edge",
+   "to": "api_c",
+   "points": [
+    [
+     120,
+     450
+    ],
+    [
+     160,
+     450
+    ]
+   ]
+  },
+  {
+   "id": "c_db",
+   "from": "api_c",
+   "to": "db",
+   "points": [
+    [
+     310,
+     450
+    ],
+    [
+     365,
+     450
+    ]
+   ]
+  }
+ ],
+ "notes": []
+}

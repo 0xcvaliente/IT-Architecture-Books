@@ -1,0 +1,174 @@
+{
+ "title": "A bounded experiment leads to a decision",
+ "description": "A decision uncertainty leads to a bounded experiment, which produces evaluation evidence. The evidence leads to one of three decisions: stop, revise or scale conditionally.",
+ "width": 860,
+ "height": 400,
+ "theme": "light",
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "regions": [],
+ "nodes": [
+  {
+   "id": "u",
+   "label": "Decision uncertainty",
+   "x": 20,
+   "y": 20,
+   "w": 250,
+   "h": 90,
+   "status": "provided",
+   "detail": "Business task and baseline"
+  },
+  {
+   "id": "x",
+   "label": "Bounded experiment",
+   "x": 305,
+   "y": 20,
+   "w": 250,
+   "h": 90,
+   "status": "provided",
+   "detail": "Authority, cost and scope"
+  },
+  {
+   "id": "ev",
+   "label": "Evaluation evidence",
+   "x": 590,
+   "y": 20,
+   "w": 250,
+   "h": 90,
+   "status": "provided",
+   "detail": "Errors, effort and outcomes",
+   "emphasis": true
+  },
+  {
+   "id": "st",
+   "label": "Stop",
+   "x": 20,
+   "y": 290,
+   "w": 250,
+   "h": 90,
+   "status": "provided",
+   "detail": "Unacceptable consequence"
+  },
+  {
+   "id": "rv",
+   "label": "Revise",
+   "x": 305,
+   "y": 290,
+   "w": 250,
+   "h": 90,
+   "status": "provided",
+   "detail": "Narrow the task or design"
+  },
+  {
+   "id": "sc",
+   "label": "Scale conditionally",
+   "x": 590,
+   "y": 290,
+   "w": 250,
+   "h": 90,
+   "status": "provided",
+   "detail": "New population and risk"
+  }
+ ],
+ "edges": [
+  {
+   "id": "i1",
+   "from": "u",
+   "to": "x",
+   "points": [
+    [
+     270,
+     65
+    ],
+    [
+     305,
+     65
+    ]
+   ]
+  },
+  {
+   "id": "i2",
+   "from": "x",
+   "to": "ev",
+   "points": [
+    [
+     555,
+     65
+    ],
+    [
+     590,
+     65
+    ]
+   ]
+  },
+  {
+   "id": "i3",
+   "from": "ev",
+   "to": "st",
+   "points": [
+    [
+     640,
+     110
+    ],
+    [
+     640,
+     200
+    ],
+    [
+     145,
+     200
+    ],
+    [
+     145,
+     290
+    ]
+   ]
+  },
+  {
+   "id": "i4",
+   "from": "ev",
+   "to": "rv",
+   "points": [
+    [
+     690,
+     110
+    ],
+    [
+     690,
+     230
+    ],
+    [
+     430,
+     230
+    ],
+    [
+     430,
+     290
+    ]
+   ]
+  },
+  {
+   "id": "i5",
+   "from": "ev",
+   "to": "sc",
+   "points": [
+    [
+     790,
+     110
+    ],
+    [
+     790,
+     290
+    ]
+   ]
+  }
+ ]
+}

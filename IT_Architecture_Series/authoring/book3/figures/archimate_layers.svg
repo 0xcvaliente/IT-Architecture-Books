@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="672" viewBox="0 0 880 672" role="img" aria-labelledby="t d" font-family="DejaVu Sans">
+<title id="t">Helios service fulfilment in ArchiMate 4</title>
+<desc id="d">Business domain: the service coordinator role is assigned to the process Handle service request, which realises the service Field maintenance, which serves the customer. Application domain: CRM North realises the case management service and the customer link hub realises the customer lookup service; both services serve the process. Technology domain: the shared cloud platform node realises the container hosting service, which serves both application components.</desc>
+<rect width="880" height="672" fill="#ffffff"/>
+<rect x="8" y="12" width="864" height="140" rx="8" fill="none" stroke="#323232" stroke-width="1.2" stroke-dasharray="4 4"/>
+<text x="18" y="32" font-size="13" font-weight="bold" text-anchor="start" fill="#323232">BUSINESS DOMAIN</text>
+<rect x="8" y="247" width="864" height="140" rx="8" fill="none" stroke="#323232" stroke-width="1.2" stroke-dasharray="4 4"/>
+<text x="18" y="267" font-size="13" font-weight="bold" text-anchor="start" fill="#323232">APPLICATION DOMAIN</text>
+<rect x="8" y="487" width="864" height="140" rx="8" fill="none" stroke="#323232" stroke-width="1.2" stroke-dasharray="4 4"/>
+<text x="18" y="507" font-size="13" font-weight="bold" text-anchor="start" fill="#323232">TECHNOLOGY DOMAIN</text>
+<rect x="20" y="50" width="140" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="30" y="74" font-size="15" font-weight="bold" text-anchor="start" fill="#000000">Service</text>
+<text x="30" y="92" font-size="15" font-weight="bold" text-anchor="start" fill="#000000">coordinator</text>
+<text x="30" y="114" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Role</text>
+<rect x="255" y="50" width="140" height="90" rx="6" fill="#e8f0fe" stroke="#276ef1" stroke-width="2.5"/>
+<text x="265" y="74" font-size="15" font-weight="bold" text-anchor="start" fill="#000000">Handle</text>
+<text x="265" y="92" font-size="15" font-weight="bold" text-anchor="start" fill="#000000">service</text>
+<text x="265" y="110" font-size="15" font-weight="bold" text-anchor="start" fill="#000000">request</text>
+<text x="265" y="132" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Process</text>
+<rect x="490" y="50" width="140" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="500" y="74" font-size="15" font-weight="bold" text-anchor="start" fill="#000000">Field</text>
+<text x="500" y="92" font-size="15" font-weight="bold" text-anchor="start" fill="#000000">maintenance</text>
+<text x="500" y="114" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Service</text>
+<rect x="725" y="50" width="140" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="735" y="74" font-size="15" font-weight="bold" text-anchor="start" fill="#000000">Customer</text>
+<text x="735" y="96" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Business actor</text>
+<rect x="20" y="285" width="140" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="30" y="309" font-size="15" font-weight="bold" text-anchor="start" fill="#000000">CRM North</text>
+<text x="30" y="331" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Application</text>
+<text x="30" y="346" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">component</text>
+<rect x="255" y="285" width="140" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="265" y="309" font-size="15" font-weight="bold" text-anchor="start" fill="#000000">Case</text>
+<text x="265" y="327" font-size="15" font-weight="bold" text-anchor="start" fill="#000000">management</text>
+<text x="265" y="349" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Service</text>
+<rect x="490" y="285" width="140" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="500" y="309" font-size="15" font-weight="bold" text-anchor="start" fill="#000000">Customer</text>
+<text x="500" y="327" font-size="15" font-weight="bold" text-anchor="start" fill="#000000">lookup</text>
+<text x="500" y="349" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Service</text>
+<rect x="725" y="285" width="140" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="735" y="309" font-size="15" font-weight="bold" text-anchor="start" fill="#000000">Customer</text>
+<text x="735" y="327" font-size="15" font-weight="bold" text-anchor="start" fill="#000000">link hub</text>
+<text x="735" y="349" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Application</text>
+<text x="735" y="364" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">component</text>
+<rect x="255" y="525" width="140" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="265" y="549" font-size="15" font-weight="bold" text-anchor="start" fill="#000000">Shared cloud</text>
+<text x="265" y="567" font-size="15" font-weight="bold" text-anchor="start" fill="#000000">platform</text>
+<text x="265" y="589" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Node</text>
+<rect x="490" y="525" width="140" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="500" y="549" font-size="15" font-weight="bold" text-anchor="start" fill="#000000">Container</text>
+<text x="500" y="567" font-size="15" font-weight="bold" text-anchor="start" fill="#000000">hosting</text>
+<text x="500" y="589" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">Service</text>
+<line x1="160" y1="95.0" x2="255" y2="95.0" stroke="#000000" stroke-width="2"/>
+<polygon points="255.0,95.0 243.0,89.0 243.0,101.0" fill="#000000"/>
+<circle cx="164" cy="95.0" r="4" fill="#000000"/>
+<rect x="161.7" y="73.0" width="91.6" height="19" rx="3" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="165.7" y="87.0" font-size="13" font-weight="normal" text-anchor="start" fill="#000000">assigned to</text>
+<polygon points="490.0,95.0 478.0,89.0 478.0,101.0" fill="#ffffff" stroke="#000000" stroke-width="1.8"/>
+<line x1="395" y1="95.0" x2="478.0" y2="95.0" stroke="#000000" stroke-width="2" stroke-dasharray="2 4"/>
+<rect x="408.1" y="73.0" width="68.8" height="19" rx="3" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="412.1" y="87.0" font-size="13" font-weight="normal" text-anchor="start" fill="#000000">realises</text>
+<line x1="630" y1="95.0" x2="725" y2="95.0" stroke="#000000" stroke-width="2"/>
+<line x1="725" y1="95.0" x2="713.0" y2="89.0" stroke="#000000" stroke-width="2"/>
+<line x1="725" y1="95.0" x2="713.0" y2="101.0" stroke="#000000" stroke-width="2"/>
+<rect x="650.7" y="73.0" width="53.599999999999994" height="19" rx="3" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="654.7" y="87.0" font-size="13" font-weight="normal" text-anchor="start" fill="#000000">serves</text>
+<polygon points="255.0,330.0 243.0,324.0 243.0,336.0" fill="#ffffff" stroke="#000000" stroke-width="1.8"/>
+<line x1="160" y1="330.0" x2="243.0" y2="330.0" stroke="#000000" stroke-width="2" stroke-dasharray="2 4"/>
+<rect x="173.1" y="308.0" width="68.8" height="19" rx="3" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="177.1" y="322.0" font-size="13" font-weight="normal" text-anchor="start" fill="#000000">realises</text>
+<polygon points="630.0,330.0 642.0,336.0 642.0,324.0" fill="#ffffff" stroke="#000000" stroke-width="1.8"/>
+<line x1="725" y1="330.0" x2="642.0" y2="330.0" stroke="#000000" stroke-width="2" stroke-dasharray="2 4"/>
+<rect x="643.1" y="308.0" width="68.8" height="19" rx="3" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="647.1" y="322.0" font-size="13" font-weight="normal" text-anchor="start" fill="#000000">realises</text>
+<polygon points="490.0,570.0 478.0,564.0 478.0,576.0" fill="#ffffff" stroke="#000000" stroke-width="1.8"/>
+<line x1="395" y1="570.0" x2="478.0" y2="570.0" stroke="#000000" stroke-width="2" stroke-dasharray="2 4"/>
+<rect x="408.1" y="548.0" width="68.8" height="19" rx="3" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="412.1" y="562.0" font-size="13" font-weight="normal" text-anchor="start" fill="#000000">realises</text>
+<line x1="300" y1="285" x2="300" y2="140" stroke="#000000" stroke-width="2"/>
+<line x1="300" y1="140" x2="294.0" y2="152.0" stroke="#000000" stroke-width="2"/>
+<line x1="300" y1="140" x2="306.0" y2="152.0" stroke="#000000" stroke-width="2"/>
+<rect x="308" y="191" width="53.599999999999994" height="19" rx="3" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="312" y="205" font-size="13" font-weight="normal" text-anchor="start" fill="#000000">serves</text>
+<line x1="560" y1="285" x2="560" y2="225" stroke="#000000" stroke-width="2"/>
+<line x1="560" y1="225" x2="370" y2="225" stroke="#000000" stroke-width="2"/>
+<line x1="370" y1="225" x2="370" y2="140" stroke="#000000" stroke-width="2"/>
+<line x1="370" y1="140" x2="364.0" y2="152.0" stroke="#000000" stroke-width="2"/>
+<line x1="370" y1="140" x2="376.0" y2="152.0" stroke="#000000" stroke-width="2"/>
+<rect x="450" y="204" width="53.599999999999994" height="19" rx="3" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="454" y="218" font-size="13" font-weight="normal" text-anchor="start" fill="#000000">serves</text>
+<line x1="530" y1="525" x2="530" y2="470" stroke="#000000" stroke-width="2"/>
+<line x1="530" y1="470" x2="90" y2="470" stroke="#000000" stroke-width="2"/>
+<line x1="90" y1="470" x2="90" y2="375" stroke="#000000" stroke-width="2"/>
+<line x1="90" y1="375" x2="84.0" y2="387.0" stroke="#000000" stroke-width="2"/>
+<line x1="90" y1="375" x2="96.0" y2="387.0" stroke="#000000" stroke-width="2"/>
+<rect x="98" y="406" width="53.599999999999994" height="19" rx="3" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="102" y="420" font-size="13" font-weight="normal" text-anchor="start" fill="#000000">serves</text>
+<line x1="600" y1="525" x2="600" y2="470" stroke="#000000" stroke-width="2"/>
+<line x1="600" y1="470" x2="795" y2="470" stroke="#000000" stroke-width="2"/>
+<line x1="795" y1="470" x2="795" y2="375" stroke="#000000" stroke-width="2"/>
+<line x1="795" y1="375" x2="789.0" y2="387.0" stroke="#000000" stroke-width="2"/>
+<line x1="795" y1="375" x2="801.0" y2="387.0" stroke="#000000" stroke-width="2"/>
+<rect x="720" y="406" width="53.599999999999994" height="19" rx="3" fill="#ffffff" stroke="none" stroke-width="0"/>
+<text x="724" y="420" font-size="13" font-weight="normal" text-anchor="start" fill="#000000">serves</text>
+<text x="18" y="656" font-size="13" font-weight="bold" text-anchor="start" fill="#323232">Notation:</text>
+<line x1="100" y1="652" x2="150" y2="652" stroke="#000000" stroke-width="2"/>
+<polygon points="150.0,652.0 138.0,646.0 138.0,658.0" fill="#000000"/>
+<circle cx="104" cy="652" r="4" fill="#000000"/>
+<text x="158" y="656" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">assignment</text>
+<polygon points="310.0,652.0 298.0,646.0 298.0,658.0" fill="#ffffff" stroke="#000000" stroke-width="1.8"/>
+<line x1="260" y1="652" x2="298.0" y2="652.0" stroke="#000000" stroke-width="2" stroke-dasharray="2 4"/>
+<text x="318" y="656" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">realisation</text>
+<line x1="420" y1="652" x2="470" y2="652" stroke="#000000" stroke-width="2"/>
+<line x1="470" y1="652" x2="458.0" y2="646.0" stroke="#000000" stroke-width="2"/>
+<line x1="470" y1="652" x2="458.0" y2="658.0" stroke="#000000" stroke-width="2"/>
+<text x="478" y="656" font-size="13" font-weight="normal" text-anchor="start" fill="#323232">serving</text>
+</svg>

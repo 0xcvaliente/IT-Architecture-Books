@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="1200" height="560" role="img" aria-labelledby="t d" font-family="DejaVu Sans">
+  <title id="t">Two transactions updating one stock row under two isolation levels</title>
+  <desc id="d">In both cases T1 updates the row first and holds its lock until it commits, and T2 waits. Under READ COMMITTED, T2 then re-checks the WHERE clause on the newest row version and either takes a unit or updates nothing. Under REPEATABLE READ or SERIALIZABLE, T2 fails with SQLSTATE 40001 and must be retried.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#323232"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="560" fill="#ffffff"/>
+  <!-- T1 commit line -->
+  <line x1="640" y1="50" x2="640" y2="470" stroke="#323232" stroke-width="2" stroke-dasharray="4 5"/>
+  <text x="640" y="38" font-size="18" text-anchor="middle" fill="#000000">T1 commits</text>
+
+  <!-- Panel 1 -->
+  <text x="40" y="80" font-size="20" font-weight="bold" fill="#000000">READ COMMITTED</text>
+  <text x="40" y="128" font-size="19" fill="#000000">T1</text>
+  <rect x="220" y="104" width="420" height="40" rx="5" fill="#e8f0fe" stroke="#276ef1" stroke-width="2"/>
+  <text x="430" y="130" font-size="18" text-anchor="middle" fill="#000000">UPDATE, then holds the row lock</text>
+  <text x="40" y="190" font-size="19" fill="#000000">T2</text>
+  <rect x="330" y="166" width="310" height="40" rx="5" fill="#ffffff" stroke="#323232" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="485" y="192" font-size="18" text-anchor="middle" fill="#000000">UPDATE waits for the lock</text>
+  <rect x="640" y="158" width="545" height="56" rx="5" fill="#f3f3f3" stroke="#323232" stroke-width="2"/>
+  <text x="912" y="181" font-size="18" text-anchor="middle" fill="#000000">Re-checks the WHERE clause on the newest row,</text>
+  <text x="912" y="203" font-size="18" text-anchor="middle" fill="#000000">then takes a unit or updates nothing</text>
+
+  <!-- Panel 2 -->
+  <text x="40" y="290" font-size="20" font-weight="bold" fill="#000000">REPEATABLE READ or SERIALIZABLE</text>
+  <text x="40" y="338" font-size="19" fill="#000000">T1</text>
+  <rect x="220" y="314" width="420" height="40" rx="5" fill="#e8f0fe" stroke="#276ef1" stroke-width="2"/>
+  <text x="430" y="340" font-size="18" text-anchor="middle" fill="#000000">UPDATE, then holds the row lock</text>
+  <text x="40" y="400" font-size="19" fill="#000000">T2</text>
+  <rect x="330" y="376" width="310" height="40" rx="5" fill="#ffffff" stroke="#323232" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="485" y="402" font-size="18" text-anchor="middle" fill="#000000">UPDATE waits for the lock</text>
+  <rect x="640" y="368" width="545" height="56" rx="5" fill="#ffffff" stroke="#000000" stroke-width="2.5"/>
+  <text x="912" y="391" font-size="18" text-anchor="middle" fill="#000000" font-weight="bold">Fails with SQLSTATE 40001,</text>
+  <text x="912" y="413" font-size="18" text-anchor="middle" fill="#000000">even if a unit remains; must be retried</text>
+
+  <!-- time axis -->
+  <line x1="220" y1="490" x2="1140" y2="490" stroke="#323232" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="1140" y="520" font-size="18" text-anchor="end" fill="#000000">Time</text>
+  <!-- legend -->
+  <g font-size="18" fill="#323232">
+    <rect x="220" y="512" width="36" height="20" rx="3" fill="#e8f0fe" stroke="#276ef1" stroke-width="2"/>
+    <text x="264" y="529">Holding the lock</text>
+    <rect x="450" y="512" width="36" height="20" rx="3" fill="#ffffff" stroke="#323232" stroke-width="2" stroke-dasharray="6 4"/>
+    <text x="494" y="529">Waiting</text>
+  </g>
+</svg>

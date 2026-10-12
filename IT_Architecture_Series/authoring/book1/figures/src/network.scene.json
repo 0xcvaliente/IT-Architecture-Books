@@ -1,0 +1,207 @@
+{
+ "title": "Example network boundaries",
+ "description": "Three subnets: ingress with the public HTTPS edge, runtime with the API and worker, and data with a private endpoint. TLS protects the edge-to-API and API-to-database connections. Operators reach the runtime only through a controlled management path, and outbound calls to the CRM vendor pass an egress policy.",
+ "width": 860,
+ "height": 490,
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "regions": [
+  {
+   "id": "ing",
+   "label": "Ingress 10.20.10.0/24",
+   "x": 220,
+   "y": 10,
+   "w": 420,
+   "h": 120
+  },
+  {
+   "id": "run",
+   "label": "Runtime 10.20.20.0/24",
+   "x": 220,
+   "y": 165,
+   "w": 420,
+   "h": 135
+  },
+  {
+   "id": "dat",
+   "label": "Data 10.20.30.0/24",
+   "x": 220,
+   "y": 345,
+   "w": 420,
+   "h": 125
+  }
+ ],
+ "nodes": [
+  {
+   "id": "op",
+   "label": "Operator",
+   "x": 10,
+   "y": 20,
+   "w": 180,
+   "h": 90,
+   "detail": "Strong identity"
+  },
+  {
+   "id": "mgmt",
+   "label": "Management path",
+   "x": 10,
+   "y": 195,
+   "w": 180,
+   "h": 115,
+   "detail": "Controlled and audited"
+  },
+  {
+   "id": "edge",
+   "label": "Edge",
+   "x": 300,
+   "y": 45,
+   "w": 260,
+   "h": 70,
+   "detail": "Public HTTPS"
+  },
+  {
+   "id": "api",
+   "label": "API and worker",
+   "x": 300,
+   "y": 205,
+   "w": 260,
+   "h": 80,
+   "detail": "No direct public entry",
+   "emphasis": true
+  },
+  {
+   "id": "data",
+   "label": "Data connectivity",
+   "x": 300,
+   "y": 385,
+   "w": 260,
+   "h": 70,
+   "detail": "Private endpoint"
+  },
+  {
+   "id": "crm",
+   "label": "CRM vendor",
+   "x": 680,
+   "y": 205,
+   "w": 170,
+   "h": 80,
+   "detail": "Outbound HTTPS"
+  }
+ ],
+ "edges": [
+  {
+   "id": "tls1",
+   "from": "edge",
+   "to": "api",
+   "points": [
+    [
+     430,
+     115
+    ],
+    [
+     430,
+     205
+    ]
+   ],
+   "label": "1 API TLS",
+   "label_at": [
+    440,
+    140
+   ],
+   "label_w": 86
+  },
+  {
+   "id": "tls2",
+   "from": "api",
+   "to": "data",
+   "points": [
+    [
+     430,
+     285
+    ],
+    [
+     430,
+     385
+    ]
+   ],
+   "label": "2 DB TLS",
+   "label_at": [
+    440,
+    320
+   ],
+   "label_w": 80
+  },
+  {
+   "id": "admin",
+   "from": "op",
+   "to": "mgmt",
+   "points": [
+    [
+     100,
+     110
+    ],
+    [
+     100,
+     195
+    ]
+   ],
+   "label": "3 Admin",
+   "label_at": [
+    110,
+    140
+   ],
+   "label_w": 70
+  },
+  {
+   "id": "scoped",
+   "from": "mgmt",
+   "to": "api",
+   "points": [
+    [
+     190,
+     250
+    ],
+    [
+     300,
+     250
+    ]
+   ],
+   "label": "4 Scoped access",
+   "label_at": [
+    194,
+    198
+   ],
+   "label_w": 96
+  },
+  {
+   "id": "egress",
+   "from": "api",
+   "to": "crm",
+   "points": [
+    [
+     560,
+     245
+    ],
+    [
+     680,
+     245
+    ]
+   ],
+   "label": "5 Egress policy",
+   "label_at": [
+    566,
+    193
+   ],
+   "label_w": 104
+  }
+ ],
+ "notes": []
+}

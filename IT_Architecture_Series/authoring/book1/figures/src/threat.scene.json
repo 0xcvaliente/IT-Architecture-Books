@@ -1,0 +1,175 @@
+{
+ "title": "Trust boundaries in the Meridian portal",
+ "description": "The browser reaches the API across the public boundary with TLS and identity. Inside the application boundary the API authorises requests and hands durable work to the worker. The API reaches the database with a scoped identity, and the worker reaches attachments with limited access, across the data boundary.",
+ "width": 860,
+ "height": 410,
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "regions": [
+  {
+   "id": "pub",
+   "label": "Public boundary",
+   "x": 10,
+   "y": 20,
+   "w": 260,
+   "h": 370
+  },
+  {
+   "id": "app",
+   "label": "Application boundary",
+   "x": 300,
+   "y": 20,
+   "w": 260,
+   "h": 370
+  },
+  {
+   "id": "dat",
+   "label": "Data boundary",
+   "x": 590,
+   "y": 20,
+   "w": 260,
+   "h": 370
+  }
+ ],
+ "nodes": [
+  {
+   "id": "br",
+   "label": "Browser",
+   "x": 40,
+   "y": 90,
+   "w": 200,
+   "h": 90
+  },
+  {
+   "id": "api",
+   "label": "API",
+   "x": 330,
+   "y": 90,
+   "w": 200,
+   "h": 90,
+   "detail": "Authorisation",
+   "emphasis": true
+  },
+  {
+   "id": "wk",
+   "label": "Worker",
+   "x": 330,
+   "y": 270,
+   "w": 200,
+   "h": 90
+  },
+  {
+   "id": "db",
+   "label": "Database",
+   "x": 620,
+   "y": 90,
+   "w": 200,
+   "h": 90,
+   "shape": "store"
+  },
+  {
+   "id": "att",
+   "label": "Attachments",
+   "x": 620,
+   "y": 270,
+   "w": 200,
+   "h": 90,
+   "shape": "store"
+  }
+ ],
+ "edges": [
+  {
+   "id": "tls",
+   "from": "br",
+   "to": "api",
+   "points": [
+    [
+     240,
+     145
+    ],
+    [
+     330,
+     145
+    ]
+   ],
+   "label": "TLS and identity",
+   "label_at": [
+    242,
+    92
+   ],
+   "label_w": 86
+  },
+  {
+   "id": "dur",
+   "from": "api",
+   "to": "wk",
+   "points": [
+    [
+     430,
+     180
+    ],
+    [
+     430,
+     270
+    ]
+   ],
+   "label": "Durable work",
+   "label_at": [
+    440,
+    210
+   ],
+   "label_w": 110
+  },
+  {
+   "id": "sc",
+   "from": "api",
+   "to": "db",
+   "points": [
+    [
+     530,
+     145
+    ],
+    [
+     620,
+     145
+    ]
+   ],
+   "label": "Scoped identity",
+   "label_at": [
+    532,
+    92
+   ],
+   "label_w": 86
+  },
+  {
+   "id": "lim",
+   "from": "wk",
+   "to": "att",
+   "points": [
+    [
+     530,
+     325
+    ],
+    [
+     620,
+     325
+    ]
+   ],
+   "label": "Limited access",
+   "label_at": [
+    532,
+    272
+   ],
+   "label_w": 86
+  }
+ ],
+ "notes": []
+}

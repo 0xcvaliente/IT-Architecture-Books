@@ -1,0 +1,30 @@
+REVIEW AND RELEASE RECORD
+4 October 2026 | Assistant-led editorial and production review
+
+SCOPE
+The academic revision was restricted to Book 3. Books 1 and 2 received design changes only. The reference inspiration was the user-supplied Uber 2018 guide. Normal body text remains 10 pt, single spaced. The final series contains 201 PDF pages, 193 exercises with corresponding answer entries, 72 figures and 93 per-volume reference entries (not 93 unique sources).
+
+ACADEMIC REVISION OF BOOK 3
+The three previous abstract-only support roles were retired and replaced with inspected, accessible material. The unavailable original full texts were not verified. The revision adds a cross-sectional EA-capability study critique, governance case evidence, an organisational-change case critique, original causal and adoption figures, worked alternatives, measurement distinctions and four exercises with answers. It retains the fictional Helios case and explicitly distinguishes research findings from original teaching assumptions and design reasoning.
+
+The current ledger contains 13 selected direct Book 3 claim records and one background source check. There are 17 mapped citation-paragraph locations because some claims recur. The record separates new source inspection from retained preceding checks. AC19 remains a valid source-background record, but is not represented as a direct Book 3 claim; its substantive course application is in Book 1 chapter 15. Source inventory, paragraph-page mappings, locators, access history and replacement decisions are supplied.
+
+Full-text verification means the relevant supporting passages, methods and limits were inspected in accessible full sources. It does not mean every sentence in every article was read or every sentence in the book was independently verified. Official product guidance and framework definitions serve narrower evidential roles than empirical academic studies. The references include foundational research, university teaching material, authoritative standards and official implementation documentation; their ages and evidence types are assessed according to the claim they support.
+
+CONTENT AND DESIGN PRESERVATION
+All frozen manuscript and reference files match their design baselines: 31 for Book 1, 20 for Book 2 and 20 for Book 3. Ordered DOCX body text matches exactly: 2,052 text runs, 828 and 998 respectively. All 72 SVGs preserve geometry, labels and connectors after color normalization. The six original PDF/DOCX editions still match their saved hashes. No information was removed during design.
+
+STRUCTURAL AND EXPORT CHECKS
+All numbered exercise identifiers have matching answer identifiers: 81, 54 and 58. First-use reference order matches each bibliography: 55, 19 and 19. Figure counts are 32, 19 and 21. Normal styles are Nimbus Sans 10 pt with 1.0 line spacing. The 71 contents entries match their final PDF pages, and all 71 internal contents destinations were verified. No blank PDF pages or out-of-page text bounds were detected. These structural checks are not proof that every open-ended answer is uniquely correct.
+
+VISUAL REVIEW
+Every final page was visually covered at full image size. Pages unchanged by the final backmatter reflow were confirmed pixel-identical to their individually inspected prior render. Every changed release page was separately inspected. Checks covered missing text/glyphs, figure labels, caption attachment, table continuation, code wrapping, bibliography layout and page navigation. Nearly empty spill pages were corrected by allowing backmatter to flow. The final render has no identified unresolved layout defects. PDF layout is the checked version; another word processor or missing local fonts may repaginate the editable DOCX.
+
+PRACTICE CHECKS
+The four Book 3 support programs were rerun successfully during the academic revision. The advanced pilot_and_outcomes.py experiment was also rerun successfully for this release, with exact rational arithmetic, posterior probabilities, pilot values and the difference-in-differences calculation. The unchanged Books 1 and 2 retain their preceding recorded program results; these are clearly marked historical rather than presented as new tests. Scripts remain bounded local teaching models and do not establish production correctness, causal effects or actual business returns.
+
+REMAINING HUMAN WORK
+Independent architect review, academic review and learner feedback have not taken place. No messages were sent to reviewers. The supplied brief, findings register, declarations, revision log and learner-pilot protocol are ready for named people to use. Revisions based on external feedback must wait for actual findings. This release must not be called independently peer reviewed, accredited or exhaustively fact-certified.
+
+HISTORICAL PREFACE NOTE
+Books 1 and 2 still contain their preceding-edition statement that three enterprise references had abstract-only checks. Their text was preserved at the learner's explicit request. For the current source disposition, consult Book 3 and evidence/book3-current: those support roles were replaced, while the originals' full texts remain unverified.

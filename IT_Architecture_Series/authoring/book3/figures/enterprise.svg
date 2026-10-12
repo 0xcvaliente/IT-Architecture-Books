@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 420" width="860" height="420" role="img" aria-labelledby="dc-850b253eb0-title dc-850b253eb0-desc" font-family="DejaVu Sans">
+<title id="dc-850b253eb0-title">Enterprise architecture coordinates shared decisions</title>
+<desc id="dc-850b253eb0-desc">Three business units each have local capabilities that contribute to enterprise outcomes; a small set of shared decisions supports all three.</desc>
+<defs><marker id="dc-850b253eb0-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 4 L0 8 Z" fill="#323232"/></marker></defs>
+<rect width="860" height="420" fill="#ffffff" aria-hidden="true"/>
+<polyline data-edge="e1" points="145,170 330,100" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-850b253eb0-arrow)"/>
+<polyline data-edge="e2" points="430,170 430,100" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-850b253eb0-arrow)"/>
+<polyline data-edge="e3" points="715,170 530,100" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-850b253eb0-arrow)"/>
+<polyline data-edge="e4" points="145,320 145,250" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-850b253eb0-arrow)"/>
+<polyline data-edge="e5" points="430,320 430,250" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-850b253eb0-arrow)"/>
+<polyline data-edge="e6" points="715,320 715,250" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-850b253eb0-arrow)"/>
+<g id="dc-850b253eb0-node-out" data-node="out" data-x="260" data-y="20" data-w="340" data-h="80">
+<rect x="260" y="20" width="340" height="80" rx="6" fill="#e8f0fe" stroke="#276ef1" stroke-width="2"/>
+<text x="278" y="57.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="out"><tspan x="278" dy="0">Enterprise outcomes</tspan></text>
+<text x="278" y="83.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="out"><tspan x="278" dy="0">Service, cost and adaptability</tspan></text>
+</g>
+<g id="dc-850b253eb0-node-m" data-node="m" data-x="20" data-y="170" data-w="250" data-h="80">
+<rect x="20" y="170" width="250" height="80" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="38" y="207.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="m"><tspan x="38" dy="0">Maintenance</tspan></text>
+<text x="38" y="233.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="m"><tspan x="38" dy="0">Local capabilities</tspan></text>
+</g>
+<g id="dc-850b253eb0-node-r" data-node="r" data-x="305" data-y="170" data-w="250" data-h="80">
+<rect x="305" y="170" width="250" height="80" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="323" y="207.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="r"><tspan x="323" dy="0">Retail Distribution</tspan></text>
+<text x="323" y="233.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="r"><tspan x="323" dy="0">Local capabilities</tspan></text>
+</g>
+<g id="dc-850b253eb0-node-d" data-node="d" data-x="590" data-y="170" data-w="250" data-h="80">
+<rect x="590" y="170" width="250" height="80" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="608" y="207.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="d"><tspan x="608" dy="0">Digital Services</tspan></text>
+<text x="608" y="233.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="d"><tspan x="608" dy="0">Local capabilities</tspan></text>
+</g>
+<g id="dc-850b253eb0-node-s" data-node="s" data-x="130" data-y="320" data-w="600" data-h="80">
+<rect x="130" y="320" width="600" height="80" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="148" y="357.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="s"><tspan x="148" dy="0">Shared decisions</tspan></text>
+<text x="148" y="383.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="s"><tspan x="148" dy="0">Customer identity, contracts, risk and investment</tspan></text>
+</g>
+</svg>

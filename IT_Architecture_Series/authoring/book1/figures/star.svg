@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 440" width="860" height="440" role="img" aria-labelledby="dc-d6492d8062-title dc-d6492d8062-desc" font-family="DejaVu Sans">
+<title id="dc-d6492d8062-title">Facts at different grains sharing conformed dimensions</title>
+<desc id="dc-d6492d8062-desc">Three fact tables at different grains, FactServiceEvent, FactRequestDaily and FactOrderLine, each relate many facts to one key in the shared conformed dimensions. Aggregate to an agreed common grain before comparing facts.</desc>
+<defs><marker id="dc-d6492d8062-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 4 L0 8 Z" fill="#323232"/></marker></defs>
+<rect width="860" height="440" fill="#ffffff" aria-hidden="true"/>
+<polyline data-edge="k1" points="300,130 300,200 140,200 140,300" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-d6492d8062-arrow)"/>
+<polyline data-edge="k2" points="430,130 430,300" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-d6492d8062-arrow)"/>
+<polyline data-edge="k3" points="560,130 560,200 720,200 720,300" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-d6492d8062-arrow)"/>
+<g id="dc-d6492d8062-node-dim" data-node="dim" data-x="230" data-y="20" data-w="400" data-h="110">
+<rect x="230" y="20" width="400" height="110" rx="6" fill="#e8f0fe" stroke="#276ef1" stroke-width="2"/>
+<text x="248" y="63.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="dim"><tspan x="248" dy="0">Conformed dimensions</tspan></text>
+<text x="248" y="89.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="dim"><tspan x="248" dy="0">Date, customer, product, business unit; governed</tspan><tspan x="248" dy="18">keys and history</tspan></text>
+</g>
+<g id="dc-d6492d8062-node-f1" data-node="f1" data-x="20" data-y="300" data-w="240" data-h="120">
+<rect x="20" y="300" width="240" height="120" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="38" y="339.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="f1"><tspan x="38" dy="0">FactServiceEvent</tspan></text>
+<text x="38" y="365.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="f1"><tspan x="38" dy="0">One row per source event</tspan><tspan x="38" dy="18">and version; event and</tspan><tspan x="38" dy="18">ingestion time</tspan></text>
+</g>
+<g id="dc-d6492d8062-node-f2" data-node="f2" data-x="310" data-y="300" data-w="240" data-h="120">
+<rect x="310" y="300" width="240" height="120" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="328" y="348.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="f2"><tspan x="328" dy="0">FactRequestDaily</tspan></text>
+<text x="328" y="374.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="f2"><tspan x="328" dy="0">One row per request per</tspan><tspan x="328" dy="18">day; end-of-day state</tspan></text>
+</g>
+<g id="dc-d6492d8062-node-f3" data-node="f3" data-x="600" data-y="300" data-w="240" data-h="120">
+<rect x="600" y="300" width="240" height="120" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="618" y="348.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="f3"><tspan x="618" dy="0">FactOrderLine</tspan></text>
+<text x="618" y="374.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="f3"><tspan x="618" dy="0">One row per order line;</tspan><tspan x="618" dy="18">quantity and currency</tspan></text>
+</g>
+<g data-label="k1" data-x="146" data-y="208" data-w="170" data-h="30"><rect x="146" y="208" width="170" height="30" rx="4" fill="#ffffff"/>
+<text x="154" y="227" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="154" dy="0">Many facts : one key</tspan></text>
+</g>
+<g data-label="k2" data-x="440" data-y="220" data-w="96" data-h="30"><rect x="440" y="220" width="96" height="30" rx="4" fill="#ffffff"/>
+<text x="448" y="239" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="448" dy="0">Many : one</tspan></text>
+</g>
+<g data-label="k3" data-x="546" data-y="208" data-w="170" data-h="30"><rect x="546" y="208" width="170" height="30" rx="4" fill="#ffffff"/>
+<text x="554" y="227" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="554" dy="0">Many facts : one key</tspan></text>
+</g>
+</svg>

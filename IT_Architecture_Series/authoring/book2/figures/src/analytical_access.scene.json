@@ -1,0 +1,230 @@
+{
+ "title": "Analytical access paths",
+ "description": "Dashboard, notebook and export requests all pass one policy enforcement point; the raw zone has no consumer path, and an export writes a new copy that needs its own policy.",
+ "width": 880,
+ "height": 530,
+ "theme": "light",
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "nodes": [
+  {
+   "id": "raw",
+   "label": "Restricted raw zone",
+   "x": 20,
+   "y": 30,
+   "w": 220,
+   "h": 100,
+   "status": "provided",
+   "detail": "No consumer path"
+  },
+  {
+   "id": "curated",
+   "label": "Curated products",
+   "x": 330,
+   "y": 30,
+   "w": 220,
+   "h": 100,
+   "status": "provided",
+   "detail": "Detail by division and tenant; aggregates"
+  },
+  {
+   "id": "copy",
+   "label": "Exported copy",
+   "x": 640,
+   "y": 30,
+   "w": 220,
+   "h": 100,
+   "status": "provided",
+   "detail": "Needs its own policy and audience"
+  },
+  {
+   "id": "policy",
+   "label": "Policy enforcement",
+   "x": 330,
+   "y": 205,
+   "w": 220,
+   "h": 130,
+   "status": "provided",
+   "emphasis": true,
+   "detail": "Checks identity, division and tenant scope"
+  },
+  {
+   "id": "dash",
+   "label": "Dashboard",
+   "x": 20,
+   "y": 420,
+   "w": 220,
+   "h": 80,
+   "status": "provided"
+  },
+  {
+   "id": "nb",
+   "label": "Notebook",
+   "x": 330,
+   "y": 420,
+   "w": 220,
+   "h": 80,
+   "status": "provided"
+  },
+  {
+   "id": "job",
+   "label": "Export job",
+   "x": 640,
+   "y": 420,
+   "w": 220,
+   "h": 80,
+   "status": "provided"
+  }
+ ],
+ "edges": [
+  {
+   "id": "pub",
+   "from": "raw",
+   "to": "curated",
+   "points": [
+    [
+     240,
+     80
+    ],
+    [
+     330,
+     80
+    ]
+   ],
+   "status": "provided",
+   "label": "Publish",
+   "label_at": [
+    248,
+    38
+   ],
+   "label_w": 76
+  },
+  {
+   "id": "perm",
+   "from": "curated",
+   "to": "policy",
+   "points": [
+    [
+     440,
+     130
+    ],
+    [
+     440,
+     205
+    ]
+   ],
+   "status": "provided",
+   "label": "Permitted data only",
+   "label_at": [
+    450,
+    152
+   ],
+   "label_w": 160
+  },
+  {
+   "id": "q1",
+   "from": "dash",
+   "to": "policy",
+   "points": [
+    [
+     130,
+     420
+    ],
+    [
+     130,
+     270
+    ],
+    [
+     330,
+     270
+    ]
+   ],
+   "status": "provided",
+   "label": "Query",
+   "label_at": [
+    140,
+    300
+   ],
+   "label_w": 64
+  },
+  {
+   "id": "q2",
+   "from": "nb",
+   "to": "policy",
+   "points": [
+    [
+     440,
+     420
+    ],
+    [
+     440,
+     335
+    ]
+   ],
+   "status": "provided",
+   "label": "Query",
+   "label_at": [
+    450,
+    362
+   ],
+   "label_w": 64
+  },
+  {
+   "id": "q3",
+   "from": "job",
+   "to": "policy",
+   "points": [
+    [
+     690,
+     420
+    ],
+    [
+     690,
+     270
+    ],
+    [
+     550,
+     270
+    ]
+   ],
+   "status": "provided",
+   "label": "Read for export",
+   "label_at": [
+    556,
+    278
+   ],
+   "label_w": 130
+  },
+  {
+   "id": "w",
+   "from": "job",
+   "to": "copy",
+   "points": [
+    [
+     840,
+     420
+    ],
+    [
+     840,
+     130
+    ]
+   ],
+   "status": "provided",
+   "label": "Writes a new copy",
+   "label_at": [
+    700,
+    330
+   ],
+   "label_w": 130,
+   "style": "dashed"
+  }
+ ]
+}

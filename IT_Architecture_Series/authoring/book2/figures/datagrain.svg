@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 470" width="880" height="470" role="img" aria-labelledby="dc-8376b5243d-title dc-8376b5243d-desc" font-family="DejaVu Sans">
+<title id="dc-8376b5243d-title">Grain and dimensions</title>
+<desc id="dc-8376b5243d-desc">Three facts at different grains share governed dimensions and are aggregated to a common grain before measures are combined.</desc>
+<defs><marker id="dc-8376b5243d-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 4 L0 8 Z" fill="#323232"/></marker></defs>
+<rect width="880" height="470" fill="#ffffff" aria-hidden="true"/>
+<polyline data-edge="k1" points="300,126 300,160 145,160 145,200" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-8376b5243d-arrow)"/>
+<polyline data-edge="k2" points="440,126 440,200" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-8376b5243d-arrow)"/>
+<polyline data-edge="k3" points="580,126 580,160 735,160 735,200" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-8376b5243d-arrow)"/>
+<polyline data-edge="a1" points="145,310 145,345 300,345 300,380" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-8376b5243d-arrow)"/>
+<polyline data-edge="a2" points="440,310 440,380" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-8376b5243d-arrow)"/>
+<polyline data-edge="a3" points="735,310 735,345 580,345 580,380" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-8376b5243d-arrow)"/>
+<g id="dc-8376b5243d-node-dim" data-node="dim" data-x="250" data-y="30" data-w="380" data-h="96">
+<rect x="250" y="30" width="380" height="96" rx="6" fill="#e8f0fe" stroke="#276ef1" stroke-width="2"/>
+<text x="268" y="66.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="dim"><tspan x="268" dy="0">Governed dimensions</tspan></text>
+<text x="268" y="92.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="dim"><tspan x="268" dy="0">Customer, division and date, with</tspan><tspan x="268" dy="18">source-qualified identities</tspan></text>
+</g>
+<g id="dc-8376b5243d-node-ev" data-node="ev" data-x="20" data-y="200" data-w="250" data-h="110">
+<rect x="20" y="200" width="250" height="110" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="38" y="243.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="ev"><tspan x="38" dy="0">Service event</tspan></text>
+<text x="38" y="269.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="ev"><tspan x="38" dy="0">One row per event and</tspan><tspan x="38" dy="18">version</tspan></text>
+</g>
+<g id="dc-8376b5243d-node-snap" data-node="snap" data-x="315" data-y="200" data-w="250" data-h="110">
+<rect x="315" y="200" width="250" height="110" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="333" y="243.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="snap"><tspan x="333" dy="0">Request snapshot</tspan></text>
+<text x="333" y="269.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="snap"><tspan x="333" dy="0">One row per request, date</tspan><tspan x="333" dy="18">and publication</tspan></text>
+</g>
+<g id="dc-8376b5243d-node-comp" data-node="comp" data-x="610" data-y="200" data-w="250" data-h="110">
+<rect x="610" y="200" width="250" height="110" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="628" y="243.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="comp"><tspan x="628" dy="0">Completion</tspan></text>
+<text x="628" y="269.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="comp"><tspan x="628" dy="0">One row per qualifying first</tspan><tspan x="628" dy="18">closure</tspan></text>
+</g>
+<g id="dc-8376b5243d-node-agg" data-node="agg" data-x="190" data-y="380" data-w="500" data-h="76">
+<rect x="190" y="380" width="500" height="76" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="208" y="415.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="agg"><tspan x="208" dy="0">Common grain</tspan></text>
+<text x="208" y="441.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="agg"><tspan x="208" dy="0">Aggregate each fact first, then combine measures</tspan></text>
+</g>
+<g data-label="k2" data-x="452" data-y="145" data-w="56" data-h="30"><rect x="452" y="145" width="56" height="30" rx="4" fill="#ffffff"/>
+<text x="460" y="164" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="460" dy="0">Keys</tspan></text>
+</g>
+<g data-label="a2" data-x="452" data-y="330" data-w="96" data-h="30"><rect x="452" y="330" width="96" height="30" rx="4" fill="#ffffff"/>
+<text x="460" y="349" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="460" dy="0">Aggregate</tspan></text>
+</g>
+</svg>

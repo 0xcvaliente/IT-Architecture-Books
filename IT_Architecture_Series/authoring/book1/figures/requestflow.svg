@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 410" width="860" height="410" role="img" aria-labelledby="dc-eeb29857c7-title dc-eeb29857c7-desc" font-family="DejaVu Sans">
+<title id="dc-eeb29857c7-title">Submission and background processing</title>
+<desc id="dc-eeb29857c7-desc">The customer submits metadata to the submission API, which writes the request and outbox record atomically and returns a receipt. Attachments upload to object storage through an authorised path. In the background, a worker reads pending work and hands it off to the CRM. Solid arrows show foreground requests and responses; dashed arrows show background processing.</desc>
+<defs><marker id="dc-eeb29857c7-arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L10 4 L0 8 Z" fill="#323232"/></marker></defs>
+<rect width="860" height="410" fill="#ffffff" aria-hidden="true"/>
+<polyline data-edge="submit" points="220,60 330,60" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-eeb29857c7-arrow)"/>
+<polyline data-edge="receipt" points="330,95 220,95" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-eeb29857c7-arrow)"/>
+<polyline data-edge="write" points="530,75 640,75" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-eeb29857c7-arrow)"/>
+<polyline data-edge="upload" points="120,120 120,300" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-eeb29857c7-arrow)"/>
+<polyline data-edge="read" points="740,120 740,300" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-eeb29857c7-arrow)" stroke-dasharray="6 5"/>
+<polyline data-edge="handoff" points="640,345 530,345" fill="none" stroke="#323232" stroke-width="2" stroke-linejoin="round" marker-end="url(#dc-eeb29857c7-arrow)" stroke-dasharray="6 5"/>
+<g id="dc-eeb29857c7-node-cust" data-node="cust" data-x="20" data-y="30" data-w="200" data-h="90">
+<rect x="20" y="30" width="200" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="38" y="81.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="cust"><tspan x="38" dy="0">Customer</tspan></text>
+</g>
+<g id="dc-eeb29857c7-node-api" data-node="api" data-x="330" data-y="30" data-w="200" data-h="90">
+<rect x="330" y="30" width="200" height="90" rx="6" fill="#e8f0fe" stroke="#276ef1" stroke-width="2"/>
+<text x="348" y="81.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="api"><tspan x="348" dy="0">Submission API</tspan></text>
+</g>
+<g id="dc-eeb29857c7-node-db" data-node="db" data-x="640" data-y="30" data-w="200" data-h="90">
+<rect x="640" y="30" width="200" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<path d="M650 39 H830 M650 111 H830" stroke="#323232" fill="none"/>
+<text x="658" y="72.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="db"><tspan x="658" dy="0">Database</tspan></text>
+<text x="658" y="98.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="db"><tspan x="658" dy="0">Request and outbox</tspan></text>
+</g>
+<g id="dc-eeb29857c7-node-obj" data-node="obj" data-x="20" data-y="300" data-w="200" data-h="90">
+<rect x="20" y="300" width="200" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<path d="M30 309 H210 M30 381 H210" stroke="#323232" fill="none"/>
+<text x="38" y="342.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="obj"><tspan x="38" dy="0">Object storage</tspan></text>
+<text x="38" y="368.5" font-size="13" font-weight="400" fill="#323232" text-anchor="start" data-node-text="obj"><tspan x="38" dy="0">Attachment</tspan></text>
+</g>
+<g id="dc-eeb29857c7-node-crm" data-node="crm" data-x="330" data-y="300" data-w="200" data-h="90">
+<rect x="330" y="300" width="200" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="348" y="351.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="crm"><tspan x="348" dy="0">CRM</tspan></text>
+</g>
+<g id="dc-eeb29857c7-node-worker" data-node="worker" data-x="640" data-y="300" data-w="200" data-h="90">
+<rect x="640" y="300" width="200" height="90" rx="6" fill="#f3f3f3" stroke="#323232" stroke-width="1.5"/>
+<text x="658" y="351.5" font-size="18" font-weight="650" fill="#000000" text-anchor="start" data-node-text="worker"><tspan x="658" dy="0">Worker</tspan></text>
+</g>
+<g data-label="submit" data-x="224" data-y="8" data-w="100" data-h="48"><rect x="224" y="8" width="100" height="48" rx="4" fill="#ffffff"/>
+<text x="232" y="27" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="232" dy="0">Submit</tspan><tspan x="232" dy="18">metadata</tspan></text>
+</g>
+<g data-label="receipt" data-x="240" data-y="100" data-w="72" data-h="30"><rect x="240" y="100" width="72" height="30" rx="4" fill="#ffffff"/>
+<text x="248" y="119" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="248" dy="0">Receipt</tspan></text>
+</g>
+<g data-label="write" data-x="534" data-y="22" data-w="100" data-h="48"><rect x="534" y="22" width="100" height="48" rx="4" fill="#ffffff"/>
+<text x="542" y="41" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="542" dy="0">Atomic</tspan><tspan x="542" dy="18">write</tspan></text>
+</g>
+<g data-label="upload" data-x="130" data-y="190" data-w="196" data-h="48"><rect x="130" y="190" width="196" height="48" rx="4" fill="#ffffff"/>
+<text x="138" y="209" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="138" dy="0">Upload via authorised</tspan><tspan x="138" dy="18">path</tspan></text>
+</g>
+<g data-label="read" data-x="600" data-y="190" data-w="132" data-h="48"><rect x="600" y="190" width="132" height="48" rx="4" fill="#ffffff"/>
+<text x="608" y="209" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="608" dy="0">Read pending</tspan><tspan x="608" dy="18">work</tspan></text>
+</g>
+<g data-label="handoff" data-x="550" data-y="310" data-w="74" data-h="30"><rect x="550" y="310" width="74" height="30" rx="4" fill="#ffffff"/>
+<text x="558" y="329" font-size="13" font-weight="400" fill="#000000" text-anchor="start"><tspan x="558" dy="0">Handoff</tspan></text>
+</g>
+</svg>

@@ -1,0 +1,413 @@
+{
+ "admission control": [
+  41
+ ],
+ "architecture decision record (ADR)": [
+  6,
+  8
+ ],
+ "assumption": [
+  7,
+  8,
+  12,
+  75,
+  76,
+  78
+ ],
+ "authority epoch": [
+  62,
+  66,
+  68,
+  69,
+  71,
+  76
+ ],
+ "bucket": [
+  36,
+  37,
+  38,
+  42,
+  43,
+  44
+ ],
+ "change card": [
+  24,
+  42,
+  56,
+  71,
+  72,
+  77
+ ],
+ "change data capture (CDC)": [
+  60,
+  61,
+  62
+ ],
+ "closed workload": [
+  10
+ ],
+ "compensation": [
+  35,
+  38,
+  44,
+  77
+ ],
+ "constant-rate queue model": [
+  9,
+  10
+ ],
+ "constraint": [
+  6,
+  7,
+  8,
+  19,
+  77,
+  78
+ ],
+ "container view": [
+  7,
+  16,
+  34,
+  74
+ ],
+ "context view": [
+  7
+ ],
+ "controlled conditions": [
+  9,
+  12
+ ],
+ "cutover": [
+  66,
+  67,
+  69,
+  70,
+  71,
+  72
+ ],
+ "data view": [
+  7
+ ],
+ "decision brief": [
+  28,
+  43,
+  52,
+  57,
+  73,
+  76
+ ],
+ "dependent variables": [
+  9
+ ],
+ "deployment view": [
+  7,
+  8,
+  76
+ ],
+ "direct replacement": [
+  59,
+  60,
+  72
+ ],
+ "dossier": [
+  8,
+  26,
+  72,
+  76,
+  77,
+  78
+ ],
+ "dual run": [
+  62,
+  63,
+  68,
+  72
+ ],
+ "event time": [
+  45,
+  46,
+  47
+ ],
+ "fencing token": [
+  18,
+  20,
+  21,
+  23,
+  67
+ ],
+ "grain": [
+  45,
+  46,
+  47,
+  57
+ ],
+ "handoff": [
+  14,
+  16,
+  19,
+  20,
+  25,
+  27
+ ],
+ "hot row": [
+  36,
+  38,
+  77,
+  78
+ ],
+ "idempotency key": [
+  13,
+  18,
+  22,
+  23
+ ],
+ "in-transit record": [
+  37,
+  42
+ ],
+ "independent variables": [
+  9,
+  12
+ ],
+ "invariant": [
+  30,
+  34,
+  38,
+  39,
+  43,
+  44
+ ],
+ "isolation level": [
+  30,
+  32
+ ],
+ "latest safe decision point": [
+  59,
+  70,
+  72
+ ],
+ "lease": [
+  18,
+  19,
+  20,
+  21,
+  23,
+  27
+ ],
+ "linearizability": [
+  39
+ ],
+ "Little's law": [
+  11,
+  12
+ ],
+ "lock-hold time": [
+  33,
+  34,
+  42,
+  43,
+  44,
+  77
+ ],
+ "metric contract": [
+  45,
+  47,
+  57
+ ],
+ "outbox": [
+  13,
+  15,
+  16,
+  19,
+  22,
+  23
+ ],
+ "percentile": [
+  9,
+  39,
+  41,
+  44
+ ],
+ "phased migration": [
+  59,
+  60,
+  61,
+  72
+ ],
+ "preference": [
+  7,
+  8,
+  73,
+  74,
+  75,
+  77
+ ],
+ "processing time": [
+  45,
+  46,
+  47
+ ],
+ "publication ledger": [
+  48,
+  50,
+  51,
+  57
+ ],
+ "publication time": [
+  45,
+  46,
+  47
+ ],
+ "quality gate": [
+  51
+ ],
+ "quality scenario": [
+  8,
+  9,
+  16,
+  24,
+  27
+ ],
+ "READ COMMITTED": [
+  30,
+  32,
+  33,
+  34,
+  42,
+  43
+ ],
+ "receipt": [
+  8,
+  13,
+  15,
+  18,
+  24,
+  27
+ ],
+ "reconciliation": [
+  52,
+  63,
+  65,
+  69,
+  70,
+  72
+ ],
+ "refinement mode": [
+  46,
+  47
+ ],
+ "REPEATABLE READ": [
+  30,
+  32,
+  34
+ ],
+ "replication lag": [
+  9,
+  59,
+  62
+ ],
+ "reservation": [
+  31,
+  32,
+  34,
+  35,
+  40,
+  42
+ ],
+ "restatement": [
+  47,
+  48,
+  50,
+  56,
+  57,
+  58
+ ],
+ "retry storm": [
+  33
+ ],
+ "review trigger": [
+  8,
+  28,
+  43,
+  48,
+  57,
+  77
+ ],
+ "saga": [
+  30,
+  35
+ ],
+ "sequence or state view": [
+  7
+ ],
+ "SERIALIZABLE": [
+  30,
+  32,
+  33,
+  34
+ ],
+ "serialization failure": [
+  32
+ ],
+ "strangler fig": [
+  59,
+  60
+ ],
+ "temporary rehosting": [
+  59,
+  60,
+  61,
+  71,
+  72
+ ],
+ "tenant": [
+  13,
+  18,
+  19,
+  27,
+  55,
+  67
+ ],
+ "transactional outbox": [
+  13
+ ],
+ "trigger (Dataflow Model)": [
+  45,
+  46,
+  47,
+  48,
+  57
+ ],
+ "utilisation": [
+  32,
+  33,
+  34,
+  42,
+  43,
+  44
+ ],
+ "void": [
+  36,
+  38,
+  40,
+  44
+ ],
+ "watermark": [
+  45,
+  46,
+  47
+ ],
+ "window": [
+  45,
+  46,
+  47,
+  48,
+  51,
+  56
+ ],
+ "write fence": [
+  59,
+  62,
+  65
+ ]
+}

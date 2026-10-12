@@ -1,0 +1,163 @@
+{
+ "title": "Enterprise architecture coordinates shared decisions",
+ "description": "Three business units each have local capabilities that contribute to enterprise outcomes; a small set of shared decisions supports all three.",
+ "width": 860,
+ "height": 420,
+ "theme": "light",
+ "tokens": {
+  "paper": "#ffffff",
+  "surface": "#f3f3f3",
+  "ink": "#000000",
+  "muted": "#323232",
+  "rule": "#323232",
+  "edge": "#323232",
+  "accent": "#276ef1",
+  "accent_surface": "#e8f0fe"
+ },
+ "regions": [],
+ "nodes": [
+  {
+   "id": "out",
+   "label": "Enterprise outcomes",
+   "x": 260,
+   "y": 20,
+   "w": 340,
+   "h": 80,
+   "status": "provided",
+   "detail": "Service, cost and adaptability",
+   "emphasis": true
+  },
+  {
+   "id": "m",
+   "label": "Maintenance",
+   "x": 20,
+   "y": 170,
+   "w": 250,
+   "h": 80,
+   "status": "provided",
+   "detail": "Local capabilities"
+  },
+  {
+   "id": "r",
+   "label": "Retail Distribution",
+   "x": 305,
+   "y": 170,
+   "w": 250,
+   "h": 80,
+   "status": "provided",
+   "detail": "Local capabilities"
+  },
+  {
+   "id": "d",
+   "label": "Digital Services",
+   "x": 590,
+   "y": 170,
+   "w": 250,
+   "h": 80,
+   "status": "provided",
+   "detail": "Local capabilities"
+  },
+  {
+   "id": "s",
+   "label": "Shared decisions",
+   "x": 130,
+   "y": 320,
+   "w": 600,
+   "h": 80,
+   "status": "provided",
+   "detail": "Customer identity, contracts, risk and investment"
+  }
+ ],
+ "edges": [
+  {
+   "id": "e1",
+   "from": "m",
+   "to": "out",
+   "points": [
+    [
+     145,
+     170
+    ],
+    [
+     330,
+     100
+    ]
+   ]
+  },
+  {
+   "id": "e2",
+   "from": "r",
+   "to": "out",
+   "points": [
+    [
+     430,
+     170
+    ],
+    [
+     430,
+     100
+    ]
+   ]
+  },
+  {
+   "id": "e3",
+   "from": "d",
+   "to": "out",
+   "points": [
+    [
+     715,
+     170
+    ],
+    [
+     530,
+     100
+    ]
+   ]
+  },
+  {
+   "id": "e4",
+   "from": "s",
+   "to": "m",
+   "points": [
+    [
+     145,
+     320
+    ],
+    [
+     145,
+     250
+    ]
+   ]
+  },
+  {
+   "id": "e5",
+   "from": "s",
+   "to": "r",
+   "points": [
+    [
+     430,
+     320
+    ],
+    [
+     430,
+     250
+    ]
+   ]
+  },
+  {
+   "id": "e6",
+   "from": "s",
+   "to": "d",
+   "points": [
+    [
+     715,
+     320
+    ],
+    [
+     715,
+     250
+    ]
+   ]
+  }
+ ]
+}
